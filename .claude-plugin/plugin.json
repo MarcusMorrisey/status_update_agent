@@ -1,0 +1,7 @@
+{
+  "name": "status-update-agent",
+  "description": "Skills for producing structured project status reports from meeting transcripts. Includes ingest-meetings, ingest-project-docs, extract-and-verify, generate-report, and period-rollover.",
+  "author": {
+    "name": "Marcus Morrisey"
+  }
+}

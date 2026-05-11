@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "skill_name": "ingest-meetings",
+    "skill_path": "skills-plugin/.../skills/ingest-meetings",
+    "executor_model": "claude-sonnet-4-6",
+    "analyzer_model": "claude-sonnet-4-6",
+    "timestamp": "2026-03-09T00:00:00Z",
+    "evals_run": [1, 2, 3],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 96.2,
+        "tokens": 35762,
+        "tool_calls": 14,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "meeting-notes-current.md is written to the project root", "passed": true, "evidence": "File written to test-project-multi root and copied to outputs/meeting-notes-current.md"},
+        {"text": "meeting-notes-current.md covers only the oldest period (around 2026-01-14) — not the March meetings", "passed": true, "evidence": "Output covers Period 1 only (2026-01-05 to 2026-01-18). March meetings absent."},
+        {"text": "Skill reports that multiple periods were found (mentions at least 2 periods) before writing the file", "passed": true, "evidence": "Agent reported '4 meetings across 3 periods' with a period table before proceeding."},
+        {"text": "Output labels the Jan 14 meeting as Internal", "passed": true, "evidence": "meeting-notes-current.md header: '## Internal Meeting — 2026-01-14'"},
+        {"text": "Skill asks user to run /extract-and-verify and does NOT perform any extraction itself", "passed": true, "evidence": "Handoff message present. Output is raw verbatim transcript with no action items or extracted structure."}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 240.6,
+        "tokens": 44472,
+        "tool_calls": 19,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "meeting-notes-current.md is written to the project root", "passed": true, "evidence": "File written to project root."},
+        {"text": "meeting-notes-current.md covers only the oldest period (around 2026-01-14) — not the March meetings", "passed": false, "evidence": "Ingested all 4 meetings (Jan 14, Jan 27, Mar 4, Mar 10). No period scoping — replaced prior output with 'comprehensive notes covering all 4 meetings across full project history'."},
+        {"text": "Skill reports that multiple periods were found (mentions at least 2 periods) before writing the file", "passed": false, "evidence": "Categorised by Internal/External only. No period boundaries computed, no iterative processing plan."},
+        {"text": "Output labels the Jan 14 meeting as Internal", "passed": true, "evidence": "Jan 14 meeting labelled 'Internal (team standups)'."},
+        {"text": "Skill asks user to run /extract-and-verify and does NOT perform any extraction itself", "passed": false, "evidence": "No handoff. Produced structured action item tables, resolution tracker, open items with IDs — full extraction during ingestion."}
+      ],
+      "notes": ["without_skill ran 2.5× slower and used more tool calls — spent time on comprehensive extraction rather than faithful transcription"]
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 72.1,
+        "tokens": 31118,
+        "tool_calls": 10,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Skill does not error or stop due to missing internal/external subdirectories", "passed": true, "evidence": "Detected flat directory, applied External fallback rule. No error."},
+        {"text": "meeting-notes-current.md is written with content from both meetings", "passed": true, "evidence": "Both Mar 4 and Mar 10 present with full verbatim content."},
+        {"text": "Both meetings are labelled External (not Internal) in meeting-notes-current.md", "passed": true, "evidence": "Headers: '## External Meeting — 2026-03-04' and '## External Meeting — 2026-03-10'. Team meeting correctly defaulted to External per flat-directory rule."},
+        {"text": "Skill ends with handoff prompt referencing /extract-and-verify", "passed": true, "evidence": "Handoff: 'Meetings: 2 (External) | Run /extract-and-verify to proceed.'"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "total": 4,
+        "time_seconds": 95.1,
+        "tokens": 32782,
+        "tool_calls": 18,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Skill does not error or stop due to missing internal/external subdirectories", "passed": true, "evidence": "Handled flat directory without error."},
+        {"text": "meeting-notes-current.md is written with content from both meetings", "passed": true, "evidence": "Both meetings present."},
+        {"text": "Both meetings are labelled External (not Internal) in meeting-notes-current.md", "passed": false, "evidence": "Mar 4 labelled 'Type: Internal' (inferred from attendees — team-only meeting). Mar 10 labelled 'Type: External (Client)'. Content-based inference instead of directory-based default."},
+        {"text": "Skill ends with handoff prompt referencing /extract-and-verify", "passed": false, "evidence": "No handoff. Produced action tables, period summary with risk assessment — extraction during ingestion."}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 139.6,
+        "tokens": 40773,
+        "tool_calls": 15,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Skill mentions that periods already completed are being skipped (references project-state.md or Last Completed Period)", "passed": true, "evidence": "Explicitly reported W01 and W03 as already completed per project-state.md. Skipped W05 and W07 (no meetings). Started from W09."},
+        {"text": "meeting-notes-current.md is written covering March meetings (2026-03-02 to 2026-03-15 period)", "passed": true, "evidence": "File header: 'Period: 2026-03-02 to 2026-03-15'. Both W09 meetings present."},
+        {"text": "meeting-notes-current.md does NOT contain the January 14 or January 27 meeting content", "passed": true, "evidence": "Output contains only Mar 4 and Mar 10 content."},
+        {"text": "meeting-notes-current.md contains both the Mar 4 (Internal) and Mar 10 (External) meetings", "passed": true, "evidence": "'## Internal Meeting — 2026-03-04' and '## External Meeting — 2026-03-10' both present with full verbatim content."},
+        {"text": "Skill ends with handoff prompt referencing /extract-and-verify", "passed": true, "evidence": "Handoff: 'Meetings: 1 internal, 1 external | Ready to extract? Run /extract-and-verify to proceed'"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 137.4,
+        "tokens": 35935,
+        "tool_calls": 12,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Skill mentions that periods already completed are being skipped (references project-state.md or Last Completed Period)", "passed": true, "evidence": "Read project-state.md. Identified last save as end of W03. Only processed meetings post-dating that state."},
+        {"text": "meeting-notes-current.md is written covering March meetings (2026-03-02 to 2026-03-15 period)", "passed": true, "evidence": "File covers 2026-03-02 to 2026-03-15."},
+        {"text": "meeting-notes-current.md does NOT contain the January 14 or January 27 meeting content", "passed": true, "evidence": "January transcript files were empty in this test project; only March content present."},
+        {"text": "meeting-notes-current.md contains both the Mar 4 (Internal) and Mar 10 (External) meetings", "passed": true, "evidence": "Both meetings present."},
+        {"text": "Skill ends with handoff prompt referencing /extract-and-verify", "passed": false, "evidence": "No handoff. Produced full extraction: action items A-003/A-004, issue I-001, updated status for A-001/A-002, state counters for next IDs."}
+      ],
+      "notes": ["without_skill correctly used project-state.md to resume — state-file reading is within base Claude capability. Failure is exclusively the extraction-during-ingestion boundary violation."]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0},
+      "time_seconds": {"mean": 102.6, "stddev": 35.0, "min": 72.1, "max": 139.6},
+      "tokens": {"mean": 35884, "stddev": 4886, "min": 31118, "max": 40773}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 0.567, "stddev": 0.208, "min": 0.4, "max": 0.8},
+      "time_seconds": {"mean": 157.7, "stddev": 73.9, "min": 95.1, "max": 240.6},
+      "tokens": {"mean": 37730, "stddev": 5979, "min": 32782, "max": 44472}
+    },
+    "delta": {
+      "pass_rate": "+0.43",
+      "time_seconds": "-55.1",
+      "tokens": "-1846"
+    }
+  },
+  "notes": [
+    "eval-1 (multi-period-catchup) is the most discriminating: without_skill scores 2/5 by ingesting all meetings at once with no period scoping. Skill correctly identifies 3 periods and processes only the oldest.",
+    "eval-2 (flat-directory) reveals a labelling gap: without_skill infers Internal/External from meeting content (correct heuristic but violates the directory-based rule). Skill correctly defaults to External for flat structures.",
+    "eval-3 (resume-from-state) is the least discriminating: without_skill scores 4/5. State-file reading is within base Claude capability. The single failure is always the same — extraction during ingestion.",
+    "without_skill is consistently slower on discriminating evals (eval-1: 240s vs 96s) because it does more work (full extraction). The skill is faster because it stops at transcription.",
+    "The ingestion/extraction boundary is the core value this skill delivers. All without_skill failures trace to crossing this boundary."
+  ]
+}
