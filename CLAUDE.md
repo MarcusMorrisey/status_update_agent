@@ -17,9 +17,13 @@ Key files:
 
 ## Meeting Minutes Structure
 
-Meeting transcripts are in `./project/01. Meeting Minutes/`. The folder uses a mixed structure:
+Meeting transcripts are sourced from the network drive — **not** the local `./project/01. Meeting Minutes/` folder:
+
+**Source path:** `Z:\Shared\3_Client Projects\Peguis CFS\Projects\PD25-1186-CO - Custom CMS\4. Controlling\01. Meeting Minutes`
+
+The folder uses a mixed structure:
 - Root-level `YYYY-MM-DD` date folders → **External** meetings
-- `internal/` subfolder with `YYYY.MM.DD` date folders → **Internal** meetings
+- `internal\` subfolder with `YYYY.MM.DD` date folders → **Internal** meetings
 
 There is no `external/` subfolder — external meetings sit directly under the source root.
 

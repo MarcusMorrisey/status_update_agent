@@ -1,0 +1,169 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W11 · 2026-02-27 to 2026-03-12"
+date: "2026-03-12"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-03-12 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-03-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🟡 Yellow |
+| Schedule | 🔴 Red |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟢 Green |
+
+## Project Status & Dates
+
+**Project Status:** Iteration 1 development is actively underway and intake workflow wireframes have been handed to visual designers, marking continued progress. Two client meetings were held this period: a broader project onboarding session for the new Fam Care supervisor (2026-03-03) and a focused weekly check-in (2026-03-10) that confirmed high-risk record access behaviour and added address-based search as a confirmed new deliverable. Schedule health remains Red — the M-03 and M-04 baseline of 2026-03-31 is effectively unachievable with only Iteration 1 in development and 9 iterations required; re-baselining is urgently needed once Iteration 1 velocity is measured. Scope expanded with the addition of address-based search, and the notification system external integration is being scoped. Client engagement is positive and collaborative.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-03-31 (re-baseline pending; current estimated finish for M-03/M-04 is no longer achievable — new dates to be established after Iteration 1 velocity measurement)
+
+## Progress This Period
+
+- Iteration 1 development actively underway (login, search, add/edit person); dev team onboarded Feb 24 and building
+- Intake workflow wireframes completed and handed off to visual designers (Gabrielle)
+- Notification and task assignment system design started (Marcus + Gabrielle)
+- Design walkthrough conducted with Christine Chartrand, Christina Sutherland, and Ross Gillingham (2026-03-03)
+- Christina Sutherland (new Fam Care supervisor, joined 2026-02-23) onboarded to the project
+- Ross Gillingham announced as fractional CIO (30 hrs/week, Mon–Thu), increasing project integration
+- High-risk/confidential record behaviour confirmed with Christina Sutherland: same as CFIS — record visible in search, file details locked; flagged as "confidential" with no accessible content
+- Address-based search feature confirmed technically feasible and agreed to be built as a new search tab
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01 Stage 1 — Discovery and Requirements complete | 2025-12-22 | 2026-03-26 | Delayed | +94d |
+| M-02 Stage 2 — Solution Design complete | 2026-01-31 | 2026-03-26 | Delayed | +54d |
+| M-03 Stage 3 — All 9 iterations complete / system ready | 2026-03-31 | TBD* | Delayed | TBD* |
+| M-04 Go-Live | 2026-03-31 | TBD* | Delayed | TBD* |
+| M-05 Stage 4 — Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+*\*M-03 and M-04 re-baseline required: only Iteration 1 is in development as of 2026-03-10; completing all 9 iterations by the 2026-03-31 baseline is not achievable. New estimated dates to be established once Iteration 1 velocity is measured (A-082).*
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section M-01 Stage 1 - Discovery
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section M-02 Stage 2 - Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section M-03 Stage 3 - All 9 Iterations
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-03-31, 0d
+  section M-04 Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-03-31, 0d
+  section M-05 Stage 4 - Post-Launch
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Microsoft 365 SSO only — no alternate username/password login path | Marcus / Ross | 2026-03-03 | Break glass accounts to be set up by Ross; deactivating M365 account automatically blocks app access |
+| Sensitive ID fields (SIN, health numbers, etc.) to be masked by default in person record | Marcus / Gabrielle | 2026-03-03 | Users can reveal when needed; already implemented in visual design |
+| Design feedback to be tracked by department going forward in solution document | Marcus / Ross | 2026-03-03 | Supports future audit and change rationale |
+| Resource homes tracked as separate record types with visual indicators for licensed facilities | Marcus | 2026-03-03 | In response to Christine's kinship/licensing request |
+| Address-based search: implement as search over existing address fields (not address objects), presented as a tab in the search feature, showing individuals/cases filterable by open status | Marcus | 2026-03-10 | Avoids storing address records for every home in Manitoba; matches CFIS behaviour |
+| Confidential/high-risk record access: person visible in search, file details inaccessible (flagged "confidential") | Marcus / Christina | 2026-03-10 | Matches CFIS pattern; conflict of interest and media involvement are primary use cases |
+| External notifications via Microsoft REST API for off-system users and escalation; in-app notifications are primary | Marcus | 2026-03-10 | No sensitive data in external messages — reference number only, authentication required to view details |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Open | Yes |
+| A-050 | Hailey | Consult caseworkers to clarify which tasks are performed on mobile devices | 2026-01-29 | Open | Yes |
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Open | Yes |
+| A-077 | Hailey | Finalize gender identity, sex assigned at birth, and pronouns field options per Stats Canada standards | 2026-01-29 | Open | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | Yes |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | Yes |
+| A-081 | Marcus | Consult ongoing services to resolve pending field decisions: SIN placement, caregiver role terminology, household member requirements, critical health info categorization | 2026-02-12 | Open | Yes |
+| A-082 | Marcus | Establish new pilot target dates; prepare status update for Jaren and Rob with technical challenges and revised timeline | 2026-02-12 | Open | Yes |
+| A-083 | Marcus / Varun | Complete Iteration 1 development; dev walkthrough completed 2026-02-24; development actively underway | 2026-02-12 | Open | Yes |
+| A-084 | Marcus | Source standardized municipality/community list for address dropdown; investigate on-reserve address automation feasibility | 2026-02-12 | Open | Yes |
+| A-085 | Marcus | Obtain stakeholder alignment on sensitive data handling strategy (SIN, person profile vs. case/finance tab); ID field masking confirmed 2026-03-03 | 2026-02-12 | Open | Yes |
+| A-086 | Marcus | Confirm survey skip logic requirements with client; document decision | 2026-02-12 | Open | Yes |
+| A-095 | Marcus / Gabrielle | Update intake wireframe with Feb 17 design decisions (eligibility logic, combined case management tab, high-risk alerts); confirm readiness and respond to Christine re: client review scheduling | 2026-02-26 | Complete | Yes |
+| A-097 | Marcus / Ken | Arrange Azure environment walkthrough/orientation session for dev team | 2026-03-12 | Open | Yes |
+| A-100 | Ross | Send schema export to agency once available; free up resources to begin environment setup | 2026-03-26 | Open | No |
+| A-101 | Marcus | Track and itemize design feedback by department in the solution document going forward | 2026-03-26 | Open | No |
+| A-102 | Marcus | Upload current visual design images to SharePoint for team review | 2026-03-12 | Open | No |
+| A-103 | Marcus | Add Christina Sutherland and Ross Gillingham to recurring meeting invite | 2026-03-12 | Open | No |
+| A-104 | Christine | Consult Kinship department and QA to ensure licensing and placement info accurately represented in system design | 2026-03-26 | Open | No |
+| A-105 | Marcus / Ross | Determine agency email account for external notification sends (Microsoft REST API integration) | 2026-03-26 | Open | No |
+| A-106 | Marcus | Implement address-based search tab (search address fields on existing records; show associated individuals/cases, prioritized by open status) | 2026-03-26 | Open | No |
+| A-107 | Marcus | Consult after-hours team to capture any additional requirements for address-based search feature | 2026-03-26 | Open | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-011 | Campfire infrastructure delayed — UAT approach confirmed (Azure tenant); environment setup pending resource availability from other Campfire client projects (confirmed 2026-03-03) | Medium | Marcus / Ross | 2026-01-31 | Open |
+| I-018 | Finance/Sage integration requirements incomplete — Sage version/build not received, coding structure not formally documented, integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-029 | Pilot timeline slippage — original mid-January pilot target missed; no revised target dates established; M-03 baseline (2026-03-31) now days away with only Iter 1 in development | High | Marcus | 2026-02-12 | Open |
+| I-030 | Sensitive data field strategy incomplete — masking approach confirmed for ID fields (2026-03-03); full field placement strategy and documentation not yet complete | Medium | Marcus | 2026-02-12 | Open |
+| I-031 | Ongoing services field clarification gap — field definitions, terminology, and data placement decisions require ongoing services team consultation; no update this period | Medium | Marcus / Hailey | 2026-02-12 | Open |
+| I-032 | Development timeline at risk — Iteration 1 in progress as of 2026-03-10; 9 iterations required by 2026-03-31 baseline; new address-based search requirement adds further scope; re-baselining required | High | Marcus | 2026-03-12 | Open |
+| I-033 | Address-based search confirmed as new development requirement (2026-03-10) — adds scope to an already-constrained timeline; impact on iteration sequencing not yet assessed | Medium | Marcus | 2026-03-26 | Open |
+
+## Return to Green Plans
+
+### Schedule — 🔴 Red (first flagged: 2025-W48)
+
+- Re-baseline M-03 and M-04 after measuring Iteration 1 velocity; prepare revised timeline for Jaren and Rob (A-082)
+- Assess impact of address-based search scope addition on iteration sequencing (I-033)
+- Prioritize remaining field definition decisions to unblock Iterations 2+ without blocking delays
+
+### Overall — 🟡 Yellow (first flagged: 2025-W48)
+
+- Complete Iteration 1 development and use velocity data to establish a realistic remaining schedule
+- Resolve ongoing services field clarifications to close requirements gap (A-081, I-031)
+- Finalize notification system design scope before Iteration 2 planning begins
+
+### Scope — 🟡 Yellow (first flagged: 2025-W50)
+
+- Document address-based search as confirmed scope addition; assess timeline and iteration impact (I-033, A-106)
+- Complete ongoing services field clarifications to close remaining requirements gap (A-081, I-031)
+- Finalize notification system design scope before Iteration 2 planning begins
+
+### Budget — 🟡 Yellow (first flagged: 2025-W50)
+
+- Obtain Sage 300 version/build number to define integration scope and cost impact (A-079)
+
+## Next Period Plan
+
+- Complete Iteration 1 development; prepare for PCFS user acceptance testing
+- Finalize notification and task assignment system design (Marcus + Gabrielle)
+- Establish revised pilot target dates; prepare status update for Jaren and Rob with updated timeline (A-082)
+- Confirm agency email account for external notifications with Ross (A-105)
+- Consult after-hours team on address-based search requirements (A-107)

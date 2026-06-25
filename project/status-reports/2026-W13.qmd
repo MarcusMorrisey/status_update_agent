@@ -1,0 +1,170 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W13 · 2026-03-13 to 2026-03-26"
+date: "2026-03-26"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+|  |  |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-03-26 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-06-30 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🔴 Red |
+| Schedule | 🔴 Red |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟡 Yellow |
+
+## Project Status & Dates
+
+**Project Status:** Development is actively underway in an iterative delivery model; however, the project is significantly behind the original March 31 baseline, with a revised completion estimate of June 2026 confirmed this period. Key client-side leadership has transitioned — Ross Gillingham has assumed the CIO role for PCFS and Clemene is covering Haley's responsibilities during a 3-month absence — and finance stakeholder engagement has been confirmed to begin at the April 7th in-person meeting.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-06-30 (+91 days)
+
+## Progress This Period
+
+- Held project onboarding session with Ross Gillingham (new PCFS CIO) and Clemene (covering Haley during 3-month absence)
+- Provided full development status update: iterative approach, current modules (person, intake, case management), and timeline revised to June 2026
+- Established new biweekly in-person meeting cadence at ID Fusion starting April 7th
+- Agreed on UAT approach: anonymized real-world scenarios with staff feedback loops
+- Agreed to maintain a product roadmap / parking lot for out-of-scope feature requests
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01 — Stage 1: Discovery & Requirements complete | 2025-12-22 | 2026-03-26 | Delayed | +94d |
+| M-02 — Stage 2: Solution Design complete | 2026-01-31 | 2026-03-26 | Delayed | +54d |
+| M-03 — Stage 3: All 9 iterations complete / system ready | 2026-03-31 | 2026-06-30 | Delayed | +91d |
+| M-04 — Go-Live | 2026-03-31 | 2026-06-30 | Delayed | +91d |
+| M-05 — Stage 4: Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+
+  section M-01 Discovery & Requirements
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+
+  section M-02 Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+
+  section M-03 All Iterations Complete
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-06-30, 0d
+
+  section M-04 Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-06-30, 0d
+
+  section M-05 Post-Launch Support
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, done, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Ross Gillingham confirmed as PCFS CIO — primary coordination/approval contact, replacing Haley | Ross, Clemene, Rob, Marcus | 2026-03-23 | AJ and Campfire continue managing technical work/scheduling |
+| Clemene covering Haley's role during 3-month absence (possibly longer) | Clemene | 2026-03-23 | Clemene requires full project orientation |
+| Project timeline revised to June 2026; no additional cost to agency | Rob | 2026-03-23 | Only out-of-scope additions would trigger extra cost |
+| Biweekly in-person meetings at ID Fusion, starting April 7th at 1:00 PM | All | 2026-03-23 | Christine to send recurring invite; Ross/Marcus to hold additional weekly check-ins as needed |
+| UAT approach: sanitized/anonymized real-world scenarios | Rob, Ross, Marcus | 2026-03-23 | Staff test edge cases and provide feedback before moving to next module |
+| Finance integration discussions to begin early, before module reaches development | All | 2026-03-23 | CFO, Director of Finance, Senior Finance Officer to be included from April 7th |
+| Product roadmap / parking lot to be maintained for out-of-scope feature requests | Rob, Ross | 2026-03-23 | Out-of-scope items communicated clearly and documented for future phases |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Open | Yes |
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Open | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | Yes |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | Yes |
+| A-082 | Marcus | Establish revised target dates; prepare status update for Jaren and Rob with technical challenges and revised timeline | 2026-02-12 | Open | Yes |
+| A-083 | Marcus / Varun | Complete Iteration 1 development | 2026-02-12 | Open | Yes |
+| A-097 | Marcus / Ken | Arrange Azure environment walkthrough/orientation session for dev team | 2026-03-12 | Open | Yes |
+| A-104 | Christine | Consult Kinship department and QA to ensure licensing and placement info accurately represented in system design | 2026-03-26 | Open | Yes |
+| A-105 | Marcus / Ross | Determine agency email account for external notification sends (Microsoft REST API integration) | 2026-03-26 | Open | Yes |
+| A-106 | Marcus | Implement address-based search tab (search address fields on existing records; show associated individuals/cases, prioritized by open status) | 2026-03-26 | Open | Yes |
+| A-107 | Marcus | Consult after-hours team to capture any additional requirements for address-based search feature | 2026-03-26 | Open | Yes |
+| A-108 | Clemene | Bring CFO (Bev Stranger), Director of Finance (Barry Mann), and Senior Finance Officer (Carrie) to April 7th in-person meeting | 2026-04-07 | Open | No |
+| A-109 | Clemene | Provide Marcus with finance contact email for follow-up and summary sharing from last finance meeting | 2026-04-07 | Open | No |
+| A-110 | Christine | Send recurring calendar invite for biweekly in-person meetings starting April 7th (all relevant participants) | 2026-04-07 | Open | No |
+| A-111 | Rob | Prepare and circulate agenda for April 7th meeting | 2026-04-04 | Open | No |
+| A-112 | Clemene / Rob | Review contract and create a revised, clean project timeline and implementation schedule | 2026-04-07 | Open | No |
+| A-113 | Ross / Marcus | Schedule internal debrief prior to April 7th meeting | 2026-04-04 | Open | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-011 | Campfire infrastructure delayed — UAT environment setup was pending resource availability from other Campfire client projects | Medium | Marcus / Ross | 2026-01-31 | Closed 2026-03-31 |
+| I-018 | Finance/Sage integration requirements incomplete — Sage version/build not received; CFO and Director of Finance not yet engaged in requirements sessions | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-029 | Timeline slippage — original delivery targets missed; revised completion estimate is June 2026; M-03 baseline (2026-03-31) now missed with Iteration 1 still in progress; re-baselining in progress (A-112) | High | Marcus | 2026-02-12 | Open |
+| I-032 | Development timeline at risk — 9 iterations required; address-based search adds scope; revised June estimate communicated to client; re-baselining underway | High | Marcus | 2026-03-12 | Open |
+| I-033 | Address-based search confirmed as new development requirement — adds scope to constrained timeline; impact on iteration sequencing not yet assessed | Medium | Marcus | 2026-03-26 | Open |
+| I-034 | Client-side continuity risk — Haley absent for 3+ months; Clemene covering but requires full project orientation; risk of decision delays and requirements gaps during transition | Medium | Marcus / Ross | 2026-04-07 | Open |
+
+## Return to Green Plans
+
+### Overall — Red (first flagged: 2025-W48)
+
+- Complete revised project timeline with June target (A-112, Clemene + Rob) and share with all stakeholders
+- Engage finance decision-makers (CFO, Director of Finance) starting April 7th to close remaining requirements gap
+- Maintain biweekly in-person cadence with clear agendas to improve oversight and accountability
+
+### Schedule — Red (first flagged: 2025-W48)
+
+- Produce revised, signed-off project timeline via A-112; update M-03/M-04 estimated ends once confirmed
+- Measure iteration velocity after Iteration 1 completes; use as basis for realistic remaining schedule
+- Prioritize unblocking open action items (A-078, A-082, A-097) that affect iteration sequencing
+
+### Scope — Yellow (first flagged: 2025-W50)
+
+- Document address-based search as confirmed scope addition; assess timeline and iteration sequencing impact (I-033, A-106)
+- Finalize notification system design scope before Iteration 2 planning begins
+- Monitor for additional requirements emerging from finance stakeholder engagement starting April 7th
+
+### Budget — Yellow (first flagged: 2025-W50)
+
+- Obtain Sage 300 version/build number to define integration scope and cost impact (A-079); Bev Stranger (CFO) now confirmed for April 7th meeting — resolution path exists
+
+### Client's Feeling — Yellow (first flagged: 2026-W13)
+
+- Bring Clemene fully up to speed via Ross/Marcus internal debrief (A-113) and April 7th in-person meeting
+- Address Clemene's training/documentation concern by confirming a documentation plan before go-live
+- Maintain product roadmap visibility so client understands scope and future feature pathway
+
+## Next Period Plan
+
+- Hold April 7th in-person meeting: development status demo (intake module), finance stakeholder engagement, revised timeline review
+- Ross/Marcus internal debrief to align on project details and communication protocols (A-113)
+- Christine sends recurring biweekly meeting calendar invite (A-110)
+- Rob circulates April 7th meeting agenda (A-111)
+- Clemene/Rob begin revised project timeline and implementation schedule (A-112)
+- Continue Iteration development; target Iteration 1 completion for velocity measurement

@@ -1,0 +1,226 @@
+"""
+Writes status-reports/2026-W19.qmd for the Custom-CMS project.
+"""
+import pathlib
+
+OUT = pathlib.Path(r'C:/ClaudeProjects/status_update_agent/project/status-reports/2026-W19.qmd')
+OUT.parent.mkdir(exist_ok=True)
+
+CONTENT = r"""---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W19 · 2026-04-24 to 2026-05-07"
+date: "2026-05-07"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-05-07 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-06-30 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🔴 Red |
+| Schedule | 🔴 Red |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟡 Yellow |
+
+## Project Status & Dates
+
+**Project Status:** Active requirements refinement this period with productive sessions across Finance (Apr 24 & 28), Abuse Investigations (Apr 28), and Ongoing Services (Apr 29) modules — key architecture decisions locked for all three. Development and Azure infrastructure progress remain unconfirmed, and the June 30 go-live target demands immediate closure of outstanding development blockers.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-06-30 (+91 days / +13 weeks)
+
+## Progress This Period
+
+- Held detailed 2-hour Finance Review session (Apr 24) with Bev and Barry; confirmed end-to-end PO workflow (worker request → supervisor approval → finance review → Sage 300 export) and credit card reconciliation approach
+- Completed Finance follow-up session (Apr 28) with expanded group including Christine; whiteboard finance dashboard design session run after live demo crashed — PO queue, credit card queue, and aging/timer requirements documented
+- Confirmed finance workflow decisions: Wabanon holds PO/CC data as source of truth for family-related expenses; Sage handles operational-only charges; finance team reviews in Wabanon then triggers export — no duplicate data entry
+- Held two Abuse Investigations sessions (Apr 28 AM): detailed review of abuse module wireframes with Kelvin covering intake triggers, form routing (Peguis vs ANCHOR), 24-business-hour timer logic, access/confidentiality tiers (standard / confidential / restricted), phase transitions, evidence reference logging, coordinator dashboard, and auto-generated investigation file numbers
+- Confirmed key abuse design decisions: include-based access model, "Valid Incident / Abuse Did Not Occur / Inconclusive" terminology replacing "Substantiated/Unsubstantiated", physical evidence never stored in Wabanon (file number reference only), final report upload triggers sign-off task for Sherry/Kelvin
+- Held two Ongoing Services sessions (Apr 29) with Chief Reconciliation Directors (Melanie, Colleen, Rupin, Christina); walked through case creation, household definition, case assignment hierarchy, conflict-of-interest access model, case notes architecture, checklists, and placement financial sheet triggers
+- Confirmed ongoing services decisions: include-based conflict-of-interest access model, case notes attach to case record (not individual person), mandatory Child Services checklist rename, face sheet auto-triggers on placement save, in-home/out-of-home toggle needed per person on case file
+- Standing biweekly Tuesday meetings confirmed booked through September in Eagle Boardroom; finance team (Bev/Barry) added to Tuesday afternoon slot
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01: Stage 1 — Discovery and Requirements complete | 2025-12-22 | 2026-03-26 | Delayed | +94d |
+| M-02: Stage 2 — Solution Design complete | 2026-01-31 | 2026-03-26 | Delayed | +54d |
+| M-03: Stage 3 — All 9 iterations complete / system ready | 2026-03-31 | 2026-06-30 | Delayed | +91d |
+| M-04: Go-Live | 2026-03-31 | 2026-06-30 | Delayed | +91d |
+| M-05: Stage 4 — Post-launch support complete | 2026-04-30 | 2026-07-28 | Delayed | +89d |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section Stage 1 — Discovery & Requirements
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section Stage 2 — Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section Stage 3 — All Iterations Complete
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-06-30, 0d
+  section Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-06-30, 0d
+  section Stage 4 — Post-Launch Support
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, crit, 2026-07-28, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| All PO request/approval/authorization workflow captured in Wabanon; only final approved export goes to Sage 300; finance team does not re-enter data | Marcus / Bev / Ross | 2026-04-24 | End-to-end workflow confirmed |
+| Family/child-related credit card expenses tracked in Wabanon attached to client files; purely operational charges stay in Sage only | Marcus / Ross / Finance team | 2026-04-24 | Addresses mixed-transaction problem on Visa statements |
+| Finance task routing: "Finance Assigner" role (manual queue distribution) to start; automated routing deferred to roadmap given June 30 deadline | Marcus / Ross / Finance team | 2026-04-28 | Mirrors current manual practice; automation is post-launch |
+| Global holiday calendar needed in Wabanon system settings for business-hour timer accuracy | Marcus / Ross | 2026-04-28 | Affects both finance and abuse module timer SLAs |
+| Abuse investigation file number: auto-generated by Wabanon on "Accept & Open Investigation" (PCFS + fiscal-year sequential) | Kelvin / Marcus | 2026-04-28 | Removes manual step; reduces risk from staff turnover |
+| Abuse terminology change: "Substantiated/Unsubstantiated" → "Valid Incident / Abuse Did Not Occur / Inconclusive" | Kelvin / Marcus | 2026-04-28 | Kelvin to confirm final terms |
+| Abuse access model: include-based (only explicitly granted users can view); by default: opener + Sherry + Kelvin + assigned investigator | Kelvin / Marcus | 2026-04-28 | Separate from conflict-of-interest restrictions |
+| Phase transitions and closure in abuse module restricted to supervisor role (Sherry / Kelvin / Alice only can close) | Kelvin / Marcus | 2026-04-28 | Role permissions locked |
+| Sensitive physical evidence (DVDs, CSAM, autopsy photos) not stored in Wabanon or Azure; case reference field links to secure physical storage only | Marcus / Ross | 2026-04-28 | Legal/data security compliance |
+| Conflict-of-interest: include-based access model; conflict of interest is a reason type under Safety Confidentiality on case creation | Marcus / CRD team | 2026-04-29 | Consistent with abuse module approach |
+| Case notes attach to case record, not individual person records; persons on case access notes through the case link | Marcus / CRD team | 2026-04-29 | Data architecture decision |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | In Progress | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | Yes |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | Yes |
+| A-082 | Marcus | Establish revised target dates; prepare status update for Jaren and Rob with technical challenges and revised timeline | 2026-02-12 | Open | Yes |
+| A-083 | Marcus / Varun | Complete Iteration 1 development | 2026-02-12 | In Progress | Yes |
+| A-104 | Christine | Consult Kinship department and QA to ensure licensing and placement info accurately represented in system design | 2026-03-26 | Open | Yes |
+| A-105 | Marcus / Ross | Determine agency email account for external notification sends (Microsoft REST API integration) | 2026-03-26 | Open | Yes |
+| A-106 | Marcus | Implement address-based search tab (search address fields on existing records; show associated individuals/cases) | 2026-03-26 | Open | Yes |
+| A-107 | Marcus | Consult after-hours team to capture any additional requirements for address-based search feature | 2026-03-26 | Open | Yes |
+| A-109 | Clemene | Provide Marcus with finance contact email for follow-up and summary sharing | 2026-04-07 | Open | Yes |
+| A-110 | Christine | Send recurring calendar invite for biweekly in-person meetings starting April 7th | 2026-04-07 | Open | Yes |
+| A-112 | Clemene / Rob | Review contract and create a revised, clean project timeline and implementation schedule | 2026-04-07 | Open | Yes |
+| A-114 | Ken Jacobs / Antonio Faiazza | Complete Azure post-setup: verify .onmicrosoft tenant access and permissions; share SQL DB credentials; provide IDFusion office static IP for whitelisting; fine-tune RBAC group assignments | 2026-04-09 | In Progress | Yes |
+| A-115 | Ken Jacobs / Marcus | Deploy Wabanon application code to Azure dev environment (PHP backend to App Service + React frontend to Web App) | 2026-04-23 | In Progress | Yes |
+| A-116 | Marcus | Document Azure infrastructure recap (high-level) for Clemene; store in SharePoint | 2026-04-09 | Open | Yes |
+| A-118 | Marcus / Gabrielle | Design and implement finance dashboard: track finance sheet requests, in-app and email notifications for pending approvals | 2026-04-23 | In Progress | Yes |
+| A-119 | Marcus | Spec cleanup: spec sheet drop-downs only, update pronoun field to free-form, update person record spec | 2026-04-23 | In Progress | Yes |
+| A-120 | Marcus | Clarify with Ross: (a) multiple open intakes per person, (b) assessment worker task assignment, (c) status terminology | 2026-04-23 | Open | Yes |
+| A-123 | Marcus | Define and document formal UAT sign-off procedure with IDFusion | 2026-04-30 | Open | Yes |
+| A-124 | Kelvin / Clemene | Send abuse program forms and Excel template (PII removed) to IDFusion for requirements mapping | 2026-04-28 | In Progress | Yes |
+| A-125 | Marcus | Share IDFusion's current abuse-related resources/forms with team; identify requirement gaps | 2026-04-28 | In Progress | Yes |
+| A-126 | Marcus / Ross / Kelvin | Schedule and hold follow-up meeting to review abuse program requirements | 2026-04-30 | Complete | Yes |
+| A-127 | Christine / Clemene | Provide IDFusion with complete list and definitions of all legal terms used by agency (SSG, agreements with minors, temporary/permanent orders, customary acceptance, etc.) | 2026-05-07 | Open | Yes |
+| A-128 | Marcus / Clemene | Cross-reference agency law/regulations with system terminology to ensure consistency | 2026-05-07 | In Progress | Yes |
+| A-129 | IDFusion / Kelvin | Set up alpha testing access for Kelvin, Christine, and Darryl; coordinate review of language/forms before broader staff testing | 2026-05-07 | Open | Yes |
+| A-130 | Marcus | Translate project timeline into Outlook calendar invites for key testing/review milestones | 2026-04-28 | Open | Yes |
+| A-131 | IDFusion dev | Implement Apr 13 demo feedback items: fix Peguis footer typo; gender options; child profile type; auto age-18 upgrade; ID lookup table; abuse investigation tab with RBAC; address history; reserve/non-reserve auto-populate; CEFAS copy report; finance processing buttons | 2026-04-30 | Open | Yes |
+| A-135 | IDFusion / Rob / Ross | Define post-go-live support tiers (bronze/silver/gold) and SLAs | 2026-05-28 | Open | Yes |
+| A-136 | Bev / Christine / Barry / Clemene | Send all finance templates and forms (face sheet, child maintenance Excel, visa rec, check rec, month-end report, chart of accounts) to Marcus/Gabrielle — headers only, no PII | 2026-04-28 | In Progress | Yes |
+| A-137 | Bev | Send Sage 300 chart of accounts and all GL codes to Marcus/Gabrielle/Christine for integration mapping | 2026-04-28 | Open | Yes |
+| A-138 | Marcus | Compile list of finance documents already received from Haley to avoid duplicate submissions | 2026-04-28 | Open | Yes |
+| A-139 | Ross | Explore credit card receipt management options; assess third-party virtual card providers and Wabanon integration | 2026-05-07 | Complete | Yes |
+| A-140 | Ross | Send abuse program master spreadsheet to Marcus/Gabrielle/Clemene/Christine | 2026-04-28 | Open | Yes |
+| A-141 | Ross | Book Eagle Boardroom for IDFusion every Tuesday; send Teams invites for standing finance and ongoing services slots | 2026-04-25 | In Progress | Yes |
+| A-142 | Gabrielle | Follow up with Sherry to confirm she has started testing | 2026-04-23 | Open | Yes |
+| A-143 | Marcus | Add ClickUp task for address note field (ordinary residence complexity) | 2026-04-23 | Open | Yes |
+| A-144 | Marcus | Spec update: remove "new task" button from person record; task creation only available in intake/case records | 2026-04-28 | Open | Yes |
+| A-145 | Marcus | Validate case file wireframes/specs are complete; review all features captured | 2026-04-28 | In Progress | Yes |
+| A-146 | Marcus | Create/update spec for case-specific documents tab (aligned with person record documents tab logic) | 2026-04-28 | Open | Yes |
+| A-147 | Marcus | Schedule wireframe review meeting with ongoing services team (overview, case notes, placements tabs) | 2026-04-30 | Complete | Yes |
+| A-148 | Marcus | Send finance/placements flow documentation to Gabrielle in advance of next finance requirements session | 2026-04-23 | Open | Yes |
+| A-149 | Marcus / Gabrielle | Produce detailed wireframes for finance dashboard (PO queue, credit card queue, aging/timer displays) and share with Bev/Barry for review | 2026-05-21 | Open | No |
+| A-150 | Marcus / Gabrielle | Update finance PO workflow wireframes based on Apr 24 & Apr 28 feedback (correct step sequence: worker request → supervisor approval → finance review → PO generation → receipt attachment → Sage export) | 2026-05-21 | Open | No |
+| A-151 | Marcus / Gabrielle | Update abuse module wireframes: correct conclusion terminology; add "notice to provide information" step; update form routing to 3 options; add "Other" free-text to evidence reference categories; remove committee access screen; update timer logic for business hours and holidays | 2026-05-21 | Open | No |
+| A-152 | Ross / IDFusion | Implement global holiday calendar in Wabanon system settings to support business-hour timer calculations for finance and abuse workflows | 2026-05-21 | Open | No |
+| A-153 | Kelvin (PCFS) | Send finalized abuse investigation conclusion terminology (Valid Incident / Abuse Did Not Occur / Inconclusive + any others) to Ross/Marcus for implementation | 2026-05-21 | Open | No |
+| A-154 | Kelvin (PCFS) | Provide blank/redacted provincial abuse investigation form fields to IDFusion for copy-assist screen field mapping | 2026-05-21 | Open | No |
+| A-155 | Marcus | Follow up with intake team re: adding missing Manitoba CFS Act abuse issue categories to Wabanon intake form | 2026-05-21 | Open | No |
+| A-156 | Marcus | Clarify with ongoing services/intake team how "parenting time" is determined for case anchoring when both parents are Peguis members | 2026-05-21 | Open | No |
+| A-157 | Marcus / Gabrielle | Update ongoing services wireframes: add in-home/out-of-home toggle per person on case; rename "New Admission Checklist" to "Mandatory Child Services Checklist"; add director reference to case assignment view; confirm face sheet auto-trigger on placement save; add open case/file indicator column to persons-in-case table | 2026-05-21 | Open | No |
+| A-158 | Bev / Barry (PCFS) | Send RBC bank export file column headers (CSV format) to IDFusion for building the Wabanon credit card import template | 2026-05-21 | Open | No |
+| A-159 | Marcus | Schedule follow-up ongoing services wireframe review meeting with CRD team after wireframe revisions completed | 2026-05-21 | Open | No |
+| A-160 | Ross (IDFusion) | Document "Finance Assigner" role in Wabanon role architecture: define queue visibility and task assignment capabilities | 2026-05-21 | Open | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-018 | Finance/Sage integration requirements incomplete — Sage 300 PO module specifics not yet clarified; PO workflow and credit card reconciliation requirements substantially documented at Apr 24 & Apr 28 meetings; GL codes and account numbers referenced but formal receipt unconfirmed; integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-029 | Timeline slippage — original delivery targets missed; June 30 go-live confirmed as hard constraint by all parties; cited repeatedly as driver of design tradeoffs (task automation deferred); formal contract re-baselining still pending (A-112) | High | Marcus | 2026-02-12 | Open |
+| I-032 | Development timeline at risk — Azure DevOps CI/CD infrastructure in place; application code deployment to Azure dev environment (A-115) is the critical immediate next step; demo environment crash Apr 28 indicates active development but unstable environment | High | Marcus | 2026-03-12 | Open |
+| I-033 | Address-based search confirmed as new development requirement — adds scope to constrained timeline; impact on iteration sequencing not yet assessed | Medium | Marcus | 2026-03-26 | Open |
+| I-034 | Client-side continuity risk — Haley absent 3+ months; Clemene covering; abuse program clerk Alice approaching retirement (noted by Kelvin Apr 28); auto-generated file number design partially mitigates; risk still active | Medium | Marcus / Ross | 2026-04-07 | Open |
+| I-035 | Abuse program requirements — substantially resolved; two full sessions Apr 28 covered all major workflow elements; wireframe revisions in progress; remaining items are specific form field details and edge cases | Medium | Marcus / Kelvin / Clemene | 2026-04-30 | Open |
+| I-036 | Alpha testing not started — Sherry had not begun testing as of Apr 17; no update this period; delay risks downstream iteration sign-off timelines | Low | Gabrielle | 2026-04-30 | Open |
+| I-037 | Demo environment crash at Apr 28 finance meeting — Wabanon screens could not be shown; whiteboard walkthrough used instead; indicates dev environment instability risk for upcoming UAT cycles | Medium | Ross / IDFusion | 2026-05-21 | Open |
+| I-038 | Wabanon intake form incomplete — Kelvin identified current intake form missing mandatory Manitoba CFS Act abuse issue categories required for provincial reporting; must be resolved before abuse module can be finalized | Medium | Marcus | 2026-05-21 | Open |
+| I-039 | Holiday calendar missing — Wabanon timer logic does not yet account for observed holidays (including First Nations–specific and Friday holidays); required for accurate SLA tracking in finance and abuse workflows | Medium | Ross / IDFusion | 2026-05-21 | Open |
+
+## Return to Green Plans
+
+### Overall — 🔴 Red (first flagged: 2025-W48)
+
+- Complete Azure code deployment (A-115) and validate dev environment stability to unblock UAT and eliminate demo reliability risk
+- Finalize abuse module and ongoing services wireframe revisions (A-151, A-157) to close the requirements phase for these modules
+- Maintain Tuesday in-person cadence and weekly status reports; prioritize A-115 as the single most critical unlock
+
+### Schedule — 🔴 Red (first flagged: 2025-W48)
+
+- Azure deployment (A-115) remains the critical-path unlock — confirm before end of W21
+- Complete Iteration 1 first UAT cycle to measure actual velocity against June 30 target
+- Formally re-baseline contract timeline (A-112) — all stakeholders have implicitly accepted June 30 but no signed-off schedule exists
+
+### Scope — 🟡 Yellow (first flagged: 2025-W50)
+
+- Wireframe revisions for finance, abuse, and ongoing services must capture all Apr feedback before developer implementation begins
+- New items from Apr sessions (holiday calendar, intake form categories, finance assigner role) are confirmed in-scope for V1; hold the line on further additions
+- Continue deferring non-critical items (task automation, advanced reporting) to post-launch roadmap as agreed
+
+### Budget — 🟡 Yellow (first flagged: 2025-W50)
+
+- Sage 300 PO module integration specifics still unclear — clarify before implementation scoping to avoid cost surprises
+- RBC export format and credit card reconciliation workflow finalized; confirm no Azure/infrastructure surprises as UAT environment comes online
+- Assess whether intake form category additions (A-155) and holiday calendar (A-152) create out-of-scope development costs
+
+### Client's Feeling — 🟡 Yellow (first flagged: 2026-W13)
+
+- CRD and abuse teams engaged and positive — maintain momentum by delivering revised wireframes promptly after Apr sessions
+- Finance team's demo crash managed via whiteboard; follow up with updated wireframes and a screen walkthrough before next Tuesday meeting
+- Communicate June 30 realistic assessment clearly once Iteration 1 velocity is measurable
+
+## Next Period Plan
+
+- Complete finance dashboard wireframes (A-149, A-150) and present to Bev/Barry
+- Complete abuse module wireframe revisions (A-151) incorporating Apr 28 feedback; obtain Kelvin terminology sign-off (A-153)
+- Complete ongoing services wireframe revisions (A-157) and schedule follow-up CRD review meeting (A-159)
+- Confirm Azure code deployment status (A-115) — remains highest-priority development milestone
+- Obtain RBC CSV export headers from Bev/Barry (A-158) and Kelvin's redacted abuse forms (A-154)
+- Follow up with intake team on Manitoba CFS Act category completeness (A-155)
+"""
+
+OUT.write_text(CONTENT, encoding='utf-8')
+print(f'Written {OUT.stat().st_size:,} bytes to {OUT}')

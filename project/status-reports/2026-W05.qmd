@@ -1,0 +1,226 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W05 · 2026-01-16 to 2026-01-29"
+date: "2026-01-29"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-01-29 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-03-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🟡 Yellow |
+| Schedule | 🟡 Yellow |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟢 Green |
+
+## Project Status & Dates
+
+**Project Status:** Iteration 1 design advanced substantially this period: a comprehensive stakeholder wireframe review with intake and after-hours directors (Jan 23) resolved numerous open design questions, and a full technical specification walkthrough with the development team (Jan 28) finalized the data model and interaction patterns. Client sentiment is strong. However, the original mid-January pilot target was not achieved, contact list development experienced 2–3 weeks of delays, and new target dates have not yet been established. Campfire infrastructure provisioning remains unconfirmed.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-03-31 (On Track)
+
+## Progress This Period
+
+**Jan 21 — Internal Project Check-In (Marcus, Gabrielle)**
+
+- Emergency contact and address book integration designed: checkbox column allows users to add emergency contacts, foster parents, and guardians to address book
+- Search screen redesigned: phone number search added, current stage/status combined into open services column, last updated field added, advanced filters expand inline
+- UI conventions established: help text placeholders in all wireframes, record buffering on save, "where to find them" naming for frequented locations, work addresses added for adults, last updated column for stale record identification
+
+**Jan 23 — External PCFS Meeting (Darryl/Intake Director, Edgar Moses/After-Hours Director, Joshua, Gabrielle, Marcus)**
+
+- Full wireframe review with intake and after-hours directors — first deep-dive with service delivery stakeholders beyond Hailey
+- Person record creation permissions resolved: only supervisors and admins create full records; field workers collect info and pass to supervisors
+- Limited profile approach agreed: emergency contacts, doctors, community contacts stored with name and contact info only; convertible to full profiles when needed
+- Minimum required fields confirmed: name (or "unknown") and approximate DOB only; system sends reminder after 1–2 days for incomplete records
+- Multiple address support confirmed; ordinary residence designation required for service eligibility; shared custody supported via notes
+- Household member visibility requirements clarified: parents and children in household section; non-parental adults tracked separately for after-hours safety assessment needs
+- Membership status default set to "pending" to ensure follow-up; membership document upload supported (status cards, letters)
+- Manitoba Health dual tracking confirmed: 6-digit registration number, 9-digit personal health ID, and health card image upload
+- Reporting requirements surfaced: after-hours call lists, intake reports needed; Edgar requested robust reporting capability
+- Data migration approach agreed: migrate all FamCare data with cleanup to remove duplicates; Azure hosting for large data volume performance
+- Contact order tracking, search by facility/group home name, wildcard/partial name search, and DOB in search results all confirmed as requirements
+
+**Jan 28 — Internal Iteration 1 Dev Walkthrough (Marcus, Varun, Gabrielle, Sherrylyn)**
+
+- Full Iteration 1 technical specification walkthrough with development team
+- Person profile data structure finalized: persistent banner (name, photo, critical warnings, open cases/intakes), Finance/Log tabs hidden from caseworkers
+- Deceased date field added; flexible date entry (year only, month/year optional) designed for adoption and incomplete information scenarios
+- Address management workflow finalized: start/end dates for history, modal editing, two address line fields, on-reserve checkbox
+- Contact information handling specified; legal and preferred names supported
+- Genogram and relationship mapping structure designed: up to three generations; reciprocal relationship links
+- Household composition logic: generated from shared addresses and relationships; current and historical households
+- Critical health information display: prominent notification banner at top of profile with open text fields
+- Mobile responsiveness and printer-friendly versions (intake/case files only) requirements documented
+- Specification document designated as living document with tracked changes
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01 — Stage 1: Discovery and Requirements complete | 2025-12-22 | 2026-02-12 | Delayed | +52d |
+| M-02 — Stage 2: Solution Design complete | 2026-01-31 | 2026-01-31 | At Risk | On time |
+| M-03 — Stage 3: All 9 iterations complete / system ready | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-04 — Go-Live | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-05 — Stage 4: Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section M-01 Discovery and Requirements
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-02-12, 0d
+  section M-02 Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-01-31, 0d
+  section M-03 Iterations Complete
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section M-04 Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section M-05 Post-Launch Support
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+**Jan 21 — Internal**
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Emergency contacts and caregiver entries added to address book via checkbox column | Marcus, Gabrielle | Jan 21 | |
+| Current stage/status combined into single "open services" column showing intake or case status | Marcus, Gabrielle | Jan 21 | |
+| Phone number added as search criterion for cases with unknown or misspelled names | Marcus, Gabrielle | Jan 21 | |
+| Placeholder instruction text included in all wireframes | Marcus, Gabrielle | Jan 21 | |
+| Record input buffered temporarily; saved only on final confirmation to prevent stale records | Marcus, Gabrielle | Jan 21 | |
+| "Where to find them" used as label for frequented locations | Marcus, Gabrielle | Jan 21 | |
+| Work address included under address section with type indicator | Marcus, Gabrielle | Jan 21 | |
+| Frequented locations as simple table: name, address, comment field | Marcus, Gabrielle | Jan 21 | |
+| Advanced filters expand within search screen rather than navigating to new page | Marcus, Gabrielle | Jan 21 | |
+| "Last updated" column included in search results to identify recently modified and inactive records | Marcus, Gabrielle | Jan 21 | |
+
+**Jan 23 — External**
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Only supervisors and admins can create full person records; field workers collect info and pass to supervisors | Darryl, Edgar, Marcus | Jan 23 | |
+| Limited profiles supported: name and contact info only required for non-service-recipient contacts | Darryl, Edgar, Marcus | Jan 23 | |
+| Only name (or "unknown") and approximate DOB required to create a person record | Edgar, Marcus | Jan 23 | |
+| System sends reminder after 1–2 days if critical fields remain incomplete | Edgar, Marcus | Jan 23 | |
+| Multiple addresses per person supported; ordinary residence designation required | Darryl, Edgar, Marcus | Jan 23 | |
+| Primary and secondary caregiver roles tracked; terminology to be confirmed with ongoing services | Darryl, Edgar, Marcus | Jan 23 | |
+| Parents and children in household section; non-parental adults tracked separately for safety assessments | Darryl, Edgar, Marcus | Jan 23 | |
+| Membership status defaults to "pending" to ensure follow-up on unresolved records | Edgar Moses | Jan 23 | |
+| Membership document upload supported within membership section and documents tab | Darryl, Edgar, Marcus | Jan 23 | |
+| Manitoba Health: 6-digit registration number, 9-digit personal health ID, and health card image upload supported | Darryl, Edgar, Marcus | Jan 23 | |
+| Migrate all FamCare data with duplicate cleanup; Azure hosting for performance at scale | Marcus, Gabrielle, Darryl | Jan 23 | |
+| Contact order implemented to indicate primary contact preferences | Edgar, Marcus | Jan 23 | |
+| Search by group home/facility name to list associated children | Edgar, Marcus | Jan 23 | |
+| Date of birth included in search results to disambiguate records | Darryl, Marcus | Jan 23 | |
+| Wildcard/partial name search supported | Darryl, Marcus | Jan 23 | |
+
+**Jan 28 — Internal Dev Walkthrough**
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Finance and Log tabs hidden by default; visible to finance team, directors, admins only | Marcus, Varun | Jan 28 | |
+| Persistent top banner: name, photo, critical warnings, open cases/intakes visible across view/edit modes | Marcus, Varun | Jan 28 | |
+| Deceased date field included to prevent age incrementing for deceased individuals | Marcus, Varun | Jan 28 | |
+| Flexible date entry: year, month, day each optional to handle adoption and incomplete data scenarios | Marcus, Varun | Jan 28 | |
+| System supports both legal and preferred names with indication of which is used for contact | Marcus, Varun | Jan 28 | |
+| Modals used for adding/editing addresses, phones, emails, relationships; do not close without explicit action | Marcus, Varun | Jan 28 | |
+| Address history tracked with start and end dates; ordinary residence determinable for service eligibility | Marcus, Varun | Jan 28 | |
+| Mobile-responsive layouts for complex tables; printer-friendly versions for intake and case files only | Marcus, Varun, Gabrielle | Jan 28 | |
+| Offline functionality deprioritized per director and frontline feedback | Marcus, Varun | Jan 28 | |
+| Search returns full profiles by default; advanced filter enables limited profile inclusion | Marcus, Varun | Jan 28 | |
+| Limited profiles convertible to full profiles; system prompts for required fields based on relationship type | Marcus, Varun | Jan 28 | |
+| Genogram captures up to three generations with reciprocal relationship links | Marcus, Varun | Jan 28 | |
+| Household generated from shared addresses and relationships; current household members and roles displayed | Marcus, Varun | Jan 28 | |
+| Critical health info in prominent notification banner at top of profile with open text fields | Marcus, Varun, Gabrielle | Jan 28 | |
+| Specification document is a living document; changes tracked via comments and highlights | Marcus, Varun, Sherrylyn, Gabrielle | Jan 28 | |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Open | Yes |
+| A-050 | Hailey | Consult caseworkers to clarify which tasks are performed on mobile devices | 2026-01-29 | Open | Yes |
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Open | Yes |
+| A-077 | Hailey | Finalize gender identity, sex assigned at birth, and pronouns field options per Stats Canada standards | 2026-01-29 | Open | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | Yes |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | Yes |
+| A-080 | Marcus / Gabrielle | Incorporate Jan 23 stakeholder feedback into wireframes: search results (DOB, wildcard/partial name, facility/group home search), address format updates (line 1/line 2, on-reserve checkbox), open services column, and help text placeholders | 2026-02-12 | Open | No |
+| A-081 | Marcus | Consult ongoing services to resolve pending field decisions: SIN placement, caregiver role terminology, household member requirements for safety assessments, and critical health info categorization | 2026-02-12 | Open | No |
+| A-082 | Marcus | Establish new pilot target dates to replace missed mid-January deadline; prepare status update for Jaren and Rob with technical challenges and revised timeline | 2026-02-12 | Open | No |
+| A-083 | Marcus / Varun | Complete Iteration 1 development: deceased date field, flexible date entry, modal editing behavior, address start/end dates, household/genogram logic; conduct detailed dev walkthrough with team | 2026-02-12 | Open | No |
+| A-084 | Marcus | Source standardized municipality/community list for address dropdown with manual addition capability; investigate on-reserve address automation feasibility | 2026-02-12 | Open | No |
+| A-085 | Marcus | Obtain stakeholder alignment on sensitive data handling (SIN strategy: person profile vs. case/finance tab); document access and deletion protocols in spec | 2026-02-12 | Open | No |
+| A-086 | Marcus | Confirm survey skip logic requirements with client; document decision | 2026-02-12 | Open | No |
+| A-087 | Gabrielle / Marcus | Follow up with Stanis for Iteration 1 feedback; schedule ongoing services meetings for remaining field clarifications | 2026-02-12 | Open | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-011 | Campfire infrastructure delayed — environments email sent; Campfire has not yet confirmed provisioning start date | Medium | Marcus / Ross | 2026-01-31 | Open |
+| I-018 | Finance/Sage integration requirements incomplete — Sage version/build not received, coding structure not formally documented, integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-020 | Phase 1 scope not formally bounded — feature prioritization exercise complete but written scope boundary document not yet produced | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-029 | Pilot timeline slippage: original mid-January pilot target missed; contact list work experienced 2–3 weeks of delays due to recurring bugs requiring repeated fixes; new target dates not yet established | High | Marcus | 2026-02-12 | Open |
+| I-030 | Sensitive data field strategy undefined: SIN, Manitoba Health numbers, and other sensitive identifiers need placement decisions (person profile vs. case/finance tab); security, data minimization, and reporting needs must be balanced; no stakeholder consensus yet | Medium | Marcus | 2026-02-12 | Open |
+| I-031 | Ongoing services field clarification gap: multiple field definitions, terminology, and data placement decisions require consultation with the ongoing services team before Iteration 1 specification can be finalized and scope boundary document produced | Medium | Marcus / Hailey | 2026-02-12 | Open |
+
+## Return to Green Plans
+
+### Overall — Yellow (first flagged: 2025-W48)
+
+- Establish new pilot target dates and communicate revised timeline to all stakeholders (A-082).
+- Produce written Phase 1 scope boundary document once ongoing services field clarifications are received (A-081, I-031).
+- Confirm Campfire infrastructure provisioning start date (I-011).
+
+### Schedule — Yellow (first flagged: 2025-W48)
+
+- Establish new pilot target dates to replace missed mid-January deadline (A-082); lock into project spreadsheet.
+- Complete Iteration 1 development and dev walkthrough (A-083) to restore schedule momentum.
+- Confirm Campfire environment provisioning timeline (I-011).
+
+### Scope — Yellow (first flagged: 2025-W50)
+
+- Obtain ongoing services field clarifications (A-081) to finalize the Iteration 1 specification.
+- Produce written Phase 1 scope boundary document once clarifications are complete (I-020, I-031).
+
+### Budget — Yellow (first flagged: 2025-W50)
+
+- Obtain Sage 300 version/build number (A-079) and formal coding structure from finance to define finance integration scope and effort.
+
+## Next Period Plan
+
+1. Establish new pilot target dates and send status update to Jaren and Rob with revised timeline and technical context (A-082).
+2. Finalize Iteration 1 field definitions with ongoing services: SIN placement, caregiver terminology, household member requirements, critical health info categorization (A-081, A-085).
+3. Complete Iteration 1 wireframe updates based on Jan 23 feedback and conduct dev walkthrough with Varun (A-080, A-083).
+4. Source municipality/community list and resolve on-reserve address logic (A-084); confirm survey skip logic (A-086).
+5. Confirm Campfire environment provisioning start date with Rob/Ken; close I-011 or escalate.

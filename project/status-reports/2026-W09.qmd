@@ -1,0 +1,172 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W09 · 2026-02-13 to 2026-02-26"
+date: "2026-02-26"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-02-26 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-03-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🟡 Yellow |
+| Schedule | 🔴 Red |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟢 Green |
+
+## Project Status & Dates
+
+**Project Status:** The project entered active development this period following the Iteration 1 kickoff on 2026-02-24. Specs and designs for the first iteration (login, search, add/edit person) are complete and distributed to the development team, who have been onboarded with repository access and tooling. Schedule health is flagged Red: M-01 and M-02 estimates both missed their 2026-02-26 targets, and the original March 31 completion date for all 9 development iterations appears highly aggressive given the February 24 development start. Re-baselining is recommended once Iteration 1 velocity is measured. Requirements gaps (ongoing services field clarifications, sensitive data decisions) and an incomplete Azure environment setup remain as near-term blockers for subsequent iterations.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-03-31 (On time — overall project date not yet formally revised; schedule flagged Red pending re-baseline)
+
+## Progress This Period
+
+- Initial dev walkthrough conducted 2026-02-24; Iteration 1 development initiated with dev team (Varun, Omer, awaisamir23)
+- Iteration 1 scope confirmed: login, search, add/edit person
+- Authentication approach confirmed: Microsoft Entra (SSO + MFA)
+- Technology stack confirmed: Laravel + Blade templates; Spatie package for RBAC
+- Iteration 1 spec document and first design draft completed and distributed to dev team
+- Git repository created by Varun; pull request process communicated to dev team
+- Azure testing environment setup followed up with Rob and Ken
+- Intake wireframe reviewed internally 2026-02-17; design decisions made on eligibility logic, combined case management tab, and high-risk alert behaviour
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01 Stage 1 — Discovery and Requirements complete | 2025-12-22 | 2026-03-26 | Delayed | +94d |
+| M-02 Stage 2 — Solution Design complete | 2026-01-31 | 2026-03-26 | Delayed | +54d |
+| M-03 Stage 3 — All 9 iterations complete / system ready | 2026-03-31 | 2026-03-31 | At Risk | On time* |
+| M-04 Go-Live | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-05 Stage 4 — Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+*\*M-03 flagged At Risk: Iteration 1 development began 2026-02-24; completing all 9 iterations by 2026-03-31 baseline appears unrealistic. Re-baselining recommended after Iteration 1 velocity is measured.*
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section M-01 Stage 1 - Discovery
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section M-02 Stage 2 - Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section M-03 Stage 3 - All 9 Iterations
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-03-31, 0d
+  section M-04 Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section M-05 Stage 4 - Post-Launch
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Microsoft Entra (Azure AD) confirmed as authentication provider (SSO + MFA) | Marcus / Varun | 2026-02-24 | Leverages existing client infrastructure; removes need for custom auth solution |
+| Laravel + Blade templates confirmed as technology stack | Varun | 2026-02-24 | Consistent with prior projects; jQuery and other libraries permitted as needed |
+| Spatie package selected for role and permission management | Varun | 2026-02-24 | Final role structure to be confirmed after spec review |
+| Intake and case management history combined into single tab with collapsible sections | Marcus / Gabrielle | 2026-02-17 | Reduces navigation; sections filterable with direct cross-navigation between records |
+| High-risk intakes trigger system alerts at the risk assessment step; only high-risk cases flagged | Marcus / Gabrielle | 2026-02-17 | Design prevents alert fatigue |
+| Eligibility check displayed on new intake start; authorized roles may override; handles transfers from other agencies | Marcus / Gabrielle | 2026-02-17 | |
+| Open case prompt: system prompts user before starting new intake if person has an open case | Marcus / Gabrielle | 2026-02-17 | Directs user to existing case file unless immediate action required |
+| CSS to be kept in separate files; not inline | Varun | 2026-02-24 | Dev standard; must be enforced when using AI-assisted coding tools |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Open | Yes |
+| A-050 | Hailey | Consult caseworkers to clarify which tasks are performed on mobile devices | 2026-01-29 | Open | Yes |
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Open | Yes |
+| A-077 | Hailey | Finalize gender identity, sex assigned at birth, and pronouns field options per Stats Canada standards | 2026-01-29 | Open | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | Yes |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | Yes |
+| A-080 | Marcus / Gabrielle | Incorporate Jan 23 stakeholder feedback into wireframes (search results, address format, open services column, help text placeholders) | 2026-02-12 | Complete | Yes |
+| A-081 | Marcus | Consult ongoing services to resolve pending field decisions: SIN placement, caregiver role terminology, household member requirements, critical health info categorization | 2026-02-12 | Open | Yes |
+| A-082 | Marcus | Establish new pilot target dates; prepare status update for Jaren and Rob with technical challenges and revised timeline | 2026-02-12 | Open | Yes |
+| A-083 | Marcus / Varun | Complete Iteration 1 development; dev walkthrough completed 2026-02-24 | 2026-02-12 | Open | Yes |
+| A-084 | Marcus | Source standardized municipality/community list for address dropdown; investigate on-reserve address automation feasibility | 2026-02-12 | Open | Yes |
+| A-085 | Marcus | Obtain stakeholder alignment on sensitive data handling strategy (SIN, person profile vs. case/finance tab); masking approach discussed Feb 24 | 2026-02-12 | Open | Yes |
+| A-086 | Marcus | Confirm survey skip logic requirements with client; document decision | 2026-02-12 | Open | Yes |
+| A-087 | Gabrielle / Marcus | Follow up with Stanis for Iteration 1 feedback; schedule ongoing services meetings for field clarifications | 2026-02-12 | Complete | Yes |
+| A-088 | Christine | Confirm participants for intake/service delivery sessions (30-min person profile fields + 1-hour wireframe review); include Kelvin, Darrell, frontline staff | 2026-02-12 | Complete | Yes |
+| A-089 | Marcus | Send Teams meeting invites for intake/service delivery sessions once Christine provides participant list | 2026-02-12 | Complete | Yes |
+| A-090 | Ross / Christine | Review SharePoint IT requirements table for gaps; finalize UAT test data approach and complete costing approval for Azure UAT environment | 2026-02-12 | Complete | Yes |
+| A-091 | Gabrielle | Update search wireframe (profile type multi-select, Add New Person profile type modal); send Sherrylyn MMF spec reference and Stanis design link | 2026-02-12 | Complete | Yes |
+| A-092 | Sherrylyn | Begin spec documentation for login screen, menu/header, and search screen using MMF spec as format reference | 2026-02-12 | Complete | Yes |
+| A-093 | Marcus / Gabrielle | Follow up with Rob to get Sherrylyn shared AI access; obtain client approval on Iteration 1 visual designs; begin development handoff once approved | 2026-02-12 | Complete | Yes |
+| A-095 | Marcus / Gabrielle | Update intake wireframe with Feb 17 design decisions (eligibility logic, combined case management tab, high-risk alerts); confirm readiness and respond to Christine re: client review scheduling | 2026-02-26 | Open | No |
+| A-096 | Marcus | Follow up with Rob and Ken on Azure testing environment setup for dev team | 2026-02-26 | Complete | No |
+| A-097 | Marcus / Ken | Arrange Azure environment walkthrough/orientation session for dev team | 2026-03-12 | Open | No |
+| A-098 | Marcus | Distribute Iteration 1 spec document and design sections to dev team | 2026-02-26 | Complete | No |
+| A-099 | Varun | Create Git repository and communicate pull request process to dev team | 2026-02-26 | Complete | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-011 | Campfire infrastructure delayed — UAT approach confirmed (Azure tenant); environment setup now assigned to Rob and Ken; dev team onboarded 2026-02-24 | Medium | Marcus / Ross | 2026-01-31 | Open |
+| I-018 | Finance/Sage integration requirements incomplete — Sage version/build not received, coding structure not formally documented, integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-020 | Phase 1 scope not formally bounded — intake meetings held; scope boundary document in progress | Medium | Hailey / Marcus | 2026-01-29 | Resolved |
+| I-029 | Pilot timeline slippage — original mid-January pilot target missed; new target dates not yet established | High | Marcus | 2026-02-12 | Open |
+| I-030 | Sensitive data field strategy undefined — SIN, Manitoba Health numbers, and other sensitive identifiers need placement decisions before spec can be finalized; masking approach discussed 2026-02-24 | Medium | Marcus | 2026-02-12 | Open |
+| I-031 | Ongoing services field clarification gap — field definitions, terminology, and data placement decisions require ongoing services team consultation before Iteration 1 spec can be finalized | Medium | Marcus / Hailey | 2026-02-12 | Open |
+| I-032 | Development timeline at risk — Iteration 1 development starting 2026-02-24 with 9 iterations required to complete by 2026-03-31 baseline; velocity unknown; timeline appears highly aggressive | High | Marcus | 2026-03-12 | Open |
+
+## Return to Green Plans
+
+### Schedule — 🔴 Red (first flagged: 2025-W48)
+
+- Re-baseline M-03 and M-04 once Iteration 1 velocity is measured (after first sprint completes)
+- Establish revised pilot target dates aligned with updated development timeline (A-082)
+- Accelerate remaining requirements work to unblock subsequent iterations (A-095, A-081)
+
+### Overall — 🟡 Yellow (first flagged: 2025-W48)
+
+- Complete intake wireframe updates and schedule client review (A-095)
+- Resolve ongoing services field clarifications to close requirements gap (A-081, I-031)
+- Track Iteration 1 development progress closely as first indicator of project health
+
+### Scope — 🟡 Yellow (first flagged: 2025-W50)
+
+- Complete intake meetings and ongoing services consultation for remaining field definitions (A-081)
+- Produce written Phase 1 scope boundary document once all clarifications received (I-031)
+
+### Budget — 🟡 Yellow (first flagged: 2025-W50)
+
+- Obtain Sage 300 version/build number and formal coding structure from finance to define integration scope and effort (A-079)
+
+## Next Period Plan
+
+- Varun: confirm dev team access to ClickUp and Ignite; Iteration 1 development begins (A-099 complete)
+- Complete Azure environment setup; schedule walkthrough for dev team (A-097)
+- Update intake wireframe and schedule client review with Christine (A-095)
+- Schedule ongoing services consultation to resolve remaining field definitions (A-081)
+- Establish revised pilot target dates and prepare schedule update for Jaren and Rob (A-082)

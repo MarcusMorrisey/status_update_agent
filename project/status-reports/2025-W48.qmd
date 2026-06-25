@@ -1,0 +1,170 @@
+﻿---
+title: "Project Status Report â€” Custom-CMS"
+subtitle: "Reporting Period: 2025-W48 Â· 2025-11-17 to 2025-11-30"
+date: "2025-11-30"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2025-11-30 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-03-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | ðŸŸ¡ Yellow |
+| Schedule | ðŸŸ¡ Yellow |
+| Scope | ðŸŸ¢ Green |
+| Budget | ðŸŸ¢ Green |
+| Client's Feeling | ðŸŸ¢ Green |
+
+## Project Status & Dates
+
+**Project Status:** The project is in its opening period, with discovery and requirements work progressing well. Key integration stakeholders (Campfire/Azure and Finance) have not yet been formally engaged, placing schedule and overall health at Yellow; scope and budget remain stable and on track.
+
+**Variance:** Planned finish 2026-03-31 â†’ Estimated finish 2026-03-31 (On Track)
+
+## Progress This Period
+
+- Marcus reviewed all intake documents shared by Hailey prior to the 2025-11-19 meeting.
+- Team mapped the existing CFIS/FamCare procedural overlap and agreed on future flow: new system first, then minimum CFIS data entry downstream.
+- Hailey shared and walked through the Measuring to Thrive event-based coding methodology report; Hailey uploaded it to SharePoint.
+- Hailey demonstrated FamCare interface live, surfacing concrete UX anti-requirements (129+ item dropdowns, fragmented multi-window flows, no auto-population).
+- Marcus used AI tools to produce an initial draft intake workflow from documentation in ~15 minutes - proof of concept for the workflow development approach.
+- Marcus reviewed Community Circle of Care documents and confirmed limited external-organization access is achievable within the planned permissions framework.
+- Project kickoff meeting held ~2025-11-20 (Campfire Ross confirmed attendance).
+- Bi-weekly status update format and cadence agreed: Wednesdays to SharePoint, starting ~2025-12-03.
+- Team conducted a multi-day HR/Finance data reconciliation exercise, surfacing concrete data integration requirements.
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01: Stage 1 - Discovery and Requirements complete | 2025-12-22 | 2025-12-22 | On Track | On time |
+| M-02: Stage 2 - Solution Design complete | 2026-01-31 | 2026-01-31 | On Track | On time |
+| M-03: Stage 3 - All 9 iterations complete / system ready | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-04: Go-Live | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-05: Stage 4 - Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section Stage 1 - Discovery Complete
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, 2025-12-22, 0d
+  section Stage 2 - Solution Design Complete
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, 2026-01-31, 0d
+  section Stage 3 - System Ready
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section Stage 4 - Post-Launch Support Complete
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Intake process will begin in new system, then minimum data translated to CFIS - not the reverse | Hailey + Marcus | 2025-11-19 | FamCare historically not receiving intake data anyway |
+| CFIS updates triggered via dashboard/task notification (ticketing-model) rather than batch export; real-time preferred | Hailey + Marcus | 2025-11-19 | Emergency response desk needs current placement/address data |
+| Existing FamCare/CFIS roles used as starting point only; new system roles will be enhanced | Hailey + Marcus | 2025-11-19 | Cassandra is CFIS access gatekeeper |
+| Relational table on back end to maintain client number mapping between new system and Sage 300 | Marcus + Hailey | 2025-11-19 | Avoids API dependency; enables cross-system reporting |
+| Finance to be engaged early, before or concurrent with intake requirements sessions | Hailey + Marcus | 2025-11-19/25 | Finance coding categories needed at design time |
+| Event-based coding implemented back-end only; hidden from front-end users | Hailey + Marcus | 2025-11-19 | Automation preferred; only visible to data analysts |
+| Hailey added as optional attendee to all Campfire/technical meetings | Hailey + Marcus | 2025-11-19 | Standard for all technical meetings throughout project |
+| Workflow development: Marcus AI-drafts from docs, Hailey reviews and iterates; no formal workshop (Rob resistant) | Marcus + Hailey | 2025-11-25 | Hailey does not have AI tools on work devices |
+| Workflows to use numbering system (1.1, 1.2) and swim lanes for cross-department handoffs | Marcus | 2025-11-25 | Best practice recommended |
+| Status updates posted bi-weekly to SharePoint on Wednesdays; Marcus notifies Hailey; budget section monthly | Marcus + Hailey | 2025-11-25 | No email follow-up for meeting recaps |
+| Marcus to run internal reporting/measurement methodology workshops rather than external stats training | Marcus + Hailey | 2025-11-25 | Conflict of interest concerns; Helena Gaspard to provide external data science trainer contacts |
+| Community Circle of Care external access scoped as user role/record type within standard permissions framework | Marcus | 2025-11-25 | Legal agreements (NDAs) will govern access; operational not technical challenge |
+| Meeting notes/transcripts organized by date on SharePoint; no separate email follow-up | Marcus + Hailey | 2025-11-25 | |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-001 | Marcus | Prepare and send kickoff presentation deck to Hailey for review before kickoff | 2025-11-19 | Complete | No |
+| A-002 | Hailey | Upload Measuring to Thrive report to SharePoint and indicate relevant appendix | 2025-11-30 | Complete | No |
+| A-003 | Hailey | Review kickoff presentation deck and provide feedback | 2025-11-20 | Complete | No |
+| A-004 | Hailey | Schedule and initiate meeting with finance to understand document categories, processing, and coding practices | 2025-11-28 | Open | No |
+| A-005 | Hailey | Forward Excel sheet mapping internal dept categories to finance/funder categories to Marcus; add to SharePoint | 2025-11-30 | Open | No |
+| A-006 | Marcus | Identify local data analysis/statistics experts who could provide training to the agency | 2025-11-30 | Open | No |
+| A-007 | Marcus | Circle back with Rob Piche to discuss what can begin right away on the project | 2025-11-22 | Open | No |
+| A-008 | Marcus | Establish meeting notes filing system by topic in SharePoint system design documents | Ongoing | Open | No |
+| A-009 | Marcus | Schedule first joint workflow drafting session with Hailey (intake workflow first) | 2025-11-30 | Open | No |
+| A-010 | Marcus | Plan and communicate scheduling and sequencing of requirements sessions | 2025-11-30 | Open | No |
+| A-011 | Marcus | Obtain CFIS permissions list from Cassandra to use as starting point for new system roles | 2025-11-30 | Open | No |
+| A-012 | Hailey | Screenshot Teams cross-org error and share with Campfire to resolve Teams integration | 2025-11-25 | Complete | No |
+| A-013 | Hailey | Propose alternative dates to finance and legal teams for a meeting | 2025-11-28 | Open | No |
+| A-014 | Marcus | Investigate and resolve SharePoint external-user access issue; escalate to IT | 2025-11-30 | Open | No |
+| A-015 | Marcus | Send meeting invite for Campfire/Azure technical integration meeting (Ross, Azure dev, IT heads, Hailey optional) | 2025-11-28 | Open | No |
+| A-016 | Hailey | Create SharePoint folder for policies/procedures; compile available procedures as workflow development starting point | 2025-11-30 | Open | No |
+| A-017 | Marcus | Post first bi-weekly status update to SharePoint by 2025-12-03 | 2025-12-03 | Open | No |
+| A-018 | Marcus | Prepare outline for reporting/measurement methodology workshop; share with Hailey; coordinate with Rob | 2025-11-30 | Open | No |
+| A-019 | Hailey | Send finance team an email establishing them as scheduling priority; request availability | 2025-11-28 | Open | No |
+| A-020 | Marcus | Send Hailey available time slots for next 1-2 weeks for finance/legal meeting coordination | 2025-11-26 | Open | No |
+| A-022 | Hailey | Share draft/in-progress service delivery procedures (case management) with Marcus, pending org approval | 2025-11-30 | Open | No |
+| A-023 | Marcus | Prepare tips and tricks document for workflow documentation (numbering, swim lanes, failure cases) | 2025-11-30 | Open | No |
+| A-024 | Hailey | Upload PCFS report presented to Canada to SharePoint reporting folder | 2025-11-30 | Open | No |
+| A-025 | Hailey | Invite Darrell to follow-up meeting to discuss intake document requirements and CFIS upload practices | 2025-11-30 | Open | No |
+| A-026 | Marcus | Confirm/resend Campfire meeting invite (sent before their holiday) to reconnect all parties | 2025-11-26 | Open | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-001 | SharePoint external-user access requires multi-step verification each login - friction for collaboration | Medium | Marcus | 2025-11-30 | Resolved |
+| I-002 | Teams cross-org messaging blocked between PCFS and IDFusion - impairs direct communication outside formal meeting invites | Medium | Hailey | 2025-11-30 | Resolved |
+| I-003 | No dedicated BA on the project - Hailey and Marcus sharing BA responsibilities on top of primary roles; capacity and coverage risk | High | Marcus / Hailey | Ongoing | Resolved |
+| I-004 | PCFS previous software analyst has departed; some institutional design knowledge lost | Medium | Hailey | Ongoing | Resolved |
+| I-005 | Finance integration requirements (Sage 300 mapping, coding categories) not yet captured - risk of design proceeding without this input | Medium | Hailey | 2025-11-30 | Resolved |
+| I-006 | HR and Finance use entirely different staff categorization systems with no shared unique identifiers - known data quality problem requiring design-time attention | High | Marcus / Hailey | Design phase | Resolved |
+| I-007 | Legal framework for Community Circle of Care external access (NDAs, agreements) not yet defined | Low | Hailey | Pre-build | Resolved |
+| I-008 | Campfire not yet formally engaged - Azure/technical integration planning blocked until they join | Medium | Marcus | 2025-11-30 | Resolved |
+| I-009 | Holiday season (December) likely to constrain stakeholder availability for finance, legal, and IT sessions | Medium | Marcus / Hailey | 2025-12-15 | Resolved |
+| I-010 | Existing FamCare/CFIS workflows are not fully documented in a form suitable for system design | Medium | Hailey | Ongoing | Resolved |
+
+## Return to Green Plans
+
+### Overall â€” ðŸŸ¡ Yellow (first flagged: 2025-W48)
+
+- Complete Campfire technical meeting scheduling by 2025-11-30 to unblock Azure/technical planning.
+- Schedule finance meeting before 2025-12-15 to prevent design proceeding without integration requirements.
+- Complete first joint workflow drafting session to establish repeatable process and reduce BA-gap risk.
+
+### Schedule â€” ðŸŸ¡ Yellow (first flagged: 2025-W48)
+
+- Establish a shared schedule with target dates for the next 6 weeks before the holiday break.
+- Prioritize Campfire and finance engagement before mid-December.
+- Agree on a minimum set of workflow drafts to complete before the holiday break.
+
+## Next Period Plan
+
+- Schedule and hold Campfire/Azure technical integration meeting (Marcus + Ross + Azure dev + Hailey optional).
+- Schedule and hold finance requirements meeting to capture coding categories and Sage 300 integration inputs.
+- Complete first intake workflow draft session with Hailey; produce a template for ongoing workflow development.
+- Resolve SharePoint external-user access issue; resolve Teams cross-org communication gap.
+- Post first bi-weekly status update to SharePoint (~2025-12-03).

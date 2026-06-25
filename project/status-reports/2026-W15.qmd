@@ -1,0 +1,178 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W15 · 2026-03-27 to 2026-04-09"
+date: "2026-04-09"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-04-09 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-06-30 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🔴 Red |
+| Schedule | 🔴 Red |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟡 Yellow |
+
+## Project Status & Dates
+
+**Project Status:** The project remains in Red status overall — original delivery targets were substantially missed (M-03/M-04 now estimated June 2026, +91 days from the March 31 baseline), and finance integration requirements continue to be the most significant unresolved dependency. A critical enabling milestone was reached this period: the Azure dev/test infrastructure was fully provisioned, clearing the path for application deployment and the start of UAT. Design activity on the intake workflow, document permissions, and finance module is active and progressing.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-06-30 (+91 days / ~13 weeks)
+
+## Progress This Period
+
+- Azure dev/test environment fully provisioned in Peguis' Azure tenant — new DevOps subscription, resource group, VNET with 4 subnets (DB, web, app, outbound), MySQL Flexible Server, PHP App Service, React App Service, Azure Data Lake Gen 2 Blob Storage, private endpoints, private DNS integration
+- Ken Jacobs (IDFusion) onboarded to PCFS Azure tenant (.onmicrosoft.com user, MFA enabled, group-based RBAC configured)
+- Intake workflow redesigned: supervisor loop fixed, notes field added (required before save-and-send), role-specific flows confirmed for intake worker vs. intake supervisor
+- Document permissions design finalized — access inherited from case/intake/person; financial docs restricted to designated roles
+- Intake status terminology confirmed: Open / Pending Review / Closed (intakes); Open / Closed (case files)
+- Finance workflow analysis started — finance tabs for case files and intakes, dashboard design, Sage 300 integration approach discussed
+- Admin queue designed for closed intakes (replaces spreadsheet-based CFIS tracking)
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| Stage 1 — Discovery and Requirements complete | 2025-12-22 | 2026-03-26 | Delayed | +94d |
+| Stage 2 — Solution Design complete | 2026-01-31 | 2026-03-26 | Delayed | +54d |
+| Stage 3 — All 9 iterations complete / system ready | 2026-03-31 | 2026-06-30 | Delayed | +91d |
+| Go-Live | 2026-03-31 | 2026-06-30 | Delayed | +91d |
+| Stage 4 — Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section Stage 1 - Discovery & Requirements
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section Stage 2 - Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+  section Stage 3 - All 9 Iterations Complete
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-06-30, 0d
+  section Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-06-30, 0d
+  section Stage 4 - Post-launch Support
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Azure dev environment built under new isolated DevOps subscription | Ross Gillingham | 2026-03-31 | Keeps dev/test billing and architecture separate from production |
+| Group-based RBAC for all Azure resources; least-privilege access; time-limited elevated permissions | Ken Jacobs / Ross Gillingham | 2026-03-31 | No individual user role assignments; renewal process to be established |
+| Managed identities + RBAC only — shared storage account keys disabled | Ken Jacobs | 2026-03-31 | Security hardening; applies to all Azure resources |
+| Document permissions: case/intake/person-level access; financial docs restricted by type or confidential checkbox | Marcus Morrisey / Gabrielle Mahé-Serle | 2026-03-30 | No document attachments on tasks |
+| Intake supervisor gets a separate bypass flow to prevent workflow loop | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-03-30 | Supervisor can proceed with intake directly or route through standard escalation |
+| Notes field (required) added to intake save-and-send actions | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-03-30 | Notes logged in task and in case file with timestamp and role |
+| Intake statuses: Open / Pending Review / Closed | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-03-30 | Aligned to policy documents; "active" dropped |
+| Finance tabs added to both case files and intakes; admin queue replaces spreadsheet for CFIS tracking | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-03-30 | Supervisors approve finance actions; daily budget visibility planned |
+| Pronoun field: free-form text | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-04-02 | Unless a reporting requirement dictates otherwise |
+| Spec sheet: drop-down values only (buttons and radio buttons removed) | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-04-02 | Spec sheet is for client to fill in missing dropdown values |
+| Finance email notifications: for pending finance approvals only, not supervisor reviews | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-04-02 | In-app notifications for all; email only where users are not in the system daily |
+| Project milestone markers = iteration completions; meeting events = single-day markers | Gabrielle Mahé-Serle / Marcus Morrisey | 2026-04-02 | Addresses timeline confusion raised by Ross/Clemene |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Complete | Yes |
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Open | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | Yes |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | Yes |
+| A-082 | Marcus | Establish revised target dates; prepare status update for Jaren and Rob with technical challenges and revised timeline | 2026-02-12 | Open | Yes |
+| A-083 | Marcus / Varun | Complete Iteration 1 development | 2026-02-12 | Open | Yes |
+| A-097 | Marcus / Ken | Arrange Azure environment walkthrough/orientation session for dev team | 2026-03-12 | Complete | Yes |
+| A-104 | Christine | Consult Kinship department and QA to ensure licensing and placement info accurately represented in system design | 2026-03-26 | Open | Yes |
+| A-105 | Marcus / Ross | Determine agency email account for external notification sends (Microsoft REST API integration) | 2026-03-26 | Open | Yes |
+| A-106 | Marcus | Implement address-based search tab | 2026-03-26 | Open | Yes |
+| A-107 | Marcus | Consult after-hours team to capture any additional requirements for address-based search feature | 2026-03-26 | Open | Yes |
+| A-108 | Clemene | Bring CFO, Director of Finance, and Senior Finance Officer to April 7th in-person meeting | 2026-04-07 | Open | Yes |
+| A-109 | Clemene | Provide Marcus with finance contact email for follow-up | 2026-04-07 | Open | Yes |
+| A-110 | Christine | Send recurring calendar invite for biweekly in-person meetings starting April 7th | 2026-04-07 | Open | Yes |
+| A-111 | Rob | Prepare and circulate agenda for April 7th meeting | 2026-04-04 | Open | Yes |
+| A-112 | Clemene / Rob | Review contract and create a revised, clean project timeline and implementation schedule | 2026-04-07 | Open | Yes |
+| A-113 | Ross / Marcus | Schedule internal debrief prior to April 7th meeting | 2026-04-04 | Open | Yes |
+| A-114 | Ken Jacobs / Antonio Faiazza | Complete Azure post-setup: verify tenant access and permissions; share SQL DB credentials via secure private link; provide IDFusion office static IP for whitelisting; fine-tune RBAC group assignments | 2026-04-09 | Open | No |
+| A-115 | Ken Jacobs / Marcus | Deploy Wabanong application code to Azure dev environment (PHP backend + React frontend) | 2026-04-23 | Open | No |
+| A-116 | Marcus | Document Azure infrastructure recap (high-level) for Clemene; store in SharePoint | 2026-04-09 | Open | No |
+| A-117 | Marcus | Finance meeting prep: compile and bring outstanding finance questions — intake types funding, head of household determination, budget visibility, credit card reimbursement, Sage 300 version/build | 2026-04-23 | Open | No |
+| A-118 | Marcus / Gabrielle | Design and implement finance dashboard for finance users: track finance sheet requests, in-app notifications + email notifications for pending approvals | 2026-04-23 | Open | No |
+| A-119 | Marcus | Spec cleanup: spec sheet drop-downs only, update pronoun field to free-form, update person record spec (address tab, save button, genogram search clarity) | 2026-04-23 | Open | No |
+| A-120 | Marcus | Clarify with Ross: (a) whether multiple open intakes per person are permitted, (b) assessment worker task assignment process, (c) status terminology final confirmation | 2026-04-23 | Open | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-018 | Finance/Sage integration requirements incomplete — Sage version/build not received, coding structure not formally documented, integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-029 | Timeline slippage — original delivery targets missed; revised completion estimate is June 2026; re-baselining in progress (A-112) | High | Marcus | 2026-02-12 | Open |
+| I-032 | Development timeline at risk — Iteration 1 in progress; 9 iterations required by revised June 2026 target; Azure infrastructure now complete | High | Marcus | 2026-03-12 | Open |
+| I-033 | Address-based search confirmed as new development requirement — adds scope to an already-constrained timeline; impact on iteration sequencing not yet assessed | Medium | Marcus | 2026-03-26 | Open |
+| I-034 | Client-side continuity risk — Haley absent for 3+ months; Clemene covering but requires full project orientation; risk of decision delays and requirements gaps | Medium | Marcus / Ross | 2026-04-07 | Open |
+
+## Return to Green Plans
+
+### Overall — 🔴 Red *(first flagged: 2025-W48)*
+
+- Azure dev environment is operational — application deployment (A-115) and first UAT cycle are now the critical path to demonstrating progress
+- Engage finance stakeholders via April 7th+ meetings to close outstanding requirements (I-018, A-117)
+- Maintain weekly iteration-based updates to Ross to ensure leadership visibility as delivery accelerates
+
+### Schedule — 🔴 Red *(first flagged: 2025-W48)*
+
+- Application deployment to Azure dev environment (A-115) is the immediate unlock for testing and iteration velocity measurement
+- Sign off on revised project timeline (A-112) once finance engagement begins — use as baseline for remaining schedule management
+- Measure Iteration 1 completion velocity to project realistic dates for iterations 2–9
+
+### Scope — 🟡 Yellow *(first flagged: 2025-W50)*
+
+- Finance dashboard and notification scope now in design (A-118) — monitor for scope expansion during upcoming finance meetings
+- Complete spec cleanup (A-119) to lock design scope before Iteration 2 planning
+- Address-based search (I-033, A-106) impact on iteration sequencing still unassessed — flag for next planning cycle
+
+### Budget — 🟡 Yellow *(first flagged: 2025-W50)*
+
+- Azure dev environment costs (~$200/mo) confirmed and accepted by Ross — clarify whether this is within project budget or a separate Campfire cost
+- Sage 300 integration scope (key cost driver) to be resolved at upcoming finance meeting via A-117
+
+### Client's Feeling — 🟡 Yellow *(first flagged: 2026-W13)*
+
+- Ross providing active technical leadership and briefing Clemene — communication channel is healthy
+- Bring Clemene into next meaningful milestone update once application is deployed to Azure
+- Maintain biweekly in-person meeting cadence once confirmed (A-110)
+
+## Next Period Plan
+
+- Deploy Wabanong application code to Azure dev environment (A-115) — PHP backend + React frontend
+- Engage finance stakeholders: bring prepared questions (A-117), close Sage 300 requirements, resolve I-018
+- Complete spec cleanup (A-119) to prepare for Iteration 2 design
+- Confirm revised project timeline (A-112) following finance stakeholder engagement
+- Confirm status of April 7th in-person meeting — add transcript if it occurred; update A-108–A-113 accordingly

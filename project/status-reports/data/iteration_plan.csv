@@ -1,0 +1,18 @@
+iteration,subtask_type,subtask_label,start_date,end_date,status,iteration_name
+1,dev,Dev,2025-11-17,2026-03-31,Complete,System Infrastructure & Environments
+2,dev,Dev,2026-03-31,2026-04-17,Development,Centralized Client — Member & Family Data
+2,uat,UAT,2026-04-20,2026-04-24,Planned,Centralized Client — Member & Family Data
+3,dev,Dev,2026-04-20,2026-05-01,Development,Intake Management & Automated Notifications
+3,uat,UAT,2026-05-04,2026-05-08,Planned,Intake Management & Automated Notifications
+4,dev,Dev,2026-05-04,2026-05-18,in Design,Case Creation & Signs of Safety
+4,uat,UAT,2026-05-19,2026-05-25,Planned,Case Creation & Signs of Safety
+5,dev,Dev,2026-05-19,2026-06-01,Planned,Case Notes — Supervision & Document Management
+5,uat,UAT,2026-06-01,2026-06-08,Planned,Case Notes — Supervision & Document Management
+6,dev,Dev,2026-04-14,2026-04-28,Planned,Data Cleaning and Migration
+6,uat,UAT,2026-04-29,2026-05-05,Planned,Data Cleaning and Migration
+7,dev,Dev,2026-04-13,2026-04-24,in Design,Financial Tracking & System Integration
+7,uat,UAT,2026-04-27,2026-05-01,Planned,Financial Tracking & System Integration
+8,dev,Dev,2026-05-12,2026-05-25,Planned,My Dashboard & Reporting
+8,uat,UAT,2026-05-26,2026-06-01,Planned,My Dashboard & Reporting
+9,dev,Dev,2026-06-01,2026-06-08,Planned,Production Readiness & Go-Live
+9,uat,UAT,2026-06-08,2026-06-13,Planned,Production Readiness & Go-Live

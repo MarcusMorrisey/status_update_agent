@@ -1,0 +1,257 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2025-W52/2026-W02 merged · 2025-12-15 to 2026-01-15"
+date: "2026-01-15"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-01-15 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-03-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🟡 Yellow |
+| Schedule | 🟡 Yellow |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟢 Green |
+
+## Project Status & Dates
+
+**Project Status:** The project is actively progressing through discovery and design: the full IDFusion team was introduced to the client this period, the ABAC permissions framework was agreed, finance requirements were reviewed in depth, and person-record wireframes are underway. Health indicators remain Yellow across schedule, scope, and budget — primarily due to the Stage 1 milestone slipping past its December baseline, the written Phase 1 scope boundary document still pending, and Sage 300 integration details not yet received. Client sentiment has improved to Green, with Hailey expressing strong optimism and active engagement across the January meetings.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-03-31 (On Track)
+
+## Progress This Period
+
+**Dec 16 — Weekly Meeting (External)**
+
+- Gabrielle Mahe-Serle (Senior Systems Analyst) and Sherrylyn Dumaua (QA Engineer) formally introduced to Hailey Primrose; roles explained
+- Marcus walked Hailey through the Gantt/iteration plan for the first time — 8 iterations confirmed: infrastructure/identity, core accessibility/search, case management, tasks/coverage/dashboard, migration/documents, reporting, hardening
+- Draft ABAC permissions framework presented as first client view: three-component model (roles, ABAC rules, permission key registry); real-world scenarios discussed including temporary coverage, family-relation restrictions, and conflict-of-interest controls
+- Microsoft SSO confirmed as primary login method; email/password login retained as fallback
+- Design direction agreed: Hailey to obtain high-resolution brand assets from Kirk (Communications Director); UI inspiration SharePoint folder concept agreed
+
+**Dec 18 — Finance Requirements Review (External)**
+
+- Finance requirements session completed with Bev Stranger, Barry Mann, Carrie Soldier, Lyndel Sinclair, Christine, and Hailey Primrose
+- Sage 300 confirmed as ongoing finance platform; upgrade to 2026 version under discussion; exact version/build number deferred to follow-up
+- Finance integration goal confirmed: CMS triggers Sage workflows automatically; finance staff remain in Sage, not the CMS
+- Finance sheet integration confirmed as non-negotiable for Phase 1; receipt photo upload deferred to Phase 2
+- Validation model agreed: CMS enforces required fields before forms reach finance (prevents the blanks problem from FamCare)
+- Finance coding structure described verbally (spend codes per case type; project/job costing in Sage); formal documentation to follow in the new year
+
+**Dec 23 — Weekly Meeting (External)**
+
+- Brand guide uploaded to SharePoint by Hailey (medicine wheel, Northern Lights, tree silhouettes, PCFS fonts); confirmed ready for visual designer
+- Phase 1 feature prioritization exercise agreed: Marcus to prepare dual-column vendor assessment matrix; both parties to complete independently and consolidate
+- Mobile scope resolved: web-responsive app only for Phase 1; no native mobile; offline capability deferred; voice-to-text via native device built-ins
+- Campfire environment plan clarified: IDFusion runs temporary internal dev environment; Campfire provisions staging and production-mirror environments on PCFS premises
+- PCFS IT Security Policy and Acceptable Use Policy (Policy 11, page 18) identified as the governing security and privacy documents for the development team
+
+**Jan 5 — Infrastructure & RACI Meeting (Internal: Rob Piché, Ken Jacobs, Marcus)**
+
+- Environment structure decided: Dev, UAT, and Production with production staging slot (Azure App Services); no fourth environment
+- RACI finalized: Campfire IT = Accountable/Responsible for server provisioning, network/firewall configuration, RBAC setup in Azure, vulnerability scanning, audit log review, and infrastructure patches; IDFusion = Accountable/Responsible for CI/CD pipeline, deployment, and release management
+- Architecture confirmed: React frontend + PHP backend API on two separate Azure App Services; load balancing via Azure Front Door
+
+**Jan 7 — Wireframe Working Session (Internal: Gabrielle Mahe-Serle, Marcus)**
+
+- Full wireframe design session (~1hr 50min) for the add/edit person screen:
+  - Name fields: explicit separate fields for legal first, last, middle, maiden, and preferred names; additional-names option for historical/alternate names
+  - Preferred name displayed prominently; legal name in smaller text below; legal name used if no preferred name set
+  - Membership status and verification workflow: fields visible but disabled until status confirmed; document upload button appears on confirmation
+  - Multiple address support with move-in/move-out dates and historical address retention; household changes trigger a new living arrangement record
+  - Family/relationship linking: search-first workflow required before adding household members or emergency contacts; reciprocal links created automatically
+
+**Jan 8 — Weekly Meeting (External)**
+
+- Varun Mehra (senior developer) introduced to Hailey Primrose; Joshua's support role clarified; full development team now known to client
+- Requirements document fully consolidated in SharePoint: constraints log, policy compliance section (with page-number citations), glossary, archive folder, and iteration plan all added
+- Custom CMS feature matrix created and presented to Hailey for priority review
+- MNP data consulting firm engagement announced by Hailey for current-state data assessment and migration prep — separate workstream
+- Enhanced biweekly status report format presented to Hailey; she requested task start/completion dates and planned iteration dates be added
+
+**Jan 13 — Weekly Meeting (External)**
+
+- Full wireframe walkthrough with Hailey (add/edit person screen):
+  - Finance ID mapping strategy designed: internal UUID always generated; mapping table links to Sage 300 ID; finance ID visible and searchable on person record
+  - Medical/disability/risk information: prominent placement near photo with role-based visibility for sensitive details
+  - Demographics: "sex assigned at birth" field name confirmed; Stats Canada standards for gender identity and pronouns; two-spirit included; pronouns displayed alongside preferred name at top of profile
+  - Household model simplified: primary caregiver + children as core record; address tracked per individual
+- Environments diagram received by Marcus; Campfire communication confirmed as the immediate critical-path action
+- Field-definitions Excel template structure agreed: Marcus prepares structure (tab per screen, field names, dropdown values, rules/comments column); Hailey populates content
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01 — Stage 1: Discovery and Requirements complete | 2025-12-22 | 2026-01-31 | Delayed | +40d |
+| M-02 — Stage 2: Solution Design complete | 2026-01-31 | 2026-01-31 | At Risk | On time |
+| M-03 — Stage 3: All iterations complete / system ready | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-04 — Go-Live | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-05 — Stage 4: Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section Stage 1 - Discovery & Requirements
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-01-31, 0d
+  section Stage 2 - Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-01-31, 0d
+  section Stage 3 - Iterations Complete
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section Stage 4 - Post-Launch
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Microsoft SSO as primary login; email/password as fallback | Marcus, Hailey | Dec 16 | |
+| ABAC framework adopted: roles, ABAC rules, permission key registry | Marcus, Hailey | Dec 16 | |
+| Conflict-of-interest restriction: family-based per HR CoI policy | Hailey, Rob, Marcus | Dec 23 | Not the FamCare high-profile workaround |
+| Sage 300 confirmed as ongoing finance platform; upgrade to 2026 version under discussion | Barry, Bev, Marcus | Dec 18 | No product change |
+| Finance integration: CMS triggers Sage automatically; finance staff use Sage | Hailey, finance team | Dec 18 | |
+| Finance sheet integration non-negotiable for Phase 1 | Hailey, Marcus, Rob | Dec 18 / Dec 23 | |
+| Receipt photo upload deferred to Phase 2 | Hailey | Dec 18 | |
+| CMS enforces required fields before forms reach finance | Hailey, finance team | Dec 18 | Prevents blanks problem |
+| Phase 1 scope exercise: dual-column vendor assessment matrix; both parties complete independently | Marcus, Hailey, Rob | Dec 23 | |
+| Mobile: web-responsive app only; no native mobile for Phase 1 | Rob, Hailey, Marcus | Dec 23 | |
+| Offline capability not a priority for Phase 1; focus on connection-error feedback | Rob, Hailey | Dec 23 | |
+| Voice-to-text: leverage native device built-in functionality | Rob, Marcus, Hailey | Dec 23 | Revisit after caseworker feedback |
+| Campfire provisions staging and production-mirror environments on PCFS premises; IDFusion runs temp internal dev env | Rob, Hailey | Dec 23 | |
+| Rob communicates directly with Campfire on environments; Hailey CC'd | Rob, Hailey | Dec 23 | |
+| Privacy/security requirements drawn from PCFS IT Security Policy and Acceptable Use Policy; Policy 11 (page 18) applicable | Hailey, Rob, Marcus | Dec 23 | |
+| Environment structure: Dev, UAT, Production with staging slot; no fourth environment | Rob, Ken | Jan 5 | |
+| RACI: Campfire IT accountable/responsible for provisioning, network/firewall, RBAC in Azure, scanning, audit logs, patches | Rob, Ken, Marcus | Jan 5 | |
+| RACI: IDFusion accountable/responsible for CI/CD, deployment, release management | Rob, Ken, Marcus | Jan 5 | Consulted on access controls |
+| Software application maintenance responsibility: TBD | Rob, Ken | Jan 5 | Separate discussion required |
+| Architecture: React frontend + PHP backend on two separate Azure App Services; Azure Front Door load balancing | Ken, Rob | Jan 5 | |
+| Name entry: explicit separate fields (legal first, last, middle, maiden, preferred); additional-names option | Gabrielle, Marcus | Jan 7 | No dropdown matrix |
+| Display logic: preferred name prominent; legal name below; legal used if no preferred name | Gabrielle, Marcus; confirmed Hailey | Jan 7 / Jan 13 | |
+| Search-first workflow required before adding emergency contacts or household members | Gabrielle, Marcus | Jan 7 | Duplicate prevention |
+| Membership fields visible but disabled until status confirmed; document upload on confirmation | Gabrielle, Marcus | Jan 7 | |
+| Multiple addresses supported with move-in/move-out dates; historical addresses retained | Gabrielle, Marcus | Jan 7 | |
+| Household changes trigger a new living arrangement record | Gabrielle, Marcus | Jan 7 | |
+| Reciprocal relationship links created automatically when family/household member is added | Gabrielle, Marcus | Jan 7 | |
+| IP and document sharing: PCFS owns all deliverables; IDFusion coordinates outbound sharing through Hailey | Marcus, Hailey | Jan 8 | |
+| Power BI for embedded reporting: plan early integration | Marcus, Hailey | Jan 8 | |
+| Permissions: feature-based access; exceptions for budget section and high-profile/CoI cases | Rob, Hailey | Dec 23 / Jan 13 | Not field-level granularity |
+| Finance ID strategy: internal UUID always generated; mapping table to Sage 300 ID; finance ID visible/searchable | Marcus, Gabrielle, Hailey | Jan 13 | |
+| Band member status number stored as additional identifier on person record | Marcus, Gabrielle, Hailey | Jan 13 | |
+| Demographic field name: "sex assigned at birth" | Hailey, Marcus | Jan 13 | |
+| Gender identity and pronouns: Stats Canada standards; two-spirit included; free-text option alongside dropdown | Hailey, Marcus, Gabrielle | Jan 13 | |
+| Pronouns displayed alongside preferred name at top of profile | Gabrielle, Hailey | Jan 13 | |
+| Household model: primary caregiver + children as core; address tracked per individual | Hailey, Gabrielle, Marcus | Jan 13 | |
+| Culturally appropriate animal symbols for child/youth/adult categories with hover text | Hailey, Marcus | Jan 13 | |
+| Field-definitions Excel template: Marcus prepares structure; Hailey populates content | Marcus, Gabrielle, Hailey | Jan 13 | Tab per screen; field names, dropdown values, rules |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Open | Yes |
+| A-048 | Hailey | Review vendor assessment matrix and mark Phase 1 priorities independently | 2026-01-29 | Complete | No |
+| A-049 | Marcus | Prepare dual-column vendor assessment matrix (IDFusion + Hailey view) and send to Hailey | 2026-01-29 | Complete | No |
+| A-050 | Hailey | Consult caseworkers to clarify which tasks are performed on mobile devices | 2026-01-29 | Open | No |
+| A-051 | Hailey | Gather caseworker feedback on voice-to-text usefulness for case note entry | 2026-01-29 | Complete | No |
+| A-052 | Marcus | Share brand guide resources with the visual designer | 2026-01-15 | Complete | No |
+| A-053 | Rob | Communicate with Campfire (Ross) to set up staging and production-mirror environments; CC Hailey | 2026-01-29 | Complete | No |
+| A-054 | Marcus | Review PCFS IT Security Policy and Acceptable Use Policy; integrate requirements into system design | 2026-01-29 | Complete | No |
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Open | No |
+| A-056 | Marcus | Send NDAs/confidentiality agreements to team including Ken Jacobs; provide SharePoint access once signed | 2026-01-08 | Complete | No |
+| A-057 | Ken / Rob | Review and update app architecture document (Azure version) to reflect current environment structure | 2026-01-08 | Complete | No |
+| A-058 | Ken | Create SDLC diagram illustrating Dev, UAT, staging, and production environments | 2026-01-08 | Complete | No |
+| A-059 | Marcus | Create new Lucid document under Chris's account; invite Ken to collaborate on architecture documentation | 2026-01-08 | Complete | No |
+| A-060 | Marcus | Review PulseCheck survey spec for missing screenshots/figures; restore from previous version if needed | 2026-01-29 | Complete | No |
+| A-061 | Marcus | Consult Hailey: is "sex assigned at birth" field required? Update interface accordingly | 2026-01-29 | Complete | No |
+| A-062 | Marcus | Consult Hailey: should documentation upload be required on membership status confirmation? | 2026-01-29 | Complete | No |
+| A-063 | Marcus | Consult Hailey: how to handle individuals with multiple current addresses (e.g., 50/50 custody)? | 2026-01-29 | Complete | No |
+| A-064 | Marcus | Consult Hailey: provide complete relationship type list for the living arrangement section | 2026-01-29 | Complete | No |
+| A-065 | Marcus | Validate with Hailey: historical living arrangement tracking requirements | 2026-01-29 | Complete | No |
+| A-066 | Hailey | Review consolidated requirements document; focus on technical constraints; add notes for next meeting | 2026-01-29 | Complete | No |
+| A-067 | Hailey | Review custom CMS feature matrix; modify priorities or add notes | 2026-01-29 | Complete | No |
+| A-068 | Hailey / Marcus | Coordinate with MNP data consultants; clarify roles and document-sharing protocol | 2026-01-29 | Complete | No |
+| A-069 | Hailey | Review proposed enhanced biweekly status update template and provide feedback | 2026-01-29 | Complete | No |
+| A-070 | Marcus / Rob | Provide Hailey with overdue monthly financials update | 2026-01-14 | Complete | No |
+| A-071 | Marcus / Gabrielle | Update status report format to include task start/completion dates and planned iteration dates | 2026-01-29 | Complete | No |
+| A-072 | Marcus | Send Campfire, Hailey, and team the environments diagram and RACI summary; confirm IP whitelisting included | 2026-01-14 | Complete | No |
+| A-073 | Marcus | Loop in Varun to confirm UUID-to-Sage-300 ID mapping table feasibility | 2026-01-29 | Complete | No |
+| A-074 | Marcus / Gabrielle | Add finance ID display to finance tab on person profile; enable searching by finance ID | 2026-01-29 | Complete | No |
+| A-075 | Hailey | Consult service delivery directors on high-risk warning visibility parameters per role | 2026-01-29 | Complete | No |
+| A-076 | Hailey | Create prioritized list of medical/disability information for prominent flagging on person profile | 2026-01-29 | Complete | No |
+| A-077 | Hailey | Finalize gender identity, sex assigned at birth, and pronouns field options per Stats Canada standards | 2026-01-29 | Open | No |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | No |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-011 | Campfire infrastructure delayed — Campfire confirmed no cycles until "later in January"; environments diagram completed and Campfire email sent; provisioning not yet started | Medium | Marcus / Ross | 2026-01-31 | Open |
+| I-018 | Finance/Sage integration requirements incomplete — Dec 18 session substantive but Sage version/build not received, finance coding structure not formally documented, and integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-020 | Phase 1 scope not formally bounded — feature prioritization exercise completed but written scope boundary document not yet produced; stakeholder expectations remain unmanaged | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-021 | Sage 300 version/build number not yet received; cannot finalize integration design without it | Medium | Barry Mann / Marcus | 2026-01-29 | Resolved |
+| I-022 | Finance coding structure not formally documented; spend codes described verbally only at Dec 18 meeting | Medium | Hailey / Marcus | 2026-01-29 | Resolved |
+| I-023 | Phase 1 scope not formally bounded; written scope boundary document still missing as of Jan 13 | High | Hailey / Marcus | 2026-01-29 | Resolved |
+| I-024 | Campfire infrastructure timeline at risk; no formal SOW or confirmed provisioning start date | High | Marcus / Rob / Ross | 2026-01-29 | Resolved |
+| I-025 | MNP data consultants coordination gap; protocol for sharing CMS design materials with MNP not established | Medium | Hailey / Marcus | 2026-01-29 | Resolved |
+| I-026 | Finance ID mapping for new records undefined; Varun feasibility confirmation was pending | Medium | Marcus / Varun | 2026-01-29 | Resolved |
+| I-027 | Living arrangement and placement data model — most complex unresolved modeling challenge; consultation with intake and service delivery teams required | Medium | Marcus / Hailey | 2026-01-29 | Resolved |
+| I-028 | Monthly financial update was overdue as of Jan 8 (holiday delay) | Low | Marcus / Rob | 2026-01-14 | Resolved |
+
+## Return to Green Plans
+
+### Overall Health — Yellow (first flagged: 2025-W48)
+
+- Produce written Phase 1 scope boundary document from the completed prioritization exercise — the document itself remains missing.
+- Obtain a confirmed Campfire infrastructure provisioning start date and plan in response to the environments email (A-072 complete; awaiting Campfire response).
+
+### Schedule — Yellow (first flagged: 2025-W48)
+
+- Obtain confirmed Campfire environment provisioning start date and timeline following the environments email.
+- Set explicit exit criteria for M-01 (Stage 1: Discovery and Requirements complete) and formally declare M-01 closed once met; revised Estimated End: 2026-01-31.
+
+### Scope — Yellow (first flagged: 2025-W50)
+
+- Produce written Phase 1 scope boundary document from the completed feature prioritization exercise — formally list confirmed in-scope and deferred items before active development begins.
+
+### Budget — Yellow (first flagged: 2025-W50)
+
+- Obtain Sage 300 version/build number (A-079) and formal coding structure from finance to define the scope and effort of the finance sheet integration — a non-negotiable Phase 1 feature.
+
+## Next Period Plan
+
+1. Follow up with Campfire on test environment provisioning (A-036) — environments email sent; confirm Campfire has engaged and obtain a committed provisioning start date.
+2. Produce written Phase 1 scope boundary document — feature prioritization exercise complete; convert consolidated matrix into a signed-off in-scope / deferred items document.
+3. Obtain Sage 300 version/build number and formal coding structure from finance (A-079) — prerequisite for finance integration design.
+4. Advance wireframes: prepare field-definitions Excel template and share with Hailey (A-078); finalize gender identity/pronouns field options with Hailey (A-077); resolve role-based access and conflict-of-interest requirements (A-055); consult caseworkers on mobile device usage (A-050).

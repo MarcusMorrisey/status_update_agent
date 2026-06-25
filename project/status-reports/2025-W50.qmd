@@ -1,0 +1,218 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2025-W50 · 2025-12-01 to 2025-12-14"
+date: "2025-12-14"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2025-12-14 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-03-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🟡 Yellow |
+| Schedule | 🟡 Yellow |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟡 Yellow |
+
+## Project Status & Dates
+
+**Project Status:** The project completed its first month with strong requirements-gathering momentum — the first Campfire technical alignment meeting was held, a detailed intake and after-hours workflow session was conducted with key departmental SMEs, and the first Community Circle of Care legal requirements session took place. Five health indicators are at Yellow: Campfire's Azure environment setup is delayed to mid-January due to the holiday slowdown, scope is actively expanding through CCC and legal requirements, and the finance/Sage integration meeting is still pending. All milestones remain on their baseline estimated dates.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-03-31 (On Track)
+
+## Progress This Period
+
+- Conducted first deep intake and after-hours workflow session with Darryl Boulanger (Intake Supervisor) and Edgar Moses (Director of After Hours); end-to-end intake process, tiered PO approval routing, and budget module requirements documented.
+- Completed first formal technical alignment meeting with Campfire (Ross Gillingham, Dennis Wigmore); stack, security model, monitoring RACI, RTO/RPO, and test environment approach agreed.
+- Held weekly check-in with Hailey (Dec 9); development methodology walkthrough completed; Hailey aligned on agile approach and sprint cadence.
+- Completed first Community Circle of Care legal requirements session with Earl's legal team, Rannon Wilson (CCC Coordinator), and Elders coordinators; external access model, consent requirements, and CCC use cases documented.
+- Intake direction confirmed: new system is the originating system (not FamCare); minimum data then pushed to IM/provincial system.
+- Financial/PO module requirements captured from Edgar: per-family budget tracking, tiered approval by dollar threshold, automated deductions, compartmentalized spend categories, vendor notification on PO submission.
+- Confirmed HR data stays in Bamboo (no integration required); new system user profiles to leverage M365 SSO sync.
+- Minimum data requirements document and intake tracking Excel shared by Hailey and confirmed in SharePoint.
+- Finance team meeting planned for pre-Christmas (Bev, Barry, Carrie Soldier, Lindell); Sage 300 integration scoping confirmed as agenda item.
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01: Stage 1 - Discovery and Requirements complete | 2025-12-22 | 2025-12-22 | On Track | On time |
+| M-02: Stage 2 - Solution Design complete | 2026-01-31 | 2026-01-31 | On Track | On time |
+| M-03: Stage 3 - All 9 iterations complete / system ready | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-04: Go-Live | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-05: Stage 4 - Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section Stage 1 - Discovery Complete
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, 2025-12-22, 0d
+  section Stage 2 - Solution Design Complete
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, 2026-01-31, 0d
+  section Stage 3 - System Ready
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section Stage 4 - Post-Launch Support Complete
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Intake originates in new system; minimum data then pushed to IM/provincial. New system generates its own internal intake tracking number independent of Cephas | Hailey + Edgar + Darryl | Dec 2 | FamCare historically not receiving intake data anyway |
+| Per-family brief services budget visible to supervisors/directors only; workers submit POs without seeing balance. Tiered PO approval: worker → supervisor → director by dollar threshold | Darryl + Edgar + Hailey | Dec 2 | Mirrors existing manual approval model |
+| Attachments use categorized/tagged system (financial, intake/safety plan, external reports) with date filtering | Marcus + Edgar | Dec 2 | |
+| Tech stack confirmed: Azure App Services on Linux, PHP Laravel, no VMs; IDFusion handles app dev/maintenance, Campfire handles system patching and monitoring | Rob/Ken + Ross/Dennis | Dec 4 | |
+| Named accounts required for all users; no generic accounts. MFA + YubiKeys for privileged access | Ross + Rob | Dec 4 | |
+| Campfire = primary monitoring (SIEM/Huntress, Meraki, Umbrella); IDFusion = secondary application-level support | Ross + Rob | Dec 4 | |
+| Test/staging environments will never contain real PII (scrubbed data only per IT policy) | Ross + Rob | Dec 4 | |
+| RTO and RPO both set at 24 hours; Campfire to investigate Azure multi-region failover (Canada Central → Canada East) | Group | Dec 4 | Manual fallback processes in place during outages |
+| IDFusion to stand up temporary test environment with IP whitelisting while Campfire infrastructure unavailable until mid-late January 2026 | Rob + Ross | Dec 4 | |
+| Marcus to share draft planning documents to SharePoint by end of day Friday Dec 12: requirements doc, iteration plan, screen flow diagram, wireframe starters | Marcus | Dec 9 | Committed in response to Hailey's visibility concern |
+| Finance team meeting to be organized by Hailey before Christmas; target: Bev, Barry, Carrie Soldier, Lindell | Hailey + Marcus | Dec 9 | |
+| HR staff demographics remain in Bamboo; no integration required. New system user profiles leverage M365 SSO sync for work-relevant fields | Hailey + Marcus | Dec 9 | |
+| IDFusion builds new permissions framework from scratch (permissions matrix approach); FamCare security groups will not be directly translated | Marcus | Dec 9 | |
+| All users (internal and external) require MFA given data sensitivity | Marcus + Hailey | Dec 11 | |
+| External organization access defined per service agreement; each org sees only fields relevant to their services; access predefined, not ad-hoc | Hailey + Rannon + Marcus | Dec 11 | |
+| Churches, lodges, and non-First Nations entities will not receive direct system access in Phase 1; Rannon Wilson (CCC Coordinator) acts as human intermediary | Hailey + Rannon | Dec 11 | |
+| CSA class action work and abuse investigations are out of Phase 1 scope; addressed later as highly confidential separate modules | Hailey + Marcus | Dec 11 | |
+| Membership list integration (band registry) is out of Phase 1 scope; requires Chief and Council authorization | Hailey | Dec 11 | |
+| Legal case statuses (court orders, temporary orders) addressed in separate future session with Earl and Calvin's team | Hailey | Dec 11 | |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-001 | Marcus | Prepare and send kickoff presentation deck to Hailey for review before kickoff | 2025-11-19 | Complete | Yes |
+| A-002 | Hailey | Upload Measuring to Thrive report to SharePoint and indicate relevant appendix | 2025-11-30 | Complete | Yes |
+| A-003 | Hailey | Review kickoff presentation deck and provide feedback | 2025-11-20 | Complete | Yes |
+| A-004 | Hailey | Schedule and initiate meeting with finance to understand document categories, processing, and coding practices | 2025-11-28 | Complete | Yes |
+| A-005 | Hailey | Forward Excel sheet mapping internal dept categories to finance/funder categories to Marcus; add to SharePoint | 2025-11-30 | Complete | Yes |
+| A-006 | Marcus | Identify local data analysis/statistics experts who could provide training to the agency | 2025-11-30 | Complete | Yes |
+| A-007 | Marcus | Circle back with Rob Piche to discuss what can begin right away on the project | 2025-11-22 | Complete | Yes |
+| A-008 | Marcus | Establish meeting notes filing system by topic in SharePoint system design documents | Ongoing | Complete | Yes |
+| A-009 | Marcus | Schedule first joint workflow drafting session with Hailey (intake workflow first) | 2025-11-30 | Complete | Yes |
+| A-010 | Marcus | Plan and communicate scheduling and sequencing of requirements sessions | 2025-11-30 | Complete | Yes |
+| A-011 | Marcus | Obtain CFIS permissions list from Cassandra to use as starting point for new system roles | 2025-11-30 | Complete | Yes |
+| A-012 | Hailey | Screenshot Teams cross-org error and share with Campfire to resolve Teams integration | 2025-11-25 | Complete | Yes |
+| A-013 | Hailey | Propose alternative dates to finance and legal teams for a meeting | 2025-11-28 | Complete | Yes |
+| A-014 | Marcus | Investigate and resolve SharePoint external-user access issue; escalate to IT | 2025-11-30 | Complete | Yes |
+| A-015 | Marcus | Send meeting invite for Campfire/Azure technical integration meeting (Ross, Azure dev, IT heads, Hailey optional) | 2025-11-28 | Complete | Yes |
+| A-016 | Hailey | Create SharePoint folder for policies/procedures; compile available procedures as workflow development starting point | 2025-11-30 | Complete | Yes |
+| A-017 | Marcus | Post first bi-weekly status update to SharePoint by 2025-12-03 | 2025-12-03 | Complete | Yes |
+| A-018 | Marcus | Prepare outline for reporting/measurement methodology workshop; share with Hailey; coordinate with Rob | 2025-11-30 | Complete | Yes |
+| A-019 | Hailey | Send finance team an email establishing them as scheduling priority; request availability | 2025-11-28 | Complete | Yes |
+| A-020 | Marcus | Send Hailey available time slots for next 1-2 weeks for finance/legal meeting coordination | 2025-11-26 | Complete | Yes |
+| A-022 | Hailey | Share draft/in-progress service delivery procedures (case management) with Marcus, pending org approval | 2025-11-30 | Complete | Yes |
+| A-023 | Marcus | Prepare tips and tricks document for workflow documentation (numbering, swim lanes, failure cases) | 2025-11-30 | Complete | Yes |
+| A-024 | Hailey | Upload PCFS report presented to Canada to SharePoint reporting folder | 2025-11-30 | Complete | Yes |
+| A-025 | Hailey | Invite Darrell to follow-up meeting to discuss intake document requirements and CFIS upload practices | 2025-11-30 | Complete | Yes |
+| A-026 | Marcus | Confirm/resend Campfire meeting invite (sent before their holiday) to reconnect all parties | 2025-11-26 | Complete | Yes |
+| A-027 | Marcus | Create dedicated Teams channel for project and post Dec 4 meeting summary + document links | 2025-12-12 | Complete | No |
+| A-028 | Marcus | Connect directly with Ross Gillingham to resolve Teams message delivery issue | 2025-12-12 | Complete | No |
+| A-029 | Marcus | Confirm Dennis Wigmore's Teams channel access and connectivity | 2025-12-12 | Complete | No |
+| A-030 | Marcus | Upload planning drafts to SharePoint by Dec 12: requirements doc, iteration plan, screen flow diagram, wireframe starters | 2025-12-12 | Complete | No |
+| A-031 | Marcus | Invite Sherrilyn to next weekly meeting for team introduction; clarify expected hours commitment | 2025-12-16 | Complete | No |
+| A-032 | Marcus + Ken | Share Ken's system architecture/tech stack diagram with Hailey and broader team | 2025-12-28 | Complete | No |
+| A-033 | Hailey | Organize finance team meeting before Christmas (Bev, Barry, Carrie Soldier, Lindell) — Sage version, coding structures, integration scope | 2025-12-19 | Complete | No |
+| A-034 | Hailey | Maintain and share active user list with current FamCare access levels (for permissions migration) | 2025-12-28 | Complete | No |
+| A-035 | Ross Gillingham | Prepare light Statement of Work for initial test environment setup | 2025-12-28 | Complete | No |
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Open | No |
+| A-037 | Ross / Campfire | Confirm IT security policy documents sent to IDFusion | 2025-12-12 | Complete | No |
+| A-038 | Marcus + Ken | Draft architecture diagram summarizing system component interactions for non-technical stakeholders | 2025-12-28 | Complete | No |
+| A-039 | Ross + Marcus + Rob | Develop RACI matrix for access levels and responsibilities on new project environment | 2025-12-28 | Complete | No |
+| A-040 | Ross + Dennis + Ken | Enable monitoring and audit logging for new Azure subscription; confirm ongoing monitoring responsibilities | 2026-01-31 | Complete | No |
+| A-041 | Hailey + Earl | Formally document legal/privacy requirements (FIPPA, PHIA, CFS legislation) applicable to the system | 2025-12-28 | Complete | No |
+| A-042 | Marcus | Email CCC diagrams and design documents to Rannon Wilson and Hailey | 2025-12-12 | Complete | No |
+| A-043 | Hailey | Define per-organization field access scope for each CCC external department | 2025-12-28 | Complete | No |
+| A-044 | Hailey + legal | Schedule follow-up session on legal case statuses with Earl and Calvin's team | 2025-12-28 | Complete | No |
+| A-045 | Marcus | Assess whether FamCare SQL export can produce a usable field/permissions map for data migration planning | 2025-12-28 | Complete | No |
+| A-046 | Marcus + Darryl + Edgar | Schedule follow-up intake/after-hours session once blueprint/wireframes ready | 2025-12-28 | Complete | No |
+| A-047 | Marcus | Locate and document written intake response-time standards (per issue category); integrate into notification design | 2025-12-28 | Complete | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-001 | SharePoint external-user access requires multi-step verification each login - friction for collaboration | Medium | Marcus | 2025-11-30 | Resolved |
+| I-002 | Teams cross-org messaging blocked between PCFS and IDFusion - impairs direct communication outside formal meeting invites | Medium | Hailey | 2025-11-30 | Resolved |
+| I-003 | No dedicated BA on the project - Hailey and Marcus sharing BA responsibilities on top of primary roles; capacity and coverage risk | High | Marcus / Hailey | Ongoing | Resolved |
+| I-004 | PCFS previous software analyst has departed; some institutional design knowledge lost | Medium | Hailey | Ongoing | Resolved |
+| I-005 | Finance integration requirements (Sage 300 mapping, coding categories) not yet captured - risk of design proceeding without this input | Medium | Hailey | 2025-11-30 | Resolved |
+| I-006 | HR and Finance use entirely different staff categorization systems with no shared unique identifiers - known data quality problem requiring design-time attention | High | Marcus / Hailey | Design phase | Resolved |
+| I-007 | Legal framework for Community Circle of Care external access (NDAs, agreements) not yet defined | Low | Hailey | Pre-build | Resolved |
+| I-008 | Campfire not yet formally engaged - Azure/technical integration planning blocked until they join | Medium | Marcus | 2025-11-30 | Resolved |
+| I-009 | Holiday season (December) likely to constrain stakeholder availability for finance, legal, and IT sessions | Medium | Marcus / Hailey | 2025-12-15 | Resolved |
+| I-010 | Existing FamCare/CFIS workflows are not fully documented in a form suitable for system design | Medium | Hailey | Ongoing | Resolved |
+| I-011 | Campfire infrastructure (new Azure subscription, environment provisioning) unavailable until mid-late January 2026 due to holiday slowdown; development start contingent on environment availability | Medium | Marcus / Ross | 2026-01-31 | Resolved |
+| I-012 | Teams cross-org communication not fully functional: Ross Gillingham (Campfire) not receiving Teams messages from Marcus as of Dec 9; Dennis Wigmore connectivity also unconfirmed | Medium | Marcus | 2025-12-12 | Resolved |
+| I-013 | CCC external access requirements (consent forms, per-organization field access scopes, service agreement mapping) introduce design complexity not yet fully scoped in Phase 1 | Medium | Hailey + Marcus | 2025-12-28 | Resolved |
+| I-014 | Legal and privacy compliance requirements (FIPPA, PHIA, CFS legislation, external consent form structure) not yet formally documented; risk of building before compliance boundaries defined | High | Hailey + Earl | 2025-12-28 | Resolved |
+| I-015 | Sherrilyn (IDFusion tester/systems analyst) worked only ~20 hours the week expected for full engagement; resourcing expectation not clearly communicated | Low | Marcus | 2025-12-16 | Resolved |
+| I-016 | Client visibility gap: wireframes, iteration plan, and screen flow diagram not shared with Hailey as of Dec 9 (~4 weeks into project); Marcus committed to upload by Dec 12 | Medium | Marcus | 2025-12-12 | Resolved |
+| I-017 | FamCare security groups have no human-readable descriptions of access scope; permissions migration cannot be translated directly - new framework must be built from scratch | Low | Marcus | 2025-12-28 | Resolved |
+| I-018 | Finance/Sage integration requirements still uncaptured: Sage version, integration feasibility, and whether finance will be direct users all unknown; affects intake financial module design | Medium | Hailey | 2025-12-19 | Resolved |
+| I-019 | Membership registry integration raised by Rannon Wilson as stakeholder expectation; out of Phase 1 scope - may require expectation management | Low | Hailey | 2025-12-28 | Resolved |
+| I-020 | Multiple Phase 1 scope-out items surfaced (CSA class action, abuse investigations, legal case statuses, membership registry); stakeholder expectations need active management to prevent scope creep | Medium | Hailey + Marcus | 2025-12-28 | Resolved |
+
+## Return to Green Plans
+
+### Overall — 🟡 Yellow (first flagged: 2025-W48)
+
+- Upload planning artifacts to SharePoint by Dec 12 (A-030) to close client visibility gap.
+- Formally bound Phase 1 scope in writing after December requirements sessions to prevent open-ended expansion.
+
+### Schedule — 🟡 Yellow (first flagged: 2025-W48)
+
+- Hold finance meeting before Christmas (A-033) to unblock financial module design.
+- Confirm Campfire SOW and test environment timeline (A-035) so development start date can be planned.
+
+### Scope — 🟡 Yellow (first flagged: 2025-W50)
+
+- Produce a written Phase 1 scope boundary document listing confirmed in-scope and deferred items (CCC, legal statuses, CSA, membership registry) before build begins.
+
+### Budget — 🟡 Yellow (first flagged: 2025-W50)
+
+- Finance meeting (A-033) will determine Sage integration complexity and whether finance will be a direct user — critical inputs to budget assessment.
+
+### Client's Feeling — 🟡 Yellow (first flagged: 2025-W50)
+
+- Upload planning docs by Dec 12 (A-030) directly addresses Hailey's visibility concern.
+- Introduce Sherrilyn at next weekly meeting (A-031) to demonstrate team depth and resourcing.
+
+## Next Period Plan
+
+- Upload planning artifacts to SharePoint by Dec 12: requirements doc, iteration plan, screen flow diagram, login wireframe (A-030).
+- Resolve Campfire Teams channel access for Ross and Dennis (A-028, A-029, A-037).
+- Hold finance team meeting before Christmas (A-033) — Sage version, account coding structure, integration scope.
+- Confirm Campfire test environment SOW and timeline (A-035); ensure development can begin by mid-January.
+- Onboard Sherrilyn to project at next weekly meeting (A-031); clarify hours commitment.

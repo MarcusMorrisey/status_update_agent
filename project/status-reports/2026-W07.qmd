@@ -1,0 +1,178 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W07 · 2026-01-30 to 2026-02-12"
+date: "2026-02-12"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-02-12 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-03-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🟡 Yellow |
+| Schedule | 🟡 Yellow |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟢 Green |
+
+## Project Status & Dates
+
+**Project Status:** Spec documentation and design work advanced substantially this period: Iteration 3 wireframes (login, person records, search) were completed and sent to the visual designer, the UAT environment approach was confirmed with Campfire (Azure tenant, costing approval in progress), and intake/service delivery meetings were coordinated with Christine to validate field values. Client engagement remains strong. However, pilot target dates remain unestablished, M-01 and M-02 estimated end dates have both slipped to 2026-02-26, and ongoing services field clarifications remain outstanding.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-03-31 (On Track)
+
+## Progress This Period
+
+**Feb 09 — External (Marcus, Gabrielle, Ross Gillingham/Campfire, Christine Chartrand/QA Director)**
+
+- Campfire UAT environment approach confirmed: hosted within PCFS Azure tenant; leveraging existing Alpha system or sanitized schema export; costing approval in progress with Christine
+- IDFusion dev/test environments confirmed as independent of Campfire UAT setup; test data to be manufactured or sanitized per PCFS IT security policy
+- Iteration 3 wireframes (login, person records, search) confirmed complete with Jan 23 feedback incorporated and sent to visual designer for UI development
+- Intake workflow wireframes in progress; plan established to meet with intake team to validate field values
+- Christine to coordinate meetings with Kelvin (COO, Service Delivery), Darrell, and frontline staff; two sessions agreed (30-min person profile fields + 1-hour wireframe review)
+- SharePoint document access issue for Christine resolved during meeting (verification email)
+
+**Feb 11 — Internal spec walkthrough (Marcus, Gabrielle, Sherrylyn Dumaua)**
+
+- Sherrylyn onboarded to spec documentation process via review of Gabrielle's revised person record spec
+- Login specs: Microsoft Entra (SSO) as primary; no custom specs needed for standard elements; email MFA recommended as backup (not text or authenticator app)
+- Search spec logic finalized: profile types refined to three types (child/youth, adult, limited); intake/case statuses defined; open services column behaviour; search criteria (name, phone, email, DOB, case/intake ID); single result auto-opens record; Add New Person disabled until search performed
+- Sherrylyn assigned to begin spec documentation for login, menu/header, and search screens
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01 — Stage 1: Discovery and Requirements complete | 2025-12-22 | 2026-02-26 | Delayed | +66d |
+| M-02 — Stage 2: Solution Design complete | 2026-01-31 | 2026-02-26 | Delayed | +26d |
+| M-03 — Stage 3: All 9 iterations complete / system ready | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-04 — Go-Live | 2026-03-31 | 2026-03-31 | On Track | On time |
+| M-05 — Stage 4: Post-launch support complete | 2026-04-30 | 2026-04-30 | On Track | On time |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+  section M-01 Discovery and Requirements
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-02-26, 0d
+  section M-02 Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-02-26, 0d
+  section M-03 Iterations Complete
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section M-04 Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, 2026-03-31, 0d
+  section M-05 Post-Launch Support
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, 2026-04-30, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| UAT environment will be hosted within PCFS Azure tenant | Ross, Christine, Marcus | Feb 09 | Leverage existing Alpha system or sanitized schema export; costing approval with Christine |
+| IDFusion dev/test environments are independent of Campfire UAT; test data manufactured or sanitized | Marcus, Ross | Feb 09 | Compliant with PCFS IT security policy |
+| Login: Microsoft Entra (SSO) as primary; standard flow — no custom spec required | Marcus, Gabrielle | Feb 11 | |
+| Email MFA recommended as backup to Entra SSO; not text or authenticator app | Gabrielle, Marcus | Feb 11 | Agency staff may not have work phones for text; authenticator app also disfavoured |
+| Three profile types confirmed: child/youth, adult, limited | Gabrielle, Marcus | Feb 11 | Replaces prior two-type model; type selected at Add New Person modal |
+| Profile type filter in search changed to multi-select dropdown; default shows child/youth + adult | Gabrielle, Marcus | Feb 11 | |
+| DOB entry: flexible — calendar picker (full date) or individual year/month/day dropdowns | Gabrielle, Marcus | Feb 11 | Accommodates incomplete DOB at record creation |
+| Intake statuses: awaiting approval → active → closed | Marcus, Gabrielle | Feb 11 | Lifecycle: worker creates, supervisor approves, active, then closed |
+| Case file statuses: active and closed only (no awaiting approval) | Marcus, Gabrielle | Feb 11 | Case file starts active once opened by supervisor |
+| Open services column in search shows only active/awaiting approval records | Marcus, Gabrielle | Feb 11 | |
+| Phone/email search covers all contact fields directly associated with person record | Marcus | Feb 11 | Does not search contacts of related persons |
+| Search status indicator: icon/colour with popup (tap on mobile instead of hover) | Gabrielle, Marcus, Sherrylyn | Feb 11 | |
+| Single search result auto-opens person record directly | Gabrielle, Marcus | Feb 11 | |
+| Add New Person button disabled until search performed to minimize duplicate records | Gabrielle | Feb 11 | |
+| AI tools: no public AI on this project; Marcus to provision Sherrylyn with shared internal account | Marcus | Feb 11 | Security requirement per client expectations |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-036 | Ross Gillingham | Stand up test environment with IP whitelisting for IDFusion access | 2026-01-31 | Open | Yes |
+| A-050 | Hailey | Consult caseworkers to clarify which tasks are performed on mobile devices | 2026-01-29 | Open | Yes |
+| A-055 | Hailey / Marcus | Clarify and document requirements for role-based access, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Open | Yes |
+| A-077 | Hailey | Finalize gender identity, sex assigned at birth, and pronouns field options per Stats Canada standards | 2026-01-29 | Open | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules column) | 2026-01-29 | Open | Yes |
+| A-079 | Barry / Bev | Provide exact Sage 300 version/build number for integration documentation | 2026-01-29 | Open | Yes |
+| A-080 | Marcus / Gabrielle | Incorporate Jan 23 stakeholder feedback into wireframes (search results, address format, open services column, help text placeholders) | 2026-02-12 | Complete | Yes |
+| A-081 | Marcus | Consult ongoing services to resolve pending field decisions: SIN placement, caregiver role terminology, household member requirements, critical health info categorization | 2026-02-12 | Open | Yes |
+| A-082 | Marcus | Establish new pilot target dates; prepare status update for Jaren and Rob with technical challenges and revised timeline | 2026-02-12 | Open | Yes |
+| A-083 | Marcus / Varun | Complete Iteration 1 development and conduct detailed dev walkthrough with team | 2026-02-12 | Open | Yes |
+| A-084 | Marcus | Source standardized municipality/community list for address dropdown; investigate on-reserve address automation feasibility | 2026-02-12 | Open | Yes |
+| A-085 | Marcus | Obtain stakeholder alignment on sensitive data handling strategy (SIN, person profile vs. case/finance tab) | 2026-02-12 | Open | Yes |
+| A-086 | Marcus | Confirm survey skip logic requirements with client; document decision | 2026-02-12 | Open | Yes |
+| A-087 | Gabrielle / Marcus | Follow up with Stanis for Iteration 1 feedback; schedule ongoing services meetings for field clarifications | 2026-02-12 | Complete | Yes |
+| A-088 | Christine | Confirm participants for intake/service delivery sessions (30-min person profile fields + 1-hour wireframe review); include Kelvin, Darrell, frontline staff | 2026-02-12 | Complete | No |
+| A-089 | Marcus | Send Teams meeting invites for intake/service delivery sessions once Christine provides participant list | 2026-02-12 | Complete | No |
+| A-090 | Ross / Christine | Review SharePoint IT requirements table for gaps; finalize UAT test data approach and complete costing approval for Azure UAT environment | 2026-02-12 | Complete | No |
+| A-091 | Gabrielle | Update search wireframe (profile type multi-select, Add New Person profile type modal); send Sherrylyn MMF spec reference and Stanis design link | 2026-02-12 | Complete | No |
+| A-092 | Sherrylyn | Begin spec documentation for login screen, menu/header, and search screen using MMF spec as format reference | 2026-02-12 | Complete | No |
+| A-093 | Marcus / Gabrielle | Follow up with Rob to get Sherrylyn shared AI access; obtain client approval on Iteration 1 visual designs; begin development handoff once approved | 2026-02-12 | Complete | No |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-011 | Campfire infrastructure delayed — UAT approach now confirmed (Azure tenant); Campfire ops team available in coming weeks; costing approval with Christine in progress | Medium | Marcus / Ross | 2026-01-31 | Open |
+| I-018 | Finance/Sage integration requirements incomplete — Sage version/build not received, coding structure not formally documented, integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-020 | Phase 1 scope not formally bounded — intake meetings scheduled; scope boundary document production in progress | Medium | Hailey / Marcus | 2026-01-29 | Resolved |
+| I-029 | Pilot timeline slippage — original mid-January pilot target missed; new target dates not yet established | High | Marcus | 2026-02-12 | Open |
+| I-030 | Sensitive data field strategy undefined — SIN, Manitoba Health numbers, and other sensitive identifiers need placement decisions before spec can be finalized | Medium | Marcus | 2026-02-12 | Open |
+| I-031 | Ongoing services field clarification gap — field definitions, terminology, and data placement decisions require ongoing services team consultation before Iteration 1 spec can be finalized | Medium | Marcus / Hailey | 2026-02-12 | Open |
+
+## Return to Green Plans
+
+### Overall — Yellow (first flagged: 2025-W48)
+
+- Complete intake/service delivery meetings to resolve pending field values and finalize Iteration 1 requirements.
+- Obtain client approval on Iteration 1 visual designs and begin development handoff.
+- Obtain ongoing services field clarifications to finalize scope boundary document.
+
+### Schedule — Yellow (first flagged: 2025-W48)
+
+- Establish new pilot target dates (A-082); no dates established this period.
+- Finalize and deliver Iteration 1 design/spec to start development; Campfire UAT expected ready in coming weeks (I-011 progressing).
+- Complete intake and ongoing services meetings to close out M-01 requirements.
+
+### Scope — Yellow (first flagged: 2025-W50)
+
+- Complete intake meetings and ongoing services consultation for remaining field definitions (A-081).
+- Produce written Phase 1 scope boundary document once all clarifications received (I-031).
+
+### Budget — Yellow (first flagged: 2025-W50)
+
+- Obtain Sage 300 version/build number and formal coding structure from finance to define integration scope and effort (A-079).
+
+## Next Period Plan
+
+1. Hold intake/service delivery sessions coordinated by Christine; validate person profile field values and review intake wireframe workflow.
+2. Sherrylyn completes login, menu/header, and search specs; Gabrielle reviews and signs off.
+3. Obtain client approval on Iteration 1 visual designs from Stanis; complete development handoff for approved screens.
+4. Schedule and hold ongoing services consultation to resolve SIN placement, caregiver terminology, and household field clarifications (A-081).
+5. Establish new pilot target dates and communicate revised timeline to Jaren and Rob (A-082).

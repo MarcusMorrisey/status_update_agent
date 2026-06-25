@@ -1,0 +1,264 @@
+---
+title: "Waabanong Weekly Iteration Update"
+date: today
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(scales)
+
+plan  <- read.csv("data/iteration_plan.csv",  stringsAsFactors = FALSE)
+tasks <- read.csv("data/iteration_tasks.csv", stringsAsFactors = FALSE)
+
+plan <- plan |>
+  mutate(
+    start_date      = as.Date(start_date),
+    end_date        = as.Date(end_date),
+    status          = factor(status,
+                             levels = c("Complete", "Development", "in Design",
+                                        "Planning", "Planned")),
+    subtask_label   = factor(subtask_label, levels = c("UAT", "Dev")),
+    iteration_label = paste0("Iteration ", iteration, "\n", iteration_name),
+    fill_key        = paste0(subtask_type, "_", as.character(status))
+  )
+
+iter_label_levels <- plan |>
+  distinct(iteration, iteration_label) |>
+  arrange(iteration) |>
+  pull(iteration_label)
+
+plan <- plan |>
+  mutate(iteration_label = factor(iteration_label, levels = iter_label_levels))
+```
+
+# Iteration Plan
+
+```{r progress-summary, echo=FALSE, results='asis'}
+today       <- Sys.Date()
+target_date <- as.Date("2026-06-05")
+days_left   <- as.integer(target_date - today)
+
+status_counts <- plan |>
+  filter(subtask_type == "dev") |>
+  count(status) |>
+  mutate(status = as.character(status))
+
+get_n <- function(s) {
+  val <- status_counts$n[status_counts$status == s]
+  if (length(val) == 0) 0L else val
+}
+
+n_complete <- get_n("Complete")
+n_dev      <- get_n("Development")
+n_design   <- get_n("in Design")
+n_planned  <- get_n("Planned")
+n_total    <- nrow(plan |> filter(subtask_type == "dev"))
+
+# Latest end date among active (Development / in Design) iterations
+active_rows <- plan |>
+  filter(subtask_type == "dev",
+         status %in% c("Development", "in Design"))
+latest_active_end <- if (nrow(active_rows) > 0) max(active_rows$end_date) else today
+
+# Projected last dev end date
+projected_end <- max(plan$end_date[plan$subtask_type == "dev"])
+on_track <- projected_end <= target_date
+
+track_word  <- if (on_track) "**On Track**" else "**At Risk**"
+track_color <- if (on_track) "276749" else "991B1B"
+track_tag   <- paste0(
+  '`<w:r><w:rPr><w:color w:val="', track_color, '"/><w:b/></w:rPr>',
+  '<w:t>', if (on_track) "\u2714 On Track" else "\u26A0 At Risk",
+  '</w:t></w:r>`{=openxml}'
+)
+
+cat(paste0(
+  "> **Week of ", format(today, "%B %d, %Y"), "** \u2014 ",
+  track_tag, "  \n",
+  "> ", n_complete, " of ", n_total, " iterations complete. ",
+  if (n_dev > 0)    paste0(n_dev,    " in active development. ") else "",
+  if (n_design > 0) paste0(n_design, " in design. ")             else "",
+  if (n_planned > 0) paste0(n_planned, " planned.  \n") else "\n",
+  "> Target completion: **", format(target_date, "%B %d, %Y"),
+  "** (", days_left, " days). Projected finish: **",
+  format(projected_end, "%B %d, %Y"), "**."
+), "\n\n")
+```
+
+> Data Cleaning & Migration (Iteration 6) runs independently Apr 14 – May 5 under a separate team. Dates are subject to revision following the re-baselined project timeline (A-112).
+
+## Schedule
+
+```{r gantt, echo=FALSE, fig.width=9, fig.height=8, dpi=150}
+gantt_plan  <- plan |> filter(iteration != 1)
+x_min       <- min(gantt_plan$start_date) - 3
+x_max       <- max(gantt_plan$end_date)   + 3
+
+fill_values <- c(
+  "dev_Development" = "#1B4F8A",   # deep navy      — Dev: in development
+  "dev_in Design"   = "#6D28D9",   # deep purple    — Dev: in design
+  "dev_Planning"    = "#0369A1",   # dark sky-blue  — Dev: planning
+  "dev_Planned"     = "#60A5FA",   # sky blue       — Dev: planned
+  "dev_Complete"    = "#6B7280",   # gray           — Dev: complete
+  "uat_Development" = "#B45309",   # deep amber     — UAT: in development
+  "uat_in Design"   = "#D97706",   # mid amber      — UAT: in design
+  "uat_Planning"    = "#0E7490",   # dark cyan      — UAT: planning
+  "uat_Planned"     = "#FCD68A",   # pale amber     — UAT: planned
+  "uat_Complete"    = "#9CA3AF"    # light grey     — UAT: complete
+)
+
+legend_labels <- c(
+  "dev_Development" = "Dev \u2014 Development",
+  "dev_in Design"   = "Dev \u2014 In Design",
+  "dev_Planning"    = "Dev \u2014 Planning",
+  "dev_Planned"     = "Dev \u2014 Planned",
+  "dev_Complete"    = "Dev \u2014 Complete",
+  "uat_Development" = "UAT \u2014 Development",
+  "uat_in Design"   = "UAT \u2014 In Design",
+  "uat_Planning"    = "UAT \u2014 Planning",
+  "uat_Planned"     = "UAT \u2014 Planned",
+  "uat_Complete"    = "UAT \u2014 Complete"
+)
+
+legend_order <- c("dev_Development", "dev_in Design", "dev_Planning", "dev_Planned", "dev_Complete",
+                  "uat_Development", "uat_in Design", "uat_Planning", "uat_Planned", "uat_Complete")
+
+ggplot(gantt_plan) +
+  geom_rect(
+    aes(
+      xmin = start_date,
+      xmax = end_date,
+      ymin = as.numeric(subtask_label) - 0.38,
+      ymax = as.numeric(subtask_label) + 0.38,
+      fill = fill_key
+    ),
+    color = "white",
+    linewidth = 0.3
+  ) +
+  facet_grid(iteration_label ~ ., switch = "y") +
+  scale_fill_manual(
+    values = fill_values,
+    labels = legend_labels,
+    breaks = legend_order,
+    drop   = FALSE
+  ) +
+  scale_x_date(
+    limits      = c(x_min, x_max),
+    date_breaks = "1 week",
+    date_labels = "%b %d",
+    expand      = expansion(add = 0)
+  ) +
+  scale_y_continuous(
+    breaks = c(1, 2),
+    labels = c("UAT", "Design & Dev"),
+    expand = expansion(add = 0.5)
+  ) +
+  labs(x = NULL, y = NULL, fill = NULL) +
+  theme_minimal(base_size = 14) +
+  theme(
+    strip.placement      = "outside",
+    strip.text.y.left    = element_text(angle = 0, hjust = 1,
+                                        size = 11, face = "bold",
+                                        lineheight = 1.15,
+                                        margin = margin(r = 8)),
+    panel.grid.major.y   = element_blank(),
+    panel.grid.minor     = element_blank(),
+    panel.grid.major.x   = element_line(color = "#E5E7EB", linewidth = 0.3),
+    panel.spacing        = unit(0.2, "lines"),
+    panel.background     = element_rect(fill = "#FAFAFA", color = NA),
+    strip.background     = element_rect(fill = "#F3F4F6", color = NA),
+    axis.text.y          = element_text(size = 12, color = "#374151"),
+    axis.text.x          = element_text(size = 10, angle = 45, hjust = 1),
+    legend.position      = "bottom",
+    legend.key.size      = unit(0.6, "cm"),
+    legend.text          = element_text(size = 12),
+    legend.spacing.x     = unit(0.45, "cm")
+  )
+```
+
+## Meetings
+
+| # | Meeting | Date |
+|---|---------|------|
+| M-01 | PCFS In-Person Meeting | April 13, 2026 |
+| M-02 | PCFS In-Person Meeting | May 5, 2026 |
+| M-03 | PCFS In-Person Meeting | May 19, 2026 |
+| M-04 | PCFS In-Person Meeting | June 2, 2026 |
+| M-05 | PCFS In-Person Meeting | June 15, 2026 |
+
+## Iteration Scope
+
+```{r active-tasks, echo=FALSE, results='asis'}
+# Hex colours matched exactly to Gantt dev bar fill_values
+status_hex <- c(
+  "Development" = "1B4F8A",
+  "in Design"   = "6D28D9",
+  "Planning"    = "0369A1",
+  "Planned"     = "60A5FA",
+  "Complete"    = "6B7280"
+)
+
+make_tag <- function(label, hex) {
+  paste0(
+    '`<w:r><w:rPr><w:color w:val="', hex, '"/><w:b/></w:rPr>',
+    '<w:t xml:space="preserve">[', label, '] </w:t></w:r>`{=openxml}'
+  )
+}
+
+active_subtasks <- plan |>
+  filter(subtask_type == "dev") |>
+  arrange(iteration)
+
+for (i in seq_len(nrow(active_subtasks))) {
+  row    <- active_subtasks[i, ]
+  status <- as.character(row$status)
+  hex    <- status_hex[status]
+  tag    <- make_tag(status, hex)
+  dates  <- paste0(format(row$start_date, "%b %d"),
+                   " \u2013 ",
+                   format(row$end_date, "%b %d, %Y"))
+
+  heading <- paste0(
+    "### ", tag,
+    "Iteration ", row$iteration, " \u2014 ", row$iteration_name,
+    " (", dates, ")"
+  )
+  cat(heading, "\n\n")
+
+  iter_tasks <- tasks |>
+    filter(iteration == row$iteration, subtask_type == row$subtask_type) |>
+    arrange(task_order)
+
+  if (nrow(iter_tasks) > 0) {
+    for (j in seq_len(nrow(iter_tasks))) {
+      cat("-", iter_tasks$task_description[j], "\n")
+    }
+  } else {
+    cat("_No tasks recorded for this subtask._\n")
+  }
+  cat("\n")
+}
+```
+
+## Outstanding Questions
+
+| # | Question |
+|---|----------|
+| Q-01 | What exact Sage 300 version and build is in use? Required to finalize integration design scope. |
+| Q-02 | What are the complete requirements for role-based access, high-profile cases, and conflict-of-interest restrictions? |
+| Q-03 | What agency email account will be used for external notification sends (Microsoft REST API)? |
+| Q-04 | What additional requirements does the after-hours team have for address-based search? |
+| Q-05 | What finance requirements emerge from CFO / Director of Finance engagement beginning April 7th? |
+| Q-06 | Is it possible to have two intakes open simultaneously? |
+| Q-07 | What is an assessment worker exactly, and how is a given intake assigned to a specific worker? |
+| Q-08 | Can a data entry worker start or edit Intakes, or only verify them and enter into CFSIS? How is the work currently distributed? |
+| Q-09 | Who can submit a finance sheet — only supervisors? What is the complete list of finance sheet request types we need to support? |
