@@ -1,0 +1,1309 @@
+Feedback on how to improve specs and managing
+testing-20260513_113131-Meeting Recording
+
+13 May 2026, 04:31pm
+
+29m 7s
+
+[]
+Marcus Morrisey started transcription
+
+[]
+Gabrielle Mahé-Serle 0:03
+Yeah.
+Okay, so I can bring up the spec if you'd like.
+
+[]
+Marcus Morrisey 0:09
+Sounds great.
+
+[]
+Gabrielle Mahé-Serle 0:19
+Wait, so first, if you can just kind of walk through what you, like how
+you got to this version of this pack, I guess.
+
+[]
+Marcus Morrisey 0:32
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 0:32
+Oh, assuming it's an AI generated document, right?
+
+[]
+Marcus Morrisey 0:37
+Yeah, I mean like there's some tweaking from me and feedback, but...
+Yeah, so the process was...
+after the screenshot of the screen, right, that we were doing.
+
+[]
+Gabrielle Mahé-Serle 0:49
+Mhm.
+
+[]
+Marcus Morrisey 0:53
+Yeah.
+sort of feed that into the spec writing agent.
+And then ask it to create a set of specs.
+And then...
+The agents I have sort of do it differently, so then I run another layer
+that says, okay, now let's make it more like what we do at ID Fusion.
+Yeah.
+And then.
+Then, from there, I go in and I do some sort of manual editing and
+reading. Well, I mean...
+There's a couple steps in there where I look at it sort of manually,
+but...
+
+[]
+Gabrielle Mahé-Serle 1:34
+Thanks.
+
+[]
+Marcus Morrisey 1:36
+Oh, I also feed it the...
+I.
+Yeah, what it's a PCMR or something, but anyway, the balsamic like
+database file that you can export.
+
+[]
+Gabrielle Mahé-Serle 1:50
+Okay.
+I've never done that.
+
+[]
+Marcus Morrisey 1:51
+Okay.
+It just helps it recognize all the controls. So I found when I was like
+asking it, just make sure you document every control. So I have a step
+that says, okay, well, look at that and make sure you've, you know, done
+something with everything.
+
+[]
+Gabrielle Mahé-Serle 1:56
+Okay.
+Mhm.
+
+[]
+Marcus Morrisey 2:09
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 2:10
+So, I'd say this is probably...
+I don't know, like 70, 75% that been QA ready. I don't know what your
+thoughts were. Like, were you thinking that this was like a final good
+to go version or?
+
+[]
+Marcus Morrisey 2:20
+McKay.
+
+[]
+Gabrielle Mahé-Serle 2:30
+Were you thinking that it was kind of a work in progress?
+
+[]
+Marcus Morrisey 2:35
+This would be first traffic, yes, like, um, yeah.
+
+[]
+Gabrielle Mahé-Serle 2:37
+Okay.
+Um, so the...
+Main things when I looked at it is, so if we're feeding it to a dev
+that's using Claude code.
+
+[]
+Marcus Morrisey 2:45
+Yeah.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 2:54
+They'd probably be able to just kind of skim through some of the wordy.
+Like the case notes tab here is kind of the intro is a little bit wordy
+and kind of spins around the same thing. So I think Claude Code would
+probably just kind of skip through that, but it could get confused too.
+
+[]
+Marcus Morrisey 3:04
+Okay.
+Yeah.
+OK.
+McKay.
+
+[]
+Gabrielle Mahé-Serle 3:17
+But from a QA perspective to read through it.
+I think they'd have a hard time.
+
+[]
+Marcus Morrisey 3:24
+So it's to.
+
+[]
+Gabrielle Mahé-Serle 3:24
+I'm trying to think of...
+Have an example.
+Uhh...
+
+[]
+Marcus Morrisey 3:31
+Too wordy, you're saying?
+
+[]
+Gabrielle Mahé-Serle 3:32
+Yeah, like there's like this, I think it was, yeah, here. So it talks
+about the model, collects the category, title, event, blah, blah, blah,
+like it names some of the stuff and then it names it again. And then we
+have like the categories are kind of, I think they're repeated three
+times.
+
+[]
+Marcus Morrisey 3:33
+Okay.
+Yeah.
+Right.
+
+[]
+Gabrielle Mahé-Serle 3:55
+So if ever we add a category, then you have to go add it multiple times
+in the document.
+
+[]
+Marcus Morrisey 3:58
+Right.
+Right, that's a good point.
+
+[]
+Gabrielle Mahé-Serle 4:01
+And.
+One thing that I thought was kind of interesting, and I'm not sure what
+the thought was behind it, was to hide the supervision from the filter
+bar.
+So yes, a caseworker wouldn't be able to create a note with as the
+supervision tag.
+But they should probably still be able to filter on it so that they can
+see whatever notes their supervisor left, right?
+
+[]
+Marcus Morrisey 4:32
+Yeah, that's a good point.
+Yep.
+
+[]
+Gabrielle Mahé-Serle 4:36
+So I don't know if that was like a AI assumption.
+
+[]
+Marcus Morrisey 4:41
+Yeah, that's just an error. Yeah.
+
+[]
+Gabrielle Mahé-Serle 4:41
+Based on what was.
+Yeah.
+And.
+
+[]
+Marcus Morrisey 4:46
+That good patch.
+
+[]
+Gabrielle Mahé-Serle 4:48
+And it so it looks like it took everything from the wireframes and that
+kind of briefing document.
+
+[]
+Marcus Morrisey 4:56
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 4:56
+That my AI thing created, but it it.
+
+[]
+Marcus Morrisey 4:59
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 5:05
+if it wasn't in that document, it's not in here kind of thing. So
+there's still gaps because that document wasn't, like obviously I didn't
+address every single thing while we're building the wireframes, right?
+So
+
+[]
+Marcus Morrisey 5:08
+Right.
+And.
+Sure.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 5:20
+So little things like when you upload a document.
+It just says to use.
+What was that?
+So, the attached document section with an upload button that invokes the
+platform document layer.
+
+[]
+Marcus Morrisey 5:44
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 5:45
+Like we don't need to describe because there's other document upload
+things, we don't need to describe in detail what it is, but this seems
+to be a little too brief.
+
+[]
+Marcus Morrisey 5:52
+Okay.
+Back.
+
+[]
+Gabrielle Mahé-Serle 5:58
+And then it's also like, what happens with that document?
+So, like, yes, it gets attached to the notes, but then it should also go
+to the documents tab.
+
+[]
+Marcus Morrisey 6:02
+Right.
+Right.
+
+[]
+Gabrielle Mahé-Serle 6:11
+And then what tag do we give?
+Because all documents have types, like what type do we give that
+document?
+
+[]
+Marcus Morrisey 6:21
+Right.
+
+[]
+Gabrielle Mahé-Serle 6:23
+So there's, so there's gaps like that, that weren't necessarily in the
+briefing document, but should be part of the solution.
+
+[]
+Marcus Morrisey 6:23
+K.
+Okay.
+Yeah, good call.
+
+[]
+Gabrielle Mahé-Serle 6:37
+So my recommendation would be to...
+Just at this point, just take this as kind of your starting point and
+then manually make any adjustments.
+
+[]
+Marcus Morrisey 6:46
+Yeah.
+Sure.
+
+[]
+Gabrielle Mahé-Serle 6:52
+Um...
+Yeah, it's just kind of...
+closing some of those gaps and then thinking like as a user, as I'm
+clicking through this, what should happen? Because AI doesn't always, AI
+will just take whatever context you give it, right? And not necessarily
+think, unless you ask a thing.
+
+[]
+Marcus Morrisey 7:06
+Mhm.
+For sure.
+Yeah, absolutely.
+
+[]
+Gabrielle Mahé-Serle 7:18
+Yeah, but it's a decent first, first draft.
+
+[]
+Marcus Morrisey 7:22
+McKay.
+Yeah, so...
+
+[]
+Gabrielle Mahé-Serle 7:28
+I know, thoughts, concerns, like, feel free to...
+
+[]
+Marcus Morrisey 7:32
+No, no, no, no, no concerns. Yeah, no, it's good to get this feedback.
+Um...
+Yeah, I'll address those things and look for more examples of that.
+I guess with the documents thing.
+I wonder, like, I sort of figured that the documents tab would specify,
+you know, that just pull in all documents attached to this person and
+sort them by. So like, I guess I didn't, didn't occur to me that we
+would have to tell the developer to.
+
+[]
+Gabrielle Mahé-Serle 8:07
+But.
+Well, because we have types, we have to tell them which type we should
+assign to the document, right?
+
+[]
+Marcus Morrisey 8:13
+To do that.
+Yes, for sure.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 8:23
+And then that actually makes me think of another example, so...
+That.
+That thought, there's actually this that kind of does the opposite,
+which was the, so there's a visits category.
+
+[]
+Marcus Morrisey 8:42
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 8:44
+And the visits, I don't know where that is now.
+But the visits case notes come from the visits tab.
+
+[]
+Marcus Morrisey 8:53
+Right.
+
+[]
+Gabrielle Mahé-Serle 8:54
+And then this document talks a lot about that, how don't worry about the
+visits because that'll come from another tab. But...
+The tab, like the devs don't even know that tab exists yet, so to call
+it out in here.
+
+[]
+Marcus Morrisey 9:05
+Right.
+
+[]
+Gabrielle Mahé-Serle 9:09
+doesn't really, like it's not a drop down value, it's not, so I think
+what AI did is it took probably a sticky note from the wireframes that
+mentions that and then added that in the spec, but.
+
+[]
+Marcus Morrisey 9:18
+Right.
+
+[]
+Gabrielle Mahé-Serle 9:22
+It's just probably going to cause confusions, especially like when the
+QA is looking at it, they're like, oh, well, how do I generate this
+visits thing? The tab isn't there. So we're kind of like documenting.
+It's kind of we're getting ahead of ourselves, I guess.
+
+[]
+Marcus Morrisey 9:38
+OK, sure.
+
+[]
+Gabrielle Mahé-Serle 9:38
+For that one, so, so the documents is kind of...
+Kind of the opposite, right?
+
+[]
+Marcus Morrisey 9:48
+Okay, so, but they would need to like, for the visits, certainly they
+would need to implement it on this page, right?
+
+[]
+Gabrielle Mahé-Serle 9:56
+Well, not necessarily, because it's coming in a future in a future tab,
+so...
+
+[]
+Marcus Morrisey 9:57
+I give it some time.
+
+[]
+Gabrielle Mahé-Serle 10:03
+In that tab, it'll say whenever you're adding a visit, create a case
+note.
+
+[]
+Marcus Morrisey 10:04
+Right.
+
+[]
+Gabrielle Mahé-Serle 10:09
+And then that will already be built, right?
+But if you're saying like...
+When the visit is created in this tab that doesn't exist yet, added in
+the case notes, they can't build anything yet.
+
+[]
+Marcus Morrisey 10:24
+Right.
+So would you put that like as a note saying that that's coming or just
+not put it?
+
+[]
+Gabrielle Mahé-Serle 10:31
+I would probably not even mention it because it's not really...
+Like the trigger is on.
+the other tab and then it just gets displayed there on this one.
+
+[]
+Marcus Morrisey 10:46
+Okay.
+
+[]
+Gabrielle Mahé-Serle 10:50
+Right, like it's not in a...
+I guess it's in the filters, but that's kind of it. It's not in the
+drop-down values for the categories or anything. So.
+
+[]
+Marcus Morrisey 11:03
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 11:04
+I mean, if you want, because it's in the filters, you could.
+
+[]
+Marcus Morrisey 11:04
+McKay.
+
+[]
+Gabrielle Mahé-Serle 11:12
+It's actually not there.
+So you could add it in the filters here.
+And then just put that it's.
+This will be part of a future tab or something. Yeah, that's another
+thing. It should be in this filters.
+
+[]
+Marcus Morrisey 11:27
+OK.
+Okay.
+Okay.
+
+[]
+Gabrielle Mahé-Serle 11:43
+Yeah, any.
+Like if you don't agree or if you don't, if you...
+
+[]
+Marcus Morrisey 11:50
+But no.
+I, I agree.
+
+[]
+Gabrielle Mahé-Serle 11:53
+If okay.
+
+[]
+Marcus Morrisey 11:54
+So, yeah, it's all good.
+
+[]
+Gabrielle Mahé-Serle 11:58
+Um, so yeah, if you look at...
+Just the other sections in the spec and how.
+how detailed so usually it's just like kind of a quick intro just to
+kind of give context on what
+how to get to this screen or what the purpose of the screen is, just one
+or two lines, and then just something that's kind of easier to read
+through.
+
+[]
+Marcus Morrisey 12:13
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 12:23
+And then some, so another thing I was doing is for like the logs, it's
+mentioned a few times where it needs to create a log entry, which is
+good, but because there's technically potentially 3 different devs
+working on it, they might have their own way of.
+
+[]
+Marcus Morrisey 12:28
+Yeah.
+Mhm.
+
+[]
+Gabrielle Mahé-Serle 12:43
+Doing the log entry.
+
+[]
+Marcus Morrisey 12:46
+Right.
+
+[]
+Gabrielle Mahé-Serle 12:46
+So I've actually been putting, so like in the overview tab in that
+section, like I actually put what to.
+to include in that log.
+
+[]
+Marcus Morrisey 12:58
+Okay.
+
+[]
+Gabrielle Mahé-Serle 12:59
+To make sure that the format is always the same, because always might do
+it differently than Omar does it, and then we don't have any consistency
+there, so...
+
+[]
+Marcus Morrisey 13:02
+Right.
+Yep, that's a good point.
+Yep, and like would you make a like a page for logging in general or no?
+You're just saying like you'd have it at the top of each section?
+
+[]
+Gabrielle Mahé-Serle 13:19
+So, I, I have it, um, do I have it open?
+So it kind of depends if...
+Not so.
+Trying to, there we go. Ohh, and it's not responding.
+
+[]
+Marcus Morrisey 13:41
+Mmh.
+
+[]
+Gabrielle Mahé-Serle 13:46
+So here, because I had one save, was triggering.
+A lot of different logs, I just put it in the table like this.
+
+[]
+Marcus Morrisey 13:57
+Okay.
+
+[]
+Gabrielle Mahé-Serle 13:59
+And then kind of what the event is, and then...
+to give it more detail because somebody might put the username first.
+
+[]
+Marcus Morrisey 14:09
+Yeah, for sure.
+
+[]
+Gabrielle Mahé-Serle 14:09
+And then another person might put the date first, so then it just kind
+of gets screwed up. So I've been doing it either like this or there's
+other places where...
+I might have just called it out, like, where the actual action is.
+Two.
+Maybe not, maybe I just did it in the table.
+Oh, here. So in the action, I actually put...
+Get in there.
+Yeah.
+
+[]
+Marcus Morrisey 14:55
+Okay.
+Mhm.
+And I guess like that, that doesn't say like date and time, like, or is
+that covered in like a general section?
+
+[]
+Gabrielle Mahé-Serle 15:17
+Yeah, I'm just noticing that now. Okay, so take my advice, but don't do
+as I did. So no, there should be a date and timing here.
+
+[]
+Marcus Morrisey 15:23
+Yeah.
+Yeah, cool.
+
+[]
+Gabrielle Mahé-Serle 15:29
+Yeah.
+
+[]
+Marcus Morrisey 15:31
+I wonder if we should like maybe.
+
+[]
+Gabrielle Mahé-Serle 15:34
+Have a standard somewhere.
+
+[]
+Marcus Morrisey 15:36
+Do it at the, yeah, like top of the document. Hey, if we say log, we
+mean for sure date and time and user, like, 'cause that'll be the same.
+
+[]
+Gabrielle Mahé-Serle 15:42
+Yeah, yeah, we can do that, yeah.
+
+[]
+Marcus Morrisey 15:45
+And then other stuff as specified.
+
+[]
+Gabrielle Mahé-Serle 15:48
+Yeah.
+Yeah, we can do that.
+Yeah, I think that's all I had for for this.
+
+[]
+Marcus Morrisey 15:59
+Okay, awesome.
+
+[]
+Gabrielle Mahé-Serle 16:03
+Um...
+Anything else for that?
+
+[]
+Marcus Morrisey 16:08
+No, I'll take it away and update it.
+
+[]
+Gabrielle Mahé-Serle 16:09
+Yeah.
+Okay.
+
+[]
+Marcus Morrisey 16:12
+Probably not till tomorrow, earliest.
+
+[]
+Gabrielle Mahé-Serle 16:15
+That's okay. I know you've got a lot of other things now on your plate,
+so...
+
+[]
+Marcus Morrisey 16:16
+Yeah.
+Yeah, all good.
+
+[]
+Gabrielle Mahé-Serle 16:20
+Huh.
+Um, you also wanted to chat about UAT?
+
+[]
+Marcus Morrisey 16:27
+Yeah, just so if it's going through ClickUp now, right? Really all we
+need is 1 central email that they can send to you and we monitor.
+What do we usually use for that?
+
+[]
+Gabrielle Mahé-Serle 16:40
+So.
+We can.
+So that it'll all go to Ross or Kelvin or whoever, right? Like
+internally, they'll send it to one person and then that person will send
+it to us. Is that?
+
+[]
+Marcus Morrisey 16:59
+Yeah, that's not 100% verified yet, but I think that's that's what we
+propose to them, so I can I can confirm that with Ross.
+
+[]
+Gabrielle Mahé-Serle 17:05
+Okay.
+That would be ideal, because then it's easier.
+
+[]
+Marcus Morrisey 17:08
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 17:11
+for them to kind of go through what changes they want and prioritize
+them. Rob had mentioned before, it was that just talking about MDFC.
+
+[]
+Marcus Morrisey 17:12
+Yeah.
+Yeah.
+Yeah, for sure.
+
+[]
+Gabrielle Mahé-Serle 17:24
+Um...
+was to, so they can send an email to devteam at idfusion.com, and that
+will automatically create a ticket in.
+
+[]
+Marcus Morrisey 17:34
+Mm.
+
+[]
+Gabrielle Mahé-Serle 17:38
+in Freshdesk.
+
+[]
+Marcus Morrisey 17:40
+Mhm.
+
+[]
+Gabrielle Mahé-Serle 17:41
+And then I guess it would be Varun and I would sort through them.
+And then add them in ClickUp.
+For the devs, I guess.
+
+[]
+Marcus Morrisey 17:51
+Is that?
+Is that your preferred approach?
+
+[]
+Gabrielle Mahé-Serle 17:56
+I mean, that's kind of the only...
+That's what we're doing for pulse.
+
+[]
+Marcus Morrisey 18:01
+Mhm.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 18:04
+And.
+I don't really know another way that we can do it.
+Because I don't think you can create a ticket directly in ClickUp
+through an email.
+
+[]
+Marcus Morrisey 18:21
+Um...
+Yeah, I'm not sure. I thought you could, but regardless, I guess I'm
+just wondering, like, do you...
+That just basically make it kind of sense like then you're doing it,
+which is, you know, fine if you want to do that, but like I don't know.
+
+[]
+Gabrielle Mahé-Serle 18:39
+I don't know if there's plans on giving you access to Freshdesk, because
+that's an option too. I don't think there is, right?
+
+[]
+Marcus Morrisey 18:42
+No.
+No, because we're eventually going to get rid of that.
+Um...
+I guess I'm just wondering, like...
+Do you want to triage it and say like, yeah, this is a thing we should
+put it and like, then you can send it to me. You know what I mean?
+Because it's coming out of Freshdesk at some point and that I can help
+manage that or because we also, sorry.
+
+[]
+Gabrielle Mahé-Serle 19:03
+Yeah.
+Or like another way we can do it is just have like a document that they
+track. So, because they're going to get their requests, so they could
+put it like in an Excel file.
+
+[]
+Marcus Morrisey 19:21
+They meaning.
+
+[]
+Gabrielle Mahé-Serle 19:21
+That's in SharePoint.
+
+[]
+Marcus Morrisey 19:23
+Like...
+
+[]
+Gabrielle Mahé-Serle 19:23
+App.
+Hey, Chris.
+
+[]
+Marcus Morrisey 19:25
+Like, pay this, okay, yeah.
+
+[]
+Gabrielle Mahé-Serle 19:28
+And then it's kind of a shared document that we can then go through.
+And then create, create, click up, yeah, that's another option, but then
+you have to.
+
+[]
+Marcus Morrisey 19:34
+So rather than sending emails, you mean?
+Okay.
+Set to monitor it.
+
+[]
+Gabrielle Mahé-Serle 19:43
+consistently monitor that document.
+
+[]
+Marcus Morrisey 19:46
+Yeah.
+Yeah, we should do that.
+
+[]
+Gabrielle Mahé-Serle 19:52
+It's the it's tough.
+
+[]
+Marcus Morrisey 19:54
+I guess I should say, now that I'm thinking back though, Rob did say
+like, yeah, there's just an email that you'll send to us.
+
+[]
+Gabrielle Mahé-Serle 19:55
+If.
+The Freshdesk works when it's.
+like Varun and I working on it because we both have access and we can
+and then we give that to the clients and they just send an email and one
+of us jumps on it. But then when we have to move over to them click up
+for the other devs, then it just adds an extra step.
+
+[]
+Marcus Morrisey 20:11
+Yeah.
+Yeah.
+Yeah.
+Right.
+Right.
+For sure.
+
+[]
+Gabrielle Mahé-Serle 20:28
+So.
+But yeah, it's definitely what we've done for Pulse.
+Is they send an email to that email?
+that goes to Freshdesk, then...
+It's mostly been Varun. He goes through them and then creates the tasks
+and click up.
+
+[]
+Marcus Morrisey 20:49
+OK, fair enough.
+
+[]
+Gabrielle Mahé-Serle 20:51
+So.
+I don't know, it's kind of one or two, one of the two approaches. It's
+either we keep doing that or we just have a shared document that we
+monitor and move the tasks over. I guess it depends who.
+who kind of owns that triage. Like if it's me, then it makes sense to
+just keep it in Freshdesk. But if it's you or both of us, then I think
+moving it out of Freshdesk probably makes more sense.
+
+[]
+Marcus Morrisey 21:11
+Yeah.
+Right.
+You're the boss, let me know, you know.
+
+[]
+Gabrielle Mahé-Serle 21:25
+Well, I don't know if it's, I don't know what.
+Rob's plans are for that.
+
+[]
+Marcus Morrisey 21:31
+Yeah, well, I don't he said that I said he wanted us to be involved,
+yeah.
+Yeah, I don't know. I don't know exactly, but yeah, it's not like I'm
+like, oh, I got to be involved in this. Like, I just don't want to also
+like dump it on you, you know, so it's a, you tell whatever is the most
+efficient way, you know, like that we can do it.
+
+[]
+Gabrielle Mahé-Serle 21:39
+Yeah.
+No, no, I no, I get it.
+So...
+I think...
+Because you have a lot more things on your plate.
+than I do at this point.
+
+[]
+Marcus Morrisey 22:08
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 22:09
+Um...
+I think it makes more sense for maybe me to do it. So just have them in
+Freshdesk, Varun and I can go through them.
+
+[]
+Marcus Morrisey 22:20
+Sure.
+
+[]
+Gabrielle Mahé-Serle 22:20
+and move them to ClickUp. If there's things like obviously...
+
+[]
+Marcus Morrisey 22:27
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 22:28
+I need your opinion on something or I'll share it with you and all that.
+
+[]
+Marcus Morrisey 22:30
+Yeah, for sure.
+Yeah.
+So...
+I'll add one step as well. Ross wants basically a list of the tickets we
+get. Just like a simple, like, yes, this is a bug, we're going to fix
+it, or no, this is going on our roadmap or whatever sort of thing. So is
+that something?
+
+[]
+Gabrielle Mahé-Serle 22:54
+Mhm.
+
+[]
+Marcus Morrisey 22:59
+But what would be the process? Can I help with that? Like there's a.
+
+[]
+Gabrielle Mahé-Serle 23:03
+So that would be kind of in the ticket. So if it's a ticket.
+We could move it like there's, yeah, or in Freshdesk. So we could, if
+it's something that we're not addressing at all, we can close it.
+
+[]
+Marcus Morrisey 23:11
+Like, in the clickout ticket, yeah.
+Okay.
+
+[]
+Gabrielle Mahé-Serle 23:20
+and add a note to it and then Ross would get that note. So he would know
+right away that it's not something that we're going to address.
+
+[]
+Marcus Morrisey 23:20
+Yeah.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 23:29
+If it's something that we move to like the backlog, we have a backlog
+status in the tickets that we could move to and then I'd send him a note
+through that ticket saying we've moved it to the backlog and then we'd
+be able to have a report of here, here are all the tickets that you
+submitted that we've moved to the backlog.
+
+[]
+Marcus Morrisey 23:49
+Okay, perfect. So yeah, because the essentially like just from meetings
+and stuff too, we have like that Excel sheet that Rob described making,
+right? So I'm just wondering like how do we get those on there as well,
+just so they know or can reference it.
+
+[]
+Gabrielle Mahé-Serle 24:00
+Mhm.
+It, we'd have to manually add them.
+
+[]
+Marcus Morrisey 24:06
+Is that?
+Okay.
+
+[]
+Gabrielle Mahé-Serle 24:09
+You think?
+
+[]
+Marcus Morrisey 24:10
+But is it hard to do that report you're talking about?
+
+[]
+Gabrielle Mahé-Serle 24:15
+I've never pulled reports from FreshDesk, but I don't think so. Like
+it's, there's reporting, like canned reports that you can filter on who
+the...
+
+[]
+Marcus Morrisey 24:19
+Okay.
+Right.
+
+[]
+Gabrielle Mahé-Serle 24:26
+who the customer is and what the status is and stuff. So it should be.
+
+[]
+Marcus Morrisey 24:29
+Okay.
+
+[]
+Gabrielle Mahé-Serle 24:32
+Now that reminds us.
+Rob did talk about that yesterday, right? Yes, so it makes sense to have
+a new fresh desk and it separate from click up so we can give Ross
+reports and stuff so.
+
+[]
+Marcus Morrisey 24:37
+Yeah.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 24:46
+Yeah.
+
+[]
+Marcus Morrisey 24:49
+Yeah, and so, yeah, if it has to be manually, you could kick that my way
+if you want, and then I can make sure it gets onto that spreadsheet.
+Like I don't really know how many do you should get for like...
+
+[]
+Gabrielle Mahé-Serle 25:03
+Like for like bugs that are.
+
+[]
+Marcus Morrisey 25:04
+If you had to guess like how many people you are going to send you an
+email each week, like 10, 15, 20, 100.
+
+[]
+Gabrielle Mahé-Serle 25:09
+It depends. Sometimes it's like pulling teeth and you get nothing.
+
+[]
+Marcus Morrisey 25:11
+Yeah, it's fair.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 25:16
+And then sometimes you get like just everything under the session. So I
+think if we have somebody...
+
+[]
+Marcus Morrisey 25:21
+Right.
+
+[]
+Gabrielle Mahé-Serle 25:27
+kind of in the middle, that's vetting some of it.
+I don't think it'll be too bad.
+Like MMS, we get probably like we've gotten 3 already today. So like
+we're used to getting.
+
+[]
+Marcus Morrisey 25:40
+Yeah.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 25:44
+So...
+
+[]
+Marcus Morrisey 25:45
+Fair enough, yeah. So it sounds like we have a plan. You'll do the
+triage and if you need assistance, let me know.
+
+[]
+Gabrielle Mahé-Serle 25:48
+Um...
+Yep.
+
+[]
+Marcus Morrisey 25:52
+We can periodically export a report so I can put it in the spreadsheet
+and.
+
+[]
+Gabrielle Mahé-Serle 25:57
+Yeah.
+
+[]
+Marcus Morrisey 25:59
+That that works as a plan.
+
+[]
+Gabrielle Mahé-Serle 26:02
+For the UAT walkthrough itself, so when I talked to Ross yesterday, he
+suggested Wednesday afternoon.
+
+[]
+Marcus Morrisey 26:05
+Yeah.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 26:11
+And.
+So, yeah. Well, so I think my, when I talked to Rob about it, I
+recommended that maybe you do that one because you know that side a lot
+more than I do. But then he also mentioned in the chat yesterday that
+
+[]
+Marcus Morrisey 26:14
+Do you want to do that? Do you want me to do that? Should we both do it?
+Yeah.
+Sure.
+
+[]
+Gabrielle Mahé-Serle 26:34
+he wanted both of us to be part of it. So, like I can still be there,
+but I think it makes more sense for you to actually drive. Because,
+yeah, you know that one. And you've done.
+
+[]
+Marcus Morrisey 26:44
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 26:49
+A walkthrough for them already, so.
+
+[]
+Marcus Morrisey 26:51
+Yeah, yeah, for sure, a couple of times. So yeah, I'm not worried about
+that. And then maybe even we can do like we did with the meetings is
+just like have you there. We'll explain a bit about how the process is
+going to work back in, you know, we'll work together to triage it. And
+then just so we're not paying us both to be there. Like, then you can
+drop out if you want. I mean, not that you have to, you can also stay.
+
+[]
+Gabrielle Mahé-Serle 27:02
+Yeah.
+
+[]
+Marcus Morrisey 27:12
+But just budget, right?
+
+[]
+Gabrielle Mahé-Serle 27:12
+Yeah, I don't, yeah, that's...
+Like either usually be, like for this, you could probably get away with
+an hour, walk through, and then they might have questions.
+
+[]
+Marcus Morrisey 27:22
+Yeah.
+Yeah.
+
+[]
+Gabrielle Mahé-Serle 27:28
+So it shouldn't be like too long.
+
+[]
+Marcus Morrisey 27:30
+Sure.
+
+[]
+Gabrielle Mahé-Serle 27:31
+But I think it makes sense, especially if I'm going to be like answering
+the tickets and stuff, it makes sense for them to know why I'm there and
+who. So, yeah.
+
+[]
+Marcus Morrisey 27:38
+Yeah.
+Yeah. Oh, for sure, for sure.
+
+[]
+Gabrielle Mahé-Serle 27:44
+Um...
+Yeah, I, if you wanna...
+Coordinate with.
+
+[]
+Marcus Morrisey 27:51
+Ross.
+
+[]
+Gabrielle Mahé-Serle 27:52
+Ross to get that scheduled.
+
+[]
+Marcus Morrisey 27:54
+Yeah, will do.
+
+[]
+Gabrielle Mahé-Serle 27:55
+I do have a 3 o'clock on Wednesdays.
+
+[]
+Marcus Morrisey 27:59
+Okay.
+
+[]
+Gabrielle Mahé-Serle 28:00
+But I can always, it's just my weekly seer, the MMF meetings, so, and
+Varun is usually there too, so I can.
+
+[]
+Marcus Morrisey 28:06
+We.
+We can probably work around it. I think they've cleared off like early
+afternoons, even on Wednesdays. So, but yeah, I'll keep you looped in,
+but I'll reach out to Ross.
+
+[]
+Gabrielle Mahé-Serle 28:10
+Okay.
+Yeah.
+Hey.
+Because it'll be hard to get, because they have 15 testers, he said,
+so...
+
+[]
+Marcus Morrisey 28:27
+Yeah, I think.
+
+[]
+Gabrielle Mahé-Serle 28:27
+It'll be hard to get everybody in there anyway, and so if it's, we're
+going to record it and get as many people as we can.
+
+[]
+Marcus Morrisey 28:33
+Yeah.
+Yeah, they have been pretty proactive about getting people engaged in
+that way. So I think we'll get a good core, if not, like probably not
+every single person, but yeah.
+
+[]
+Gabrielle Mahé-Serle 28:47
+Yep.
+McKay.
+
+[]
+Marcus Morrisey 28:51
+But yeah, awesome.
+
+[]
+Gabrielle Mahé-Serle 28:54
+I now have to jump into a post-check meeting because that's still not
+off my plate.
+
+[]
+Marcus Morrisey 28:58
+It.
+Okay, thank you. Talk to you soon. Cheers.
+
+[]
+Gabrielle Mahé-Serle 29:01
+Okay, thanks. Okay, bye.
+
+[]
+Marcus Morrisey stopped transcription

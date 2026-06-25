@@ -1,0 +1,221 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W25 · 2026-06-05 to 2026-06-18"
+date: "2026-06-18"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-06-18 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-07-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🔴 Red |
+| Schedule | 🔴 Red |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟡 Yellow |
+
+## Project Status & Dates
+
+**Project Status:** The Wabanong Custom-CMS project is in active UAT — the intake module walkthrough was completed June 16 with strong stakeholder engagement, new PCFS testers were onboarded, and 25 outstanding action items were closed this period. The revised July 31 go-live target remains in view, but completing case file, finance, and abuse module UAT within the remaining window is the critical path risk.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-07-31 (+122 days)
+
+## Progress This Period
+
+> Note: The UAT session date is June 16, 2026 per the recording header; the source folder is dated 2026-06-17 (upload date).
+
+- **UAT Intake Module Walkthrough completed** (June 16) — Full PCFS stakeholder UAT session demonstrated the end-to-end intake workflow: individual search, intake creation, document upload, referral source, persons involved via search and genogram, issue categories, narrative, SLA timer, task assignment to supervisor, supervisor review and return-to-worker, CFIS entry, intake log, and intake close. New testers onboarded: Keisha, Cassandra, Geraldine, Leanne Lippins.
+- **First round of UAT feedback already received** — Prior to the June 16 session, Teagan and other participants had already submitted a first round of edits; Marcus confirmed these are being processed as a priority.
+- **Search bug identified and ticketed** — Gabrielle created a Freshdesk/ClickUp ticket live during the session for "open services not showing in person search results" — a UAT finding immediately captured and actioned.
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01: Stage 1 — Discovery and Requirements complete | 2025-12-22 | 2026-03-26 | Delayed | +94d |
+| M-02: Stage 2 — Solution Design complete | 2026-01-31 | 2026-03-26 | Delayed | +54d |
+| M-03: Stage 3 — All 9 iterations complete / system ready | 2026-03-31 | 2026-06-30 | Delayed | +91d |
+| M-04: Go-Live | 2026-03-31 | 2026-07-31 | Delayed | +122d |
+| M-05: Stage 4 — Post-launch support complete | 2026-04-30 | 2026-08-28 | Delayed | +120d |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+
+  section Stage 1 — Discovery
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+
+  section Stage 2 — Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+
+  section Stage 3 — All Iterations
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-06-30, 0d
+
+  section Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-07-31, 0d
+
+  section Stage 4 — Post-Launch
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, crit, 2026-08-28, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Intake task assignment: default to general supervisor pool; optional specific assignment; directors monitor unassigned/overdue queue | Darryl / Gabrielle / Ross | 2026-06-16 | |
+| Add optional case synopsis / summary field at end of intake form; carries over to case file | Teagan / Gabrielle / Marcus | 2026-06-16 | Hidden if empty; shown front-and-centre if populated |
+| Issue categories expanded to full CFIS list before go-live — development ticket to be submitted | Darryl / Gabrielle / Marcus | 2026-06-16 | May not be available at UAT start but must be complete for go-live |
+| PCC and assessment documents: upload to intake record via document upload; brief summary in presenting problem narrative | Darryl / Marcus | 2026-06-16 | Required only for transition from intake to ongoing case |
+| Step one for any intake is always search — confirm person does not already exist before creating records | Ross / Darryl / Marcus | 2026-06-16 | |
+| Limited profiles can be upgraded to child/adult later; cannot be downgraded | Marcus | 2026-06-16 | |
+| Finance tab visible to all workers as read-only summary; intake supervisors can modify family budgets; after-hours needs some financial access | Darryl / Marcus / Ross | 2026-06-16 | Darryl to be included in upcoming finance module design session |
+| SLA timer continues when supervisor sends task back to worker; worker receives a new sub-deadline | Ross / Marcus | 2026-06-16 | Confirmed as original design; subject to adjustment if UAT feedback requires it |
+| Follow-up intake practice sessions to be scheduled by Ross and Darryl; Marcus and Gabrielle available for support calls | Ross / Darryl / Marcus | 2026-06-16 | |
+
+## Action Items & Commitments
+
+| # | Owner | Item | Due Date | Status | Carried Over? |
+|---|-------|------|----------|--------|---------------|
+| A-104 | Christine | Consult Kinship dept and QA to ensure licensing and placement info accurately represented | 2026-03-26 | Open | Yes |
+| A-127 | Christine / Clemene | Provide complete list and definitions of all legal terms used by agency | 2026-05-07 | Open | Yes |
+| A-128 | Marcus / Clemene | Cross-reference agency law/regulations with system terminology | 2026-05-07 | In Progress | Yes |
+| A-129 | IDFusion / Kelvin | UAT access setup — intake UAT walkthrough completed June 16; formal sign-off procedure still pending | 2026-05-07 | In Progress | Yes |
+| A-130 | Marcus | Translate project timeline into Outlook calendar invites for key milestones | 2026-04-28 | Open | Yes |
+| A-131 | IDFusion dev | Implement Apr 13 demo feedback items (footer, gender options, profile types, abuse tab, address history, etc.) | 2026-04-30 | Open | Yes |
+| A-135 | IDFusion / Rob / Ross | Define post-go-live support tiers (bronze/silver/gold) and SLAs | 2026-05-28 | Open | Yes |
+| A-136 | Bev / Christine / Barry / Clemene | Send all finance templates and forms (headers only, no PII) | 2026-04-28 | In Progress | Yes |
+| A-150 | Marcus / Gabrielle | Update finance PO workflow wireframes: worker request → supervisor → finance review → PO → receipt → Sage export | 2026-05-21 | Open | Yes |
+| A-151 | Marcus / Gabrielle | Update abuse module wireframes: redesign as intake-form wizard per May 11 reset | 2026-05-21 | In Progress | Yes |
+| A-152 | Ross / IDFusion | Implement global holiday calendar in Wabanong system settings for SLA calculations | 2026-05-21 | Open | Yes |
+| A-153 | Kelvin (PCFS) | Send finalized abuse investigation conclusion terminology to Ross/Marcus | 2026-05-21 | Open | Yes |
+| A-154 | Kelvin (PCFS) | Provide blank/redacted provincial abuse investigation form fields to IDFusion | 2026-05-21 | Open | Yes |
+| A-155 | Marcus | Follow up re: missing Manitoba CFS Act abuse issue categories for intake form | 2026-05-21 | In Progress | Yes |
+| A-156 | Marcus | Clarify how "parenting time" is determined for case anchoring (both parents Peguis members) | 2026-05-21 | Open | Yes |
+| A-157 | Marcus / Gabrielle | Update ongoing services wireframes (in-home/out-of-home toggle, checklist rename, IRAP rate trigger, etc.) | 2026-05-21 | In Progress | Yes |
+| A-158 | Bev / Barry (PCFS) | Send RBC bank export column headers (CSV) for Wabanong credit card import template | 2026-05-21 | Open | Yes |
+| A-159 | Marcus | Schedule follow-up ongoing services wireframe review with CRD team | 2026-05-21 | Open | Yes |
+| A-160 | Ross (IDFusion) | Document "Finance Assigner" role: queue visibility and task assignment capabilities | 2026-05-21 | Open | Yes |
+| A-161 | Darryl (PCFS) | Provide complete issue categories and subcategories list from provincial IM form (with timeframes) | 2026-05-21 | Open | Yes |
+| A-170 | Marcus / Gabrielle | Redesign abuse module as intake-form wizard; produce initial wireframes for Kelvin review | 2026-06-04 | In Progress | Yes |
+| A-171 | Marcus (Rob) | Send updated PCFS status report: revised July go-live, abuse as separate iteration, updated meeting cadence | 2026-05-21 | Open | Yes |
+| A-176 | Marcus | Clarify which budget pool covers intake-related purchases (operations vs. prevention/family service) | 2026-05-21 | Open | Yes |
+| A-177 | Gabrielle | Implement dual supervisor task assignment in intake task modal: default to general pool + specific supervisor option | 2026-07-02 | Open | No |
+| A-178 | Gabrielle | Add optional case synopsis/summary field at end of intake form; carry over to case file | 2026-07-02 | Open | No |
+| A-179 | Gabrielle | Submit development ticket for issue categories expansion to full CFIS list — go-live blocker | 2026-07-02 | Open | No |
+| A-180 | Ross / Darryl | Schedule follow-up intake practice run sessions; coordinate with Marcus/Gabrielle for follow-up reviews | 2026-07-02 | Open | No |
+| A-181 | Ross / Gabrielle / Marcus | Define and implement intake supervisor finance permissions: budget view + change; include after-hours access | 2026-07-02 | Open | No |
+| A-182 | Marcus | Activate UAT accounts for newly added team members following June 16 meeting | 2026-06-18 | Open | No |
+| A-183 | Marcus | Send UAT session summary: role assignments chart + feedback submission instructions to all June 16 participants | 2026-06-18 | Open | No |
+| A-184 | Gabrielle | Create/confirm bug ticket for "open services" not showing in person search results when initiating a new intake | 2026-06-18 | Open | No |
+| A-055 | Hailey / Marcus | Clarify and document RBAC, high-profile cases, and conflict-of-interest restrictions | 2026-01-29 | Complete | Yes |
+| A-078 | Marcus | Prepare field-definitions Excel template (tab per screen, field names, dropdown values, rules) | 2026-01-29 | Complete | Yes |
+| A-079 | Barry / Bev | Provide Sage 300 version/build number — current most recent version confirmed online | 2026-01-29 | Complete | Yes |
+| A-082 | Marcus | Establish revised target dates; prepare status update for Jaren and Rob | 2026-02-12 | Complete | Yes |
+| A-083 | Marcus / Varun | Complete Iteration 1 development — UAT actively underway across modules | 2026-02-12 | Complete | Yes |
+| A-105 | Marcus / Ross | Determine agency email account for external notification sends | 2026-03-26 | Complete | Yes |
+| A-106 | Marcus | Address-based search — moved to roadmap | 2026-03-26 | Resolved | Yes |
+| A-107 | Marcus | Consult after-hours team re: address-based search requirements — moved to roadmap | 2026-03-26 | Resolved | Yes |
+| A-109 | Clemene | Provide Marcus with finance contact email | 2026-04-07 | Complete | Yes |
+| A-110 | Christine | Send recurring calendar invite for biweekly in-person meetings | 2026-04-07 | Complete | Yes |
+| A-112 | Clemene / Rob | Review contract and create revised project timeline and implementation schedule | 2026-04-07 | Complete | Yes |
+| A-114 | Ken Jacobs / Antonio | Complete Azure post-setup: tenant access, SQL credentials, IP whitelisting, RBAC | 2026-04-09 | Complete | Yes |
+| A-115 | Ken Jacobs / Marcus | Deploy Wabanong application code to Azure dev environment | 2026-04-23 | Complete | Yes |
+| A-116 | Marcus | Document Azure infrastructure recap for Clemene; store in SharePoint | 2026-04-09 | Complete | Yes |
+| A-119 | Marcus | Spec cleanup: dropdowns only, pronoun field, person record updates | 2026-04-23 | Complete | Yes |
+| A-123 | Marcus | Define and document formal UAT sign-off procedure with IDFusion | 2026-04-30 | Cancelled | Yes |
+| A-124 | Kelvin / Clemene | Send abuse program forms (PII removed) to IDFusion for requirements mapping | 2026-04-28 | Complete | Yes |
+| A-125 | Marcus | Share IDFusion's abuse-related resources/forms; identify requirement gaps | 2026-04-28 | Complete | Yes |
+| A-138 | Marcus | Compile list of finance documents already received from Haley to avoid duplicate submissions | 2026-04-28 | Complete | Yes |
+| A-140 | Ross | Send abuse program master spreadsheet to Marcus/Gabrielle/Clemene/Christine | 2026-04-28 | Complete | Yes |
+| A-141 | Ross | Book Eagle Boardroom for IDFusion every Tuesday; send Teams invites for finance slot | 2026-04-25 | Complete | Yes |
+| A-142 | Gabrielle | Follow up with Sherry to confirm she has started testing | 2026-04-23 | Complete | Yes |
+| A-143 | Marcus | Add ClickUp task for address note field (ordinary residence complexity) | 2026-04-23 | Complete | Yes |
+| A-144 | Marcus | Spec update: remove "new task" button from person record | 2026-04-28 | Complete | Yes |
+| A-145 | Marcus | Validate case file wireframes/specs — CRD walkthrough sessions completed; wireframe updates done | 2026-04-28 | Complete | Yes |
+| A-146 | Marcus | Create/update spec for case-specific documents tab | 2026-04-28 | Complete | Yes |
+| A-148 | Marcus | Send finance/placements flow documentation to Gabrielle | 2026-04-23 | Complete | Yes |
+| A-149 | Marcus / Gabrielle | Produce detailed finance dashboard wireframes (PO queue, credit card queue, timer displays) | 2026-05-21 | Complete | Yes |
+
+## Issues & Risks
+
+| # | Description | Severity | Owner | Due Date | Status |
+|---|-------------|---------|-------|----------|--------|
+| I-018 | Finance/Sage integration requirements incomplete — PO workflow substantially documented; formal receipt and integration design not yet started | Medium | Hailey / Marcus | 2026-01-29 | Open |
+| I-029 | Timeline slippage — go-live revised to end of July 2026 at May 11 reset meeting; formal contract re-baselining still pending (A-112 complete; formal document outstanding) | High | Marcus | 2026-02-12 | Open |
+| I-032 | Development timeline at risk — client+family data module UAT-ready; intake module UAT underway; case file, finance, and abuse iterations still ahead | High | Marcus | 2026-03-12 | Open |
+| I-033 | Address-based search confirmed as new development requirement — moved to roadmap (A-106, A-107 resolved) | Medium | Marcus | 2026-03-26 | Open |
+| I-034 | Client-side continuity risk — Haley absent 3+ months; Clemene covering; Alice approaching retirement | Medium | Marcus / Ross | 2026-04-07 | Open |
+| I-035 | Abuse program carved out as separate iteration — approach confirmed; initial wireframes in progress (A-170); form details (A-153, A-154) still pending from PCFS | Medium | Marcus / Kelvin / Clemene | 2026-04-30 | Open |
+| I-036 | UAT pipeline operational — Freshdesk → ClickUp triage active; client+family data UAT complete; intake module UAT walkthrough completed June 16 | Low | Gabrielle | 2026-04-30 | Open |
+| I-037 | Demo environment instability — UAT environment set up in PCFS Azure; risk substantially reduced | Medium | Ross / IDFusion | 2026-05-21 | Open |
+| I-038 | Intake form incomplete — missing mandatory Manitoba CFS Act abuse issue categories; Darryl confirmed expansion required before go-live (A-179 submitted) | Medium | Marcus | 2026-05-21 | Open |
+| I-039 | Holiday calendar missing — timer logic does not yet account for observed holidays; required for SLA accuracy in finance and abuse workflows | Medium | Ross / IDFusion | 2026-05-21 | Open |
+| I-040 | Azure Entra/conditional access setup delayed UAT kickoff — resolved via A-166; tester accounts operational | Medium | Ross / Campfire | 2026-05-21 | Resolved |
+| I-041 | UAT bug: "open services" not showing in person search results — existing open case files should surface when initiating a new intake; Gabrielle created ticket during session | Low | Gabrielle | 2026-06-18 | Open |
+
+## Return to Green Plans
+
+### Overall — 🔴 Red (first flagged: 2025-W48)
+
+- Complete intake UAT cycle (A-180); route and triage all feedback via Freshdesk → ClickUp pipeline
+- Implement high-priority UAT feedback items (A-177, A-178, A-179, A-184) promptly to demonstrate responsiveness before next practice session
+- Progress case file and finance modules toward UAT readiness; schedule first finance UAT session
+
+### Schedule — 🔴 Red (first flagged: 2025-W48)
+
+- July 31 go-live requires completing remaining module UAT (case file, finance, abuse) within a compressed W27–W33 window — identify the critical path explicitly
+- Formally re-baseline contract timeline with Clemene/Rob
+- Send updated status report to PCFS confirming July target and remaining milestone sequence (A-171)
+
+### Scope — 🟡 Yellow (first flagged: 2025-W50)
+
+- Case synopsis field and supervisor pool option confirmed in-scope (A-177, A-178); implement promptly to avoid UAT feedback accumulating as scope debt
+- Issue categories expansion (A-179, A-161) confirmed must-have before go-live — track as a go-live blocker
+- Finance access additions from Darryl (A-181) add scope to finance module; review cost implication with Rob before design begins
+
+### Budget — 🟡 Yellow (first flagged: 2025-W50)
+
+- Abuse module contract amendment still unresolved — include in updated status report to PCFS (A-171)
+- Finance access additions from Darryl (A-181) may expand finance module scope; confirm cost implication before implementation begins
+- No new cost exposures this period; monitor Azure environment costs
+
+### Client's Feeling — 🟡 Yellow (first flagged: 2026-W13)
+
+- June 16 UAT session had very positive tone; schedule follow-up practice sessions quickly (A-180) to maintain momentum
+- Deliver case synopsis field and supervisor pool option in next update to demonstrate responsiveness to UAT feedback
+- Keep Ross and Darryl closely involved in remaining module planning; send session summary promptly (A-183)
+
+## Next Period Plan
+
+- Complete immediate post-UAT tasks: activate new tester accounts, send session summary and role chart (A-182, A-183)
+- Implement intake module UAT feedback: supervisor pool option, case synopsis field, issue categories ticket, search bug fix (A-177–A-179, A-184)
+- Ross and Darryl schedule follow-up intake practice sessions; begin triaging UAT feedback through Freshdesk pipeline (A-180)
+- Hold finance module design session; include Darryl on intake supervisor budget access requirements (A-181)
+- Run /ingest-meetings for W27 to ingest the June 19 internal finance meeting transcript

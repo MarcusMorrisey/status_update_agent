@@ -1,0 +1,3114 @@
+Tuesday at 09_18_20 am
+
+Mon, May 11, 2026 2:58PM • 1:03:44
+
+SUMMARY KEYWORDS
+
+intake form, risk categories, document upload, search functionality,
+referral source, limited profile, eligibility determination, issue
+categories, timeline, action log, supervisor review, document type,
+professional judgment, user interface, system integration
+
+SPEAKERS
+
+Marcus Morrisey, Speaker 4, Speaker 7, Speaker 5, Speaker 1, Speaker 6,
+Speaker 2, Ross, Speaker 3
+
+Marcus Morrisey 00:00
+
+Again, this isn't the entry point to the app. It's when you you're
+already in the app. You've done a search for a individual and a family,
+and you've said, Let's do an intake for this family. And so that's the
+record we're looking at now. So you see this sort of line at the bottom,
+and this top part is is a banner that is persistent, so the whole thing
+unfolds as quite a long form. We tried to model it as closely as we
+could off your actual intake form, but in this static picture, it
+doesn't do it. But when in the app, it'll scroll down, and these will
+stay on the top, so you'll always know who you're working with, and
+you'll always have access to these controls here. So intake will have a
+person that's attached to, so that would be the person of reference on
+the form, I guess date received it logs who created it. This is just
+showing that it will have it much like the cases for investigation will
+have its own unique ID in the system, but we will have a way to link
+that to a Cephas ID. And these here are going to be sort of badges or
+tiles, they call them so for notifications this year. So these are the
+risk categories that you see workers assess. So that'll get put at the
+top of it, just so as a visual cue to people to know how quickly they
+need to respond to this. That said, we know that there are set time
+limits associated with these. So there's also a timer that starts. So if
+you start a high risk intake, then that 24 hour clock starts ticking.
+And I'll talk more about that as we get down there. But yeah, so the
+status is just, I believe we just have open and close right now, or
+maybe pending approval. Yeah, you can save and exit the form to save the
+fields at any time. And I should say that I'm showing you the edit view
+right now, just because that's where all the action usually happens
+outside the edit is it just kind of like the readable version, if we
+needed to review it, but edit would would bring out all the fields that
+could be. Yeah, I'll show you the view as well layout that we have. But
+terms of explaining the function, it's usually good to start with the
+edit view so we can upload and attach documents to the intake itself, so
+that would open up a little modal where you could attach this is
+actually something that we discussed quite a bit. Is it often? Or do you
+ever attach more than one document at once? Okay? So, yeah, I said,
+Yeah, we need to have so we did that. Notes are you know? Why are these
+documents being added? The Document Name is something that you would
+specify so it's distinct from the file name. So if it just says, you
+know, like Word doc three, this document name is a searchable field, so
+you'd be able to say, You know what it actually is, without having to
+necessarily rename the files you don't have that time. Document type is
+also something we talked about quite a bit, but we don't know what needs
+to be there we were thinking that, you know, like with service delivery,
+for example, there's like, certainly set kinds of documents that are
+part of, like, the process, other types for intake that we should be
+thinking about, like, specific forms and here, like, I guess it's more
+about categories, because it's like, if you say, for example, we're
+doing a safety assessment, like, you could name it that, presumably. But
+are there sort of, like, categories of, like, some sometimes legal
+documents, or do you need to distinguish those things? Is this kind of
+drop off, down, even valuable. I
+
+Speaker 1 04:25
+
+sometimes.
+
+Marcus Morrisey 04:43
+
+Okay? And so, yeah. I mean, if those are categories that you do track,
+the one nice thing about having the document type is for filtering. So
+if an intake ever has a few documents attached to it, or you're looking
+for later, then you can, you'd be able to filter like, show me all the.
+Documents or show me all the receipts, although I imagine receipts would
+will will be slightly different in the new system, because they'll
+actually go on to a fine and have arm, yeah. Well, that's what I was
+asking. If there is a set of those names, then we would put that in
+there. But if there really isn't, then we don't have that habit there.
+Yeah, so just use the document name to sort of, so yep,
+
+Ross 05:30
+
+for document type. Then so the name of the document will be whatever the
+worker wants to name their word document or PDF document type, whether
+it's like a legal document or, you know, medical form, or, I don't know,
+
+Speaker 2 05:44
+
+yeah,
+
+Ross 05:46
+
+would would it be useful to your team, Darryl, to be able to group those
+documents? So let's say I'm uploading three legal documents and a
+closing statement. Would it be useful to on that document type, drop
+down say, you know, legal, legal, legal. So do we have a working list of
+document types that we currently kind of track? No, go through by the
+name. So this is also portion that will want to probably adjust our
+internal procedure just to better better match and give better direction
+to staff on the expectations. For Hey, Ross, you can't leave it. Doc x1
+Doc x2 Doc x3 dot. Doc x right. You actually have to go in and name it
+and then do your your best,
+
+Marcus Morrisey 06:43
+
+yeah, and again, like, I'm not going to tell you how to do it, but one
+of the nice things, if you do have even very broad document types, is
+when it comes to your reporting, yeah, those are linked to certain types
+of things you want to report on. It's much, much easier to pick up a set
+field, right? You know for sure it's this type of document, whereas, if
+it's open text, you know, people just type it different ways, or it's
+typed wrong, and then you're sort of getting into, like, a fuzzy way of
+finding that, or maybe have to count it. So that's just something to
+consider too. Doesn't have to be decided at this moment.
+
+Ross 07:14
+
+Would we be uploading photos ever here sometimes? Okay, so like document
+type, photo document type, even just like document or legal documents,
+and just differentiating between those gets them starting, and kind
+
+Speaker 3 07:28
+
+of that sorting, like a sorting and filter type of thing. But you can
+also like other for like, I
+
+Speaker 4 07:32
+
+think we might
+
+Ross 07:33
+
+have
+
+Ross 07:34
+
+to have another filter, yeah, or just even an other selection. And we
+can sort by others so that later on, when we do have appropriate
+categories that have been added, we're not looking for Ross's typos of
+document type in there, closing,
+
+Speaker 3 07:48
+
+summary category. Like, for example, like, we do have a list on staff
+here that has the different types. Yeah.
+
+Marcus Morrisey 08:02
+
+Is that for a intake? I don't know what
+
+Marcus Morrisey 08:06
+
+intake, to be honest.
+
+Speaker 4 08:10
+
+Yeah, it's all good. Yeah, there's going to be four of different kinds.
+Yeah, receipts, yeah, legal,
+
+Speaker 5 08:19
+
+other, safety.
+
+Speaker 4 08:20
+
+Legal other,
+
+Marcus Morrisey 08:25
+
+okay? And then I just to point that you made Ross, I think we probably
+don't need to include any kind of, like, what format is it? Because
+we'll, we'll just put the extension and, you know, like the, yeah,
+
+Ross 08:37
+
+we should probably exclude some extensions like dmg, MSI, exe, things
+like,
+
+Marcus Morrisey 08:43
+
+Oh, yeah. I don't mean that we would allow upload of anything. I'm just
+saying we wouldn't need to in the drop down list. Oh, this is a PDF, or
+this was a word, right? Because, no, I don't think so. I think
+
+Ross 08:52
+
+we'll have just lobbing on grab that from the
+
+Speaker 5 08:54
+
+Yeah,
+
+Ross 08:55
+
+from the file when it gets
+
+Marcus Morrisey 08:56
+
+uploaded. This, this actually, no, no, that's all good we're talking
+about. And this is pretty close to what we were thinking of supporting.
+Maybe we need some extra image sources, and we can
+
+Ross 09:06
+
+probably Tiff and he I see your Apple devices, so someone's just
+uploading to their phone, right? Heic, for sure. Probably PNG, yep,
+because I imagine, even if we're getting Darryl does your team when
+they're doing an intake, sometimes, are you uploading documents from
+other organizations, other agencies? Sometimes, if it's been passed over
+to us at all, okay, so let's say Darryl gets a tip from their scanner. I
+want Darryl to be able to just attach that and not have to fight with
+it.
+
+Marcus Morrisey 09:39
+
+Yeah, and yeah, it's easy to accommodate like, Yeah, but yeah, we do
+want to limit it to sort of like you said. We don't want executable
+files or unusual things like that, just, you know, documents.
+Essentially. One thing I should mention. So whenever you see a modal
+like this or a pop out, we call it those are you. They don't go away
+unless you close it. So if you accidentally click off it, or you go
+somewhere else in the screen, you may not be able to interact with those
+fields, but it won't close this until you hit the X and say, I'm done,
+or you attach your documents, which is the final step of you loading it
+here, and sort of in between this arrow is what happens depends on what
+platform you're on. So it just opens the native upload, you know, if
+you're on Mac, it opens up your file view, you know, which also reminded
+me that I was tasked with finding out if there's a browser that you use
+most often, or a few edge, edge.
+
+Ross 10:37
+
+It's
+
+Marcus Morrisey 10:37
+
+funny because I said in the meeting, I'm like, Oh, they're Mac, they
+probably don't use
+
+Ross 10:41
+
+edge and then Safari. I think edge and Safari gonna be the big two edge
+of the Microsoft integration as far because the native Mac support, so
+it should be compatible two browsers,
+
+Marcus Morrisey 10:52
+
+perfect. Thank you.
+
+Ross 10:53
+
+Yep, I only ever use edge. I've never even touched edge. Totally fair.
+But Case in point, you've got them we've got them both, and I don't hear
+peeps from anyone I in either campus, things don't work. So that's the
+path. Yeah. That's great, yeah.
+
+Marcus Morrisey 11:10
+
+And so, because we'll integrate that into our test scenarios, sorry, go
+ahead. Yeah, absolutely. So over here, we can talk about that. We, you
+know, we were just a little plus button, me, yeah, we could add more
+row, yeah. Like, if that's a feature you think would be useful and you
+use it, we can add a little plus button, so you can essentially add
+another row, just like this, to when
+
+Ross 11:38
+
+you're doing your intakes. Daryl, help me understand, because I've
+never, I've never done it or anything like that. When we get to this
+stage for your team, do you kind of already have your pile of documents
+that you've got to kind of go through and name for the most like
+majority of time?
+
+Speaker 1 11:56
+
+Yeah. Cool. Read the summary of what happened, so our worker will get
+involved. They'll fill out so that you've seen before, right? So most of
+it so that it's
+
+Marcus Morrisey 12:32
+
+Yeah, yeah, and we just have it at the top, because we believe that
+there's like, different points in the process where you might want to do
+that just so it's always handy, and then it's persistent. You'll see
+that there's a little section down, further down, where all the
+documents are also collected. So hopefully this looks something like
+your intake form, because, as you said, our understanding, essentially
+is that, you know, we just started at the top, and these things are
+needed to do an intake, right? So these come straight off your form,
+sort of the intake type, the type of referral, if it is a referral, the
+date and time received, it defaults to whenever the current time is. But
+you had mentioned that you wanted just sort of one date, mostly right at
+one point we had different date fields. Yep, it just, it just fills with
+whatever now is. But then you can click the you can type in this box, or
+you can click the calendar to select something else and say the time
+that you want to log it in. Now, the thing I would say about that is
+there are going to be timers. So if you put it too far in the past. It's
+going to tell you, Hey, this is due. But
+
+Ross 14:05
+
+thinking on that, though, wouldn't would that still be the case though,
+like if we're opening one, if we're just getting the intake from 48
+hours or 72 hours ago? Wouldn't we want those timers to be kind of
+flagging this new intake. If we set the date in the past, like, Hey,
+we're past due on the work that needs to be done here. Is there ever a
+time where we're backdating an intake? Okay, so it would be
+
+Marcus Morrisey 14:52
+
+right, but I think, I think the shortest interval is 24 hours, right? So
+
+Ross 14:58
+
+in the case of a five. Risk intake. Is there requirements of like
+rosters in the field that day? It's a high risk intake. Is there like a
+policy requirement that keeps that intake that same day, within 12
+hours? On that? I think there might be.
+
+Marcus Morrisey 15:18
+
+So. Is it important then that we limit the scope of what they can
+select? Because right now, it's just a date field so they can put, you
+know, 1862 if they clicked a lot. But do we want to do we want to limit
+that leeway, or are we going to let sort of professional judgment do?
+
+Speaker 1 15:39
+
+Well, right now, right
+
+Ross 16:01
+
+would it be helpful if we kind of leave it as it is, but we have the
+alarm and the timers still active on that to alert everyone, because
+that might be our Canary coal mine if Ross, all of a sudden, is
+backdating a bunch of intakes by multiple days, then some supervisors
+can flag somewhere,
+
+Marcus Morrisey 16:24
+
+and that's, that's what we wanted to go for. Then, yeah,
+
+Ross 16:27
+
+yeah, I think so I think we'll leave it open for professional judgment,
+but then we'll keep those timers in place, because, like I said, if Ross
+keeps opening and backdating cases and intakes, then his supervisor
+should now see if that there's a pattern of either Roc is misusing the
+system, doesn't understand and it's entering wrong dates, yeah, or
+you're real hard wrong here, and you're too busy to I'm doing busy, or
+there's an issue with workflow there, where I'm not doing my job in An
+immediate time. Yeah, okay, okay, cool, for now that Ross will get
+better at his job. He for sure he's used in all these examples, he's a
+really bad worker. So
+
+Marcus Morrisey 17:10
+
+this screen here, yes, all this info, you're still going to need to
+upload that intake form to, yeah, yeah, there's yes, there's our
+understanding right now is that there's a role that does that like
+clerk, so when it's closed and you know, or however it's dealt with, and
+that's concluded, and the intake supervisor or director says, yeah, it's
+good to go. Then it gets sent as a task to the CPS clerk, which is what
+was described, or river rule. And then, yeah, they enter it, and then
+they would have to check off on this record that that was done. And then
+that closes it. And there's a you'll see a bit down to, similar to
+investigation, there's a log so, you know, like, both in the back end,
+sense of like, the service keeping track, but there's a visible one that
+workers can see, so that you can see, like, oh, this started a day ago,
+and then, you know, I sent it in, but I was missing some information, so
+you sent it back to me, and each one of those steps will will be logged.
+Now this referral source, this is okay. I'll say two things can happen.
+I really should have stepped back a moment like most of the things,
+we're trying to make it so that in order to do an action, you have to
+search first. Where's my search? Oh, actually, no, sorry, I'm thinking
+of another screen. But yes, you do have to search. So if you're wanting
+to do an intake for a family, you would go through the standard search
+interface and you would find that person, and if they were found already
+in the system, then their information that we had would be pre loaded
+here.
+
+Ross 19:14
+
+If they're not in the system, it prompts us to create that record at
+that time, yeah. And
+
+Marcus Morrisey 19:19
+
+so if they're not in the system, then you're going to see this referral
+source. You can do a search. So this is assuming you've started an
+intake, and you know, you know this person is in the system, or you're
+not sure. So all of these fields we've tried to leave pretty open,
+because we received feedback that you know, sometimes you don't know
+their full name or their phone number or their address, but you know, so
+we're trying to, you know, get as much as we can, obviously, but we
+don't want you to be not able to do your workflow. That's it. Is
+relationship. So anything, I should also say anything with this little
+ask. Tricks, because we're thinking about what you have to fill that
+field out, is that something that we should have mandatory here at this
+very early stage,
+
+Speaker 5 20:12
+
+unknown option in there? Okay, then, yeah, you're gonna have to have to
+have something in there.
+
+Marcus Morrisey 20:22
+
+Yeah, we'll make sure there's an unknown
+
+Ross 20:23
+
+to help me understand our referral sources contacting that could be a
+neighbor, that could be an anonymous Okay, okay, that's all. Hey, I saw
+something on my ring, doorbell, camera, and or assessment of Facebook,
+sure. Okay, yeah, that's good to know. I agree. Thank you. That's what I
+thought. But I wanted to confirm, yeah, that makes sense to have an
+unknown
+
+Marcus Morrisey 20:54
+
+so no one sorry. Go ahead.
+
+Speaker 4 20:57
+
+You want to have that search button under referral source? Do? Source.
+Because, like, I like, because there's
+
+Speaker 5 21:08
+
+literally
+
+Ross 21:09
+
+anybody here, yeah, yeah, like, I think that might be a good point. How,
+
+Marcus Morrisey 21:16
+
+how often do you have an intake that's for the same family or person.
+
+Speaker 4 21:21
+
+But when it comes to referral source, your referral source, right? It
+might be, you know, six different people, right, right? So it could be
+somebody calling, getting a false name, show me your ID when you're
+calling, kind of thing. Kind of thing, right? Literally, anybody, yeah,
+
+Marcus Morrisey 21:45
+
+yeah, no, that's good feedback. And so we usually try and show this as
+grayed out, where you have to search put a name in. But in this one, the
+search is an option, so if you think they might be in the system, okay,
+you can search for them if there are, sorry, that's
+
+Marcus Morrisey 22:03
+
+okay.
+
+Ross 22:05
+
+I was just saying, if there are in SARS referral source from Darryl and
+Kelvin's perspective and Christina's perspective, is there harm? Maybe
+not the right word. But is there a repercussion? If we have an
+accidental duplication of referral source somehow, like, maybe we only
+got Ross's first name and we didn't do a search, and Ross is already in
+the system as referral.
+
+Speaker 4 22:33
+
+Yes and no. So yes, because if you wanted for the nitty gritty side of
+things, if somebody's calling, like, just a hypothetical, if Daryl is
+calling the agency as a community member 30 times on the same family
+over and over and over and over again, yeah, and we see it's actually
+the inconsistent problem, and somebody wants to go to the police and
+say, this is like harassment. We're doing our due diligence by following
+up. But the base case malicious, yeah, technically, law enforcement
+requested information from us sure if we have duplication of people or
+misinformation. So especially in peg woods, you'll have, like, a bunch
+of same players. So it would have to be, you'd have to know for sure.
+
+Ross 23:21
+
+Yeah, that's been kind of, so that's kind of where we're what we're
+thinking, I think with the requirement for the search to be used before
+you fill anything out, when we do our forms or we're attaching anyone is
+it kind of forces the worker to go to what already exists. Because if
+you got a call last week from James Smith and filled out their user
+profile, and now Darryl got one from the same person this week. We can
+attach that referral, or we can say that, hey, this person is on an
+
+Marcus Morrisey 23:51
+
+Ontake tab under their profile that will show
+
+Ross 23:54
+
+they've called it, yeah, so if we just want to, so that's why we're
+talking about, should the search field be required here? I'm thinking,
+from just a pure like record custodian, that we should force a search
+just to confirm whether or not the referral source, if they've provided
+us identifying information, is there.
+
+Marcus Morrisey 24:17
+
+And as I said, if you were to launch this from a search, so you're
+speaking some on the phone. You look them up on their that intake tab
+that I just mentioned, where that shows the record of their in text.
+There's also a button that says, like, start an intake on this person,
+so that it, as I said, that would load their info there already if we
+had it. But yes, that doesn't invalidate your question. I'm just
+pointing that out. So I just
+
+Ross 24:38
+
+don't know, I don't want to interrupt your guys work well on intake, but
+that's, I think that's where we're coming at it with, wanting to ensure
+that the search is required whenever we're trying to look at a person in
+the wild. Amount database is reduces duplication of two rosters that are
+the same person. Like you said, we're going to have multiple people
+with. The same name, things like that. So and there are going to be
+cases of referrals with limited information. I take it right, so or
+unknown, and that might be a separate conversation for how referral
+sources are like, does unknown become a person? And then do we have all
+of these? Yeah, no potential intakes attached to that person, unknown.
+
+Marcus Morrisey 25:25
+
+That's a great question, and something we thought about a fair amount,
+and what we converged on thinking about, and that's, if you look in the
+sort of bottom right hand corner, there's this create limited profile,
+because, for exactly the reasons you're talking about, we thought
+there's going to be scenarios where we want to capture information about
+this person that's persistent over time, and, you know, can be attached,
+but we don't want to require workers to, you know, get their birth date
+and their social insurance number and, you know, address history. So we
+there's sort of three profile types. There's adults, child and limited
+information. And that just means that it's going to it actually collects
+less information about that individual. So it takes, you know, like,
+name, address, phone number, like that basic stuff, and you can make
+connections to that person, because we know, like in the genogram, for
+example, if you want to connect to a coach, like you're not providing
+service to them, you maybe don't need their day of birth and all that
+kind of stuff. But if they're gonna, you know, if they're helping out
+multiple kids or, sorry, you know, we want them to be able to maybe even
+call in and say, like, Hey, I changed my phone number. Can you update my
+record? So this, again, set in stone, but we were going to allow that
+this could just be information that only lives on this form, so it
+essentially isn't a database record. If we think like, this isn't a
+person, like you didn't find them in the search, and you think we're not
+going to hear from this person, again, from Mexico, but if you were to
+click this button, then it would, it would pull this information and
+would create a unique record for that person. And you know, the intake
+would be attached to it in the same way. So is that something that makes
+sense for you? Do you want that option? Or should we like? My concern
+would be volume like you probably get a lot of these. So we don't want
+to, maybe we don't want to always make new ones, but, and we'll put a
+little tool chip, they call it, so like these question Marky things that
+will explain what's the function of this thing.
+
+Ross 27:40
+
+So just to recap our discussion here, where did we land with search? Are
+we gonna have search the amount you have to do a search. And then, just
+to further clarify for my understanding, the information is referral
+source will only be saved to this intake unless you select 38 limited
+profile or your search and find someone exactly Okay.
+
+Marcus Morrisey 28:17
+
+Otherwise, it's just what it's what's written on this page.
+
+Ross 28:20
+
+Is there an option in the future, then to tie this referral source to
+either a limited profile, or would we
+
+Speaker 6 28:28
+
+like you
+
+Marcus Morrisey 28:29
+
+realize, like, oh,
+
+Ross 28:30
+
+this was a known person, or we needed to hold on to
+
+Marcus Morrisey 28:33
+
+this. I hadn't thought of that, but yeah, I mean,
+
+Ross 28:36
+
+maybe because maybe the person on intake has got Ross, and he called
+himself something else or used the nickname they're not familiar with.
+
+Marcus Morrisey 28:45
+
+Yeah, there's, there's going to be, have to be some kind of, we
+
+Ross 28:50
+
+don't have to answer that. Now, I just want to pull that out, because
+there might be a requirement to allow a supervisor or director to amend
+a record. I don't know if everyone should have that permission, but,
+
+Speaker 4 29:04
+
+yeah, authorization to correct it in tape form, the province, right?
+Okay, okay, finalized the province. And then they have to go in and
+unlock or delete,
+
+Ross 29:22
+
+have to
+
+Ross 29:22
+
+update the module. Okay, yeah, thank you. Because any because this has
+to match the module. Has to match this. This has to match the module. So
+anything that you would change here would then, okay, yeah, see, I'm
+making some light bulb. Yeah, professional,
+
+Speaker 3 29:38
+
+they report like the services, like, is there a type for that, like,
+relationship to child and father? Yeah, they're, like a drop down list
+for, like, all those non
+
+Marcus Morrisey 29:52
+
+professional there is. And the way we, I'll talk about that relatively,
+is we. Wanted to make these automatically link on the other end as well,
+so there's sort of like the immediate family you'd expect, and Uncle
+partner, some of those things where it's obvious, sort of what the
+person's relationship will be to them. And for any other kind of
+relationship, we have, right now, we have basically a provider and a
+recipient. And you would get much like if you selected other here, you
+would get a little box, and you would have to define what those were. So
+if it was like a coach, you'd have to say this person is the coach, and
+therefore the person I'm linking them to is the football player or
+whatever. Yeah, those ones specifically are fillable, because
+mathematically, if we the more relationships we add, it's exponential
+growth and potential links. So we're trying to think it's like, how can
+we make it flexible so that any link can be added, but not have infinite
+links? So, yeah, and also, you know, some of the, some of the titles we
+might not know, there maybe isn't a standard reciprocal to that, you
+know, like Father Son sort of thing. Does that make sense? And we can
+also jump to these other things if you want, because we have four our
+friends with those two if you want, but continuing with intake. So I
+should say, actually, at this point, all of the content below this Save
+and Continue button is actually collapsed right now, because we need for
+this record to exist in order to do linking and stuff to it, because if
+it's not yet saved, then it's not yet in the database. So this is just
+sort of an interim step, and that's why this button is here as well,
+just so people will see and then this will be collapsed. So these
+sections, these little chevrons, they open and close. They all start
+open, although you'll see as we go down, some sections are only visible
+to certain roles. Okay, so, yeah,
+
+Speaker 4 32:25
+
+yes, well,
+
+Marcus Morrisey 32:31
+
+yes, well, the ones from your your intake documents, and there's a yeah,
+there's a bunch of
+
+Ross 32:39
+
+Yeah,
+
+Marcus Morrisey 32:42
+
+yeah. And those will all be available in a drop down. And actually, I
+should say that as well. So any drop down, so all these drop downs are
+actually what they call combo boxes. So you can either type in it and
+it'll search for the thing. So if it's a long list, you can just start
+typing some match or you can click on the list. You still have to select
+something from the list like you can't type anything you want, but it'll
+automatically filter it as you're typing. Okay? And then, if we had to
+let that, we have a youth who's ran away from Kenora. Yeah, they run
+over here, they run over here, they get the call for out of province CFS
+agency or child welfare agency. We don't have that, but if you have any
+info for that, we can put it in there
+
+Speaker 4 33:33
+
+out of province called the CFS thing. CFS, and then to update that list,
+because much like Ted West, there's gonna be a bunch of other agencies
+that have their own legislation that's gonna go live, somebody gets
+contact with that confusion and
+
+Ross 33:56
+
+well,
+
+Speaker 5 33:57
+
+we're
+
+Marcus Morrisey 33:57
+
+probably gonna put that into the admin panel, so the sys admin will have
+the ability to so, like, there's a few things we have planned for there,
+like, your calendar, schedule that we talked about will go in there.
+This list will go in there. So it'll essentially just be, like, you can
+re upload it, and you know that'll update the list for you. Yeah, so
+once you hit save there, then it's a save and continue. So it doesn't
+like tended to view form. It's just like, okay, great, you save. Now we
+open up the rest of this content
+
+Ross 34:34
+
+on all these forms of their way for it to auto save programs as staff go
+through it.
+
+Marcus Morrisey 34:42
+
+There is a way to do that, yep. And I guess we had two thoughts about
+that one, yeah. So like anything you type in the fields will stay there,
+and it doesn't get fun. Our concern is if it's a long form and you type
+something and you actually know. To type over something we wanted to
+still be able to reject those changes. Like, if you say, Don't save,
+okay, that's
+
+Ross 35:07
+
+fine. I just was,
+
+Marcus Morrisey 35:10
+
+you know, that's just our feeling on usability, you know, if it's like,
+we definitely don't want the opposite problem either, where it's like,
+you know, fail, right? From
+
+Ross 35:20
+
+a from a development perspective,
+
+Speaker 5 35:22
+
+yeah. So,
+
+Ross 35:22
+
+if we just, if we roll with the Save and Continue during UAT, we find
+that, oh, wow, Ross is Ross's team is really struggling with that. Is
+there a way to, is it a relatively easy change to implement a Save As
+
+Marcus Morrisey 35:36
+
+Yeah, so, and I should say too, that there's a, you know, for security
+reasons, there are timeout windows on this.
+
+Ross 35:42
+
+Okay, perfect.
+
+Marcus Morrisey 35:43
+
+And so you do get notifications as those come up, and if it were to time
+out on you, it saves,
+
+Ross 35:49
+
+okay, then never mind. That answers my question more than anything.
+Yeah, is Ross has locked his screen to walk away, or his computer for
+free, and was in the middle of this, got used the washroom, whatever,
+
+Ross 36:00
+
+for
+
+Marcus Morrisey 36:00
+
+sure. It
+
+Ross 36:01
+
+comes back. It's timed out for security, but it hasn't cost in the last
+15 minutes of work.
+
+Marcus Morrisey 36:06
+
+Yeah, in that case, it's going to save it, okay, and you can go back in.
+And so, yeah, there's at that point, I think the next step in your
+process, if I'm not mistaken, is to determine eligibility. So you know,
+is this someone we can provide an intake services to? We've told that
+understanding from this table that in your intake manual is this still
+and what? One thing I'm not 100% clear on either is, you know, how do we
+need to record like these different programs? Does it impact budget?
+Does it impact what services they get? Right now, we haven't
+differentiated that. It's just like anyone who falls into one of These
+categories may have an intake opened.
+
+Speaker 1 37:05
+
+Right? Okay, okay,
+
+Marcus Morrisey 37:32
+
+so then they would just sort of proceed through the intake under the
+assumption that that decision makes later, and then forward it to you.
+Okay, yeah, that's that's cool too, I guess, yeah. I think it was just
+like, oh, wouldn't it be convenient if we knew that information already
+from the record, that that would load, and we can still do that. It'll
+just be later on.
+
+Ross 37:51
+
+The next step, we could do that for general team to do, like a review.
+If wabana already has the information, it still has to either be entered
+or reviewed by that supervisor, Darryl, supervisor,
+
+Marcus Morrisey 38:04
+
+and yeah, and that's true here too.
+
+Ross 38:10
+
+Yeah. Let
+
+Marcus Morrisey 38:12
+
+me explain what it does, and then you can tell me whether that's up to
+lunch, or if we want to move it down, or if we want to do it
+differently. So basically, if one of those conditions is met. So you
+know, we have say, Baby Doe as a person, we have a record on them. We
+know that their father is a pegus member. Then it's just going to say,
+yeah, we can do an intake. And let's see if not, then there's this sort
+of override screen. And again, this is, we're just reading through your
+policies. It's, and maybe this is something that the supervisor does
+then. But there's a, you know, you would refer them to another agency if
+they were eligible there. But we also wanted to give the option to be
+like, well, you know, just keep going. Proceed with the intake. You have
+to put a reason why, and then it would go all intakes go for review to
+the supervisor or director. Sorry, but this would just allow the worker
+to go bust. So, yeah, that's what we were envisioning. This could go
+down in the form, or it could be different we want. And this to your
+question earlier, Kelvin, this drop down is where all those service
+providers would be. And then this little card, so whoever you select in
+the list, it does this. And there's a, supposedly a little printer icon
+here, because one of the things it says, just be able to give them a
+reference, so it'll pop up their information. You can hit print and hand
+that to the person, if you're referring to another agency, but yeah,
+like the entire intake process is not but the resolution, the
+finalization, doesn't happen until it's sent to the. Supervisor. So with
+that in mind, do we want to move this down? Is this something the
+supervisor would do or, yeah, yeah for sure. And
+
+Ross 40:26
+
+here Darrell, if it's the same form that after hours uses so and in that
+case, then families living in peg list, regardless of status, calling
+after hours are eligible for that emergency service. So that's why the
+I'm trying to put the pieces together. So, okay, so, so that's where the
+worker doesn't really need to care about baby dough, because their job
+at this point is to rob the Roth family called at 8pm they need
+emergency services. They live on reserves. We're providing them the
+services, and the supervisor can then address everything else in the
+morning. Okay, okay, perfect.
+
+Marcus Morrisey 41:10
+
+Yeah, absolutely. Does
+
+Ross 41:11
+
+that make sense?
+
+Marcus Morrisey 41:12
+
+Yeah, for sure.
+
+Ross 41:13
+
+Great.
+
+Marcus Morrisey 41:16
+
+Okay, yeah, so, yeah, we can adjust that. No problem here. So the
+person's involved. This is, you know, it's just one of the sections on
+your forms. So, and I've shown here that again, we're going to have sort
+of this little card. So if, for example, up here in the referral, this
+person was already in the database, then we know that that's a person
+involved, and they're just going to show up here with whatever of this
+information that we have, so their name, their relationship, if it
+exists, between the person who's the focus of this, their date of birth,
+and any contact information,
+
+Ross 41:54
+
+okay, that's good to know. Like I said, it
+
+Speaker 4 41:59
+
+could be somebody like to be a teacher calling, yeah, about a student,
+but it takes really all about the students and their family. Okay, the
+teacher is just the referral source.
+
+Ross 42:11
+
+Okay. Does the referral source need to be protected?
+
+Speaker 4 42:16
+
+Yes, so we can't. So as a gage, it's like, this is just Yeah, CMS, 101,
+and any first referrals always get confidential. So like, we'll have it
+in our database. It's going to be, it's on im two for people to see. We
+go into a call, like, I feel like, hey, Marcus Ross calling me so that
+you're right for sure.
+
+Ross 42:38
+
+So still not necessarily. So now, maybe not listed in persons involved,
+but still on the form of the referral source. And then any worker is
+okay to do that, because any worker would understand that that's a
+confidential
+
+Speaker 4 42:50
+
+exactly okay on there every single time, because we have to call them
+back at a later date to get more info. We can. We don't call them back
+when update doesn't happen. We just need more. Okay,
+
+Marcus Morrisey 43:04
+
+so yeah, then I guess the only way with this would be pre loaded is if
+the actual focus of the intake was already in the database. So you
+search for them, you launch the intake based on that person, that maybe
+they've had an intake before. Casework. Then, just to save you the need
+to look them up again, because you know they're involved, they would go
+there. And then you have two ways to add people. One is the same search.
+Try and drive people through search. If it's no and you have here, if
+you do it, then you'd be making a limited profile, because you're saying
+this person is now involved in an intake if they don't exist in the
+system, you put some minimum amount of information so you can have and
+then they would become a limited profile. The other thing you can do is
+to add from their genogram. So I imagine, you know, you might want to
+add parents or siblings common. So this will just open up a list of
+everyone who's already linked. So if they're in the database already,
+and we have their family in there and all those people, this is just a
+faster way to add those people. Done, yeah and yeah to your point of
+different people, obviously having some more names, that kind of thing.
+That's why we tried to show some of this information. But also, if you
+click this, I in another browser tab, so it won't close. This won't
+bring you out of this context. It'll show you their record. You can also
+confirmation that this is the right because you know not all of them are
+going to have all of this information to display on this card. It might
+just say John Doe order, right? Or this will take you actually into the
+edit their record. If you want to update. That's. Also sort of not, not
+just a part of this module, but we've been trying to be very to make
+people update the person record if it is an address, that sort of thing,
+so that we make it easy to get there. But we don't want them like typing
+their address on a form if that actually is an update, right? Because
+you can just put it in the person and then that'll pull into the form,
+
+Ross 45:23
+
+and that can save an all the change log in history of that. John Doe,
+Father, new address. John May 5 by Ross updated the address to one to
+four fake Street,
+
+Marcus Morrisey 45:35
+
+exactly. And that is also how we, rather than having like, a toggle of
+like, this is my current address, is like, it's the date like, because
+if you put a new address, then it's going to close the previous address.
+Not that you can't have two addresses, but it'll ask you, when you do
+that, it's like, Wait, is this real? Like, you want this to be two
+addresses and and they'll confirm that the So, is there an option? Yeah,
+let's say the family dynamics changes. A kid. And by not there, you
+mean, yeah, and so that's sort of what I was alluding to. Is if you want
+to edit something about John Doe, the Father, you would click this, and
+it would take you to their record and you would edit it there. So if
+they have a new address, or, you know, something you need to note,
+because that way, the next time you come to do an intake with that
+person, or, you know, they volunteer at a program, then that information
+will be updated.
+
+Ross 47:09
+
+Not to be too nitpicky. Here, maybe it's time to be nitpicky. Can we
+change those icons to be like a pencil icon or something? Oh,
+
+Marcus Morrisey 47:16
+
+yeah, sure. Yeah. Those are absolutely
+
+Ross 47:18
+
+placeholders
+
+Ross 47:19
+
+that was just checking. Yeah? Because, to me, I get, I'm going to open a
+new window. If not, this is an edit button.
+
+Marcus Morrisey 47:25
+
+Yeah, for sure. Yes, sorry, yeah for it's okay. Oh,
+
+Ross 47:29
+
+no. I was
+
+Speaker 5 47:30
+
+just
+
+Marcus Morrisey 47:30
+
+gonna say, for people who haven't done specific, we have a visual
+designer who will redo this. This is just my sketching. Essentially,
+
+Ross 47:37
+
+look, it's, it's consistent, which is fine, I just have to make sure
+that.
+
+Marcus Morrisey 47:41
+
+No, it's a good
+
+Ross 47:41
+
+I said it because if I'm, if I'm, if my brain doesn't want to edit, I
+think a lot of people might
+
+Marcus Morrisey 47:48
+
+not. Yeah, this is the time to do it absolutely. So, yeah. So
+essentially, anything you could change on the person record, you could
+change it. Are there other situations you're thinking of that where you
+want to change something? Games? Thing, particular, results. Oh, yeah,
+we can. We can just put a little remove icon there, and it would stay in
+the log still, you know, it's like this person's added then taken off.
+And it's my understanding that these people wouldn't necessarily have to
+be in the same house, right? Like, if the incident involves someone,
+whoever, they would also go on the form, right? But yeah, you can
+absolutely, yeah, you can absolutely, we can make it so you can remove,
+if you
+
+Ross 48:51
+
+like, Okay, you beat me to it. I was just like, you want to force the
+log.
+
+Marcus Morrisey 49:02
+
+So maybe I'll, you know, I'm just going to skip ahead a bit, because I
+want to show you what we're thinking for the log here. So intake log.
+This is a part of every intake, so, like the first one would be, you
+know, hey, intake was created. So these are cards in reverse
+chronological. So the most recent thing is on top. Tells you know, date,
+time this thing happened, who did it, what their role in the
+organization was, and what they did, essentially added a note. These
+this and these ones would be individual actions. So like, if we started
+here, the intake worker started an intake they didn't eligible. The
+override. That may not be a feature anymore because we're moving that
+eligibility thing down the form, but I believe you were telling me that,
+you know, sometimes they need to, like, go gather some more information,
+right? So if they now upload some documents and add some information
+there, then that gets logged here, and they're sort of in this collapsed
+card form, but you can click it and it'll, you know, sort of expand what
+they did. So if there was notes added when they added documents, those
+notes show up there. If there were any of the intake boxes, like the
+actions taken, those get put there, and the notes that they they wrote
+there can be viewed there.
+
+Ross 50:42
+
+Darryl, the log is a really, let's be you're brought in to review an
+intake. My understanding, the log is kind of where you would start to
+see, all right, when was it created? Who created it? Then what? Then,
+what did the worker do? Then what steps were taken? And then you'd be
+able to also, through that whole intake be like, cool. And then Ross at
+this time on this date, this and you would be able to view the documents
+that I uploaded, or the notes that
+
+Speaker 5 51:06
+
+I Yeah, so
+
+Ross 51:07
+
+it kind of gives you it to and this is also immutable, right? So this,
+
+Speaker 5 51:11
+
+right?
+
+Ross 51:12
+
+So this is, this is the concrete record that cannot be changed of if you
+see Ross, you know, accidentally added the wrong person, you'd see Ross
+added person, and then if Ross removed that person, did Ross removed
+that person. And then you could be like, Hey, why did you do that, Ross?
+And I'd be like, oh, is the wrong person, so I needed to remove them. So
+this is
+
+Marcus Morrisey 51:37
+
+just this intake.
+
+Ross 51:38
+
+This is all, this is the this is the concrete record of from open to
+close and everything in between of all the actions taken on that on that
+intake, there's other places to view documents and things as well. But
+this is just kind of the the chronological, or reverse chronological, of
+where we stand, and it lets you kind of go to one place to see exactly
+who did what on this intake. One
+
+Marcus Morrisey 52:07
+
+additional thing that happens in the log is if the person on Brockman,
+so the person who this intake is created for, has had prior intakes or
+case history that is in wabanon, then those will show up here as well.
+Okay, so, yeah, we were literally, you know, that might matter. You
+know, you're trying to decide what to do. You know, you see a pattern of
+certain things, or so those will be same idea that, you know. It's just
+going to give you a high level summary of what happened. But if you were
+to click on this link, this is intake ID. It would take you to another
+form like this, but the historical record of a previous intake, for
+example. Yeah, so yeah. I just wanted to jump ahead and sort of show
+that this is all getting logged. So any of these actions as we go along,
+sorry for the fast scrolling.
+
+Ross 53:04
+
+Basically anytime we make a change on this form or making an entry on
+this form, save it, it's going to say who the person was that made that
+and what, and what they did
+
+Marcus Morrisey 53:12
+
+exactly. So it could be adding more people, to be removing people,
+
+Ross 53:16
+
+adding notes. Yep.
+
+Marcus Morrisey 53:18
+
+Okay. And then so this issue category and narrative, again, very much
+from your form. Actually, I wanted to ask about this because they're
+sort of laid out in this kind of grid on the form. And I spent some time
+being like, how is this organized? Like, if it makes sense to you, I
+don't need to understand. But I was like, trying to think of like, is
+this and if the answer is, it's just that's how we're familiar with it,
+that's fine, too. But I was, I laid it out in exactly the way it was.
+And I was like, it's not quite alphabetic. I guess it I guess it is. It
+is, yeah, I guess, left, right, yeah, yeah, I guess,
+
+Ross 54:15
+
+and down the road
+
+Speaker 5 54:17
+
+with
+
+Speaker 4 54:20
+
+this material, kind of like
+
+Speaker 5 54:21
+
+when
+
+Speaker 4 54:21
+
+it comes to ask what issue categories, there is
+
+Ross 54:24
+
+way more
+
+Speaker 4 54:24
+
+categories than this. Do you
+
+Speaker 5 54:26
+
+want to see
+
+Speaker 4 54:27
+
+what was put on? Because I know we're using other for certain ones that
+actually have issue categories, but other is actually a category in
+itself with certain criteria as well. So should we leave updating the
+intake form now would be a time we want to so then bottom up and make
+that as well. Because, yeah, so I was looking at it the other day, and I
+was like, other than certain things.
+
+Marcus Morrisey 55:00
+
+Just
+
+Ross 55:01
+
+since we're talking about categorization, I see some pretty high risk
+things, you know, child exploitation, death, things like that. Do we
+need to further, like organize them, or just alphabetical and all
+inclusive? I
+
+Speaker 4 55:22
+
+I think way it is now, because each of these should also prompt, you
+should also have a timeline attached to them, right?
+
+Marcus Morrisey 55:34
+
+Yeah, and these little eyes here are because yeah, and I was thinking
+about this, I think they might actually just open the same document,
+because they all seem to be in one document, although the document I
+have doesn't have all of these. So we'll have to talk about because
+you're saying you want to maybe add some and so yeah, now's the time to
+sort of talk about that can but yes, it'll open the document so it'll
+show them the definition of that thing and the timeframe. And that
+timeframe, if they select it, will be baked in already to the intake. So
+it sounds like you want to maybe add some here. Yeah,
+
+Speaker 4 56:17
+
+I'll define the documents,
+
+Speaker 5 56:19
+
+breakdown
+
+Speaker 3 56:21
+
+of the furniture. Yeah, I have it here. Child to return home, child
+solicitation comments of a child common emotional abuse, after our non
+agency, after our other agency, after our own agency, medical mental
+health, child mental health of a parent with a child Child, child
+neglect, absent child non child welfare, matter, additional support,
+caring caregivers, child conflict, physical abuse, sexual abuse,
+supervision, voluntary services and notices.
+
+Marcus Morrisey 57:08
+
+So I think also the after hours is captured in the type of intake, but
+it still sounds like some of that is not captured here. So, yeah, that's
+good. No, what's going to say about this? Yeah, I mean, this is, they're
+already building this, but this is relatively easy to expand, because,
+again, you just add more names and they the My feeling was, it was it
+was in a grid like this so that people could see all of the options that
+they have. So we want to keep it like that. I assume, I
+
+Ross 57:48
+
+think so. I think this is relatively user friendly. Darryl, do you
+think, as opposed to, like a picture of long drop down list or
+something, there are there also the option for multiple selections on
+these, right? Yeah. So I think the grid, like, you have it with some
+with multiple toggle here shown in blue,
+
+Marcus Morrisey 58:09
+
+yeah. And sorry, the blue is sort of the like, once they click on it,
+then that's, you know, it changes color. Or maybe there's some texture.
+That's a thing that the designer will finalize, but that's what that's
+meant to show. So, like, these white ones haven't been selected. Those
+two have. So what
+
+Speaker 3 58:23
+
+about like, a number? Like, issue one, issue two, Issue three, like, is
+it going to be like in like order of selection? Which is the more like
+the death of a child, whatever? That's like a major issue if you're
+doing it like, or is it going to be selected in the order? Like for our
+stats,
+
+Marcus Morrisey 58:44
+
+I think, well, two things, it'll probably stay in terms of presentation.
+It'll probably just stay in alphabetical order. But for your stats,
+yeah, these will have what they call enums, which is just like a code in
+the database that is unique, so anytime it shows up somewhere, you can
+count it easily. So,
+
+Speaker 7 59:06
+
+yeah. So like, the one that you look like, the user to select first
+like, is that going to be like? Shown it
+
+Marcus Morrisey 59:13
+
+would be killed in person.
+
+Speaker 3 59:14
+
+Yeah?
+
+Marcus Morrisey 59:17
+
+Like, which is more important, like? So, yeah, that's
+
+Speaker 4 59:19
+
+part of your process. Yeah. So this is the list every single issue that
+exists on the im, okay, so every single one of these gives you your time
+frame. So even if you're looking at like chronic of trial, right? 24
+hour or you can have five minutes, right? So as long as we have setting
+what we need to do in terms of our intake performance, we need to revamp
+it to essentially, yeah, because when you're looking at certain you
+don't do some of these in the current form, yeah, well, you have. Other
+one here, other than catch all, right? Because others literally category
+that has gotcha, yep. Other
+
+Marcus Morrisey 1:00:21
+
+Yeah, for sure, there's lots of things we could do. We could have, yeah,
+we could have these tiles, and then that triggers a drop down of all the
+issues in that list. Or we could even have it open a modal with another
+set of tiles, if we want that same sort of wide presentation. And then,
+you know, they would then click that too and say, yeah, and then it
+would those would be saved together
+
+Ross 1:00:58
+
+from what you had shared there, we've got categories which are
+categories, then there's like a subcategory that gets further defined
+under there, yeah. And that's exactly what you have to select on intake
+module,
+
+Speaker 5 1:01:10
+
+right?
+
+Speaker 4 1:01:11
+
+Yeah. So then we should match that with your intake workers and your
+half hours workers. Are they looking at this form to determine so I
+think form we'll
+
+Marcus Morrisey 1:01:22
+
+just build it
+
+Speaker 4 1:01:23
+
+in, build it in so they click on, you know, whatever. It's, your vision,
+your timeframe, and then that kind of would give you your list of top
+priority to Yeah, priority kind of thing, yeah. Are
+
+Ross 1:01:41
+
+there single instances where we would have, let's say, assist with Place
+of Safety would be the top category, let's call it. And could I have
+multiple instances of subcategories under there on the same intake? So
+
+Ross 1:01:56
+
+you could have multiple different issues
+
+Ross 1:01:59
+
+under the
+
+Ross 1:02:00
+
+same
+
+Ross 1:02:00
+
+off on the same category, but it could be all or or one, yeah, okay, we
+got to figure out a way to display that,
+
+Marcus Morrisey 1:02:08
+
+yeah, yeah. There's lots of
+
+Speaker 4 1:02:10
+
+ways. Click on come into trial, which check boxes, yeah,
+
+Ross 1:02:20
+
+yeah. I think checkbox would probably be the most efficient, because
+drop downs are going to get tedious for staff. And if Ross is hunting
+through all in the check boxes, displays all of the subcategories there.
+
+Marcus Morrisey 1:02:37
+
+Yeah, that, yeah, if you do that, then, then you have to, sort of have,
+if we want multiple selection, then you'd have to have little persistent
+name, right? So if you select one, it goes underneath. So, you know,
+it's selected already,
+
+Speaker 5 1:02:49
+
+yeah?
+
+Marcus Morrisey 1:02:50
+
+But yeah, I can, we can circle back, and sort of, it's definitely
+possible to make it, you know, relatively painless and in a way that'll
+work for mobile and desktop. Is that sheet, something that's able to be
+shared. I will just prop out whatever is not needed, perfect, and I'll
+look like I'll save whatever pages, grab it, send it over. Perfect. Work
+on, yeah, this is just part of a we
+
+Ross 1:03:23
+
+don't want to send over all that.
+
+Speaker 5 1:03:25
+
+Yeah,
+
+Ross 1:03:25
+
+I love operating on the least amount needed. Okay, great, yeah, so,
+yeah, send that over. Yeah, sounds good. Ever breakup, that's really,
+that's a really great segue point, because this looks great, and we'll
+just add to it so.
+
+Tuesday at 10_36_07 am
+
+Mon, May 11, 2026 2:58PM • 1:27:54
+
+SUMMARY KEYWORDS
+
+intake process, response time, supervisor review, task management,
+financial requests, budget tracking, case management, prior contact
+check, intake log, action items, risk levels, notification system,
+document upload, expense approval, workflow automation
+
+SPEAKERS
+
+Speaker 18, Speaker 3, Speaker 16, Speaker 11, Speaker 7, Speaker 17,
+Speaker 12, Speaker 14, Speaker 15, Speaker 9, Speaker 2, Speaker 5,
+Speaker 1, Speaker 6, Speaker 8, Speaker 10, Speaker 13, Speaker 19,
+Speaker 4
+
+Speaker 1 00:00
+
+Yeah, and especially things like household who they're living with,
+like, that's obviously all relevant for those instances, and we wouldn't
+want to change it in the past. Okay, yeah, so we'll update these with
+that new information. They're required to make a note, you know this
+where they would log the incident. So, oh yeah, sorry, thank you. My
+first day. No, it worries. So now, in terms of these, recommended
+response time is what it says on the form, but it kind of sounds like
+it's like there's a minimum set on all of those ones, like those issues.
+Do you ever change that? Like, can you increase it? Can you decrease it?
+If so, who can do that? You
+
+Speaker 2 01:03
+
+and when it comes to like perfect world, yeah, if we have always issued
+categories where everyone has a short spot time, should just populate
+under Recommended response, yeah,
+
+Speaker 1 01:18
+
+that's absolutely what we'll do, yeah.
+
+Speaker 3 01:19
+
+But from
+
+Speaker 1 01:21
+
+there, can it be modified? Is my question.
+
+Speaker 2 01:24
+
+Yes. I mean, it can be because, like Ross an example, like, no such
+limitation. So somebody says, you know, I was sexually abused 20 years
+ago. Yeah, right. And the response time is 48 hours. We're not going to
+be going up. No, yeah, 40 years old or whatever. 30 years old, right? I
+was
+
+Speaker 1 01:46
+
+thinking more like it selects for you medium risk based on the template
+that you have, but given your knowledge of the scenario, you think is
+more like do you have that just, does anyone have that discussion to
+say, no, no, we got to bump this up. Or is that just something you do by
+talking to people, like, should it live on the form? I guess, is my
+question. Because if that's not, I think that happens, you know, other
+than, like, maybe an admin or something, we'll just take this drop down
+box out and it'll be what you said. It'll just show up,
+
+Speaker 2 02:19
+
+yeah, and
+
+Speaker 4 02:19
+
+then populate.
+
+Speaker 5 02:20
+
+Yeah, in the event that we need to override it, does that happen on a
+different screen or different menu for supervisor?
+
+Speaker 1 02:33
+
+There's a supervisor section a little bit further today, and if you have
+a need for that, we can, we can build in for sure, so we could have it,
+yeah, like displays here to the worker and it's just static field. But
+maybe if you do want to have that, we can move this down into the
+supervisor section. If they want to modify that, something you would
+use, bearing in mind that that would modify all their notification,
+
+Speaker 2 03:02
+
+yeah,
+
+Speaker 1 03:03
+
+timing and whatnot.
+
+Speaker 2 03:06
+
+I don't think change.
+
+Speaker 6 03:10
+
+You've gone
+
+Speaker 2 03:12
+
+through issues. You have immediate 24 hours. 24 hours is passed on
+updated against all getting probably someone that they'd have, like, or,
+yeah, the timer, whatever, yeah, and
+
+Speaker 1 03:32
+
+yeah, I'll talk about that in a minute, because this is all the way up
+to this point. This is still just the worker documenting what they've
+done or or even working with the person in front of them at the time to
+save and then there's going to be a step where they're like, Okay, I'm
+ready to send this for review.
+
+Speaker 5 03:47
+
+I looking at this, I don't think there would be a need to override,
+because if we're overriding, It either means that we've miscategorized
+the intake, or that the intake definition of that category needs to be
+updated with a new time. Yeah, yeah.
+
+Speaker 1 04:11
+
+That's the province that sets those right,
+
+Speaker 2 04:13
+
+yeah. So when it comes to, when it comes to working in the im, somebody
+can call and say a bunch of different things, right? Say, like, hey,
+much health name, so on, so forth. When it goes on the ion side, when
+the status is men, has to go and finalize it. They would have to go in
+there and say, valid invalidation.
+
+Speaker 7 04:39
+
+Was it?
+
+Speaker 5 04:45
+
+So then the recommended response time, we can just leave as an Auto Fill
+value based on the selecting categories and sub categories. Exactly,
+perfect. Yeah. So I can just get rid of this. There's no override. I.
+
+Speaker 1 05:00
+
+Yeah, yeah. So at this point, so, Darryl, you had mentioned that sort
+of, this was often like, sort of the initial thing that they do, they
+sort of collect all their information, get what they know about, and
+then this sort of visual change in color. Again, this is just a mock up
+that's, you know, our designer will do something better, sort of just
+meant to indicate it's like. So now here's where they start, documenting
+the actions that they've taken in response. So again, these, these all
+come off of your form, and, oh yeah, maybe that's why I was confused,
+because these ones maybe are not alphabetical and again, however,
+however makes sense for you. This is how it's presented on the on the
+form. So we left it
+
+Speaker 5 05:51
+
+like that.
+
+Speaker 8 05:59
+
+Yeah,
+
+Speaker 5 06:00
+
+reverse alphabetical, starting from the letter M, exactly.
+
+Speaker 1 06:05
+
+Yeah, two steps forward, one step back. Standard algorithm, yeah, okay,
+yeah. So we'll do the same as above. It'll be start at the you know,
+reading direction for North America, mostly. So left, right, up to
+bottom, these ones I don't know, or we don't have, if you do have
+definitions for these, are these similar to the ones above, where there
+can be subcategories, or are These just the different ones that apply? I
+did the they do these correspond to also a surface field?
+
+Speaker 2 07:08
+
+I don't think
+
+Speaker 1 07:08
+
+so. Okay,
+
+Speaker 5 07:09
+
+this part, I
+
+Speaker 6 07:20
+
+this
+
+Speaker 2 07:28
+
+part. Yeah,
+
+Speaker 1 07:34
+
+perfect. And so we talked a little bit about this before this sort of
+section. And I was sort of asking, like, So are these harm make
+something that's always completed or always and just because I'm just
+thinking about, like, what's the most efficient way to represent these?
+Like, do we want to drop down because, you know, sometimes some of them
+don't apply. Are there some we want to have, you know, front and center,
+like these buttons, or, you know, is it enough to say, you know, in the
+notes? So here, I'm just specifically talking about these buttons. Here
+the service summary buttons.
+
+Speaker 9 08:22
+
+Thank you. Yes,
+
+Speaker 1 08:26
+
+that's closest to what your form is, yeah,
+
+Speaker 4 08:29
+
+and you can click off all three if you want to. Yeah, exactly. And I
+
+Speaker 10 08:36
+
+guess I should have
+
+Speaker 1 08:36
+
+said this, but for all of these other categories, and is this one okay
+to have an other. Or is like,
+
+Speaker 6 08:42
+
+or
+
+Speaker 1 08:42
+
+do you want to name it something else, because we, because of the nature
+of other above? Yeah. And I was gonna say, like, these text boxes only
+up here if they select that, right, so they'll see other. And then if
+they click it, then that'll show up, and the little then they'll be
+mandatory. You can't just say other and not say what you mean by that.
+And similarly, here so was any harm or danger validated. If you say yes,
+then this box will appear, and you must fill it out saying you know
+what, it was an issue. But if you say no, then this text box doesn't you
+don't even see it. Same with this. Are you certain that children are
+safe? If say yes or sorry, if you say no, you have to explain, yes,
+it'll just move on. These are required notes, just to overall summary of
+the actions you've taken. These are read only fields. We don't
+necessarily have to have them here, but they get logged anyway. So like,
+the date when it happened, who did it, what their role is, so that we
+can put that in the log. And here's where the task management part of
+it. Starts. So I'm the worker. I've done some things, I've taken some
+actions, I've logged what I did, and now I'm going to hit Save and Send
+supervisor. So it's going to open up this modal, so it's a essentially,
+this is going to assign a task to the supervisor to review it, and see
+it has a task type. I think at this point, our thinking was like, this
+is just, there's an intake for review, so this task would be static.
+Anytime you hit this, it's sending it to your supervisor saying you need
+to review this. This is just a way to go directly to that intake record,
+because you might be viewing this in your dashboard or as a notification
+somewhere else. So that's just a quick way to get there. This is your
+timer. It starts counting when you set the risk level and save it,
+because that's when we know how long it's supposed to take. This I
+wanted to ask you about so I was thinking it would be just assigned to
+whoever your supervisor is, like who your direct report is. But is there
+ever a case where a worker needs to change that
+
+Speaker 2 11:13
+
+medical leave or whatever? Or whatever,
+
+Speaker 1 11:23
+
+right?
+
+Speaker 5 11:24
+
+But we have coverage is built in on
+
+Speaker 1 11:30
+
+we probably what we don't have, like schedules, but we do have, we were
+thinking of building is like, so if you're the like, if an intake
+belongs to you and you're gonna be on holidays, then you need to
+transfer it to someone, essentially, or, I guess it's more like a case.
+So I would think that if you have a team that works for you need to,
+sort of like, tag somebody, but again, to our organization. But that was
+our thinking is like, if you go on holiday in the app, you have to say
+like so and so is me while I'm gone, essentially so that whoever
+reported to them would then that it would get routed to you
+
+Speaker 2 12:10
+
+under the assigned to supervisor. We prefer to see just a drop down of
+caller supervisors on there, because two little supervisors. That were
+there on shift out there would be like after hours, right? Because not
+everyone would have the same supervisor, the same supervisor on shift,
+so operating knowledge that students
+
+Speaker 1 12:34
+
+are okay, The intakes. Were you able to follow up? The response? Okay,
+okay, so it's not like I'm on Kelvin's team, so my intakes always go to
+Calvin. It's like, it's like a queue, essentially. And the supervisors
+themselves manage that. They grab the test on, okay.
+
+Speaker 11 13:27
+
+I mean, can we build do we need?
+
+Speaker 6 13:30
+
+Is
+
+Speaker 5 13:30
+
+there ever a case where we need to have like an auto assigned, like an
+auto assignment at this stage, or should these intake tasks go to, like
+A queue for the supervisors to simply receive them as intervention.
+Okay, okay, so then maybe we remove the assigned to at this stage, and
+it can go to a task queue that all the supervisors have access to, and
+then it drops the supervisors on holiday while I'm not claiming any
+queues, or claiming any of those tasks out of queue, or things like
+that. Does that make sense?
+
+Speaker 1 14:26
+
+And so if a task in that queue is aging out like it's approaching its
+time, who should get prompted? Do
+
+Speaker 5 14:36
+
+we want to prompt to go to all of the supervisors as well, or just to
+you Daryl, for you to go to you to go poke people and yourself.
+
+Speaker 1 14:47
+
+So would you be in that you're in that queue with the supervisors as
+well? Or is it only if it's sort of not addressed, and I'm. Guessing
+from our conversation so far that we don't really want this priority
+thing. It just adds noise, I would imagine, because, you know, they all
+have a regimented time, but I wasn't sure if that's something you put
+this up to you, we should have it okay. And high, medium low is okay,
+okay. And our thinking right now is that these are like, they're not.
+They're just an alert to the person receiving the test. So they don't
+impact timelines. They don't. You know, a high priority warning is no
+different than low, except that if there's a question about how it might
+sort in a list, for example, it would go higher.
+
+Speaker 5 15:38
+
+So again, going back to kind of, let's say we've got one supervisor on
+shift, and we've got five new intakes, and one happened to get flagged
+as high priority that supervisor. We want to look at that high priority
+one first,
+
+Speaker 1 15:49
+
+right? And it sort of sounds like I probably don't need this either.
+Like the due date is going to be set by whatever those timelines are. So
+that'll just show up. Like, due date will be shown, but it won't be
+selectable. It'll just be like, here's the due date. This the task
+details and description. If you're doing this for the first time, it's
+just going to pull out whatever you wrote here under your notes, just so
+you don't have to type it again, so it'll just show up there. You can
+still edit it. So if you don't want to put the whole notes, or you want
+to delete it and start over, you can do that. But would that be a
+valuable time saver for you?
+
+Speaker 6 16:34
+
+Question?
+
+Speaker 1 16:38
+
+Yes.
+
+Speaker 5 16:38
+
+Sorry, the notes field there is basically not here, sorry, on the main
+intake form. That Notes field is that like the actions that have been
+taken. So then where does this field on the assignment end up? So let's
+say I've done like and Darryl. How many notes generally, is it like a
+long paragraph or a series of paragraphs? Or would these notes generally
+be really short? Or could it be, you know, somewhere between all of the
+above. So it could be something simple. It could be something that's a
+big list. So then, when we go over to do the submission, and my blood
+and Ross's block of text, is there probably, is that display? Then, is
+that going to display like summary in the in the queue, or
+
+Speaker 1 17:25
+
+Yeah. So yeah, there'll be like a view surface for this task. We'll put,
+like a limit on how much will fit in that. So we'll just put ellipses,
+and then this intake ID link will take you back. So the intake just,
+yeah,
+
+Speaker 6 17:40
+
+is that if Ross
+
+Speaker 5 17:41
+
+is consistently taking very diligent notes and has paragraphs of text
+there, that it bumps Calvin's very succinct notes out of whack when
+they're if we're just talking, we're just using this as like a preview
+field, almost for the task.
+
+Speaker 1 17:58
+
+Yeah? And yeah, we would just okay, chop it cool. And don't think we
+need this status signed now either, because we're putting it in a queue.
+So it's not, in fact, assigned to anyone at that point. Yeah, so then
+there would be you can either cancel this or create the task, and then
+that's going to send to the queue, and also start the timer. And we have
+some timeframe setup so before it expires, people will get a
+notification. So you can hopefully maintain your your timelines, but
+also, if it goes over, then it also sends another notification. Our
+thinking is it should keep doing that, you know, not necessarily, like
+every 10 minutes, but until it's dealt with. Would you agree? Or
+
+Speaker 5 18:56
+
+so, I may use some technical terms, then technical get out of here. So
+SLAs service level agreements, basically, it's like we declared timer.
+We got 24 hours to resolve this when we're in breach of that, meaning
+the desire to action has not been taken in that amount of time. How
+often and what kind of notifications Do you guys want to see who should
+it go to? So it's going to it's going to change, depending, you know, on
+what the severity of the of the breach is. But how often do you want to
+be notified? Who should be notified and what type of notification?
+
+Speaker 6 19:38
+
+Yeah, so I'm
+
+Speaker 1 19:40
+
+just going to go back up for a second just to these different risk
+levels, right? Because, just to tell you a little bit about, you know,
+for high risk, we're going to, you know, obviously, do it not halfway
+through, but, you know, our six to eight hours before it expires again,
+when it expires, and then, like. And then after. So again, we get one as
+we're approaching our expiration. Yeah, expiration. And then further,
+yeah, alerts after. And I'm and
+
+Speaker 6 20:10
+
+I'm
+
+Speaker 1 20:11
+
+not saying this is how it has to be. I'm just saying this is how we are
+initially thinking of it. Same thing, medium risk, you know. So in that
+first day, maybe you don't get an alert as you move into that second day
+you get an alert when you're closer to the time again, when it happens
+and then on some repeating sequence. Non child welfare, maybe there
+aren't alerts because they don't technically have a timeframe, so they
+would stay on the dashboard. And none of these tasks are resolved until
+someone goes in and says, Yep, I've done this thing. It's logged, it's
+done. But anyway, yeah, this is exactly what Ross is saying, like this
+is about your process. So if you have specific intervals you want, you
+can let us know. If not, we'll use our best judgment, and it seems
+reasonable. Thank about six or eight hours before it expires. And I
+should note that we learned in the abuse module that these are business
+hours, right? So if it comes in Friday night, it's not going to, like,
+count the weekend in that timer, or also your we're going to load your
+holiday schedule as well, right? So the timer doesn't stop, but it
+pauses and then starts again. You know, yeah, you don't. You can think
+about that. You don't have to, like, tell me exactly what you want right
+now, but we'll just sort of make some recommendations. You can. We can
+adjust them if we need, okay, so just going back to this thing. So yeah,
+that goes into the queue. We're gonna take some of these things out this
+portion, the log and the attached document. So if we ever attach
+documents here, this is just a place where you can see them all together
+at once. You'll see your document name. If we had types, it would show
+up here. You can click this little the magnifying glass and a thing to
+just get a quick preview of it. Or you can remove the document here and
+again that would still be logged that you got rid of it. You now the
+next part of this is, this is the supervisor recommendations and review.
+So this only appears for supervisors or or above, I suppose so directors
+and supervisors. And again, this is just closely modeled off here your
+paper form. So I've sent a task, it goes in the queue, a supervisor
+picks it up, and now they're going to have these options again. These
+are like, I don't know if these are just the way you had it on paper, or
+if these are special ones that you want to have broken out like this,
+but as was thinking before we come down to these is there's essentially
+a few things that can happen when you first come to it's going to say
+pending, so like the work has sent it to you, you haven't yet looked at
+it. That's a status that it's just in there waiting for you to make a
+decision. If you say additional information or assessment required,
+we're assuming that by default, you want to send that back to the worker
+as a task. So if you were to select that, that would pop up a similar
+sort of intake task, and it would say further information or something,
+you'd have the same option to do a priority it would be assigned to that
+worker. Do you again? When we talked about the abuse module, you talked
+about these timers sort of flipping over, essentially. So if you had a
+24 hour and then the supervisor looks at it, you want to restart that is
+that similar here?
+
+Speaker 10 24:26
+
+Yeah,
+
+Speaker 1 24:29
+
+do you want them to have another timeline added there? Or do, or do we
+want that same timer running the whole time? Am for sure, and with that,
+adjust. Moment. So this would be a due date that would apply to the
+individual that this was sent back to. Do you want that to impact the
+timer? You know in terms of like, this is a high risk, should that still
+keep running as is okay? So someone I do an intake. It takes me eight
+hours. Let's say it's high risk. It takes me eight hours because I'm out
+in the field. I come back. It goes to you. You maybe don't see it till
+next morning. So let's say 12 hours comes back to me, and I essentially
+still, you can give me a timeline, like, have this done in the next four
+hours, or whatever, but that 12 hours is still running in the
+background. Okay, perfect. So let me make sure how this, you know? Yeah,
+it was clear what we're talking about. So yeah, when you say that, then
+that's going to go back. The worker gets an alert and they can come back
+to this record again and use that same sort of interface here about
+actions they took to log new actions. So, oh, now I did a harm matrix.
+Now here's my notes. I added some documents, and they can again, they
+can send that back to you. And that could you know as many times as that
+might happen in your workflow, that can happen and that just goes into
+the intake log. So that's one of the options you can select. There
+further prevention services may be required transfers. I'm assuming this
+means that you're going to try and open a case for them, like an ongoing
+services case. Is that accurate? So I don't know a lot about who an
+assessment worker would be, but it sounded like, essentially, who does
+this get sent to? If it's like, yeah, we need to open a case. Or is that
+also a cue? Or does it be the so, to select who it goes to. So, okay, so
+like the intake supervisors themselves, will do the determination of
+whether a case file needs to be opened. Okay, yeah, okay. And they would
+work with someone, though, on that, yeah, the intake worker is assigned.
+Oh, so the intake worker and the supervisor you're saying would work
+together to formulate that plan. Okay, I'm going to skip to the last one
+here. No further service. So essentially, we did the things we needed.
+We provided the help they needed. This is done that can close in intake.
+I did want to ask about multiple intakes. Is it ever possible for the
+same individual to have multiple intakes open at the same time. Yeah,
+that does happen. Okay?
+
+Speaker 2 28:26
+
+Not happen because sometimes the clerks take a little bit of time, two
+or three, or sometimes, if these teams still have to have an open intake
+too, sure, there might be. And some
+
+Speaker 12 28:39
+
+of them are 10 days, similar, 24, three, different things, yeah. Another
+example would be calls during The day. Yeah, yeah. It
+
+Speaker 1 29:22
+
+so is there ever a case where, you know, they open an intake, they're
+speaking with their supervisor, and they come back in the meantime, and
+they would, they put it on that same like, the family comes back, or
+they make a determination in like two hours, then come back. So that
+would stay in the same form. But another emergency happened, it's
+totally possible that they could open another one. Okay, okay, yeah,
+that's good to know, because I think we had our thinking was there would
+be only one at a time, but that's would you want it? To warn people, so
+if they come in, they search for a person and. To go to make an intake
+would you want like a puppet says, Hey, intake number, yada yada yada is
+open, and give them the option to sort of continue with that one. Yeah,
+okay, but they should still have the option to make a new one. Okay.
+Also, there is in the case where sorry cases, when someone comes and
+they have an open, ongoing services case, like child care, whatever the
+case may be, those intakes are supposed to be directed to the worker,
+right? Like the case worker, yeah. And so, yeah, I just maybe talk me
+through that process, because I read through the manual, and I think I
+understand it, but I want to make sure it's actually how you do it. So
+so it assuming in wabanong, they type it in, it's going to show when
+they try to do an intake, it'll tell them whether they have an open case
+or an open intake, you'll be like, hey, this person has an open intake.
+What would you do at that point? Like, do you phone them? Do you email
+them? Yeah, be. So you would Okay, so that intake essentially, then we
+might want to actually link it with that case then so that it would be
+part of the history. So yeah, the way the manual was written, or at
+least the way I read it, it sounded like maybe they might try and just
+be like, hey, you know that person's here at their desk. Does that ever
+happen where it's like you just go talk to them? Or is it always like we
+would have to complete the intake, right? Perfect. Are there other
+things also? The recommendation, I think, is just sort of how it was on
+your form. Is that how you think of it? Like this is what the supervisor
+is recommending be done. But just like, is this the right title for this
+box? Like, this is their recommendation? Or it seems like they're sort
+of deciding what's happened, right? Like this is either closed, this is
+either closed or not, but recommendations what it says on your form. So
+I'm not trying to, I'm just trying to make sure that that makes sense.
+
+Speaker 5 32:51
+
+Perfect. I think that also mimics, yeah, perfect. And sorry. I'm gonna
+say completely here. I'm just replying to Christine Peters to say, like,
+Hey, we're not going to do the Ice fusion meeting that I see fusion.
+We're shifted weekly to Governor Madison, and if we want to do a overall
+review the next time. So for an overall review with Clemen would be next
+Tuesday afternoon, Lisa, next Tuesday morning. So, yeah, I mean,
+
+Speaker 1 33:30
+
+there's definitely a few things where we want to touch base on, you
+know, like, oh, we talked about this. Scope, scope, scope, scope, just
+make sure we're on the same page. And maybe schedule two could be,
+
+Speaker 5 33:38
+
+yeah, that would be appropriate next for next for next Tuesday afternoon
+time to get all that in a room and come back and review. But I just
+wanted to throw it out there that kind of like we had said the in person
+ID fusion meetings were set just before we decided to hear weekly. Yeah,
+originally they were going to be bi weekly with some follow ups. But I
+think that makes the most sense. People here will get an email. Just
+awesome. Thank you. So if I'm the worker and Darryl, you're my
+supervisor, we work together, we talk about the intake, and we decide
+that it needs to be an ongoing service case. What happens next? Like,
+who do I send it to? Or, like, what's, what's the process? Okay, so,
+but,
+
+Speaker 1 34:30
+
+okay, so first, first part of review is supervisor and worker, and then
+they come to a consensus. They send that to you, and you make the call
+or your after hours counterpart, same. Okay, so really then, if I'm
+understanding correctly,
+
+Speaker 6 34:59
+
+you.
+
+Speaker 1 35:00
+
+This is a recommendation, and there's another step after this, where it
+goes to you, and then what are your options at that point? Board. Okay,
+and then, so let's say we did that. You agreed that the case was made.
+How do you pass the torch to that team? Like, do they have a queue? Do
+you talk to someone? Is there Someone who does that assignment
+
+Speaker 12 35:40
+
+and then
+
+Speaker 1 36:13
+
+Okay, so in this system, it should flag the Chief Operating Officer,
+like, once that you've approved it, like, yeah, we need to move this to
+the next stage, and then you two will meet or do whatever needs to
+happen there. Okay, perfect, yeah, so I'm glad you mentioned that prior
+contact check, because I wasn't sure where this happened in the process
+or what exactly it was. But once, okay, maybe I'll clarify this for me
+too. So if you've decided yes, this intake needs to be escalated into a
+case, I've sent it to Kelvin, does that mean that the intake itself is
+now complete? Now Open File, okay, but even before you started a case
+file, yeah, okay, that's, that's one and so that would it be the same
+form, you just have different information you put on
+
+Speaker 13 37:32
+
+it. Okay? So
+
+Speaker 1 37:35
+
+one of the things, maybe I'm just going to go back up to the header
+here. So one of the things we're trying to help do is, you know,
+maintain, sort of like a chain of connection, right? So, you know, this
+is the intake ID. If there was a case created from this, then we would
+link those two. Would we want to have three records where it's like, so
+intake to is going to be escalated to a case, and then we open another
+intake, they'll stay linked, and then that second intake links to the
+case. Or do we want to, or does it make sense to do it as like, a
+section of this intake where it's like the next like, not just a
+supervisor section, but a director section. Maybe I
+
+Speaker 6 38:20
+
+just
+
+Speaker 5 38:22
+
+keep in mind that the actual assessment, yeah, yeah, that would be
+addressed the actual documents or information. Information, perfect. So
+I get it. So my thought here, what triggers that next form? Is it a
+close? Would we like close intake case to be opened, or case required
+opening. And is that something that we want to flag it at the closure of
+an intake to them to then prompt, okay, well, because we did that, now
+we start the new intake immediately there to open the case.
+
+Speaker 1 39:21
+
+And does that also get logged in the intake module? There's
+
+Speaker 2 39:28
+
+anything
+
+Speaker 5 39:30
+
+like that? All, okay, so it's just a internal process, yeah, so this
+would just be continuity for us internally to be like, cool. This was,
+this was the first. This is. A preliminary intake that caused us to
+determine that ongoing supports are needed, and then there's a second
+intake for those ongoing services and to open the case.
+
+Speaker 1 40:18
+
+And I gather you have a clerk, then that is going to be responsible. And
+here be the same idea. If you close an intake so say, Yeah, whatever the
+outcome is, it's completed and it's going to case, or it's completed and
+it's not going to case, then it should send tasks to the administration
+person so that they can go on CFAs And enter all the appropriate
+information. Yeah, That's right. You
+
+Speaker 12 41:00
+
+work, necessarily, right right? Yeah, sorry for the quick scroll here.
+Okay,
+
+Speaker 5 41:46
+
+so at the top there, like where it says maybe,
+
+Speaker 1 41:48
+
+so I think that's what. Again, this is the wording from your former so
+this would be like a referral on an existing case you need something
+like that, and there it could be a different agency and worker. Yeah,
+and is it true that you wouldn't use this for Peguis case this section,
+you still would. So it's, they had an existing case, and it was at
+pegus, you would, you would fill it in here. Okay,
+
+Speaker 5 42:19
+
+so it's a referral into the non existent case, case managing agency,
+PCFs,
+
+Speaker 6 42:25
+
+yeah,
+
+Speaker 5 42:26
+
+go from there. Okay,
+
+Speaker 1 42:27
+
+cool. And yeah, in terms of, yeah, knowing, like, if it exists in the
+database that we have, then it's going to prompt them, but yeah, you're
+right. Like they would have to speak with the people, if it's from from
+somewhere else, and that that's where that would get, is that all the
+information you need, one thing I like, again, if this is what you use,
+is what you use. But like, the service worker doesn't have, like, any
+contact info. But maybe that's maybe they reached out to you already.
+Okay, yeah, I'm not sure how that happens. Okay, okay, yep, and yeah. So
+for this, these are radio buttons, so you can only select one of these
+two options. It's either a new referral or and then you would specify
+here in this drop down what
+
+Speaker 6 43:34
+
+type
+
+Speaker 1 43:35
+
+of existence. But if there's more options that we want here, then we
+definitely want to add those
+
+Speaker 5 43:41
+
+right now, it's child and care protection, case family enhancement or
+other. Yeah, there's more. Can we? Can we get that list? Because then
+we'll make sure those all get included, so that your staff have every
+option.
+
+Speaker 1 43:55
+
+Yeah, for sure.
+
+Speaker 5 43:58
+
+Would you see Darrell under other would would they need to then further
+specify a type of case, or would we leave it as other to be sorted by?
+These are all the other cases.
+
+Speaker 12 44:14
+
+Yeah. Capture with whether they are specifically Manitoba CFS files, or
+we will have cases that I their Sure, right? So would we.
+
+Speaker 1 45:00
+
+Want to put look specifically then other open file, like, just to make
+it specific that it's, it's a file we just don't know what it is. Yeah,
+yeah, absolutely. Yeah, yeah. Okay. Perfect again, just for the sort of
+user experience, if they haven't clicked this radio button and like,
+they don't actually see any of these, they don't need to fill them out,
+so that way they're not wondering, oh, do I have to put anything there?
+It only shows up once they produce
+
+Speaker 5 45:44
+
+this noise on the form, right? Because we're still in the edit.
+
+Speaker 1 45:47
+
+We're still in added, yeah, we're
+
+Speaker 5 45:49
+
+seeing all the fields that
+
+Speaker 1 45:51
+
+you
+
+Speaker 5 45:51
+
+could possibly see. But when Ross the workers going through this, he'll
+only really see the form the fields that he needs
+
+Speaker 1 45:58
+
+to Yeah, exactly.
+
+Speaker 8 46:00
+
+So yeah, then,
+
+Speaker 1 46:06
+
+yeah, tell me a bit more about this. This is a thing that it said on
+your form, prior contact, check completed, yeah, yeah. And I think like
+this section again would only be like the intake workers wouldn't even
+see it because it's not relevant for them. Maybe supervisors would just
+so they could know that it's, you know, wrapped up.
+
+Speaker 5 46:33
+
+Does Darryl help me with this one? Is a prior contact check always
+required. You against what happens is that when this information
+accepted, there's an option, okay? So is does this task of doing the
+prior contact check? Does this need to happen before anything else? Or
+does this need to happen? Like, does this hold anything up from
+happening? Does this prevent anything from happening. Yeah. Okay, so
+they can't really mark that it's been entered into CSIS unless they've
+done the prior contact checks. Okay, but they
+
+Speaker 14 47:50
+
+wouldn't
+
+Speaker 1 47:50
+
+even see that until you closed it in some way, because they don't know
+about the end result, right? Okay, right. There will be cases where
+emergencies arise, yeah, yeah. Yeah, and so also here, I assume that
+Steve says gives them a unique number, right? So this is where they
+would enter that number, if it's not already entered. And this is a new
+intake so that that now becomes a link to this forevermore sort of
+thing. And then it sounds like at this point, then like so once an
+administration has done the job, then it's truly done. There's also
+going to be
+
+Speaker 12 48:54
+
+instances where an intake
+
+Speaker 1 48:56
+
+worker will actually start for me. This information in the module, yeah.
+Like earlier on, yep, so yeah, when, when in the process, do we want
+that? And we can also very beginning, like right tippy top here. Yeah,
+okay, perfect, and then we can have it so if it gets filled in at the
+top, then it'll just be displayed at the bottom like it don't. They
+won't need to enter it again. It'll just show them what it is, because
+it's already attached. Okay, perfect. Okay, any questions? I. Gonna pop
+over to the view part of it, if you want. But first, before we move on
+to that, okay, so let's go over. Oh yeah, they changed the UI so once
+you hit save and close, for example, or you're coming back to a record
+that already exists, and apologies again for the fast scrolling, then
+you're going to see this. So it's laid out in much the same way like
+especially this header sort of stays the same. You can still upload
+documents and attachments without having to open up the edit screen
+again, and you can also print it. And so from here, you can print out an
+intake form. And our thinking was just exactly how your paper form is.
+It would fill that out for you if that's useful, or you can have it
+print a blank intake form if you need to take it somewhere and do an
+intake, when would we use? When do we use printed forms? Okay, I would
+say then too, and we, when we have that print filled out, maybe we can
+just review any sensitive data fields to make sure that
+
+Speaker 5 51:30
+
+sensitive data fields either aren't printed or are protected. I I'll
+defer to you what we would want to see on those forms, but I'm just
+thinking with like, the intake farms got some pretty sensitive info on
+it. But I think also they're printing it out. They want absolutely to
+have a history what's previously happened? Yeah, so there wouldn't be
+redacting any information
+
+Speaker 1 52:00
+
+as part of their confidential files, bring
+
+Speaker 2 52:02
+
+this with me. Oh, okay, okay, gotcha Okay,
+
+Speaker 5 52:11
+
+nope, that makes sense. Then okay. I was just curious, so I appreciate,
+
+Speaker 2 52:16
+
+yeah, otherwise,
+
+Speaker 5 52:17
+
+you know, you guys know me and my what's, what's on that piece of paper.
+That's, yeah,
+
+Speaker 6 52:22
+
+that
+
+Speaker 5 52:23
+
+makes sense, that they're using it in the field, and we already have
+those policies and controls in place. It's like, and then Ross, when
+you're done with you come back and shred it appropriate
+
+Speaker 2 52:33
+
+to in case, back to that. Okay, so they were the first one they forget.
+Next one
+
+Speaker 5 52:40
+
+makes sense. And we're in some areas where there's literally no
+reception to even use this mobily to look at the even if, even if
+everything worked perfectly on mobile device or are on iPad or whatever,
+if we're in a dead zone, we're in a dead zone, yeah, we're not going to
+be able to pull that information. Okay, I appreciate that insight. That
+makes sense.
+
+Speaker 1 53:02
+
+Maybe, actually, this is a place to ask them to when they transfer the
+information into CSIS. Are they just copy pasting right now? Like, are
+they typing, retyping it? Bit of both. I
+
+Speaker 2 53:25
+
+copy and paste from any documents. These are quotes, oh, it doesn't
+allow this. It gives you random
+
+Speaker 5 53:42
+
+okay. Is that some kind of character encoding probably address with our
+copy button. If we can
+
+Speaker 2 53:51
+
+find where do we want to just leave it manual, because as soon as you
+you know right in there. You know, they said they touched me, kind of
+thing. You have to have a quotation in
+
+Speaker 6 54:08
+
+there,
+
+Speaker 5 54:08
+
+right? How would you do a quotation?
+
+Speaker 2 54:10
+
+So if you copy and paste it, it'll give you the similar character. You
+can just backspace, Backspace, and then put in a quotation. Oh, okay, so
+it'd be the copy and pasting,
+
+Speaker 5 54:22
+
+right? But for copy and pasting, we kind of want to leave those non
+supported characters in, because that reminds Ross the worker, that
+okay, I need to go here and actually put this thesis compatible edit in.
+Okay,
+
+Speaker 1 54:35
+
+right? Yeah, sounds to me like a character encoding issue. If we knew
+how they were encoding it, maybe anyway.
+
+Speaker 5 54:43
+
+I think I'm sure they're not going
+
+Speaker 1 54:44
+
+to talk to us about it if
+
+Speaker 5 54:46
+
+we already, yeah, we already have a process, and there's and like I
+said, we can use the broken characters as the field pointer of app. You
+need to exactly. It's kind of my visual. Under the other was a special
+character. I need to make sure it's there.
+
+Speaker 1 55:02
+
+It's worth putting on the future roadmap, though, because it literally
+might be just like, Oh, they're using UTF 16, and if we convert it to
+UTF 16, then your pace is perfect. I don't know that that'll be that
+simple, and it almost never is. But
+
+Speaker 6 55:16
+
+of
+
+Speaker 5 55:16
+
+roadmap, I think that's going to be one of those quality of life things
+that we've got a we've got a solution. It won't be any worse than what
+we're doing right now, and roadmap quality of life in the future would
+be nice.
+
+Speaker 1 55:27
+
+Yeah. And then so here again, if this is not yet closed, you know this
+timer is going to show up at the top still. And this is really just all
+that information we went through, but in a view only form right now,
+right? So it sort of says, what were the issues that they actually
+selected? What did they write about it? What is the recommended
+response, any documents that were attached our intake log, this will
+allow you to filter. So if you want to see the oldest or the newest, or,
+you know, by by name, you can do that. And then the resolution of it is
+going to be just whatever is the most recent thing, and we're thinking
+we would color it right, because this is, like, the green one is like we
+finished it, and here it was entered into thesis. Do we want that
+information? Is that fine for how it shows up? Or do you want that,
+like, right at the top, what happened with closed ones, that kind of
+thing? Okay? And then, yeah, here it would say, you know, the date that
+this happened, they did their prior contact, check that's completed, and
+see this enter that date, And then this would be a complete intake fire
+
+Speaker 2 56:58
+
+contact. Well.
+
+Speaker 1 57:08
+
+And then there will be at the very top here, this status will say, like
+closed, you know, if everything is done and completed. So they they can
+check that date if they want, but they know it's done, because intake
+isn't done until that is complete. Can't
+
+Speaker 5 57:24
+
+be closed until the site number right entered with the
+
+Speaker 1 57:31
+
+Exactly, okay, so concluded
+
+Speaker 2 57:39
+
+open or status would be taken clear. Doesn't mean,
+
+Speaker 1 57:43
+
+okay, so either open or intake included, nothing in between those
+perfect so on. Like,
+
+Speaker 14 57:56
+
+yeah,
+
+Speaker 1 57:58
+
+so that's we would have, I didn't know, like, how what they look like
+with their letters, numbers, whatever, but yeah, this would be the the
+unique number that you get out of the intake module, if it's already
+there.
+
+Speaker 2 58:11
+
+Yeah.
+
+Speaker 9 58:15
+
+Okay, awesome. Write that right in there.
+
+Speaker 1 58:24
+
+So then, do we want it so that that PC FS is just like there, so you
+don't have to type it, yeah, type the number, yeah, yeah. This is a
+little and also that it's easy to do, make sure taste the same and
+there'd be no dash, no dash. Okay, is there a space or no? It's just
+like that. Okay, perfect. All right. Other things I wanted to say about
+intake, chat, multiple maybe I'll open up some questions, but I think
+that's most of what we were going to show you. Oh, I remember what I
+wanted to say. So this is now complete. There is a tab under every
+person record that just says intake and case management, which is like a
+historical log of any cases or intakes that they've been involved in. So
+if I'm, you know, pulling up baby DOE's file. I can go to that tab, and
+it'll show me just, like a just like the link and the name, the date,
+that kind of thing, so that I can see that pattern. And I can also click
+on any of them, and that'll take me to that record if I want to, like,
+they've had like, eight in the last week, or whatever. What's going on?
+I can see what they're all about, right? Yeah.
+
+Speaker 2 1:00:00
+
+Maybe don't see all babies intakes that they're attached to. Does it
+say? Will it say the case preference? Yes, yeah. They're gonna be like,
+hey, there's mom who called in claiming this baby, and dad calling the
+next day, paying baby,
+
+Speaker 6 1:00:19
+
+yeah.
+
+Speaker 1 1:00:19
+
+And then that also so anyone who's entered as a person on that like
+it'll will know who is the focus of it, but it also shows up in everyone
+else's record. So if I'm the baby, yes, it's under my tab, but it's also
+under the moms, if she was in that incidence as well, or whatever that
+case, let's say
+
+Speaker 5 1:00:42
+
+just I don't understand this. So yeah, let's pretend I don't understand
+this. Guys. Come on, not that hard. If mom opens for baby dough and they
+live in their own household, and did that show up? If we search dad,
+because dad's attached to baby dough, would we see that intake, even
+though maybe dad's over here incarcerated, or something,
+
+Speaker 1 1:01:10
+
+you would see so households are different than attaching to intakes,
+unless you tell me that they aren't. So households are we determined
+based on who's literally living in the same home and has some kind of
+parenting or child relationship?
+
+Speaker 5 1:01:25
+
+Yeah, so maybe I'm thinking about like a genogram relationship here to
+where we we know Baby Doe. We know who mom is. We know who dad is. Mom
+opens an intake for Baby Doe. Does that reflect it on dad's record that
+Baby Doe has an open intake. Or do we have to then maybe I'm
+overconfident. Maybe we see baby dole under dad as the relationship. We
+click on baby doll and now we see baby dose.
+
+Speaker 1 1:01:51
+
+Yeah. So I would think that we would only do that like they would have
+to have added that in the people involved, okay. I mean, because they
+have a parenting relationship, doesn't mean they were necessarily
+involved in the mean they were necessarily involved in that instance, or
+whatever the thing they were talking about. Or maybe, no, I was trying
+to think like Calvin situation where, yeah, it's opening
+
+Speaker 2 1:02:10
+
+one the next day, you know? Yeah. So, oh, I got you. I keep
+
+Speaker 1 1:02:27
+
+changing. So as long as this named by anybody, in case where they I
+think they call it the case reference is that also what you would call
+the person who is the focus of the intake. Yeah, yeah, so that's another
+way you can explore it takes. The other way that you'll interact with
+these is through dashboards. So you're the director, we're going to have
+a queue that goes to so you'll have a dashboard that shows you which of
+your supervisors have what caseload, essentially, and potentially their
+team as well. The supervisor will come in and they'll be able to see
+which of the cases they have personally and what they'll be connected to
+the workers that way. Workers will have a dashboard when they come in.
+It'll just be the ones that they're involved in. So you and that'll be
+on the sort of front page when you land. So sort those by priority level
+and time lapse on that timer, so that when I walk in the door and I'm
+like, Oh, what am I doing today? It's Monday, not like you'd really
+forget, but you know what I mean, it's like front and center for you. So
+it's like one point of contact where you can go and see, like, what are
+all the things that I might have to do? So that's another way that those
+that's where those tasks are going to live until they're resolved. Well,
+I'm glad to hear, because we're already building it doesn't mean you
+can't change
+
+Speaker 2 1:04:03
+
+other intakes, yes, because when it comes to abuse, yeah, you have to
+also open up intake as well. With those then show up as well under,
+
+Speaker 1 1:04:17
+
+yeah. So same, same idea with if, if an intake leads to a case, then we
+keep those links together. And likewise, if an intake leads to an abuse
+investigation, then that intake is going to be the links to that as
+well. So the first study will change
+
+Speaker 2 1:04:31
+
+Baby Doe,
+
+Speaker 1 1:04:36
+
+yeah, it'll show up. And actually, I think maybe we showed it a little
+bit, or try to with this picture, do a super great job, but they'll not
+only show up, but like if they're if one of them led to the other,
+because I assume there could be multiple intakes, not all of them lead
+to a case, not all of them lead to an investigation. Then you. Were sort
+of toying around, maybe having a box around them, or some kind of
+linking symbol, just so know that, like that's the one that led to this
+one. And those numbers, those ID numbers, will always be available to
+click on that one, right? So you can go back in the chain of events, or
+forward if you're looking there. So that's these links in that way, you
+
+Speaker 2 1:05:21
+
+probably won't have to overcomplicate it by having like this tape led to
+this referral, no, because they're going to have the exact same date,
+right? So, but
+
+Speaker 1 1:05:36
+
+it is possible to have multiples opened on the same day, which is maybe
+
+Speaker 2 1:05:42
+
+one there wouldn't, there wouldn't be a time where there could be three
+takes on a person open in a day. Would be too if anything. So it'd be
+the calling to the agency, Kate, might you know, and then we get the
+referral, and then we have to put it onto that. Yeah, it's pretty easy
+to so in the
+
+Speaker 5 1:06:02
+
+case of the two, similar what Darrell was saying, where the person can
+get excluded and the second one gets opened to create the case.
+
+Speaker 2 1:06:10
+
+It depends. So sometimes intake gets abused disclosure, and there's
+actually active child touch concerns in that home. So if the parent, the
+offending person against their child, then we just take the
+investigation. Darryl and his team started to follow up with the
+protection concerns, so making sure that child safe
+
+Speaker 5 1:06:33
+
+and those can be resolved
+
+Speaker 15 1:06:36
+
+independently, correct? Yeah, so, so Darryl did deal with all of it, and
+what's before the courts their intake, but are still stated and
+
+Speaker 5 1:06:45
+
+then just on the summary page here, not necessarily critical to have
+that additional visual that these are linked or anything, because you
+can, even if you had, let's say you have the impossible, which is four
+in a day, either we see each date and you're looking at them anyways,
+Probably drill into each one on the off chance,
+
+Speaker 1 1:07:05
+
+because we're trying to create a chain of responsibility so we can never
+go into a limbo where it's not assigned to anyone. It's very easy for us
+to do that. I thought it might be like forensically, what I'm covering
+for someone's cases? It might be nice to know. Oh, well, here's
+
+Speaker 6 1:07:24
+
+again.
+
+Speaker 1 1:07:25
+
+We don't
+
+Speaker 2 1:07:25
+
+have to put
+
+Speaker 5 1:07:26
+
+it hard to do. I yeah, I think, yeah, track the link. Those
+
+Speaker 1 1:07:29
+
+links are all. They already exist. Because the way we have to assign
+tasks,
+
+Speaker 14 1:07:34
+
+essentially, we get that for free. And we know over
+
+Speaker 16 1:07:36
+
+complicated, it was like a nice to have add on or,
+
+Speaker 6 1:07:39
+
+yeah,
+
+Speaker 1 1:07:39
+
+we essentially have to have it because we need to be able to link those.
+Because when you assign a task, it's like you got to go do this, like
+that's already built by the time we get to this point. I guess what I'm
+saying
+
+Speaker 9 1:07:49
+
+sounds great.
+
+Speaker 1 1:07:50
+
+Yeah. All right, hey, we're done 15 minutes early. Yeah.
+
+Speaker 14 1:07:58
+
+My department, yes. So yes. Thing
+
+Speaker 5 1:08:07
+
+we can we show a little bit of
+
+Speaker 1 1:08:08
+
+Yes, or
+
+Speaker 5 1:08:08
+
+finances for Darrell, yeah, to be very helpful.
+
+Speaker 1 1:08:11
+
+So two things before, before we jump into the financial seeds,
+essentially an intake, and you won't see it in these wireframes yet,
+because this is something we just learned. But there's going to be a way
+for an open intake to just hit a button that says financial sheet, and
+that will create in the app a financial sheet that will already have a
+bunch of the information correctly filled out, right? Because if it's
+after hours, that tells you something about the budget where that
+person's address is, you know if it's on reserve or not. That's gonna
+tell you about budget. So those things all get loaded. Yeah, and I'll
+show you a bit of that right now. Did
+
+Speaker 5 1:08:48
+
+you want to take a break before looking at okay, didn't want to keep you
+bolted to your chair. There
+
+Speaker 17 1:08:55
+
+we go.
+
+Speaker 6 1:09:00
+
+There we go. So let's go to Finance forms. So I think I've
+
+Speaker 9 1:09:11
+
+got some cold mochi
+
+Speaker 1 1:09:18
+
+for you. So in, in the case of an intake where you needed to attach an
+expense, or get an expense covered, for that, you would essentially, as
+I said, there would be a button on the intake itself, and that would
+automatically put this case reference. So if it was a case, would be a
+case, but an intake would be an intake number, and these streams, so the
+fee code, the stream and the expense type should all be determined,
+because we should know that from the properties of the intake, as well
+as this funding source and. And then you can describe what it is you
+need. Also not shown on here is, we obviously have to say this is if
+you're getting a PO, and it needs to say who this PO is going to so this
+is something a question for you, actually, is like in intake, who
+completes this only supervisors. And so the supervisors make the initial
+request. Or is it like in case work where the worker sends a request to
+the supervisor and they decide whether that's an expense that should be
+included? Yeah? Okay, okay, basically an input worker just gathers.
+Yeah, perfect. Another thing too, like you have to track the like it
+wouldn't be on the form, but there is a Finance tab on the person and
+the family, because you know that individual form is one thing, but
+there could be multiple intakes, right? And those would all draw
+potentially from the same budget, so that information will be on a
+Finance tab, so they could go there and see the tally of like, the
+amount of budget that's come out of each of the streams that might
+apply. This would be just how you sort of request it. Once they request
+it, this would be the worker would say, you know, I want these things.
+We need to get betting. So on this stage it's going, we're going to
+split it this way. That would then get sent to the supervisor, who says,
+Yes, we're gonna do this or not, we're just don't Okay. So how do they
+send right now? How do they ask their supervisor for something? And it's
+like, I need to get something for a family, it would say on the
+engineering create so like, just to go back to that, is there a specific
+place you put that, or you just put like in The notes of the intake
+form? Or how like
+
+Speaker 12 1:12:18
+
+you Yeah,
+
+Speaker 5 1:12:25
+
+does the does the worker at that point kind of identify the need for a
+purchase to be made?
+
+Speaker 12 1:12:32
+
+Of what?
+
+Speaker 5 1:12:38
+
+Of what? Maybe?
+
+Speaker 8 1:12:38
+
+Sorry, I sorry i Sorry I didn't hear that last one.
+
+Speaker 18 1:13:02
+
+Oh, yes. Okay, so the intake worker will ask certain
+
+Speaker 8 1:13:05
+
+questions for a
+
+Speaker 12 1:13:06
+
+service worker will the intake worker
+
+Speaker 1 1:13:28
+
+will ask certain questions. Is there a list of those? Is there a script
+that they use? Because we could build that right into the intake form,
+if that's
+
+Speaker 2 1:13:38
+
+true, because that's way easier
+
+Speaker 6 1:13:47
+
+for you.
+
+Speaker 19 1:13:47
+
+Yeah,
+
+Speaker 1 1:13:52
+
+the goal for stats is to do it as automatically as possible. So like, if
+that's a decision they're making at that time, and that's a decision you
+count, let's absolutely put it on the form, because then it's easy for
+the database to collect that information. That's
+
+Speaker 5 1:14:07
+
+fine. If we never, if we, if we use it 10% of time, that's okay. We've
+got staff for the 10% where they're calling in, and it's streamlined for
+your team for that 10% as well. Where Ross and how do I do this? Like,
+no, it's right there on the form. But
+
+Speaker 1 1:14:19
+
+so just just for me to understand, intake worker is talking to a family.
+They're going to then go meet with their supervisor and talk about, you
+know, what they need to do. And that ultimately goes to you. At what
+point does that cost first get brought up? Is that something that worker
+would put in their initial notes? Yeah, unless it's a usual request. The
+intake supervisor. Four? Is there an amount that? Yes, that's definitely
+what we're shooting for. What I meant is like for an individual
+transaction, or sometimes it's like, oh, Ross can authorize up to $500
+but anything more than that, and they got to talk to Kelvin. Is there
+anything like that in that process, like a
+
+Speaker 12 1:15:35
+
+large amount, for example, that loss, yeah, obviously, like, the intake
+supplies are react in a way that, hey, they're going to be spending A
+lot of money, right?
+
+Speaker 1 1:16:01
+
+They have nothing right
+
+Speaker 12 1:16:02
+
+now. So
+
+Speaker 1 1:16:22
+
+is that just you leave it to the professional discretion, or is there
+like, yeah, okay,
+
+Speaker 12 1:16:26
+
+to be able to use their best discretion, there's check. The big thing
+is, yeah, yeah,
+
+Speaker 1 1:17:00
+
+yeah. And I think it would, that is our plan, and when it's updated, is
+probably when finance authorizes it to go into sage 300 it's a minor
+thing, like, but it might be like the end of the day or or the next day,
+just in case, like there's an error and they need to change something.
+We don't want that, like budget jumping around and they would just but
+yeah, the the idea is that you submit this online, it gets the proper
+authorizations from whoever on the team that needs to do that. Once it
+is verified as correct from those people. Then it goes to finance. They
+do just one pass to make sure, like the budget lines are the right ones,
+and it's being applied as should be. Once they vet that, then that goes
+into a batch that says, I'm done, I'm ready. And at that point, we would
+update the family budget so that it's accurate it's
+
+Speaker 5 1:18:00
+
+spent this much of however, we had an actual page, yeah, it would so
+similar to there being that sort of like intake and case management tab.
+There's another tab just called finance, which is a list of all the
+deductions against the budget, essentially, would be able to have like,
+a pending just like kind of we said. But if you know, we've made a
+couple transactions in the morning, we just leave those maybe at a
+pending state until they get exported by finance or something, they can
+still be for sure, rejected or something. Yep, and then Darryl for the
+intake team. Are they relying generally on POS for these things? We've
+got a couple different workflows with the finance side as well for like
+POS and credit cards and things. So it's gonna be kind of lining, lining
+some of that up to that. That's decided according to
+
+Speaker 12 1:19:30
+
+another and yeah,
+
+Speaker 1 1:19:52
+
+okay, yeah, I'll follow up with finance, and it sounds like maybe that
+would be operations budget. I don't know, but yeah, I'll ask them. Maybe
+it's put. Mentioned, but a different pool of prevention money. Yeah,
+prevention,
+
+Speaker 2 1:20:03
+
+realistically, when it comes to finance and how they're expecting
+budgets for families, they don't really see a budget really. They'll
+just flag it if someone's calling it for groceries. They don't really
+care about the budget, really. But it's more so for our supervisors to
+kind of get a general idea right how much money they can be spending.
+But then there's Daryl and I, but the services number,
+
+Speaker 6 1:20:39
+
+yeah,
+
+Speaker 1 1:20:44
+
+so, yeah, no, those are all good feedback. And yeah, you're, we're going
+to be talking more about that later today, but so I can even show you a
+couple other things we're looking at here, if you like. This down. So
+this process is for the finance form. And then there's an overview form,
+so sort of like an intake form. It has these sort of steps in the
+process that it can go through. It has a unique number, and it sort of
+like is approved in line of whoever needs to touch it. At that point,
+you can attach your receipts to it directly, and finance won't take them
+until you do unless they're truly lost or something like that. Again, it
+has an audit log. It says you know what you bought here. Can attach your
+purchase orders or receipts, and then you'll also be able to generate
+POS all in the system, so don't have to go to paper. You'll indicate
+that you need a PO, what it's for, who's it going to if it's approved by
+the ongoing service or intake team, then then it will go to Finance.
+They'll make the actual po for you and send it back to you digitally so
+you can print it and head off to the store to buy what you need. And
+then after that, it again stays as a record so that you can attach if
+they give you an invoice or receipt. After that, that gets attached
+there, and then that final check By finance goes into their batch
+updates the family budget, out, yeah for sure And yeah, we're working
+with finance to get the exact numbers and the algorithm. So there's
+they're exporting it from their system, so that the idea is that those
+numbers will go onto the task, and therefore, when it's exported into a
+spreadsheet for them to import into sage, it's it's done like they don't
+have to go and retype it. They just say, import this and it would
+automatically go to the correct account. Yep, like the submitting here.
+
+Speaker 12 1:23:31
+
+Yeah. Would be
+
+Speaker 5 1:23:45
+
+Yes, uploading, that's the idea right now. Give me one moment here and
+we can just take a quick look. Yesterday, it's just under finance forms.
+Oh, nice, PJC, GL accounts for both awesome. I think that's what we is
+that
+
+Speaker 1 1:24:11
+
+the one with all the folders
+
+Speaker 5 1:24:12
+
+finance forms, yeah,
+
+Speaker 1 1:24:16
+
+but I think we're still waiting for one more like that shows the
+structure, but not the exact numbers of each item. Oh,
+
+Speaker 5 1:24:26
+
+I just got this. Oh,
+
+Speaker 1 1:24:28
+
+okay, yes,
+
+Speaker 5 1:24:29
+
+category, oh yes, cash cost. I don't know if it's what you're looking
+for. Looks like there's a lot of similar numbers, but
+
+Speaker 1 1:24:39
+
+yeah, no, yeah, but exactly so, like, if, if it's, like, on an intake,
+and it's after hours, emergency funding, and it's gross relief, and you
+selected all those things that's gonna it's gonna know what budget codes
+those go under based on what finances provided to us. So right now. Of,
+yeah, which is just a way to make more errors, right? So, yeah, I agree.
+It's it's better if we can, yeah, it'll be all right. And above a
+certain level of authority, it can be overridden if, for some reason,
+there's something unusual, but like, similar to the way the intake will
+have those timelines, if it's known that that's the budget, then we just
+want that to be what's shown. So then you don't have to reference as
+you're doing it. You know you're doing your job, and then finance gets
+the information they need. That's the goal. Anyway, I'm happy to stay
+and hang out too and talk, but you're also all free to go to lunch, not
+like you need my permission.
+
+Speaker 6 1:26:22
+
+You
+
+Speaker 5 1:26:22
+
+class. I just confirmed location. I named the docket. I have no idea if
+it's what you need. I just know that that's what bath sent over and ran
+out SQL script on the
+
+Speaker 1 1:26:42
+
+Oh, yeah,
+
+Speaker 5 1:26:44
+
+it's the PJC codes for the GL. I'm using acronyms that I'm going to
+pretend I understand. I know General Ledger.
+
+Speaker 6 1:26:53
+
+Yeah. PJC Is the project module. Yes. Job. I
+
+Speaker 1 1:27:17
+
+coin. I'll definitely have questions about this for them, but it does
+seem like this is exactly what we need,
+
+Speaker 5 1:27:27
+
+okay, yeah, and I love my cat. I don't want you to make a table.
+Christina, does that make sense for our meeting scheduling? Do.

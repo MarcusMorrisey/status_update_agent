@@ -1,0 +1,1768 @@
+2026-05-11_PCFS reset meeting
+
+Fri, May 29, 2026 3:22AM • 1:06:33
+
+SUMMARY KEYWORDS
+
+PCFS reset, application management, user testing, data migration,
+timelines, scope, finance, abuse intake, user acceptance testing,
+roadmap, security, feedback, iterations, in-person meetings, action
+items.
+
+SPEAKERS
+
+Speaker 3, Speaker 1, Speaker 5, Speaker 4, Marcus Morrisey, Ross,
+Speaker 2
+
+Speaker 1 00:00
+
+Okay, application management, that's all.
+
+Ross 00:02
+
+Absolutely, I liked it. His and my office is near enough each other, so
+that we can do a quick check of like right there, stall them. Yeah,
+drink from the fire hose a little bit. How about you guys?
+
+Speaker 1 00:14
+
+Yeah, it's it's busy every time we uncover more about services, fees,
+approaches, the reality of Peguis traveling fam service, like, oh,
+right. Okay, how do we deal with that? How do we go through this? So,
+yeah, I think this last month has been like, it, we, you had a lot of
+things unblocked in terms of moving stuff forward. So, I think what I
+want to talk about today, I'll wait till Kevin, Kelvin's in just to talk
+about, okay. Here's where you are now, based on the information. So I
+don't want to, I don't want to go through ahead. So
+
+Ross 00:49
+
+yeah, no worries. No, I, I'm glad I'm glad to hear the feedback from you
+guys that you feel that things are starting to move more quickly, and
+that you guys also hopefully feel the progress being made,
+
+Speaker 1 01:01
+
+yeah. We
+
+Ross 01:03
+
+fusion side, so
+
+Speaker 1 01:04
+
+yeah, we do. We do have some, like, we, you know, we've invested quite a
+bit of time of more in-person meetings and stuff to really bring you up
+to speed, because I think at the end of the day it's all in Haley's
+head, so it's like, okay, so we've just, you know, divested in that side
+of things, so you know the rubbers hit the road and kind of newer where
+timelines are at, we're a little bit utopic, so we kind of want to get
+back to look, here's the reality of it, we don't want to start cutting
+certain things and going through, I think at this stage you're probably
+up to speed on a lot of stuff, so I want to go, I want to adjust a bit
+of our course. I've been working with the team feverishly behind the
+scenes, and we got some good progress on stuff. So, I've got a laundry
+list of check stuff. I think from your end, one thing I'm sure you'll
+want it to know is where we're going to land with timelines, power into
+scope of things, so we can convey that, and then you know what's the
+approach to bring that up to the rest of the team, and, and also, is
+updating Clemen in terms of her expectations and where things are at.
+So, yeah, but I gotta kill time here. What did you do on the weekend?
+You know,
+
+Speaker 2 02:17
+
+I'll know.
+
+Ross 02:18
+
+I tell you, I tell you, I cut, I cut some sod out of the front, the
+front yard, because we're doing a rose garden. We're going to be doing a
+raised flower bed, so the stone's been ordered. And yeah, I wrote my
+buddy into bringing his, his Ford Ranger over. He's like, 'What are we
+doing? Like, we're hauling, we're hauling clean fill to the four hour
+depot, that's what we're doing.
+
+Speaker 3 02:42
+
+This is
+
+Marcus Morrisey 02:43
+
+a problem with owning a truck, because all your friends call you for
+those truck jobs.
+
+Ross 02:48
+
+I've been telling, I've been asking my wife, I've been telling her how
+much I need to get one of those little Japanese K trucks that have the
+full, the full size bed, and I almost had her, I almost had her to say
+that, yeah, not a problem, because the way I pitched it, I said, "Look,
+I said, I will take you to Sage, the greenhouse. I said, "I'll take you
+to Sage, you can fill the bed up, I will pay for it, and I'll happily
+drive you home. She stopped there. She went, "No. She's like, "No, she's
+like, "Als, she's like, you almost got me there. I was like, ah, it's
+close, it was close.
+
+Marcus Morrisey 03:24
+
+She's like, because in Taiwan they're just like the size of a compact
+car, but built like a cube van, and it's so much storage for such a
+small space. Yeah,
+
+Ross 03:31
+
+yeah, exactly.
+
+Speaker 4 03:33
+
+Hey Kelvin, hey, good day, I pad you guys. Good.
+
+Speaker 1 03:40
+
+All right, so thanks for an impromptu meeting. What we wanted to do is
+cover kind of a lot of ground. We have some kind of house cleaning
+items. We want to give an update on where we're at on a few of the
+streams we're going down. So, for abuse, for example, the finance side,
+we're going to jump into kind of
+
+Ross 03:58
+
+the post. Give me one second here. If we're going to do this. I'm going
+to see if Christina is Sutherland, is available to join
+
+Speaker 1 04:06
+
+us. Okay, sure.
+
+Ross 04:08
+
+Just, I know Clement wanted her involved with all meetings, so I just
+want to respect that and make sure that it's going to see if we can get
+her to join.
+
+Speaker 1 04:26
+
+Good, thanks for thinking about that. We should be, yeah, including her
+on everything, right?
+
+Ross 04:31
+
+Yeah, exactly.
+
+Speaker 3 04:34
+
+Yeah,
+
+Marcus Morrisey 04:39
+
+yeah. Apologies, I should
+
+Speaker 3 04:42
+
+have thought of that
+
+Ross 04:43
+
+as well. Apologies, we've got an impromptu meeting here with ID Fusion,
+and before we got started, I remembered before it was too late, that was
+like, I need to call Christina and get Christina in on this meeting. So,
+does right, do you have time to meet with us right now? And okay.
+Perfect. Thank you so much.
+
+Speaker 1 05:02
+
+All right. Okay. And Kelvin, you're still there too. Yep, perfect. Good.
+All right, so
+
+Ross 05:09
+
+here
+
+Speaker 1 05:09
+
+we want to make.. we wanted to just get a pulse on where things are at,
+give you an update on a bunch of things in terms of our the statuses of
+our progress, our scope, you know how with the collection of the abuse
+information it can be this, this, or this, the finance stuff, and also
+talk about our kind of like user testing, the data migration piece, but
+also just overall timelines of where we're at, because we want to maybe
+manage those expectations, and then you know, also, is updating Clement
+in terms of managing her expectations, bring it up, so as I was saying
+to Ross earlier, I think we've gotten a lot more momentum over the last
+four weeks, five weeks since we've met, and we've gotten in, we've
+invested some additional time bringing you know Ross up to speed, and
+Calvin's in the groups, because at first there was just one point in
+there, and I think Ross, you coming into your new role as well, although
+I've worked with Beggars Child and Family Services, have probably not
+delved as deep into the incredible breadth of what Child and Family
+Services is compared to every other organization entity we've seen,
+there's, it's, you know, child defensers, is this, this is what Peg was,
+does with everything else. So, what we're doing is that, especially as
+we're going through kind of even some of the iterations, is okay, we do
+this, we do this, we do this, we do these things, and then we're getting
+kind of deep into the well of what are we building for our kind of first
+version, and then going back to even, you know, the original goal is
+what's our first version, it can't be everything for everyone, and then
+I hear Clement in the back going, "Look, we can't get it too much into
+the kitchen, we need to kind of go live with a certain thing, so that's
+where our role is, to kind of scope things out. So, as we're going
+through for our iteration, so you know, client and family data has been
+ready for user testing for a while now. The challenge is, we didn't want
+to set up an external hosting like we're using for our testing
+internally, we want it to be in within your ecosystem, so we can get the
+right authorization, and you know we're treating, get in our testing
+environment with the same level of security as we would say our
+production, so we're finally at the point where we have the environment
+set up, so there's a lot of collaboration between Campfire and ID
+Fusion, so we should be able to kick off user acceptance testing for
+that very shortly, so you know, hopefully we can, you know, for this
+week the intake and notifications has been deep in development, we're
+just finalizing kind of our QA and internal testing, so soon on those
+heels we'll have your group doing the user acceptance testing for that
+as well, and then obviously we're doing our case file management system,
+so that's the other one that is, you know, expanded into more abuse
+information, so I know when we were meeting with Haley early in the
+process, so the RFP had kind of two lines of yet we make will probably
+possibly do abuse. She had said it wasn't a priority when we met with
+the team and stuff, you know, it was obviously kid or no, we have to do
+it, and we can't just have honorable mention for abuse. We need to
+actually have the features we need to do our full intake process. So,
+we've gone through, looked at all the documents, all the systems, we've
+played out some kind of, you know, that the visual designs of what the
+system could do if we built our large abuse system. What we want to do
+right now is rail the abuse section, so a, we're adding that, we're
+going to rail that in a bit. We feel it's going to be, you know, more
+useful for the team if the whole data entry is more like your intake
+process. So, for example, for abuse, instead of having your, you know,
+you have to go to a bunch of different sections to maintain the
+information, the abuse intake is really a point in time situation where,
+when the event happens, we're tracking at that point, you know, who was
+involved, who were the alleged people involved in the process, where
+they were at at that point, so we want to take an approach of doing more
+intake-based, so more like whether that be a larger intake form with
+some steps, so a bit similar to the reality you have now when you're
+filling out the form, so I don't have anything to show now, but some of
+the wireframes we've already shown before all. Are you know we need a
+segment to maintain this information. We need a segment to maintain who
+was involved, the, you know, there's, you know, doctors, healthcare
+practitioners, you know, other notes. So we're just going to move that
+more towards, you'll see some new designs in the coming weeks of more of
+an intake process. So I don't know how familiar everyone is with the
+abuse intake process, right? Calvin's
+
+Ross 10:25
+
+our subject matter expert, so
+
+Speaker 1 10:26
+
+our take is, is as we're going through this, is now that we've absorbed
+all the information, we played back some visuals in a way, now we really
+get a sense of when something happens, it's really, it's, it's kind of a
+step by step process, knowing that you can jump around like when you're
+taking your information from this segment to, okay, we don't have this
+information yet, we'll leave it blank for now, we'll go to the next
+step, but I'm going to say is you don't, efficiency of entry is going to
+be critical, so I think it's almost if it follows more of a wizard or a
+form intake of look, do I have this segment information? Yes. Do I have
+this? No. Do I have this? There might be some critical information
+that's required. Boom. Do I have the information on the alleged people
+that are involved in this? Oh, they might already be in the system.
+Quick search, attach them. So you're kind of almost going through kind
+of a form process for that, so yeah, so we're going to take some
+corrective action there in terms of adjusting that, because now that
+we've validated all the info in the forms and stuff, and we're looking
+at your inputs and outputs, then I think that's going to be a better
+fit. We're going to carve off abuse as its own iteration, that first
+we're thinking, okay, it was part of the case management, but it's meaty
+enough that we're going to split that out, so we're just updating our
+timelines, and you'll get your updated status report shortly. In terms
+of that, so I just wanted to check that with you, Kelvin, especially, is
+you know, bringing them on a journey that's kind of like the way they do
+it now, of form entry and efficiency, but still be able to tie it to
+existing information with probably a better approach.
+
+Speaker 4 12:08
+
+Totally, yeah, like I think, like when we were meeting with Marcus, and
+we kind of just brought this all kind of to light, yeah, because it's
+the, it's more so getting the info over to the program, which is the
+biggest issue, right? So that's yeah, like the project user taking, I
+think, is going to be the best way, just so if they click off certain
+fields, it just pings them, here you go, abuse, you need to be involved
+now, kind of thing. And then, in terms of like updating the cases and
+that kind of stuff, like if we have to look, wait till v for certain
+aspects, like we can always discuss that too, like there are some things
+that you know we can discuss that if it's timelines too tight, we can
+pull back on some things, but we'll sort of kind of see where you guys
+come back with, and then if we say, okay, this is good for now, and we
+can work out the kinks, and you know, fine tweak it for version two, we
+can do that as well, right. So it's by the biggest thing is just that
+intake piece of it, right, where just that initial info comes in that we
+get prompted to that immediately. That's going to be the biggest piece
+of the puzzle,
+
+Speaker 1 13:15
+
+correct. And then safe to assume that when you're doing an intake that
+is really point in time information, so if you go back two months from
+now, you're actually not seeing, oh, the family information's changed.
+It's no, this is at the point in time when we did the intake. So, as
+we're modeling this, it's not like, oh, I'm maintaining the child's
+address, I'm moving them. It's no, this is the intake of what happened
+at that point, because again,
+
+Speaker 4 13:38
+
+exactly
+
+Speaker 1 13:39
+
+in the amount of time it takes for this to go through, like your legal
+system, or you know, other challenges, you know, you're sadly, you're
+sharing, it's a year, it's two years, it's three. So we want to, we're
+going to adjust our model, so that's why the, we're going to, the other
+thing we're going to do is, I think it's a good lead in Kelvin, you're
+in the exact same mindset as us. Is we're going to basically create an
+Excel sheet or something for a roadmap item, so when we're looking at
+something, going, okay, this is getting a little too much to our kind of
+gold version of it, we don't want to lose sight of that. So we're going
+to put in our roadmap and say, look, we've decided this might not be
+version red, you know, good for version one, but at least we have an
+earmark for where we're having it, and as we said, like from the get-go,
+whatever we put on paper, if you sit here and go, no, we don't want this
+anymore, we want this, we want more of this, we're completely flexible.
+The challenge is, as you've seen, then we sit here and go, okay, well,
+what about this, and what about that, and then you're like, oh, wait,
+okay, we got it, we got to kind of scale it back a bit, so yeah, does
+that make sense? And like, yeah, it
+
+Ross 14:51
+
+totally
+
+Speaker 4 14:52
+
+makes sense to me, and it's, I think, like, what's going to end up
+happening is that I mean, the beneficial side of things is in my role,
+because I'm overseeing. Intake after hours abuse and service delivery, I
+can kind of assist in roadmapping that a little bit to see where
+everything needs to kind of interconnect, so it's and we'll, as version
+one comes out, we'll figure out, Kate, where do we want to go next time,
+right? And go from there, but I think as long as we kind of have that
+baseline we start off with, and then make it flourish down the road,
+that is a okay,
+
+Ross 15:26
+
+I think. I think one of the key things that we're focusing on too now,
+which is really good, is we just know that FAM care is not fulfilling
+even what we need version 1.0 of Wabanon to do, and as long as we
+understand what the process, what the manual processes, or what the what
+the roadmap items are, you know, if we can at least fully understand
+what those limitations of Wabanon are from day one, we'll be off to the
+races, because we can very clearly provide staff the instruction of this
+is how you use the system. These are the expectations, as opposed to I
+feel a lot like during the fam care launch, there are a lot of
+expectations of things Fancare was going to do, and then what do you
+mean it can't do that? Yeah, so yeah,
+
+Speaker 1 16:19
+
+and that's why you're all part really deep into the process, so I want
+to, we're going to take a step back now, because I know that it's great
+to have a lot of large meetings, a lot of people in there, but that's to
+collect kind of information. Now we're for abuse, for example, we're
+going to take a step back and then come back with here's what we
+recommend with our wireframe approaches and approach, and then gain
+feedback on that. So, I think it was great that we had a lot of kind of
+standing meetings, but now we need to go back and then come back with
+recommendations. Look, this is what we think is critical, high priority,
+and these are the things that we feel let's put out in small ways, like
+if there's other forms and stuff that have to be put in place, we're not
+doing version one, but then we, what we want to make sure we have, yes,
+but we have document upload, so at least you can upload the document in
+there, so we're, you know, it's all the informations in the system, so
+that's where, yeah, so we'll have some trade offs there, and 100% you
+can say no, that's critical, as long as we, you know, let's put it back.
+We're totally flexible. The only thing is, right now, a lot of things
+are critical, and if a lot are, then nothing's
+
+Ross 17:27
+
+nothing is. Yep,
+
+Speaker 1 17:28
+
+yeah. So, I'm, yeah, so I'm coming more as bad cop here. I guess that's
+a, yeah, maybe that's not the best way of doing it. So, so, as if they,
+hey, come back, because I'm not in the trenches in it, so I'm going to
+come back and probably say, okay, why don't we align? So this point of
+this conversation was, hey, here's what we're seeing, we feel we're it's
+morphing to a lot more. What do we feel about, you know, have we are we
+still on our scope of, yeah, we really want, and it's not mini, I don't
+like minimal viable product, because it's not, you know, fan care was so
+far from MVP, it hurt. We still want a solid version one, but we
+already, our timelines are, you know, starting to slip, and finance is a
+whole other ball game of complexity. So, the, and again, I'll talk to
+that in a second, but I mean, at the end of the day, my goal for
+finances, let's let's reduce the amount of effort that finance has to
+do, and your and your entire team has to do to analyze, well, what the
+heck is this for? Who does it go to? So that's where we're trying to, is
+our big goal. So the system is not run by, we get 1000s of emails a day,
+and we have to figure out which families they go to, so that to me it's
+going to be our gold standard. So, so we're adding abuse as its own
+iteration, we're going to be shifting stuff to kind of meet with that,
+we're already pretty deep into that stages, those stages, so the meeting
+cadence right now. I'd like to talk a little bit about that. Is what
+we'll go back to, is what we had before. Of okay, we're going to have a
+specific meeting to review wireframes for this, you know. Okay, Kelvin,
+say Christina, you're welcome to every meeting as well. I know Ross is
+going to be part of all the meetings as well, but then Kelvin said,
+"Okay, I want to bring in this other resource for it. The value of Get
+With Kelvin is he's been in the trenches, knows how to do the work, and
+it's high level. It's not just I'm manager, I've never done the task,
+you know, it's you're deep in the weeds, so that's we're super lucky for
+that, and the fact that you're like intake after hours abuse is magical
+in terms of helping us, so
+
+Speaker 4 19:50
+
+for sure. Okay,
+
+Speaker 1 19:52
+
+so that being said, for meeting stuff is the standard weekly touchpoint
+with Marcus Ross, is that. Marcus Ross Christina, then yeah, perfect,
+
+Ross 20:05
+
+that can be Marcus Ross Christina, and then when we need to review the
+wireframes, we'll include Kelvin, and yeah, then we need to pull on the
+team, we can identify the team and get them all pulled in to make the
+most of that meeting,
+
+Speaker 1 20:18
+
+yeah, and then go ahead, Kelvin.
+
+Speaker 4 20:22
+
+I was gonna say, I just.. I've been with this piece here, like I cleared
+my schedule every Tuesday, pretty much. Well, Tuesday mornings for sure,
+ongoing until the end of June. So, if those are kind of standing meeting
+days with Ross and Christina, then that's fine with me. Like, I can be
+available during those times, if we, there's an afternoon one that has
+to be different. I try to keep my Tuesday fully open, so that way there,
+if we ask me, it comes up, I can hop into it. So those Tuesdays will
+kind of be just standing for me until further notice, pretty much.
+
+Speaker 1 20:58
+
+Okay, yeah. And our end, then we'll, we'll let you know when those would
+be, but often it's hour and a half hour meetings, and we'll try to be
+more succinct of here's the goal of meeting, here's what we want to
+review, and kind of go through, and now we have our kind of roadmap of,
+oh, that's an awesome idea, we don't want to lose that, we just agree to
+put it on the roadmap, then we can then revisit that when we go down,
+it's just, it's such a challenge to always go wait. Do we need that? Is
+it critical? Is it this? Is it that? Well, maybe we'll bring in this
+person to check, and next thing you know, we're, you know, it's, it's
+been a challenge. We're getting back into pretty deep into the kitchen
+there. So cool. Okay, so we'll, yeah, we'll pre-book those things. I
+think at this point we have enough for the abuse iteration that we can
+go back for a few weeks and then book something ahead of time, so
+
+Ross 21:49
+
+that sounds great for sure.
+
+Speaker 1 21:52
+
+The other thing is in-person meetings, I know when we met with the group
+in Clemens, so on, so forth, we talked about, you know, having an
+in-person meeting, maybe every two weeks or every four weeks, so you
+know what, you know what we do for that, and my end is we're not, we
+don't mind in-person meetings, but if it's every week, this and that,
+because we don't charge for any travel in the city, I have, you know,
+I'd like to be mindful of that if you're open to it, but at the end of
+the day, is we're happy to adjust as is, however you'd like. So,
+
+Ross 22:27
+
+for sure, we'll probably want to schedule something in person. We can
+even move them back to our, your guys' office is gonna be under
+construction there pretty soon.
+
+Speaker 1 22:36
+
+Definitely, but define pretty soon. It's, it's, they're tearing down our
+building, but we're still waiting for a bunch of city, but so we're, we,
+we're months, months away, I believe,
+
+Ross 22:48
+
+months and months away, okay.
+
+Speaker 3 22:49
+
+But it
+
+Speaker 1 22:49
+
+doesn't really matter, because we'll probably be moving about like five
+blocks away, so really we're going to be closer to you, but like five
+blocks, so
+
+Ross 22:58
+
+there you go. Yeah, they're on Provost here, though,
+
+Speaker 1 23:02
+
+right next to the Milton Club.
+
+Speaker 4 23:05
+
+Christine, I'm not too sure whereabouts you live, but I know, Ross,
+whereabouts you live. I can just route to go towards Privacy if we
+prefer in person at your office. Um, it's up to you guys. If you guys
+prefer to do, you know, week virtual, week in person, I'm up for
+whatever. It's not a big reroute for me to go over that way, because I'm
+coming from the Shane area, anyways. So I'm going through the city most
+of the time.
+
+Speaker 5 23:31
+
+Yeah, that's fine with me.
+
+Ross 23:33
+
+Yeah, and in person, that effusion works totally, totally fine.
+
+Speaker 1 23:36
+
+Okay, so that being said, so the weekly one is more of a kind of Marcus
+Ross, Christina,
+
+Ross 23:42
+
+we'll do a touch base, yep, great
+
+Speaker 1 23:43
+
+touch points and stuff, and then the in-person meetings, I don't know,
+we, we do, we want to have every two weeks, every three weeks, like,
+
+Ross 23:52
+
+let's do every three, I think, let's do every three, because what I'm,
+what I'm hearing, and you can correct me, Rob, is that we're, we're
+getting back to kind of getting in the kitchen with you guys, and we
+need, we need to actually let you guys go cook, right?
+
+Speaker 1 24:04
+
+Maybe. Yes, but if I mean, no, no, that's yeah, of course, we've had
+again 26 years started this company with my business partner. We are at
+least getting a lot of value from those meetings, where in some cases
+I'm, we manage 40 governor Manitoba applications. We have a lot of
+meetings as well, and then you sit there and you go, I don't get value
+from this. So it's great.
+
+Ross 24:30
+
+I think that was getting, I think that was the point here too, was we
+wanted to front load some value on these meetings with with long days of
+meeting, and then basically be able to step back and and let you guys
+work, so we can always bother you more often if it's determined that
+that three week cadence isn't working, or we need to come in sooner, but
+I, but what I'm hearing from you guys is like, hey, we've got a lot of
+information, we're kind of getting. Close to people in the kitchen
+again, and we need to, we need to get cooking. Is that
+
+Speaker 3 25:05
+
+fair?
+
+Speaker 1 25:06
+
+Yes, I can get you to run this meeting. So, but yes, but that being
+said, yeah, sit here and go, no, we need more, we need this, we're
+flexible, but, but 100% we need to start cooking, so you
+
+Ross 25:21
+
+guys need to start cooking, and I think we're also anxious to start
+seeing what you're cooking, you know, because I think we were all
+looking at this recipe and it gets a bit where, because I like this
+cooking analogy, I'm in the kitchen all the time, so I like where
+Christine's gonna ask, "Well, what about red onion? and they're like,
+"Yeah, what about green onion too? And then Calvin's go, "What about
+dried onion, though? And we're gonna go like, yeah, I need some onion
+for sure. And meanwhile, Rob's Rob's there, just like guys, I got garlic
+and I got shallots, and I really need to get this stuff in the pot. So
+
+Marcus Morrisey 25:52
+
+the other subtext that Rob hasn't told you is that I was sort of the
+sous chef, so I was just prepping these things, and they were like,
+yeah, we can do it all, and he's like, wait, wait, wait, we actually
+have this, yeah, slightly, you know, softening that, but yeah, that's
+partly me. I got a little excited, yeah, do all the things, so
+
+Ross 26:08
+
+I think that's totally fair. And let's, let's get you guys in the
+position where you can can get working, and then you can come back to us
+to make those critical decisions of, of what's really critical, what
+needs to be here, what can we live, and what can Calvin and Christina
+provide their insight to taste, like you know what. Unfortunately, that
+is a roadmap item, because we're going to make room for this other,
+more, more important piece. We, and we have to, we have to let you guys
+start building and start working to be able to really identify those
+
+Speaker 1 26:42
+
+perfect, okay, that's good. That being said, we've had people in the
+kitchen cooking while we're doing this, so yeah, well, of course, like
+intake and case files, so that's why you haven't seen a lot of Gabbayan,
+because she's, we, you know, we split it off, said, "Okay, Marcus, we
+need to do a big dump of more information, so now we're, we're, yeah,
+that was great. So, and then do you, do you, Ross, feel, and even
+Kelvin, that you have a lot more background now of what we're trying to
+build, and a bit that, because I think we only had one point there with
+you meetings, so we wanted to just do a big dump of bringing you up to
+speed on this as well, so are you, you know,
+
+Ross 27:26
+
+I'll defer to Calvin on that, and then I'll follow up with my opinion.
+
+Speaker 4 27:29
+
+I think it's, I think we're at a good spot where I can at least see
+some, some light at the end of the tunnel, kind of thing. Uh, gives us a
+better sense, at least, as to where we're going, and that way there too.
+I'm not expecting the everything, and everything, and everything more,
+and I can be, you can be a little bit more realistic. And when we go
+back to those wireframes, we can look at, you know, again, is this piece
+really necessary at this point in time? Can we delay this or we just
+take us out for right now altogether, so I think it gives a better sense
+of reality, because I know, like with found care, like Ross said, it's
+just a burning dumpster fire, unfortunately, that we can put out, so
+it's terrible to say, but like I literally will just defer to using
+CFIUS instead of found care, because it just takes way longer to get any
+info. So, like, there's some things with that where I'm just like, hey,
+there's gonna be certain pieces that we, that we need to make things a
+little bit more accessible, instead of spending 10 minutes to find one
+piece of information, it should take us a minute or two, instead of 10
+minutes taking
+
+Speaker 1 28:41
+
+perfect, and then the other thing is, you're also helping us kind of
+identify the dishes we want for this, so that's been like, we bring you
+in the kitchen, okay? These are the stuff we have, so that's been super
+helpful. Yeah, fam cares, like what took your order, went away, and then
+you know you were expecting some steak and you got like you know a
+Burger King Whopper with some, you know, I
+
+Ross 29:07
+
+don't know, I like, I like Christina, how about how about
+
+Speaker 5 29:14
+
+no, like I'm I'm no chef, but it sounds like really interesting, and I'm
+looking forward to using it and testing it out.
+
+Marcus Morrisey 29:25
+
+The one test I wanted to touch on before we close off, for sure, is that
+in our previous meetings we sort of implied that there was going to be
+sort of like a beta testing group, like you know, we wouldn't have the
+broader team, so we're hoping to get that organized this week sometimes,
+so who exactly should be that first wave of testers on this?
+
+Ross 29:45
+
+What are we testing?
+
+Speaker 1 29:47
+
+Okay, client and family
+
+Marcus Morrisey 29:52
+
+data, being able to find a person, at a person, what data fields exist
+on the person that can. Action model is part of that, right? Like, how
+you connect people in the genogram, and that kind of thing. So it's
+foundational.
+
+Ross 30:09
+
+Yeah, so for sure, Kelvin, Christina, you guys need to be in the testing
+group. And what I would also recommend is, wherever possible, if we can
+keep these testers consistent and continue to use them where it, where
+it's applicable, so that we're not bringing people in with no context in
+the future for things, or it's not going to work with with everything.
+But
+
+Speaker 1 30:39
+
+yeah, that being said, the next one is soon on its heel, will be like
+kind of intake, and at the end of the day is we want a wider breadth of
+testers, so you know if we have four or five people that's fine, you
+could have put 20 if you really want, because I, it really depends on
+the feedback cycle, I think we were thinking of getting, I think last
+time we discussed his feedback would go internally, and then you would
+push that to us. In some cases, we open it up, and anyone can send us
+feedback, and then we make a judgment call on a recommendation of, okay,
+roadmap or within scope.
+
+Ross 31:15
+
+Do does ID fusion, because I'm going to be lazy, does ID fusion have any
+resources that we'd be able to use internally to to capture feedback to
+then pass on to you, so that it's that's in a format that's useful for
+you guys.
+
+Marcus Morrisey 31:34
+
+Grab this
+
+Speaker 3 31:36
+
+one, Robert.
+
+Speaker 1 31:36
+
+Yep, yeah, it literally typically our process is, is we have this kind
+of a support email, and anyone has an issue, a question, or whatnot,
+they literally just put in a ticket and send it to us. It gets sucked
+into our ticketing system. We then triage it in terms, it's just some
+clients like the, you know, why don't we at least get, and I'll make a,
+you know, vote for someone, Kelvin, to look at this first, because he
+might look at it, goes, "No, no, no, we discussed that, that's out of
+scope. Here's why, but let IDF know, so it's in the roadmap. And then
+the only reason I'm not picking on yourself, Ross or Christina is Kelvin
+has been living this, so that's where that might be a good first fence,
+and we don't care how polished it is, we don't need a novella in it.
+It's just a question of here's the issue, here's how I did to reproduce
+it, here's what I'm expecting. That's
+
+Speaker 3 32:31
+
+it.
+
+Ross 32:31
+
+Do does it fusion have, and if not, let's collaborate and build one,
+like our our testing, like what you know, gosh, words are failing me
+now, guys. Our testing requirements, like, so we are going to do UAT.
+So, do we have a checklist of tasks to test, boxes to check, to check?
+
+Speaker 1 32:55
+
+Yes, the answer is no. And part of the reason we do that is we then that
+gets pretty prescriptive, and then you're looking at the same test kind
+of cases and scenarios we have. We'd rather you basically take real-life
+examples, change names, addresses, and just use the system as you would.
+Here's an example of an intake, because that's where you're really
+getting the, oh, shoot, we forgot this, and there's going to be moments
+like that. There's no doubt. So, I'd rather you at like we've done our
+internal scripting. We have two testers that go through and think of all
+the situations, so we'd rather it be as look, we want to do an intake
+that's complex and intakes that's simple, or something that you know, or
+you know it's gone through many iterations. Yeah, it's just we have to
+be clear, we don't want any personal identifiable information. Yeah, so
+as long as you change names and stuff, I think we'd be more than covered
+on that front.
+
+Ross 33:53
+
+So then I think what we can do is we can, we can come up with some, some
+scenarios ourselves. I just want to ensure that we have documentation
+for for everyone, just like, well, this is this is how we this is how we
+did our UAT, even if it goes on the shelf and is never looked at again,
+we'll know that these were some of the scenarios that we use, this is
+what it was, and that Ross and Calvin and Christina, all three of them
+said, yeah,
+
+Speaker 1 34:21
+
+yeah, so then why I recommend for that is you in Excel or Word, you
+basically go look here, this is the happy path, so if everything goes
+right, we do this, here's an exception where we actually have to have a
+view thing put into place and kick it off, and then yeah, take it from
+there, and in some cases we say, look, we want you to enter, you know,
+1010 people, so a couple people might be tasked for be rogue testers,
+where you just enter, like, you know, 10 community members with a
+complex family structure, or a very, you know, a simple one, or Q.
+Community led, so that's almost the case of it's a couple of liners. So,
+for example, is a child that just has, you know, you know, a mother and
+a father, a child that's basically raised by the community as a bunch of
+aunties and whatnot, child that's been in this situation and displaced.
+So I keep it high level, so people can go, "Oh, okay, I'm going to
+basically do that, and then you can even assign names to people if you'd
+like.
+
+Ross 35:25
+
+All right, sounds good. And so it's the client and family data that
+we're that we're getting ready to launch our testing for.
+
+Speaker 1 35:31
+
+Yes,
+
+Ross 35:32
+
+excellent.
+
+Speaker 1 35:35
+
+But and to answer your question, yeah, we can 100% assign someone to
+you. Hey, what do you think of this in terms of our, you know, testing
+strategy, but we recommend little less structured, but more of the what
+are the scenarios we're testing, and make sure we go over that gambit.
+
+Ross 35:52
+
+So, Calvin and Christina will use part of our time tomorrow, then,
+because tomorrow's Tuesday, to start to start thinking about this and
+start planning some of this out for the client and data testing that
+way, we're that we're ready to hit the ground running,
+
+Speaker 1 36:10
+
+and then what we're going to do for UAT, all the user acceptance testing
+is we have a user acceptance kickoff thing where we actually do a screen
+share, we walk through and train you on that module, and go through all
+the ins and outs and stuff. We record it, so you can go out and play
+that back later to go, oh, that's what you know, that's what they told
+us, perfectly. So we do the,
+
+Ross 36:35
+
+so we do the kickoff with the recording, then returned loose to do our
+testing and provide feedback,
+
+Speaker 1 36:40
+
+correct? And then, in your group, if you'd like, can have access to the
+specifications if you want to zoom through to just see if you really,
+you know, you want to go that far, but at the end of the day, it's like,
+if you learn a new piece of software, you're going to look at the
+screen, go, what the heck's that, what's this, and think of your end of
+looking at some of the recent, you know, you know, community member
+info, you have, you know, you can even have fan care open if you'd like,
+you know,
+
+Ross 37:09
+
+for sure. Calvin, does that sound good to you, Christina? All right,
+getting some thumbs up on a yupper, so we can't go wrong there.
+
+Speaker 1 37:18
+
+Oh yeah, so that leads us to, we, we internally have our own boosting
+that we've done. We've decided to only do our user testing in your
+environment, so all your whole Microsoft Azure environment. We're very
+close to getting that ready. That's the only thing that's been delayed.
+So, we've decided to, we made it as a group. We don't want you guys to
+kind of test outside of that, so we didn't set a spin up a separate one.
+We're going to do it in terms of, you know, what the proper security,
+like it's a bit of a pain for us to set up and test, which is good. That
+means we've gone through the hoops. So, Campfire team has been great on
+that side of things. We have a few other things, and I think you
+unlocked it shortly today. We'll make sure we can have that, and then
+we'll set up the user acceptance testing. So I would say it's obviously
+this group, but it'd be nice to have maybe at least two other, you know,
+people. It could be
+
+Ross 38:15
+
+Christina
+
+Speaker 3 38:16
+
+Savvy.
+
+Ross 38:19
+
+Does Hope do a lot of like user entry there with helping out in fam
+care, so I think hope would probably be a really good candidate to add.
+Hope's one of our fam care administrators, so when people have issues
+internally, like Ross has entered something that's not wrong, hope will
+go in mirror Ross's permissions or mirror Ross the user and go and try
+to figure out what Ross did, so
+
+Speaker 1 38:42
+
+that's perfect. Yeah, that's
+
+Speaker 5 38:42
+
+what's gonna mention I should be a good person to test it up
+
+Ross 38:46
+
+and hope it'd be great for that. And Calvin, did you have anyone else
+that you think might be that we want to get in on this
+
+Speaker 4 38:54
+
+payroll being director for intake? I know we're seeing after hours as
+well, and then potentially Sherry being the abuse manager.
+
+Ross 39:08
+
+Sure,
+
+Speaker 4 39:11
+
+I was thinking too, if we wanted to even loop in an intake supervisor,
+potentially, because they're probably like in their, their, they just
+live literally in intake all day, every day. They're not really going on
+to found care too much. So, I think, or do you want to have somebody
+who's more working with them care specifically?
+
+Ross 39:33
+
+Just someone who's going to be entering these, this information in,
+would probably be really useful. So, if they're a person that's going to
+be
+
+Speaker 4 39:40
+
+an intake supervisor.
+
+Ross 39:42
+
+Okay, yeah, in-person record.
+
+Speaker 4 39:46
+
+Yeah, I can get Darryl to do that, or even actually, instead of an index
+supervisor, maybe the CFIS admin.
+
+Ross 39:54
+
+Yeah,
+
+Speaker 4 39:56
+
+I'll to figure out with Daryl who that, who that is. I can't remember
+their name. Off top of my head, but I'll figure out who that piece is,
+so that way that we can add them into, because they're the ones who'd be
+taking all the intakes and actually creating those perfect person
+profiles on the IM and the full nine yards, so they'd actually be more
+beneficial to have, because they're the ones who have to exactly said
+
+Speaker 5 40:21
+
+men admin,
+
+Speaker 4 40:23
+
+yeah. So I think we have Miranda, I think.
+
+Speaker 5 40:26
+
+Okay,
+
+Speaker 4 40:27
+
+something like that, because I know they're the ones who are putting
+like all of our intake forms onto CFIS or onto the I should say.
+
+Speaker 5 40:34
+
+Okay, yeah. On the team here that I have is Brandy Bear. She does the
+intake. She takes all the intakes, and then just does stats, so she's
+not really in the, in the system.
+
+Speaker 4 40:48
+
+Yeah, but I think Miranda is
+
+Speaker 5 40:50
+
+like, okay, Miranda,
+
+Speaker 3 40:52
+
+yeah,
+
+Speaker 5 40:52
+
+okay,
+
+Speaker 1 40:56
+
+perfect. And then when we met, I know someone had mentioned, well, maybe
+because people are, you know, sensitive because of how fan care is just
+a garbage fire, as you said, we kind of want to make sure where they're
+testing it, it's a bit more solid, so there was a bit of discussion of
+having, you know, a team test first, and then prior to unleashing it, in
+our experience, we set up our user acceptance testing of it. This is
+like an alpha, it's a beta, it's going to be buggy. We, if we have bugs,
+that means you're actually trying to use it. We'd rather not have
+another layer of, of kind of delay. It's, you know, just bring it up and
+say, look, it's going to be, you know, it's going to have some
+challenges, going to be this. Try to break it. Your goal is to kind of
+make us cry, and saying, "Well, I can't believe they forgot this. So
+we'd rather have that, because we really want to avoid the "we'll go
+away for three months and it's going to be super polished. And you go,
+"What about this? Like, "Ah, if we would have known that two months ago,
+it'd be way less effort. So, as long as you're
+
+Ross 42:00
+
+it's function over form, because the form can come after, and I'll make
+sure that all of our testers understand keeping fam, you know, keeping
+fam care in mind, and, and the pain points there, that this is actually
+really exciting time to be part of Wabanong at this stage, because, like
+you said, Rob, this is where they're able to ensure that by doing their
+work now and experiencing the issues and finding out that the Ross
+button doesn't Ross and the Kelvin button goes to Marcus, what's going
+on here that will give them a better end product, and that's the job
+here.
+
+Speaker 1 42:39
+
+Yeah, and then what we found is when they find a bug, and they go, "Oh
+my gosh, this is frustrating. Two weeks later, they go, "Oh, it's fixed.
+I was actually heard. Well, I'm actually contributing and building this
+product. That's the thing we want to renew. Hope, because fan care..
+that I can't believe how many stories I've heard of. We tell them, and
+they go, "Well, tough.
+
+Ross 43:00
+
+As part of the, as part of the UAT, as well, is it? I take it you guys
+are going to have your, your bug register as we submit these issues. Is
+there going to be kind of a review of that with us after? Be like, hey,
+this is what was submitted, this is what we fixed so far.
+
+Marcus Morrisey 43:19
+
+Yeah, we, yeah, let's
+
+Ross 43:22
+
+even briefly, is is fine, just
+
+Speaker 1 43:24
+
+okay, yeah, we can see that I don't mind doing that. The only thing is,
+we want to make sure if we don't have to spend a lot of time on the
+updating, okay? Here's the report, here's every status of the bug, it's
+just neat.
+
+Ross 43:36
+
+Oh, no, no, I just.. but I think it's much more like this was reported,
+it's not resolved,
+
+Speaker 1 43:41
+
+okay? Correct, yeah, do.
+
+Ross 43:42
+
+just in case there's anything left outstanding again, because I imagine
+we're gonna have a couple,
+
+Speaker 3 43:47
+
+yeah,
+
+Ross 43:48
+
+couple iterations of the UAT.
+
+Speaker 1 43:50
+
+Yeah, yeah, we can do, we'll do that. Perfect. So, if we don't have to
+try to keep it,
+
+Ross 43:55
+
+no, no, no, I think just tracking that. Hey, this was already captured,
+like this is already reported, it's open. This is reported, it's closed,
+
+Speaker 1 44:03
+
+correct. And, or even our ticket is, if something comes in, we can say
+this is already a duplicate to this ticket.
+
+Ross 44:10
+
+Yes,
+
+Speaker 1 44:10
+
+it's closed. Yes, duplicate. So, and then what can happen is, when you
+see this report, you can ask, okay? I really like to know what the heck
+this is, because it won't have the whole details if someone else visit.
+Yeah, that's perfect.
+
+Ross 44:21
+
+Yeah, I don't want you guys spending tons and tons of time on this. It's
+much more just to keep, keep us in line of, are there existing bugs?
+Have they been resolved? Great.
+
+Speaker 1 44:29
+
+Yeah, perfect. Yeah, we can do that. Perfect. And again, if you think
+more, we can have it. It's just, I, you know, I'd like a
+
+Ross 44:38
+
+no. I don't want to keep poking my head in the kitchen. I don't want to
+keep being like, how about now? Oh, how about now? Oh, that, that looked
+a little bit more like smoke and less like steam. Yeah, no, it's.. I
+look at it as more of, more so, just being able to like the master
+tickets of this, the food that was ordered. This is what's gone out
+already. This, these are the orders you're still waiting for. Gosh, the
+food analogies just. They lend really well to this. I'm, I'm going to
+just lean in real hard.
+
+Speaker 1 45:03
+
+The only downside is I have a ridiculous amount of house building
+analogies, and now they're, you've literally, I have, I have to use my
+improv hat on, and I gotta make stuff, but that's okay.
+
+Ross 45:13
+
+It's like building a kitchen in a house, you know, it's, you can, you
+can, you can pivot to cabinetry and fridges, you can make it work. Rob,
+I believe in you.
+
+Speaker 1 45:25
+
+Nice, nice. We don't need granite countertops yet.
+
+Ross 45:29
+
+And, and again, one thing we did task you guys with, as well, is to make
+sure what we're not, what we're asking you, we're like with these
+statuses, like we just had robbers, it's that it's not arduous, it's not
+being in the kitchen more, it's not taking more of your development time
+or your work time away, while still just trying to find that balance of
+are we informed, are we aware of what's going on, are things moving in
+the direction that we, that we all want it to, and yeah,
+
+Speaker 1 45:53
+
+perfect, and I think once you start seeing the app, then it's like,
+look, we already own this, this is exciting, let's shape it, I think
+that's it, so the fact that we've, you know, had some delays because of
+our environment isn't - it's fortunate. Like, let's just, like, we spent
+a lot of time, we have a lot to show you, so it's going to be exciting.
+Okay, that being said, for the environment, then, so thanks for the
+quick response for us on the email. So, do you,
+
+Speaker 3 46:18
+
+yeah,
+
+Speaker 1 46:18
+
+are those email accounts? Do you have to pay for an email? I
+
+Ross 46:22
+
+got to check the licensing, I believe. So, at the very least, so because
+of how fun Microsoft is, there are requirements, and because we're
+building this, you know, to test security. Anytime you have conditional
+access policies apply, or things
+
+Speaker 3 46:37
+
+like
+
+Speaker 1 46:37
+
+that. Yeah,
+
+Ross 46:38
+
+exactly. It's, it's okay if I've got a license accounts temporarily.
+What it's going to come down to, though, is I need to do it in a way
+that I might just give them.on microsoft.com and then just add like my
+p1 Azure one licenses to the end to avoid providing SharePoint access,
+things like that, that that kind of comes over with some of those e
+licenses, so I do have to just review that with Campfire tomorrow, but
+it shouldn't be a problem to to to get those accounts access.
+
+Speaker 1 47:18
+
+Okay, sounds good. Yeah, cuz I don't want to ask a ton of accounts, and
+you're paying like whatever every month for those, but I saw the long
+the Microsoft extension. Oh, wait a minute, maybe the, you know, on
+
+Ross 47:29
+
+microsoft.com or generally it's, you know, it's a free account at that
+point. It's just to ensure that we're compliant with compliant with the
+enter ID requirements and the conditional access things like that, that
+we would, that we'd probably just need to have a couple little add-ons.
+Okay, but again, again, it's, it's doable, it's all for the sake of
+testing, it's temporary. These are things that we'll just mark down that
+were added, and then we'll make sure they get removed once we're test
+done testing.
+
+Speaker 1 47:55
+
+Perfect. And I think you could probably set an expiration on them as
+well, so that way, yeah, you know, then we, we're okay with that too,
+because sometimes it's like, oh wait, we got to remember to do house
+cleaning, so okay,
+
+Ross 48:05
+
+yeah,
+
+Speaker 1 48:06
+
+perfect. So some of those will need kind of right away. I would say just
+Gabriel and Marcus would be the priority. I definitely, Josh and myself
+as well, but I mean, you know, we definitely want to get to, we need to
+play with our UAT environment before we kick off the UAT, but we want to
+kick off the UAT like yesterday, so I don't know if that means end of
+this week or beginning of next week, and then the biggest thing too is
+your staff is going to have a lot of homework, they're going to have to
+play around with it and test it, and so on, so forth, and you know
+
+Ross 48:39
+
+we'll have to come up, Calvin, Christina, you and I will have the three
+of us will have to come up with kind of the process that we want to see
+internally here to make sure that if our testers find an issue that it's
+documented at least somewhat similarly between everyone and we get good
+info that can get sent off to Rob and team that we can come up with that
+
+Speaker 1 49:04
+
+good cover, this covered that quick question. Gabriel was just following
+up, is you have some case file automated tasks an email respect to that,
+so I don't know if she sent it out only last week, but that would be a
+fairly high priority, so as we're doing the work on the case stuff, so
+one
+
+Ross 49:28
+
+moment, please
+
+Speaker 3 49:42
+
+do I know
+
+Ross 49:45
+
+I flagged it.
+
+Speaker 1 49:47
+
+Yeah, so it's basically automatic task assignments of when something
+happens. Who, how does it trigger? Who does it go to? Because we want to
+basically,
+
+Ross 49:56
+
+okay, yeah. Thursday, yeah, Thursday, just to about four four. PM, there
+I was off Friday, so
+
+Speaker 1 50:02
+
+yeah, no, no worries. I mean, if we can get that later this week, that
+would be great.
+
+Ross 50:06
+
+How can you and I can review that tomorrow with service delivery?
+
+Ross 50:10
+
+Yep, excellent.
+
+Ross 50:12
+
+We will get that reviewed tomorrow.
+
+Speaker 1 50:14
+
+All right, so that's an easy one. The other one is the whole data
+migration piece.
+
+Ross 50:19
+
+Yes,
+
+Speaker 1 50:20
+
+the so the summarize is we need to see the actual data. You have to know
+what we can pour in what ideally we're going to limit it to say one
+person to IDF only. Eventually they're going to have to have live access
+to kind of live info to do it. One option we've seen is if that
+information can be put into a separate database, and you scrub it of
+personal identifier information, at least when we're limiting when we
+need access to live data, but at the end of the day, you could probably
+delete a lot of case notes. There's software out there that can just
+replace names and addresses of people you know, I don't know, maybe you
+delete all documents, but again, I don't like, I know we've chatted
+about this for a while now, but that's the sooner we get to that the
+better. So you don't need to answer it now. This is a, we really,
+really, really want to kind of start that discussion, and we're happy to
+adjust however we can play with that. So
+
+Ross 51:21
+
+I think it's fair. I think Rob Marcus from your end, and Calvin can
+correct me if I'm wrong. Here we need to ensure that whoever from ID
+Fusion side is going to be in that has their vulnerable sector check
+done, just in the off event that data is not script scrubbed or
+something, so that is that is a requirement. No
+
+Speaker 3 51:44
+
+problem.
+
+Ross 51:45
+
+I will be meeting with Campfire tomorrow, I believe. So there was a plan
+at one point to condense the existing fam care environment from the two
+servers that it currently runs on down to one part of that happened.
+There might be a database running in a version of SQL that we can go
+mess up, and by say mess up, I mean run these tools, it'll give some
+level of data for it to show you guys, so
+
+Speaker 1 52:17
+
+and if the data is a year old, that's not a problem, that
+
+Speaker 3 52:20
+
+it would
+
+Ross 52:21
+
+be, it'd be a year, year and a half, but 90 95% of the structure should
+be there, and I think this might be our best bet at efficiently getting
+you guys that access and going from going from there. Okay, so I'm going
+to investigate that with Campfire tomorrow.
+
+Speaker 1 52:40
+
+Okay, so Varun, one of our senior dev architects, is going to be the
+resource. I'm gonna have to get an updated vulnerability sector check,
+because I'm pretty sure his is, you know, we want something more recent,
+so no worries there. We do it all the time. Okay, thanks for that heads
+up. All right,
+
+Ross 52:58
+
+Calvin, any other requirements there?
+
+Speaker 3 53:01
+
+Nope.
+
+Speaker 1 53:02
+
+Okay, so, so timelines. When we met, Clemen said, you know, there's no
+way you're going to reach your June timeline. It's all rainbows and
+unicorns. I don't know what you're talking about. She didn't say those
+exact words, but she's like, this is, you're crazy. So, yes, she's 100%
+right. So, right now with adding the abuse side, so we're going to add
+the abuse. It's already been starting design development. We're going to
+be shifting then our dashboard reporting and some of the finance stuff,
+so we figure we're going to be at the end of July now for kind of go
+lunch, and I don't know what people's summer months are like, so
+
+Ross 53:45
+
+well, let's talk about that right now. Then, like, honestly, just
+because I, because I love what I'm, I love what I'm hearing. Does that
+include a buffer for for summer holiday months for either your staff or
+ours, because we'll also, we also have gatherings that are happening
+then in, in June and July as well. So I just want to be be fair to
+everyone involved that I can appreciate that we've identified, like,
+hey, june 30, probably not going to happen.
+
+Speaker 1 54:17
+
+Yeah, buffer for our stuff. Yes, the challenge I have is I don't know
+how quickly the user acceptance testing and stuff is going to go, and
+again, you know, especially yes, with gatherings that could be okay.
+This week is now, you know, you know, he basically, we can't spend time
+on this during this week if we have a list of those key events and stuff
+that would be of benefit, but at the end of the day, what we do is when
+we record the user acceptance testing sessions, it's recorded, so if you
+know Jill can't make it or Miranda can't make it, they can always listen
+to it after and jump in when they can, and if we have enough people.
+Using user acceptance testing, if we have one or two missing, then you
+know, then we can at least still move forward, but yeah, so July is
+still, cross your fingers, but you know, I think with this discussion, I
+think I'm now breathing much easier with the yes wizard type form entry
+for abuse is better than let's build, you know, the, you know, multiple
+screens of entry, because that had been, yeah, bit of a challenge, so
+yeah, but I mean, what's what's even reasonable for a go live for like
+your reality, like you know, like again, you look at, you know, is one
+month like you know more challenging, the next is like you know August
+building up to September, like September is just you know crazy for
+some, you know, yeah, you're just always busy, so there's really no good
+time.
+
+Ross 56:09
+
+No, exactly, it's more so just to be able to set, you know, set
+expectations, right? And, and to also let that, let a reasonable
+deadline help drive our our schedule as well, so we can know, like, hey,
+this is reasonable, we're going to work to meet this,
+
+Speaker 1 56:28
+
+yeah, so I, that's why I don't want to push it into August, I still want
+to say July is the end, is the reasonable, but you know, you can add
+your own buffer internally for that, but we want everyone to know, holy
+crow, we're, you know, this is what we're really, you know, our revised
+deadline is here. Okay, okay, we will, we will basically get you your
+status report tomorrow, because we started working on it, but now that
+we, you agree with the plan, we want to make sure that's in the plan.
+So,
+
+Ross 57:06
+
+yeah, I think that's a fair plan going forward. Calvin,
+
+Speaker 3 57:09
+
+yep.
+
+Ross 57:11
+
+Christina, do you see any issues there? All right,
+
+Speaker 1 57:16
+
+so last but not least, there was also a meet, is meeting set for
+tomorrow, I think. Some of them we won't need to have. I don't
+
+Ross 57:28
+
+find
+
+Speaker 1 57:29
+
+Saba. The only one is with that 3pm meeting was that one of those in
+person where, like, you know, Clement wants an update on certain things,
+or
+
+Ross 57:43
+
+the plan was they have an in-person update with Clement, if possible.
+She's in the city, I can check with Christine. If it doesn't put you
+guys out too much, I'll confirm with Christine tomorrow morning to see
+if Clemens going to be able to make that, or if we either cancel it or
+make it virtual. But I'll provide you guys an update on that one
+tomorrow morning.
+
+Speaker 1 58:02
+
+Yeah, it, in all honesty, I'm happy to have a touch point, because
+again, I really, I appreciated everyone's feedback. And then Kevin
+seemed to be from higher up going, "No, here's what we need to do.
+There's, you know, this, there's a lot of value in that, that the
+guidance. I want to make sure her expectations are met as well, so
+
+Ross 58:23
+
+yeah, absolutely.
+
+Speaker 1 58:24
+
+Okay, so yeah, we're, we've, we're cleared off, we can definitely meet.
+So I think that means is the other thing I'm looking at your calendar is
+this was there's this support review at 9am
+
+Ross 58:39
+
+at the Scott Bay support review. Yeah, so that's for the, that was for
+the new program for Scave Support.
+
+Speaker 1 58:46
+
+Can you give me a summary of what that's what's the Scave again?
+
+Speaker 4 58:52
+
+So it's a, it's an in-home support program, and doesn't here wouldn't be
+only as difficult to implement, so we just would have to toss the form
+in there, and then they're all going to be presusing clients already as
+it is, so they have to be within our system as they had an open file,
+and then they just be attached to a worker to be able to go out, and
+then so they can upload contact notes to Wabanon, and it just gets shot
+over to the worker. Done. I think it's probably one of our easiest ones,
+but again, if we, if we can't get to that, that's fine, because we
+still, because it is a newer program, it's not all totally fine tuned,
+and there's probably going to be form changes and all that kind of stuff
+going on and on and on, and it will flourish more and more and more, so
+that's something we do have to push back to version two, so be it. But
+yeah, it's Ross, I don't know where you're, where you're at with that
+piece there,
+
+Ross 59:58
+
+just. Scave support is it would we be able to get away with just at like
+uploading the forms as a document to the to the case file for iteration
+1.0 and then we we road map the rest of
+
+Speaker 4 1:00:14
+
+the I think that would be fine for now yes
+
+Ross 1:00:16
+
+okay
+
+Speaker 4 1:00:17
+
+on there
+
+Ross 1:00:18
+
+so they're going to have a form we're going to we're gonna attach a
+Skabe support form in the documents, as you guys are already building
+it. So, I don't think there's any extra build required. This would just
+be absorbed as a form, but this will go on roadmap.
+
+Speaker 1 1:00:33
+
+Okay. Perfect. Sounds good. Yeah. And the other one was there's service
+delivery and finance review. I think we have a lot of information from
+finance. Anything part of those discussions with finance were like we're
+trying to figure out what we want to track, how we want to track it. So
+this is a good takeaway. We have had a lot of discussions, we've gone
+through the path, we're going to go back, we're going to put abuse ahead
+of finance, but we're going to think about it, and then we'll come back
+more with some recommendations. Of look, here's what we think you should
+do for kind of our budget management of, say, whatever. I think I
+believe there's three core things. I love the fact that you know the
+group said a month ago says no, everyone can see the budgets, and so on,
+so forth. It's going to make people's lives easier, because now I know
+the first, the original one was, well, no one can see budgets, but they
+have to manage stuff to budget, so I think we're good. So we have
+information for that, but finance, you'll see in our iteration plan,
+we're going to shift that out, but we really wanted to have those
+finance discussions to make sure what we're doing now, we know where
+finance is coming, because they're after the fact, but not really. So,
+okay, so that one can also be adjusted.
+
+Ross 1:01:51
+
+Adjusted, do you want finance only canceled?
+
+Speaker 1 1:01:54
+
+Yeah, I, at this point, we've already had a ton of information, so we
+need time to digest it, and we're going to hold up on our digestion,
+because we want to focus on, well, the iterations we have and abuse
+first.
+
+Ross 1:02:08
+
+All right. No, that sounds totally fine. I just wanted, before I started
+blasting everyone with cancelations, want to make sure we're canceling.
+
+Speaker 3 1:02:13
+
+Yeah,
+
+Ross 1:02:17
+
+okay. And then Kelvin, what I'll have you do, if you wouldn't mind, just
+reaching out to your team to see what their availability is tomorrow,
+and we can get that, we can get that form taken care of for Marcus and
+Rob. There
+
+Speaker 1 1:02:30
+
+sounds good. Yeah, and if we could just have a list of here's the user,
+here's their rule, that kind of helps us get the mind safe, and I really
+love the con
+
+Ross 1:02:39
+
+for the UAT,
+
+Speaker 1 1:02:40
+
+yeah, the fan care user, you know, the admin side, the director, and
+you're already thinking of the who makes sense, and we're getting some
+cross department stuff here.
+
+Ross 1:02:50
+
+Yep, that's the whole whole plan. So, Christina Kelvin and I, let's plan
+on meeting, you know, as we are tomorrow, 9am and we'll just, we'll be
+flexible with getting a lot of this stuff tackled for for ID fusion, and
+hopefully we can come away with some, some good updates and some good
+progress for you guys.
+
+Ross 1:03:08
+
+Excellent. Sounds good.
+
+Speaker 5 1:03:13
+
+So, so Ross, like me, you and Calvin are meeting tomorrow.
+
+Ross 1:03:18
+
+Yeah, we'll meet. We'll meet in the Eagle boardroom there. I've got it
+booked. Sorry, I see. I took everyone off that standing meeting to try
+to make things simple, and it's just stayed on my calendar, so I'm like,
+I'm.. we're all there, don't we all see this beautiful big meeting where
+we've got this space? Yes, yes, yes, Christine, it'll be you, Calvin,
+and I. And then we'll bring Calvin will bring service delivery in to
+answer that form together. We'll work on our UAT. Some of our UAT users
+will get a spreadsheet just made with who they are, role, contact info,
+stuff like that.
+
+Speaker 4 1:03:51
+
+Sounds good.
+
+Speaker 1 1:03:52
+
+Good. And then, thanks for bringing everyone to this meeting. Because at
+first, I told Margo, I just want to give a heads up to Ross. I want to
+make sure he's expectations. I was like, no, no, have it here. And then
+we're like, oh wait, we actually, okay, you guys are okay with this
+conversation, and we're making kind of some adjustment decisions. It's
+unbelievable. We're, I think, yeah,
+
+Ross 1:04:12
+
+I think we've, we've, we've benefited from a lot of that, the heavy
+lifting in those meetings. Clement is a busy person. Calvin's a busy
+person. You know, we're fortunate enough to have a really strong
+executive team that can get together and, you know, fill Phil Clement in
+and make sure that we're still holding her portion of the vision for the
+agency, but at the same time working with the constraints that we have
+to come up with with the best thing, so
+
+Speaker 5 1:04:41
+
+I'm also meeting, I'm meeting with Clem tomorrow. Yeah, yeah,
+
+Ross 1:04:47
+
+so Christina will tattle on all of
+
+Speaker 3 1:04:49
+
+us
+
+Ross 1:04:50
+
+about making these decisions, and that works great for me. I myself am a
+tattler, so
+
+Speaker 1 1:04:59
+
+I. This sounds,
+
+Ross 1:05:01
+
+no. I think this is great. And then Christina, yeah, if you want to even
+turn clumsier tomorrow, even just to jump on Teams to basically kind of
+rehear the overview here, that'd be.. I think it's
+
+Speaker 5 1:05:13
+
+actually like a.. it's actually like a Teams meeting tomorrow afternoon,
+so she's not actually coming into Wipe.
+
+Ross 1:05:20
+
+Oh, okay,
+
+Speaker 3 1:05:21
+
+yeah,
+
+Ross 1:05:22
+
+okay, great. Then, yeah, then we'll plan on, we'll plan on teams. I know
+she RSVP'd, so we'll just, we'll plan on, we'll plan on hashing us
+again.
+
+Speaker 5 1:05:32
+
+Yeah, sounds good.
+
+Speaker 1 1:05:34
+
+Okay, and then Ross, can you send me an email of exactly what check we
+need, so I know there's multiple sector. I think that's obviously for
+children, parent. I just want to get the right wording, so
+
+Ross 1:05:47
+
+sure. I'll have Kelvin. Kelvin, do you can you provide the requirement
+there?
+
+Speaker 3 1:05:53
+
+Yeah.
+
+Ross 1:05:55
+
+Thank you.
+
+Speaker 1 1:06:01
+
+Thank you. All right, excellent. Thank you very much. And again,
+anything comes up, you know, you always let
+
+Ross 1:06:08
+
+us know.
+
+Speaker 3 1:06:09
+
+Yep, perfect,
+
+Ross 1:06:10
+
+perfect.
+
+Speaker 4 1:06:11
+
+Let's put the two in there.
+
+Speaker 1 1:06:12
+
+That's the, that was the one I was also making sure. Thank you. Okay,
+here we go, because I know there's the, yeah, perfect.
+
+Ross 1:06:19
+
+All right, thanks, team.
+
+Speaker 4 1:06:20
+
+Thank you, guys. Bye
+
+Speaker 3 1:06:22
+
+bye.
