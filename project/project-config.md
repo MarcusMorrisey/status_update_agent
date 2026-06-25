@@ -15,7 +15,7 @@
 
 ## Reporting
 - **Period Length (weeks):** 2
-- **Current Period Start:** 2026-06-05
-- **Current Period End:** 2026-06-18
+- **Current Period Start:** 2026-07-03
+- **Current Period End:** 2026-07-16
 - **Meetings Source:** Z:\Shared\3_Client Projects\Peguis CFS\Projects\PD25-1186-CO - Custom CMS\4. Controlling\01. Meeting Minutes
 

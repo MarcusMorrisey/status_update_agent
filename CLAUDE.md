@@ -40,8 +40,8 @@ Run `/ingest-project-docs` once at project start or when new project documents a
 
 ## Current State (as of last rollover)
 
-- Last completed period: 2026-W15 (2026-03-27 → 2026-04-09)
-- Current period: 2026-W17 (2026-04-10 → 2026-04-23)
-- `meeting-notes-current.md` has been written for W17 (5 meetings: 1 internal, 4 external)
-- `extractions-current.md` is empty — next step is `/extract-and-verify`
-- Meetings beyond W17 (W18+) exist and will need their own full workflow cycles
+- Last completed period: 2026-W27 (2026-06-19 → 2026-07-02)
+- Current period: 2026-W29 (2026-07-03 → 2026-07-16)
+- `meeting-notes-current.md` contains W27 notes (now stale — W29 ingest not yet run)
+- `extractions-current.md` is empty — next step is `/ingest-meetings` for W29
+- No known W29 meetings yet — check Z: drive when starting next period
