@@ -9,6 +9,18 @@ Closes out the current reporting period by merging verified extractions into the
 
 **Prerequisite:** Both `extractions-current.md` (Status: Verified) and a completed `status-reports/[period-id].qmd` should exist. If the report hasn't been generated yet, warn the user but offer to proceed anyway if they confirm.
 
+**Early rollover check:** After loading `project-config.md`, compare today's date against `Current Period End`. If today is before `Current Period End`, warn the user before doing anything else:
+
+```
+⚠️  Period [period-id] doesn't end until [Current Period End] (today is [today]).
+Rolling over early means any meetings held between now and [Current Period End]
+will need to go into the next period's cycle instead.
+
+Proceed with early rollover? (yes/no)
+```
+
+Stop and wait for confirmation. Only continue if the user confirms yes. If they say no, stop with no changes made.
+
 **Do NOT auto-commit to git.** Prompt the user to commit at the end.
 
 ---

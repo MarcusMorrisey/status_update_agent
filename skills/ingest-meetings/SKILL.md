@@ -84,6 +84,15 @@ Match each meeting to its period by date. Period boundaries are inclusive-start,
 2. Process **only the oldest unprocessed period** in this run.
 3. After completing this run, tell the user to run `/extract-and-verify` and then `/generate-report` and `/period-rollover` for this period before running `/ingest-meetings` again for the next.
 
+**Future period check:** After determining the oldest unprocessed period to process, check whether its `Current Period Start` is after today. If the target period hasn't started yet, stop without scanning or writing any files:
+
+```
+⚠️  The current period ([period-id]) starts [Current Period Start], which is in the future (today is [today]).
+No meetings can exist yet for this period.
+
+If you rolled over early, wait until [Current Period Start] before running /ingest-meetings.
+```
+
 If no meetings fall in any unprocessed period, say so clearly and stop.
 
 ---
