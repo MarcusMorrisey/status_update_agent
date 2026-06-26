@@ -183,75 +183,74 @@ Before converting:
 
 ## Step 4 (convert phase) — Convert markdown to Word
 
-### 4a — Resolve the base document
-Use the most recent `.docx` from `outputs/weekly-updates/` or `outputs/peguis-cfs/` as the base document to unpack. This preserves all table styles, section headers, logo, and footer exactly.
+### Roadmap image — REQUIRED before conversion
 
-If no prior `.docx` is available locally, use:
+**The roadmap image must be supplied explicitly. There is no silent fallback.**
+
+If the user does not provide a new roadmap PNG:
+- Stop here and say: "Conversion requires an updated roadmap PNG. Please supply the path to the new Gantt image. If no new image is available this week, provide the most recent one and I'll replace it."
+- Do NOT proceed without a confirmed image path.
+
+### 4a — Run the converter
+
+```bash
+python scripts/convert.py [week-monday] --image [path/to/roadmap.png]
 ```
-Z:\Shared\3_Client Projects\Peguis CFS\Projects\PD25-1186-CO - Custom CMS\4. Controlling\02. Status Reports\Waabanong Weekly Update 2026-05-25.docx
-```
+
+The script (`scripts/convert.py`) uses **python-docx** to open the most recently-dated `.docx` from `outputs/peguis-cfs/` as the base document, then structurally replaces content at known positions: date lines, summary table cells, Features table rows, and Weekly Progress bullet paragraphs. The base document's grey table headers, logo, and footer are preserved exactly.
+
+Base document selection order (handled automatically by the script):
+1. Most recently-dated `.docx` in `outputs/peguis-cfs/` (correct grey-table structure)
+2. Most recently-dated `.docx` in `outputs/weekly-updates/` (pandoc output — less ideal)
+3. Z: drive fallback: `Z:\...\Waabanong Weekly Update 2026-05-25.docx`
 
 Do NOT fall back to a different project's `.docx` — style drift across projects is a real risk.
 
-### 4b — Unpack the base document
-```bash
-python "[docx-skill-path]/scripts/office/unpack.py" [base.docx] [unpack-dir]/
-```
-
-### 4c — Update content in XML
-
-Edit `[unpack-dir]/word/document.xml` to replace:
-1. **Header date line** — update to "Week of [Month D, YYYY]"
-2. **Gantt image** — if a new PNG was supplied, replace `word/media/image1.png` with it; otherwise leave unchanged
-3. **Summary table rows** — update Status, Current Phase, and Notes cells for all 9 iterations
-4. **Project Management & General Weekly Progress** — replace bullet content
-5. **Per-iteration Weekly Progress bullets** — replace bullet content for each iteration
-6. **Features boxes** — these should match `iteration-features.md`; update only if scope changed
-
-Use the Edit tool directly for XML string replacement. Do not write Python scripts for this.
-
-### 4d — Pack and validate
-```bash
-python "[docx-skill-path]/scripts/office/pack.py" [unpack-dir]/ [output.docx] --original [base.docx]
-python "[docx-skill-path]/scripts/office/validate.py" [output.docx]
-```
+Override the base document with `--base [path]` if needed.
 
 ---
 
-## Step 5 (convert phase) — Golden-file QA
+## Step 5 (convert phase) — Structural QA
 
-After producing the `.docx`, run a spot-check against the approved May 27 deliverable:
+After producing the `.docx`, run the structural QA check:
 
 ```bash
-pandoc [output.docx] -o - -t plain 2>/dev/null | head -5
+python scripts/qa_check.py "outputs/weekly-updates/Waabanong Weekly Update - Week of [week-monday].docx" \
+  --fixture "outputs/peguis-cfs/Waabanong Weekly Update - Week of 2026-05-18.docx"
 ```
 
-Verify:
-- [ ] Title line reads "Waabanong Weekly Update"
-- [ ] Week-of date line is present and correct
-- [ ] Summary table has 9 rows (I1 through I8 including I5 A and I5 B)
-- [ ] "Project Management & General" section present
-- [ ] All 8 iteration sections present (I1–I8)
-- [ ] Each iteration section contains "Features" and "Weekly Progress"
-- [ ] No section is empty
+This checks 12 structural properties including:
+- All 10 grey-table section headers present (General + I1–I8)
+- Summary table has 10 rows (header + 9 iterations)
+- I5 A and I5 B are separate section tables
+- `Section`-style Weekly Progress paragraphs present (9 expected)
+- `list1`-style bullets present
+- No roadmap warning placeholder remaining
+- Table count and bullet count match the May 2026 accepted fixture (within tolerance)
 
-If any check fails, fix the XML and repack before handing off.
+The regression test suite can also be run end-to-end:
+```bash
+python evals/weekly-updates/run_regression.py
+```
+
+If any check fails, re-run `scripts/convert.py` with `--dry-run` to inspect parsed content, fix the draft, and re-convert.
 
 ---
 
 ## Step 6 (convert phase) — Hand off
 
 ```
-✓ outputs/weekly-updates/Waabanong Weekly Update - Week of [week-monday].docx written.
+[OK] outputs/weekly-updates/Waabanong Weekly Update - Week of [week-monday].docx written.
 
-QA checks: [pass/fail list]
+QA checks: [pass/fail list — run scripts/qa_check.py]
 
 Copy to:
   Z:\Shared\3_Client Projects\Peguis CFS\Projects\PD25-1186-CO - Custom CMS\4. Controlling\02. Status Reports\
 
 Remaining manual steps:
-  1. Open in Word and review formatting — especially table cell heights and image placement
-  2. If roadmap image was not auto-updated, replace manually
+  1. Open in Word and review formatting — especially table cell heights and bullet indentation
+  2. Verify roadmap image is the correct week's Gantt (the script replaces the image bytes but
+     cannot confirm the content matches the current period)
   3. Save as PDF for the 01_Sent to Client folder when approved
 ```
 
@@ -259,6 +258,6 @@ Remaining manual steps:
 
 ## Known limitations
 
-- **Roadmap image**: the image is static unless a new PNG is supplied. The skill copies the prior week's image if none is provided — flag this clearly in the output.
+- **Roadmap image**: the script requires `--image` and will exit with an error if omitted. Supplying an image only replaces the bytes — the user must visually confirm the image is the correct week's Gantt before delivering.
 - **Iteration-features.md as source of truth**: if scope has changed but iteration-features.md hasn't been updated, the Features boxes will be stale. Update the file whenever scope is formally confirmed.
-- **XML editing is fragile**: changes to the base `.docx` structure (e.g. added columns, style changes) can break the XML edits. Always validate after packing.
+- **Base document structure**: `scripts/convert.py` finds content by structural position (table index, paragraph style). If the base document gains new tables or the section order changes, update the script's table-matching logic. Run `run_regression.py` after any structural changes to the base document or the script.
