@@ -164,6 +164,8 @@ Write to `outputs/weekly-updates/[week-monday]-draft.md` using this exact schema
 
 **Do not surface merge commit messages** — surface the work they contained.
 
+**PR and commit references in the markdown draft** — include them for traceability (e.g. "PR #50", "PR #49"). They are automatically stripped during Word conversion and must not appear in the final `.docx`. Never include them in parent bullet text, only in sub-bullets where they aid review of the draft.
+
 ---
 
 ## Step 3 (draft phase) — Hand off

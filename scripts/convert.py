@@ -135,6 +135,17 @@ def parse_draft(draft_path: Path) -> dict:
     }
 
 
+_PR_REF_RE = re.compile(r'\s*\(PR #\d+\)', re.IGNORECASE)
+
+
+def _strip_reference_artifacts(text: str) -> str:
+    """Remove internal reference artifacts that must not appear in Word output.
+    Currently strips PR references like '(PR #50)'. The markdown draft retains
+    them for traceability; they are cleaned here before writing to .docx.
+    """
+    return _PR_REF_RE.sub('', text).rstrip()
+
+
 def _parse_bullets(text: str) -> list:
     """Parse markdown bullets into list of (indent_level, text) tuples."""
     bullets = []
@@ -145,7 +156,7 @@ def _parse_bullets(text: str) -> list:
         stripped = stripped_right.lstrip()
         if stripped.startswith('- '):
             indent = (len(stripped_right) - len(stripped)) // 2
-            bullets.append((indent, stripped[2:]))
+            bullets.append((indent, _strip_reference_artifacts(stripped[2:])))
     return bullets
 
 
