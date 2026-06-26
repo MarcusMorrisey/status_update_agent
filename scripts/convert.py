@@ -295,9 +295,9 @@ def update_iteration_sections(doc, sections: dict):
             print(f"WARNING: Table not found for section '{section_name}' (key='{table_key}')")
             continue
 
-        # Update Features (row 1 of iteration table, skip General which has 1 row)
-        if section_name != "Project Management & General" and len(tbl.rows) >= 2:
-            _update_features_cell(tbl.rows[1].cells[0], data['features'])
+        # Features (row 1) are carried forward untouched from the base document.
+        # They are static and already correctly formatted there — recreating them
+        # from markdown loses bullet styles and cell formatting.
 
         # Replace Weekly Progress bullets
         if data['progress']:
