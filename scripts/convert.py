@@ -458,6 +458,56 @@ def _create_list_para(example_para, text: str, indent_level: int = 0):
 
 
 # ---------------------------------------------------------------------------
+# Section spacing
+# ---------------------------------------------------------------------------
+
+def add_section_spacing(doc, space_pt: float = 18.0):
+    """
+    Add breathing room before each section table (General + I1–I8) by setting
+    space_after on the paragraph immediately preceding the table. This is the
+    standard Word approach — paragraph spacing controls the visual gap above tables.
+
+    18pt (360 twips) is the default; the grey header boxes themselves are unchanged.
+    """
+    space_twips = str(int(space_pt * 20))
+    body = list(doc.element.body)
+
+    for i, el in enumerate(body):
+        tag = el.tag.split('}')[-1] if '}' in el.tag else el.tag
+        if tag != 'tbl':
+            continue
+
+        # Skip the summary table (its first row contains "Iteration" and "Status")
+        rows = el.findall('.//' + qn('w:tr'))
+        if not rows:
+            continue
+        first_text = ''.join(t.text or '' for t in rows[0].iter(qn('w:t')))
+        if 'Iteration' in first_text and 'Status' in first_text:
+            continue
+
+        # Find the paragraph immediately before this table and set space_after
+        for j in range(i - 1, -1, -1):
+            prev = body[j]
+            prev_tag = prev.tag.split('}')[-1] if '}' in prev.tag else prev.tag
+            if prev_tag == 'p':
+                _set_space_after(prev, space_twips)
+                break
+
+
+def _set_space_after(para_el, space_twips: str):
+    """Set w:spacing w:after on a paragraph XML element (in twips)."""
+    pPr = para_el.find(qn('w:pPr'))
+    if pPr is None:
+        pPr = OxmlElement('w:pPr')
+        para_el.insert(0, pPr)
+    spacing = pPr.find(qn('w:spacing'))
+    if spacing is None:
+        spacing = OxmlElement('w:spacing')
+        pPr.append(spacing)
+    spacing.set(qn('w:after'), space_twips)
+
+
+# ---------------------------------------------------------------------------
 # Image replacement
 # ---------------------------------------------------------------------------
 
@@ -643,6 +693,9 @@ def main():
 
     print("  Updating iteration sections...")
     update_iteration_sections(doc, content['sections'])
+
+    print("  Adding section spacing (18pt before each grey header)...")
+    add_section_spacing(doc, space_pt=18.0)
 
     print("  Replacing roadmap image...")
     replace_roadmap_image(doc, image_path)
