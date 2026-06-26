@@ -506,7 +506,11 @@ def add_section_spacing(doc, space_pt: float = 18.0):
 
 
 def _set_space_after(para_el, space_twips: str):
-    """Set w:spacing w:after on a paragraph XML element (in twips)."""
+    """Set w:spacing w:after on a paragraph XML element (in twips).
+
+    w:spacing must precede w:rPr in the w:pPr schema order — appending blindly
+    puts it after w:rPr, which Word silently ignores.
+    """
     pPr = para_el.find(qn('w:pPr'))
     if pPr is None:
         pPr = OxmlElement('w:pPr')
@@ -514,7 +518,11 @@ def _set_space_after(para_el, space_twips: str):
     spacing = pPr.find(qn('w:spacing'))
     if spacing is None:
         spacing = OxmlElement('w:spacing')
-        pPr.append(spacing)
+        rPr = pPr.find(qn('w:rPr'))
+        if rPr is not None:
+            rPr.addprevious(spacing)  # insert before w:rPr, not after
+        else:
+            pPr.append(spacing)
     spacing.set(qn('w:after'), space_twips)
 
 
