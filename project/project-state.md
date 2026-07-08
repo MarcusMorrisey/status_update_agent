@@ -1,8 +1,8 @@
 # Project State - Custom-CMS
-**Last Updated:** 2026-06-25
+**Last Updated:** 2026-07-08
 **Last Completed Period:** 2026-W27 (2026-06-19 → 2026-07-02)
 **Periods Completed:** 15
-**Next Action Item ID:** A-189
+**Next Action Item ID:** A-190
 **Next Issue ID:** I-042
 
 ---
@@ -58,6 +58,7 @@
 | A-188 | Marcus / Gabrielle | Schedule follow-up finance design session with Rob after documentation review | 2026-07-02 | Open | 1 |
 | A-185 | Marcus | Identify past finance team meeting dates and share locations in meeting notes folder with Rob | 2026-06-25 | Complete | 1 |
 | A-186 | Marcus | Share Egnyte folder links for finance forms/face sheets and policy manual with Rob | 2026-06-25 | Complete | 1 |
+| A-189 | Marcus / Ross | Obtain access to live (scrubbed) FAMCare production data for IDFusion (Varun) — needed to confirm what data PCFS actually uses before finalizing migration scripts; urgency flagged by Rob Piché (Jul 1 email), targeted within two weeks | 2026-07-15 | Open | 1 |
 
 ---
 ## Issues and Risks
