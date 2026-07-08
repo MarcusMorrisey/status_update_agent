@@ -55,8 +55,8 @@ gh api "repos/ID-Fusion/PCFS/commits?per_page=50&since=[week-monday]T00:00:00Z&u
 
 Group commits by date. For merge PRs, use the branch name and individual commits to infer what the PR covered. Do not surface merge commit messages themselves — surface what they contain.
 
-### 1b — Meeting notes (equal weight to GitHub)
-Read `project/meeting-notes-current.md` and `project/project-state.md`. For iterations in design or discovery phases (I5 A, I5 B, I6, I7), meeting notes are typically the **primary** source — there may be few or no GitHub commits for these. Capture session content, decisions, and outcomes with specificity matching the Apr 27 and May 27 approved examples.
+### 1b — Meeting notes and evidence emails (equal weight to GitHub)
+Read `project/evidence-notes-current.md` and `project/project-state.md`. For iterations in design or discovery phases (I5 A, I5 B, I6, I7), meeting notes and emails are typically the **primary** source — there may be few or no GitHub commits for these. Capture session content, decisions, and outcomes with specificity matching the Apr 27 and May 27 approved examples.
 
 ### 1c — Features content
 Read `project/iteration-features.md`. Every iteration section in the draft must include its Features list verbatim from this file. Do not omit or abbreviate Features. If scope has changed this week, flag it for the user and propose an update to iteration-features.md.

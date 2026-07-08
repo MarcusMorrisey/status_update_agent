@@ -1,11 +1,11 @@
 ---
 name: extract-and-verify
-description: Extract project status items from meeting notes and verify with the user before writing. Use when the user types /extract-and-verify or asks to extract, analyze, or pull out action items, decisions, issues, or health status from meeting transcripts. Runs after ingest-meetings. Extracts all structured items from meeting-notes-current.md, infers health indicators, assigns stable IDs, presents a single full list for user approval, and writes verified output to extractions-current.md. Trigger on /extract-and-verify, "extract items", "analyze meetings", "pull action items", or similar.
+description: Extract project status items from meeting notes and evidence emails, and verify with the user before writing. Use when the user types /extract-and-verify or asks to extract, analyze, or pull out action items, decisions, issues, or health status from meeting transcripts or emails. Runs after ingest-evidence. Extracts all structured items from evidence-notes-current.md, infers health indicators, assigns stable IDs, presents a single full list for user approval, and writes verified output to extractions-current.md. Trigger on /extract-and-verify, "extract items", "analyze meetings", "pull action items", or similar.
 ---
 
 # extract-and-verify
 
-Extracts all structured items from `meeting-notes-current.md`, infers health indicators, and presents everything to the user for a single verification pass. Only after the user approves does anything get written to `extractions-current.md`.
+Extracts all structured items from `evidence-notes-current.md`, infers health indicators, and presents everything to the user for a single verification pass. Only after the user approves does anything get written to `extractions-current.md`.
 
 **Verification principle:** One full-list pass. The user can approve, reject, merge, or simplify any item. Nothing is written until sign-off.
 
@@ -16,7 +16,7 @@ Extracts all structured items from `meeting-notes-current.md`, infers health ind
 ## Step 1 — Load context
 
 Read from the project root:
-- `meeting-notes-current.md` — the source transcripts (required; stop and tell user if missing)
+- `evidence-notes-current.md` — the source transcripts and emails (required; stop and tell user if missing)
 - `project-state.md` — existing action items, issues, milestones (for context and ID continuity)
 - `project-config.md` — project type (affects tone inference), period dates, client name
 
@@ -26,7 +26,7 @@ Note the `Next Action Item ID` and `Next Issue ID` from `project-state.md`. If `
 
 ## Step 2 — Extract all items
 
-Read `meeting-notes-current.md` thoroughly. For each meeting, extract:
+Read `evidence-notes-current.md` thoroughly. For each meeting and email, extract:
 
 ### Progress This Period
 Concrete work completed, deliverables produced, or milestones reached. Look for past-tense statements ("we finished", "delivered", "completed", "closed").
@@ -57,7 +57,7 @@ Infer a RAG status (Green / Yellow / Red) for each:
 - **Schedule** — are milestones on track?
 - **Scope** — any scope creep or change requests?
 - **Budget** — any cost concerns mentioned?
-- **Client's Feeling** — infer from tone and language in external meetings. If only internal meetings this period, note that.
+- **Client's Feeling** — infer from tone and language in external meetings and client emails. If only internal meetings and no client emails this period, note that.
 
 For each Yellow or Red indicator, draft a brief Return to Green Plan (1–3 bullet points) — you'll include this in the verification list.
 

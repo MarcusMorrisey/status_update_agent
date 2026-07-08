@@ -20,7 +20,9 @@ import sys
 REPO_ROOT_RAW = r"C:\ClaudeProjects\status_update_agent"
 
 # Permanent extra allowed paths (outside the repo).
-EXTRA_ALLOWED_RAW = []
+EXTRA_ALLOWED_RAW = [
+    r"C:\Users\Marcus02\.claude\plugins\marketplaces\local-plugins",
+]
 
 
 def normalize(path: str) -> str:

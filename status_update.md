@@ -40,7 +40,7 @@ Building a rapid prototype of an agent with associated skills to summarize proje
 | 22 | Contradictions between documents | Agent flags conflict and presents both versions to user for resolution during verification pass |
 | 23 | Git workflow | Prompt user to commit at end of period — no auto-commit; fits solo workflow |
 | 24 | Per-project config | Markdown file (`project-config.md`); schema locked — see Per-Project Config Schema section |
-| 25 | `ingest-meetings` trigger | Manually triggered via `/ingest-meetings` — not auto-run on session start |
+| 25 | `ingest-evidence` trigger | Manually triggered via `/ingest-evidence` — not auto-run on session start |
 | 26 | Project state file format | Markdown — human-readable, editable directly, consistent with git workflow |
 | 27 | Verification flow | Single full-list pass — user reviews all extracted items at once; approve / reject / merge / simplify |
 | 28 | `ingest-project-docs` trigger | On-demand only — run once at project start, then when new documents arrive; not re-run every period |
@@ -51,7 +51,8 @@ Building a rapid prototype of an agent with associated skills to summarize proje
 | 30 | Project state — history window | Rolling 4-week window (metadata + brief summary per period); full history available in git + `.qmd` files |
 | 31 | Milestone baselines | Stored in `project-state.md`; Baseline End is immutable to agent — agent may propose changes, user must confirm before state is updated; Estimated End is agent-writable (after verification) |
 | 32 | Action item / issue IDs | Stable sequential IDs across periods — `A-001` format for action items, `I-001` for issues; assigned during `extract-and-verify`; state file tracks next available ID |
-| 36 | `ingest-meetings` scope | Scans ALL meetings regardless of date; computes period boundaries from `Start Date` + `Period Length` in config; if meetings span multiple periods, processes iteratively from oldest to newest — full workflow per period (ingest → extract+verify → generate → rollover); pauses between periods for user verification; if `project-state.md` exists, resumes from last completed period |
+| 36 | `ingest-evidence` scope | Scans ALL meetings regardless of date; computes period boundaries from `Start Date` + `Period Length` in config; if meetings span multiple periods, processes iteratively from oldest to newest — full workflow per period (ingest → extract+verify → generate → rollover); pauses between periods for user verification; if `project-state.md` exists, resumes from last completed period |
+| 37 | Evidence sources beyond meetings | 2026-07-08: `ingest-meetings` renamed to `ingest-evidence`; `meeting-notes-current.md` renamed to `evidence-notes-current.md`. Evidence now includes emails pulled from a linked Outlook table in an Access `.accdb`, configured per-project via `Email Evidence DB:` / `Email Evidence Table:` in `project-config.md` (optional — skipped if absent). Access COM automation (`win32com.client`) is required to read linked-table content reliably; direct ODBC (`pyodbc`) crashes on this environment. |
 ---
 ## Input Folder Structure
 ```
@@ -146,7 +147,7 @@ Omit Gantt entirely if the Milestones table has no rows.
 ## Proposed Skill Architecture (v1) — LOCKED
 | # | Skill | Trigger | Responsibility |
 |---|-------|---------|---------------|
-| 1 | `ingest-meetings` | Manual: `/ingest-meetings` | Read all transcript files for current period; parse, label, store structured notes |
+| 1 | `ingest-evidence` | Manual: `/ingest-evidence` | Read all transcript files for current period; parse, label, store structured notes |
 | 2 | `ingest-project-docs` | Manual: `/ingest-project-docs`; on-demand only | SOWs, plans, roadmaps, vendor docs; extract milestones, scope, budget baseline |
 | 3 | `extract-and-verify` | Runs after ingestion | Extract progress, decisions, commitments, issues; infer health + Client's Feeling; present single full list for user verification |
 | 4 | `generate-report` | Manual: `/generate-report` | Takes verified extractions + previous period state; produces Quarto `.qmd` output |
@@ -200,7 +201,7 @@ File: `project-config.md` (Markdown, human-readable, directly editable)
 | Identity fields, Schedule | `generate-report` (Sections 1, 3) |
 | Project Type | `extract-and-verify` (tone inference context) |
 | Estimated Finish Date | `generate-report` (variance vs. Planned) |
-| Current Period Start/End | `ingest-meetings` (file date filter) |
+| Current Period Start/End | `ingest-evidence` (file date filter) |
 | Period Length | `period-rollover` (computes next period dates) |
 | Financial | `generate-report` (Section 3, optional) |
 
@@ -312,7 +313,7 @@ Written by `extract-and-verify`. Read by `generate-report`. Cleared by `period-r
 ```
 
 ### Lifecycle
-1. `ingest-meetings` → reads transcript files, stores parsed notes internally
+1. `ingest-evidence` → reads transcript files, stores parsed notes internally
 2. `extract-and-verify` → extracts all items, assigns IDs, presents for user verification → writes verified output to `extractions-current.md`
 3. `generate-report` → reads `extractions-current.md` + `project-state.md` + `project-config.md` → produces `status-reports/[period].qmd`
 4. `period-rollover` → merges `extractions-current.md` into `project-state.md` (increments Periods Open, retires Complete items, trims history to 4-week window, advances period dates in `project-config.md`) → clears `extractions-current.md`

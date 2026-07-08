@@ -104,7 +104,7 @@ Replace `extractions-current.md` with a blank template for the next period:
 ```markdown
 # Current Period Extractions — [Project Name]
 **Period:** [next-period-id] ([next-start] → [next-end])
-**Status:** Empty — awaiting ingest-meetings and extract-and-verify
+**Status:** Empty — awaiting ingest-evidence and extract-and-verify
 ```
 
 The period-id for the next period: compute from the new start date (ISO week format, e.g., `2026-W13`).
@@ -126,7 +126,7 @@ extractions-current.md cleared.
 
 Reminder: commit these changes to git to preserve the period record.
 
-When ready to start the next period, run /ingest-meetings.
+When ready to start the next period, run /ingest-evidence.
 ```
 
-Do NOT run `ingest-meetings` automatically. Do NOT commit to git automatically.
+Do NOT run `ingest-evidence` automatically. Do NOT commit to git automatically.

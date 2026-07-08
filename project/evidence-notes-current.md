@@ -1,4 +1,4 @@
-# Meeting Notes — Custom-CMS (Wabanong)
+# Evidence Notes — Custom-CMS (Wabanong)
 **Period:** 2026-W27 (2026-06-19 → 2026-07-02)
 **Generated:** 2026-06-25
 **Meetings:** 1 internal, 0 external

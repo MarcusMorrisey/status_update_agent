@@ -1,6 +1,6 @@
 {
   "name": "status-update-agent",
-  "description": "Skills for producing structured project status reports and weekly updates. Includes ingest-meetings, ingest-project-docs, extract-and-verify, generate-report, period-rollover, and weekly-update.",
+  "description": "Skills for producing structured project status reports and weekly updates. Includes ingest-evidence (meeting transcripts and emails), ingest-project-docs, extract-and-verify, generate-report, period-rollover, and weekly-update.",
   "author": {
     "name": "Marcus Morrisey"
   }

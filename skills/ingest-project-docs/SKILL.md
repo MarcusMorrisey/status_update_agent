@@ -7,7 +7,7 @@ description: Ingest project documents (SOWs, plans, roadmaps, vendor assessments
 
 Reads documents from `project-docs/` and extracts baseline project structure: milestones, scope, and budget. Updates `project-state.md` with what it finds. Run once at project start, then again when new documents arrive — not every reporting period.
 
-**This skill does NOT process meeting transcripts.** For meetings, use `/ingest-meetings`.
+**This skill does NOT process meeting transcripts or emails.** For those, use `/ingest-evidence`.
 
 ---
 
@@ -136,5 +136,5 @@ Update `project-config.md` if a budget baseline was extracted and the Financial 
 Milestones added: [N]
 Budget baseline: [amount or "not found"]
 
-Run /ingest-meetings when ready to start the first reporting period.
+Run /ingest-evidence when ready to start the first reporting period.
 ```
