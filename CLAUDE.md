@@ -40,8 +40,9 @@ Run `/ingest-project-docs` once at project start or when new project documents a
 
 ## Current State (as of last rollover)
 
+- Reporting cadence changed 2026-07-08: **Period Length is now 1 week** (was 2). The in-progress 2026-W29 period was truncated from 07-03→07-16 to 07-03→07-09 as part of this change (nothing had been ingested for it yet, so no data needed splitting). The week of 07-10→07-16 will be its own period (W30) once rolled into.
 - Last completed period: 2026-W27 (2026-06-19 → 2026-07-02)
-- Current period: 2026-W29 (2026-07-03 → 2026-07-16)
+- Current period: 2026-W29 (2026-07-03 → 2026-07-09)
 - `meeting-notes-current.md` contains W27 notes (now stale — W29 ingest not yet run)
 - `extractions-current.md` is empty — next step is `/ingest-meetings` for W29
 - No known W29 meetings yet — check Z: drive when starting next period
