@@ -15,8 +15,8 @@
 
 ## Reporting
 - **Period Length (weeks):** 1
-- **Current Period Start:** 2026-07-03
-- **Current Period End:** 2026-07-09
+- **Current Period Start:** 2026-07-10
+- **Current Period End:** 2026-07-16
 - **Meetings Source:** Z:\Shared\3_Client Projects\Peguis CFS\Projects\PD25-1186-CO - Custom CMS\4. Controlling\01. Meeting Minutes
 - **Email Evidence DB:** Z:\Shared\3_Client Projects\Peguis CFS\Projects\PD25-1186-CO - Custom CMS\2. Planning\R\email_repo\PCFS.accdb
 - **Email Evidence Table:** project_status
