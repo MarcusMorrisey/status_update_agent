@@ -1,13 +1,13 @@
 # Evidence Notes — Custom-CMS
 **Period:** 2026-W29 (2026-07-03 → 2026-07-09)
-**Generated:** 2026-07-17
+**Generated:** 2026-07-17 (regenerated 2026-07-20 via live re-pull from the Z: drive transcript source and the Access-linked email table, with normalization applied per updated ingest-evidence skill)
 **Meetings:** 0 internal, 1 external
 **Emails:** 14
 
 ---
 
 ## Email — 2026-07-03 — Scheme Review
-**From:** Ross Gillingham
+**From:** Ross Gillingham <ross.gillingham@peguiscfs.org>
 **To:** Varun Mehra
 **CC:** Marcus Morrisey
 
@@ -17,49 +17,21 @@ Can you please check the exported Schema in the SQL Dev environment and advise i
 
 Warm regards,
 
-
-
-
- 
-
 Ross Gillingham
-
 Chief Information Officer
-
 Peguis Child and Family Services
-
 Winnipeg Office
-
 500 Madison St
-
 Winnipeg, MB R3H 0L4
-
 PH: (204) 632-5404
-
-https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
- 
-
- 
+https://peguiscfs.ca/
 
 Our Children and Families Come First
-
- 
-
-THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-
-Peguis CFS Legal Disclaimer
-
-
-The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
 
 ---
 
 ## Email — 2026-07-03 — Re: Scheme Review
-**From:** Varun Mehra
+**From:** Varun Mehra <varun@idfusion.com>
 **To:** Ross Gillingham
 **CC:** Marcus Morrisey
 
@@ -70,49 +42,15 @@ Checking this out shortly. Will report back soon!
 Thanks,
 Varun
 
-
-
-	On Jul 3, 2026, at 9:59 AM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-	Good morning Varun,
-
-	Can you please check the exported Schema in the SQL Dev environment and advise if it is what you are expecting?
-
-	Warm regards,
-
-	<img-d2ea9003-b950-4a78-9bcf-d8d5a6d0ebb6>
-
-	 
-
-	Ross Gillingham
-	Chief Information Officer
-	Peguis Child and Family Services
-	Winnipeg Office
-	500 Madison St
-	Winnipeg, MB R3H 0L4
-	PH: (204) 632-5404
-	https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
-	 
-
-	 
-
-	Our Children and Families Come First
-	 
-	THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-	Peguis CFS Legal Disclaimer
-	
-
-	The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
+> On Jul 3, 2026, at 9:59 AM, Ross Gillingham wrote:
+> Good morning Varun,
+> Can you please check the exported Schema in the SQL Dev environment and advise if it is what you are expecting?
+> Warm regards, Ross Gillingham
 
 ---
 
 ## Email — 2026-07-03 — Re: Scheme Review
-**From:** Ross Gillingham
+**From:** Ross Gillingham <ross.gillingham@peguiscfs.org>
 **To:** Varun Mehra
 **CC:** Marcus Morrisey
 
@@ -121,181 +59,40 @@ Thanks Varun,
 Were you able to review the schema?
 
 Warm regards,
-
-
 Ross Gillingham
 
-Chief Information Officer
-
-Peguis Child and Family Services
-
-Winnipeg Office
-
-500 Madison St
-
-Winnipeg, MB R3H 0L4
-
-PH: (204) 632-5404
-
-https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-
-From: Varun Mehra <varun@idfusion.com>
-Date: Friday, July 3, 2026 at 1:00 PM
-To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-Cc: Marcus Morrisey <marcus.morrisey@idfusion.com>
-Subject: Re: Scheme Review
-
-
-Hi Ross,
-
-Checking this out shortly. Will report back soon!
-
-Thanks,
-Varun
-
-
-	On Jul 3, 2026, at 9:59 AM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-	Good morning Varun,
-
-	Can you please check the exported Schema in the SQL Dev environment and advise if it is what you are expecting?
-
-	Warm regards,
-
-	<img-d2ea9003-b950-4a78-9bcf-d8d5a6d0ebb6>
-
-	 
-
-	Ross Gillingham
-	Chief Information Officer
-	Peguis Child and Family Services
-	Winnipeg Office
-	500 Madison St
-	Winnipeg, MB R3H 0L4
-	PH: (204) 632-5404
-	https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
-	 
-
-	 
-
-	Our Children and Families Come First
-	 
-	THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-	Peguis CFS Legal Disclaimer
-
-	The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-Peguis CFS Legal Disclaimer
-
-
-The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
+> On Jul 3, 2026, at 1:00 PM, Varun Mehra wrote:
+> Hi Ross,
+> Checking this out shortly. Will report back soon!
+> Thanks, Varun
 
 ---
 
 ## Email — 2026-07-03 — Re: Scheme Review
-**From:** Varun Mehra
+**From:** Varun Mehra <varun@idfusion.com>
 **To:** Ross Gillingham
 **CC:** Marcus Morrisey
 
 Hi Ross,
 
-Sorry super swamped today and couldnt get back to you earlier. 
+Sorry super swamped today and couldnt get back to you earlier.
 
 The database export was not what what I was expecting. I created a schema export of the test database and dumped it in the temp folder expectring_script.sql
 
-I was able to generate that using SQL management studio. Right clicking the db then clicking “Tasks” -> Generate Scripts. From there I choose “Script entire database and all the database objects”.
+I was able to generate that using SQL management studio. Right clicking the db then clicking "Tasks" -> Generate Scripts. From there I choose "Script entire database and all the database objects".
 
 Clicking advanced you need to also set the following:
 Script Indexes = True (off by default!)
 Script Foreign Keys = True
-Types of data to script = "Schema only”
+Types of data to script = "Schema only"
 
 Thanks,
 Varun
 
-
-
-	On Jul 3, 2026, at 3:11 PM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-	Thanks Varun,
-
-	Were you able to review the schema?
-
-	Warm regards,
-
-	Ross Gillingham
-	Chief Information Officer
-	Peguis Child and Family Services
-	Winnipeg Office
-	500 Madison St
-	Winnipeg, MB R3H 0L4
-	PH: (204) 632-5404
-	https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-	From: Varun Mehra <varun@idfusion.com>
-	Date: Friday, July 3, 2026 at 1:00 PM
-	To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-	Cc: Marcus Morrisey <marcus.morrisey@idfusion.com>
-	Subject: Re: Scheme Review
-	
-	
-	Hi Ross,
-
-	Checking this out shortly. Will report back soon!
-
-	Thanks,
-	Varun
-
-
-		On Jul 3, 2026, at 9:59 AM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-		Good morning Varun,
-
-		Can you please check the exported Schema in the SQL Dev environment and advise if it is what you are expecting?
-
-		Warm regards,
-
-		<img-d2ea9003-b950-4a78-9bcf-d8d5a6d0ebb6>
-
-		 
-
-		Ross Gillingham
-		Chief Information Officer
-		Peguis Child and Family Services
-		Winnipeg Office
-		500 Madison St
-		Winnipeg, MB R3H 0L4
-		PH: (204) 632-5404
-		https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
-		 
-
-		 
-
-		Our Children and Families Come First
-		 
-		THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-		Peguis CFS Legal Disclaimer
-
-		The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-	Peguis CFS Legal Disclaimer
-	
-
-	The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
+> On Jul 3, 2026, at 3:11 PM, Ross Gillingham wrote:
+> Thanks Varun,
+> Were you able to review the schema?
+> Warm regards, Ross Gillingham
 
 ---
 
@@ -793,10 +590,7 @@ Ross  29:30
 No, it's fair. That's just a good question
 
 Speaker 7  29:33
-for me. Protection is maintenance. Yeah, yeah, we're gonna get
-
-Speaker 4  29:37
-it. Finance does it, that's our funding works, but frontline does it backwards, and we've been trying to tell them, but it's work in
+for me. Protection is maintenance. Yeah, yeah, we're gonna get it. Finance does it, that's our funding works, but frontline does it backwards, and we've been trying to tell them, but it's work in
 
 Ross  29:48
 progress. Yeah, we will, we will get our heads together and settle on terms,
@@ -1443,11 +1237,10 @@ Thank you. Okay. Thank you.
 1:21:56
 Bye. we.
 
-
 ---
 
 ## Email — 2026-07-06 — Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-**From:** Ross Gillingham
+**From:** Ross Gillingham <ross.gillingham@peguiscfs.org>
 **To:** Campfire Help Desk
 **CC:** Varun Mehra; Rob Piché; Marcus Morrisey
 
@@ -1455,213 +1248,25 @@ Good morning team,
 
 Unfortunately, the file was not what Varun was expecting, please see the below information from Varun. We can schedule a call to review together.
 
-“...
-
+"...
 The database export was not what what I was expecting. I created a schema export of the test database and dumped it in the temp folder expectring_script.sql
-
-I was able to generate that using SQL management studio. Right clicking the db then clicking “Tasks” -> Generate Scripts. From there I choose “Script entire database and all the database objects”.
-
+I was able to generate that using SQL management studio. Right clicking the db then clicking "Tasks" -> Generate Scripts. From there I choose "Script entire database and all the database objects".
 Clicking advanced you need to also set the following:
 Script Indexes = True (off by default!)
 Script Foreign Keys = True
-Types of data to script = "Schema only”
-
-Thanks,
-Varun
-
-
+Types of data to script = "Schema only"
+Thanks, Varun
 "
 
-
-
-
 Warm regards,
-
-
 Ross Gillingham
 
-Chief Information Officer
-
-Peguis Child and Family Services
-
-Winnipeg Office
-
-500 Madison St
-
-Winnipeg, MB R3H 0L4
-
-PH: (204) 632-5404
-
-https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-
-From: Campfire Support <support@campfire.ca>
-Date: Thursday, July 2, 2026 at 4:45 PM
-To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-Cc: varun@idfusion.com <varun@idfusion.com>, rob@idfusion.com <rob@idfusion.com>, marcus.morrisey@idfusion.com <marcus.morrisey@idfusion.com>
-Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-
-
-
-Hey Ross, Varun,
-
-
-
-
-Can you confirm that you've received the file and it is what you expect?
-
-
-
-
-Thanks
-
-
-
-
-A.J. (covering for Antonio on his vacation)
-
-
-
-
---
-
-A.J. Potrebka
-
-Director of Operations at Campfire
-
-________________________________
-
-
-
-
-________________________________
-
-From: Campfire Support
-Sent: 2026-06-30 1:40:16 PM
-To: ross.gillingham@peguiscfs.org
-Cc: varun@idfusion.com;rob@idfusion.com;marcus.morrisey@idfusion.com
-Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-
-
-
-Hi Ross,
-
-
-
-
-This is complete. The sql file is stored in C:\temp on the SQL server, to which Varun has access. Please let me know if you require any further assistance.
-
-
-
-
-Thanks,
-
-ANTONIO
-
-FAIAZZA
-
-SENIOR WORKPLACE TECHNOLOGY ADMINISTRATOR
-
-CAMPFIRE
-
-tel: +1 647 393 1171
-
-|
-
-web: https://campfire.ca <https://ca.content.exclaimer.net/?url=https%3A%2F%2Fcampfire.ca%2F&tenantid=ivPndEgHEe6ZN2BFvVzETQ&templateid=9482debea350ee1199376045bd5cc44d&signature=QFnQbSy82ITDOOYzyh8FHp0taTfm3K6kQhmUAiKsBfTzpU52S2YvhaPyxU7gy4nJn_xaA6fdI8jaICv_ZUsypu-KHWeors1s8vFZjWuzkOsjPfZO_FT4pZzBDpztIOSq3kwlWxup_QHXS0_vXf0Ojk1dVCTJF6J7ZrZ_7Sj4q9Ncnlz7sF9y8GlLh1eOve1T2sFnu8a8RosZQ4aHPLw9wdpO7VWShi_GxLmwbqPJodM8MScocnpBD-l6IgLEVtBmPBg2FiXIrYQ1Ef8vSpr9YFPhnQd0R-SzeRSH4DShQw7Zbm1dGRkk1LVzMLB3P8tmFsoMyYHQpFBnK3D4VKNijg&v=1> 
-
-
-
-________________________________
-
-From: Campfire Support
-Sent: 2026-06-30 9:55:19 AM
-To: ross.gillingham@peguiscfs.org
-Cc: varun@idfusion.com;rob@idfusion.com;marcus.morrisey@idfusion.com
-Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-
-
-
-Hi Ross,
-
-
-
-
-Thanks for reaching out!
-
-
-
-
-I’ll get this in front of one of our technicians to assist.
-
-
-
-
-Regards,
-
-
-.
-.
-.
-Good morning team,
-
-
-To continue working on our data migration from FAMCare to Waabanong, IDFusion needs an export of the FAMCare Production DB schema. Please see Varun’s below request for additional details and requirements.
-
-
-This export is approved. Once the export is created, please place a copy on the SQL Dev environment.
-
-
-As always, please let me know if you need additional information, ID Fusion and I will be happy to jump on a call.
-
-
-Warm regards,
-
-
-
-Ross Gillingham
-
-Chief Information Officer
-
-Peguis Child and Family Services
-
-Winnipeg Office
-
-500 Madison St
-
-Winnipeg, MB R3H 0L4
-
-PH: (204) 632-5404
-
-https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-
-From: Varun Mehra <varun@idfusion.com>
-Date: Tuesday, June 30, 2026 at 8:23 AM
-To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-Subject: DB request
-
-
-Can Campfire send me a schema-only SQL script (.sql file) from the database (no data), with foreign keys, primary keys, indexes, and constraints included?
-
-Thanks,
-Varun
-Peguis CFS Legal Disclaimer
-
-The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
-
- <https://link.campfire.ca/open/9fESUuZEwNif.GZB515_63Rtr.C5LM7QKdTQW/1.gif> 
-Peguis CFS Legal Disclaimer
-
-
-The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
+> From: Campfire Support — Sent: 2026-07-02 3:29 PM
+> Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
+> Hey Ross, Varun, Can you confirm that you've received the file and it is what you expect?
+> Thanks, A.J. (covering for Antonio on his vacation)
+>
+> (Earlier ticket history, predating this period: Ross approved the schema-only export request on 2026-06-30; Varun's original spec asked for a schema-only SQL script with FK/PK/indexes/constraints, no data.)
 
 ---
 
@@ -1672,177 +1277,22 @@ The information contained in this e-mail message is intended only for the person
 
 Good morning Ross,
 
-
-
-
 No problem. I've re-run the scripting based off Varun's notes. I've added the updated file to the C:\temp folder and renamed the old file to peguis_live_old01.sql.
-
-
-
 
 Please give it a try and let me know if this is more what was expected.
 
-
-
-
 Thanks,
-
-ANTONIO
-
-FAIAZZA
-
-SENIOR WORKPLACE TECHNOLOGY ADMINISTRATOR
-
-CAMPFIRE
-
+ANTONIO FAIAZZA
+SENIOR WORKPLACE TECHNOLOGY ADMINISTRATOR, CAMPFIRE
 tel: +1 647 393 1171
 
-|
-
-web: https://campfire.ca <https://ca.content.exclaimer.net/?url=https%3A%2F%2Fcampfire.ca%2F&tenantid=ivPndEgHEe6ZN2BFvVzETQ&templateid=9482debea350ee1199376045bd5cc44d&signature=QFnQbSy82ITDOOYzyh8FHp0taTfm3K6kQhmUAiKsBfTzpU52S2YvhaPyxU7gy4nJn_xaA6fdI8jaICv_ZUsypu-KHWeors1s8vFZjWuzkOsjPfZO_FT4pZzBDpztIOSq3kwlWxup_QHXS0_vXf0Ojk1dVCTJF6J7ZrZ_7Sj4q9Ncnlz7sF9y8GlLh1eOve1T2sFnu8a8RosZQ4aHPLw9wdpO7VWShi_GxLmwbqPJodM8MScocnpBD-l6IgLEVtBmPBg2FiXIrYQ1Ef8vSpr9YFPhnQd0R-SzeRSH4DShQw7Zbm1dGRkk1LVzMLB3P8tmFsoMyYHQpFBnK3D4VKNijg&v=1> 
-
-
-________________________________
-
-
-
-
-________________________________
-
-From: ross.gillingham@peguiscfs.org
-Sent: 2026-07-06 7:45:07 AM
-To: "Campfire Support Team" 
-Cc: varun@idfusion.com, rob@idfusion.com, marcus.morrisey@idfusion.com
-Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-
-Good morning team,
-
-Unfortunately, the file was not what Varun was expecting, please see the below information from Varun. We can schedule a call to review together.
-
-“...
-
-The database export was not what what I was expecting. I created a schema export of the test database and dumped it in the temp folder expectring_script.sql
-
-I was able to generate that using SQL management studio. Right clicking the db then clicking “Tasks” -> Generate Scripts. From there I choose “Script entire database and all the database objects”.
-
-Clicking advanced you need to also set the following:
-Script Indexes = True (off by default!)
-Script Foreign Keys = True
-Types of data to script = "Schema only”
-
-Thanks,
-Varun
-
-
-"
-
-
-
-
-Warm regards,
-
-
-Ross Gillingham
-
-Chief Information Officer
-
-Peguis Child and Family Services
-
-Winnipeg Office
-
-500 Madison St
-
-Winnipeg, MB R3H 0L4
-
-PH: (204) 632-5404
-
-https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-________________________________
-
-From: Campfire Support
-Sent: 2026-07-02 3:29:36 PM
-To: ross.gillingham@peguiscfs.org
-Cc: varun@idfusion.com;rob@idfusion.com;marcus.morrisey@idfusion.com
-Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-
-
-Hey Ross, Varun,
-
-
-
-
-Can you confirm that you've received the file and it is what you expect?
-
-
-
-
-Thanks
-
-
-
-
-A.J. (covering for Antonio on his vacation)
-
-
-.
-.
-.
-
-Good morning team,
-
-To continue working on our data migration from FAMCare to Waabanong, IDFusion needs an export of the FAMCare Production DB schema. Please see Varun’s below request for additional details and requirements.
-
-This export is approved. Once the export is created, please place a copy on the SQL Dev environment.
-
-As always, please let me know if you need additional information, ID Fusion and I will be happy to jump on a call.
-
-Warm regards,
-
-
-Ross Gillingham
-
-Chief Information Officer
-
-Peguis Child and Family Services
-
-Winnipeg Office
-
-500 Madison St
-
-Winnipeg, MB R3H 0L4
-
-PH: (204) 632-5404
-
-https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-
-From: Varun Mehra <varun@idfusion.com>
-Date: Tuesday, June 30, 2026 at 8:23 AM
-To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-Subject: DB request
-
-
-Can Campfire send me a schema-only SQL script (.sql file) from the database (no data), with foreign keys, primary keys, indexes, and constraints included?
-
-Thanks,
-Varun
-Peguis CFS Legal Disclaimer
-
-
-The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
-
- <https://link.campfire.ca/open/nc70qIK7ezc5.Xk9o9xloHWMQ.3k4KpQpAfgk/1.gif> 
-
+> From: ross.gillingham@peguiscfs.org — Sent: 2026-07-06 7:45 AM
+> Good morning team, unfortunately the file was not what Varun was expecting... [see Ross's email above, same content]
 
 ---
 
 ## Email — 2026-07-06 — Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-**From:** Varun Mehra
+**From:** Varun Mehra <varun@idfusion.com>
 **To:** Campfire Support
 **CC:** ross.gillingham@peguiscfs.org; Rob Piché; Marcus Morrisey
 
@@ -1853,137 +1303,8 @@ The file looks good.
 Thanks,
 Varun
 
-
-
-	On Jul 6, 2026, at 10:02 AM, Campfire Support <support@campfire.ca> wrote:
-
-
-	
-
-	Good morning Ross,
-
-	No problem. I've re-run the scripting based off Varun's notes. I've added the updated file to the C:\temp folder and renamed the old file to peguis_live_old01.sql.
-
-	Please give it a try and let me know if this is more what was expected.
-
-	Thanks,
-ANTONIO
-FAIAZZA
-SENIOR WORKPLACE TECHNOLOGY ADMINISTRATOR
-CAMPFIRE
-tel: +1 647 393 1171
-|
-web: https://campfire.ca <https://ca.content.exclaimer.net/?url=https%3A%2F%2Fcampfire.ca%2F&tenantid=ivPndEgHEe6ZN2BFvVzETQ&templateid=9482debea350ee1199376045bd5cc44d&signature=QFnQbSy82ITDOOYzyh8FHp0taTfm3K6kQhmUAiKsBfTzpU52S2YvhaPyxU7gy4nJn_xaA6fdI8jaICv_ZUsypu-KHWeors1s8vFZjWuzkOsjPfZO_FT4pZzBDpztIOSq3kwlWxup_QHXS0_vXf0Ojk1dVCTJF6J7ZrZ_7Sj4q9Ncnlz7sF9y8GlLh1eOve1T2sFnu8a8RosZQ4aHPLw9wdpO7VWShi_GxLmwbqPJodM8MScocnpBD-l6IgLEVtBmPBg2FiXIrYQ1Ef8vSpr9YFPhnQd0R-SzeRSH4DShQw7Zbm1dGRkk1LVzMLB3P8tmFsoMyYHQpFBnK3D4VKNijg&v=1> 
-
-
-	
-
-	
-
-________________________________
-
-
-	
-________________________________
-
-	From: ross.gillingham@peguiscfs.org <mailto:ross.gillingham@peguiscfs.org> 
-	Sent: 2026-07-06 7:45:07 AM
-	To: "Campfire Support Team" 
-	Cc: varun@idfusion.com <mailto:varun@idfusion.com> , rob@idfusion.com <mailto:rob@idfusion.com> , marcus.morrisey@idfusion.com <mailto:marcus.morrisey@idfusion.com> 
-	Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-	
-	
-	Good morning team,
-
-	Unfortunately, the file was not what Varun was expecting, please see the below information from Varun. We can schedule a call to review together.
-
-	“...
-
-	The database export was not what what I was expecting. I created a schema export of the test database and dumped it in the temp folder expectring_script.sql
-
-	I was able to generate that using SQL management studio. Right clicking the db then clicking “Tasks” -> Generate Scripts. From there I choose “Script entire database and all the database objects”.
-
-	Clicking advanced you need to also set the following:
-	Script Indexes = True (off by default!)
-	Script Foreign Keys = True
-	Types of data to script = "Schema only”
-
-	Thanks,
-	Varun
-	
-	
-	"
-
-
-
-
-	Warm regards,
-
-	Ross Gillingham
-	Chief Information Officer
-	Peguis Child and Family Services
-	Winnipeg Office
-	500 Madison St
-	Winnipeg, MB R3H 0L4
-	PH: (204) 632-5404
-	https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-________________________________
-
-	From: Campfire Support
-	Sent: 2026-07-02 3:29:36 PM
-	To: ross.gillingham@peguiscfs.org
-	Cc: varun@idfusion.com;rob@idfusion.com;marcus.morrisey@idfusion.com
-	Subject: Re: FAMCare Schema Request for Waabanong Project - Ticket Update [ID:0186030]
-	
-	
-	Hey Ross, Varun,
-
-	Can you confirm that you've received the file and it is what you expect?
-
-	Thanks
-
-	A.J. (covering for Antonio on his vacation)
-	
-	.
-	.
-	.
-	
-	Good morning team,
-
-	To continue working on our data migration from FAMCare to Waabanong, IDFusion needs an export of the FAMCare Production DB schema. Please see Varun’s below request for additional details and requirements.
-
-	This export is approved. Once the export is created, please place a copy on the SQL Dev environment.
-
-	As always, please let me know if you need additional information, ID Fusion and I will be happy to jump on a call.
-
-	Warm regards,
-
-	Ross Gillingham
-	Chief Information Officer
-	Peguis Child and Family Services
-	Winnipeg Office
-	500 Madison St
-	Winnipeg, MB R3H 0L4
-	PH: (204) 632-5404
-	https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-	From: Varun Mehra <varun@idfusion.com>
-	Date: Tuesday, June 30, 2026 at 8:23 AM
-	To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-	Subject: DB request
-	
-	
-	Can Campfire send me a schema-only SQL script (.sql file) from the database (no data), with foreign keys, primary keys, indexes, and constraints included?
-	
-	Thanks,
-	Varun
-	Peguis CFS Legal Disclaimer
-	
-	The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
+> On Jul 6, 2026, at 10:02 AM, Campfire Support wrote:
+> Good morning Ross, No problem. I've re-run the scripting based off Varun's notes... Please give it a try and let me know if this is more what was expected. Thanks, Antonio
 
 ---
 
@@ -1998,59 +1319,16 @@ The final note added to the request was:
 
 Hi Varun,
 
-
-
-
 No problem. Happy to help. I'll close out this case, but if you need anything further, don't hesitate to ask. Have an excellent day!
 
-
-
-
 Thanks,
-
-ANTONIO
-
-FAIAZZA
-
-SENIOR WORKPLACE TECHNOLOGY ADMINISTRATOR
-
-CAMPFIRE
-
-tel: +1 647 393 1171
-
-|
-
-web: https://campfire.ca <https://ca.content.exclaimer.net/?url=https%3A%2F%2Fcampfire.ca%2F&tenantid=ivPndEgHEe6ZN2BFvVzETQ&templateid=9482debea350ee1199376045bd5cc44d&signature=QFnQbSy82ITDOOYzyh8FHp0taTfm3K6kQhmUAiKsBfTzpU52S2YvhaPyxU7gy4nJn_xaA6fdI8jaICv_ZUsypu-KHWeors1s8vFZjWuzkOsjPfZO_FT4pZzBDpztIOSq3kwlWxup_QHXS0_vXf0Ojk1dVCTJF6J7ZrZ_7Sj4q9Ncnlz7sF9y8GlLh1eOve1T2sFnu8a8RosZQ4aHPLw9wdpO7VWShi_GxLmwbqPJodM8MScocnpBD-l6IgLEVtBmPBg2FiXIrYQ1Ef8vSpr9YFPhnQd0R-SzeRSH4DShQw7Zbm1dGRkk1LVzMLB3P8tmFsoMyYHQpFBnK3D4VKNijg&v=1> 
-
-
-
-------
-
-If this ticket has been closed in error, please reply to this e-mail to reopen the ticket.
-
-We are constantly reviewing our performance and services to make improvements where we can. If you could please take a moment to rate your recent experience with the support team, by clicking below:
-
-
-
- <https://cmpfr.halopsa.com/portal/feedback?id=186030&key=d2455a91-44e2-4e17-abd9-ce7d3bbfaa8c&score=1> 
-
-	 <https://cmpfr.halopsa.com/portal/feedback?id=186030&key=d2455a91-44e2-4e17-abd9-ce7d3bbfaa8c&score=2> 
-
-	 <https://cmpfr.halopsa.com/portal/feedback?id=186030&key=d2455a91-44e2-4e17-abd9-ce7d3bbfaa8c&score=3> 
-
-	 <https://cmpfr.halopsa.com/portal/feedback?id=186030&key=d2455a91-44e2-4e17-abd9-ce7d3bbfaa8c&score=4> 
-
-	
-
-Thank you.
-
- <https://link.campfire.ca/open/_NV-gTRYPtEH.ytgAVyjy-tis.Ep_mcgIaNi1/1.gif> 
-
+ANTONIO FAIAZZA
+SENIOR WORKPLACE TECHNOLOGY ADMINISTRATOR, CAMPFIRE
 
 ---
 
 ## Email — 2026-07-06 — Re: Scheme Review
-**From:** Varun Mehra
+**From:** Varun Mehra <varun@idfusion.com>
 **To:** Ross Gillingham
 **CC:** Marcus Morrisey
 
@@ -2065,108 +1343,13 @@ Is it possible for us to instead get a version of live with a limited an scrubbe
 Thanks,
 Varun
 
-
-
-	On Jul 3, 2026, at 4:27 PM, Varun Mehra <varun@idfusion.com> wrote:
-
-	Hi Ross,
-
-	Sorry super swamped today and couldnt get back to you earlier. 
-
-	The database export was not what what I was expecting. I created a schema export of the test database and dumped it in the temp folder expectring_script.sql
-
-	I was able to generate that using SQL management studio. Right clicking the db then clicking “Tasks” -> Generate Scripts. From there I choose “Script entire database and all the database objects”.
-
-	Clicking advanced you need to also set the following:
-	Script Indexes = True (off by default!)
-	Script Foreign Keys = True
-	Types of data to script = "Schema only”
-
-	Thanks,
-	Varun
-	
-
-
-		On Jul 3, 2026, at 3:11 PM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-		Thanks Varun,
-
-		Were you able to review the schema?
-
-		Warm regards,
-
-		Ross Gillingham
-		Chief Information Officer
-		Peguis Child and Family Services
-		Winnipeg Office
-		500 Madison St
-		Winnipeg, MB R3H 0L4
-		PH: (204) 632-5404
-		https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-		From: Varun Mehra <varun@idfusion.com>
-		Date: Friday, July 3, 2026 at 1:00 PM
-		To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-		Cc: Marcus Morrisey <marcus.morrisey@idfusion.com>
-		Subject: Re: Scheme Review
-		
-		
-		Hi Ross,
-
-		Checking this out shortly. Will report back soon!
-
-		Thanks,
-		Varun
-
-
-			On Jul 3, 2026, at 9:59 AM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-			Good morning Varun,
-
-			Can you please check the exported Schema in the SQL Dev environment and advise if it is what you are expecting?
-
-			Warm regards,
-
-			<img-d2ea9003-b950-4a78-9bcf-d8d5a6d0ebb6>
-
-			 
-
-			Ross Gillingham
-			Chief Information Officer
-			Peguis Child and Family Services
-			Winnipeg Office
-			500 Madison St
-			Winnipeg, MB R3H 0L4
-			PH: (204) 632-5404
-			https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
-			 
-
-			 
-
-			Our Children and Families Come First
-			 
-			THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-			Peguis CFS Legal Disclaimer
-
-			The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-		Peguis CFS Legal Disclaimer
-		
-
-		The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
-
+> On Jul 3, 2026, at 4:27 PM, Varun Mehra wrote:
+> Hi Ross, sorry super swamped today and couldnt get back to you earlier. The database export was not what I was expecting... [see Varun's Jul 3 email above, same SSMS-steps content]
 
 ---
 
 ## Email — 2026-07-07 — Re: Scheme Review
-**From:** Varun Mehra
+**From:** Varun Mehra <varun@idfusion.com>
 **To:** Ross Gillingham
 **CC:** Marcus Morrisey
 
@@ -2177,294 +1360,30 @@ Just wanted to follow up with you on this.
 Thanks,
 Varun
 
-
-
-	On Jul 6, 2026, at 5:06 PM, Varun Mehra <varun@idfusion.com> wrote:
-
-	Hi Ross,
-
-	Took a look at the Schema today.
-
-	There are some pretty significant changes to live, 89 additional tables, and 28 tables with additional columns (the client table itself has 28 additions).
-
-	Is it possible for us to instead get a version of live with a limited an scrubbed dataaset instead of trying to do anything with the test snapshot we have now?
-
-	Thanks,
-	Varun
-	
-
-
-		On Jul 3, 2026, at 4:27 PM, Varun Mehra <varun@idfusion.com> wrote:
-
-		Hi Ross,
-
-		Sorry super swamped today and couldnt get back to you earlier. 
-
-		The database export was not what what I was expecting. I created a schema export of the test database and dumped it in the temp folder expectring_script.sql
-
-		I was able to generate that using SQL management studio. Right clicking the db then clicking “Tasks” -> Generate Scripts. From there I choose “Script entire database and all the database objects”.
-
-		Clicking advanced you need to also set the following:
-		Script Indexes = True (off by default!)
-		Script Foreign Keys = True
-		Types of data to script = "Schema only”
-
-		Thanks,
-		Varun
-		
-
-
-			On Jul 3, 2026, at 3:11 PM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-			Thanks Varun,
-
-			Were you able to review the schema?
-
-			Warm regards,
-
-			Ross Gillingham
-			Chief Information Officer
-			Peguis Child and Family Services
-			Winnipeg Office
-			500 Madison St
-			Winnipeg, MB R3H 0L4
-			PH: (204) 632-5404
-			https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-			From: Varun Mehra <varun@idfusion.com>
-			Date: Friday, July 3, 2026 at 1:00 PM
-			To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-			Cc: Marcus Morrisey <marcus.morrisey@idfusion.com>
-			Subject: Re: Scheme Review
-			
-			
-			Hi Ross,
-
-			Checking this out shortly. Will report back soon!
-
-			Thanks,
-			Varun
-
-
-				On Jul 3, 2026, at 9:59 AM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-				Good morning Varun,
-
-				Can you please check the exported Schema in the SQL Dev environment and advise if it is what you are expecting?
-
-				Warm regards,
-
-				<img-d2ea9003-b950-4a78-9bcf-d8d5a6d0ebb6>
-
-				 
-
-				Ross Gillingham
-				Chief Information Officer
-				Peguis Child and Family Services
-				Winnipeg Office
-				500 Madison St
-				Winnipeg, MB R3H 0L4
-				PH: (204) 632-5404
-				https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
-				 
-
-				 
-
-				Our Children and Families Come First
-				 
-				THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-				Peguis CFS Legal Disclaimer
-
-				The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-			Peguis CFS Legal Disclaimer
-			
-
-			The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
-
-
+> On Jul 6, 2026, at 5:06 PM, Varun Mehra wrote:
+> Hi Ross, Took a look at the Schema today. There are some pretty significant changes to live, 89 additional tables, and 28 tables with additional columns... Is it possible for us to instead get a version of live with a limited and scrubbed dataset instead? Thanks, Varun
 
 ---
 
 ## Email — 2026-07-07 — Re: Scheme Review
-**From:** Ross Gillingham
+**From:** Ross Gillingham <ross.gillingham@peguiscfs.org>
 **To:** Varun Mehra
 **CC:** Marcus Morrisey
 
 Hi Varun,
 
-Apologies. Let’s review tomorrow - I was out of the office today.
-
+Apologies. Let's review tomorrow - I was out of the office today.
 
 Ross Gillingham
-
 Chief Information Officer
-
 Peguis Child and Family Services
-
 Winnipeg Office
-
 500 Madison St
-
 Winnipeg, MB R3H 0L4
-
 PH: (204) 632-5404
 
-http://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
- 
-
- 
-
-Our Children and Families Come First
-
- 
-
-THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-
-
-
-________________________________
-
-From: Varun Mehra <varun@idfusion.com>
-Sent: Tuesday, 07 July 2026 17:28:25
-To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-Cc: Marcus Morrisey <marcus.morrisey@idfusion.com>
-Subject: Re: Scheme Review 
- 
-Hi Ross, 
-
-Just wanted to follow up with you on this.
-
-Thanks,
-Varun
-
-
-
-	On Jul 6, 2026, at 5:06 PM, Varun Mehra <varun@idfusion.com> wrote:
-
-	Hi Ross, 
-
-	Took a look at the Schema today.
-
-	There are some pretty significant changes to live, 89 additional tables, and 28 tables with additional columns (the client table itself has 28 additions).
-
-	Is it possible for us to instead get a version of live with a limited an scrubbed dataaset instead of trying to do anything with the test snapshot we have now?
-
-	Thanks,
-	Varun
-	
-
-
-		On Jul 3, 2026, at 4:27 PM, Varun Mehra <varun@idfusion.com> wrote:
-
-		Hi Ross, 
-
-		Sorry super swamped today and couldnt get back to you earlier. 
-
-		The database export was not what what I was expecting. I created a schema export of the test database and dumped it in the temp folder expectring_script.sql
-
-		I was able to generate that using SQL management studio. Right clicking the db then clicking “Tasks” -> Generate Scripts. From there I choose “Script entire database and all the database objects”.
-
-		Clicking advanced you need to also set the following:
-		Script Indexes = True (off by default!)
-		Script Foreign Keys = True
-		Types of data to script = "Schema only”
-
-		Thanks,
-		Varun
-		
-
-
-			On Jul 3, 2026, at 3:11 PM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-			Thanks Varun,
-
-			Were you able to review the schema?
-
-			Warm regards,
-
-			Ross Gillingham
-			Chief Information Officer
-			Peguis Child and Family Services
-			Winnipeg Office
-			500 Madison St
-			Winnipeg, MB R3H 0L4
-			PH: (204) 632-5404
-			https://www.peguiscfs. <http://www.peguiscfs.org/> ca
-
-
-			From: Varun Mehra <varun@idfusion.com>
-			Date: Friday, July 3, 2026 at 1:00 PM
-			To: Ross Gillingham <ross.gillingham@peguiscfs.org>
-			Cc: Marcus Morrisey <marcus.morrisey@idfusion.com>
-			Subject: Re: Scheme Review
-			
-			
-			Hi Ross,
-
-			Checking this out shortly. Will report back soon!
-
-			Thanks,
-			Varun
-
-
-				On Jul 3, 2026, at 9:59 AM, Ross Gillingham <ross.gillingham@peguiscfs.org> wrote:
-
-				Good morning Varun,
-
-				Can you please check the exported Schema in the SQL Dev environment and advise if it is what you are expecting?
-
-				Warm regards,
-
-				<img-d2ea9003-b950-4a78-9bcf-d8d5a6d0ebb6>
-
-				 
-
-				Ross Gillingham
-				Chief Information Officer
-				Peguis Child and Family Services
-				Winnipeg Office
-				500 Madison St
-				Winnipeg, MB R3H 0L4
-				PH: (204) 632-5404
-				https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
-				 
-
-				 
-
-				Our Children and Families Come First
-				 
-				THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-				Peguis CFS Legal Disclaimer
-
-				The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-			Peguis CFS Legal Disclaimer
-			
-
-			The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
-
-
-Peguis CFS Legal Disclaimer
-
-
-The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
-
-
+> From: Varun Mehra — Sent: 2026-07-07 5:28 PM
+> Hi Ross, Just wanted to follow up with you on this. Thanks, Varun
 
 ---
 
@@ -2472,16 +1391,7 @@ The information contained in this e-mail message is intended only for the person
 **From:** Marcus Morrisey
 **To:** Marcus Morrisey
 
- 
-So, looked into the PO module that PCFS has already purchased with Sage300. We learned in today's me ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-Microsoft Teams
-	 
-	 Marcus Morrisey    4 days ago
-
-So, looked into the PO module that PCFS has already purchased with Sage300. We learned in today's meeting that the module is installed but not configured. According to the Sage 300 documentation the modules has its own complete requisition→approval→PO→receipt→invoice→AP/GL lifecycle, including three-way matching (PO→receipt→invoice) and auto-numbering. So, great news in a way, we won't need to build that. I think they themselves haven't yet delved into how that works or exact timelines, but they did say they were implementing it in previous meetings.  But how do we proceed with this knowledge?
-
-Go to Teams > <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783107811783?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&lm=deeplink&lmsrc=email&emltid=26a03a00-72e0-406c-82c8-d8d8c36a9f3e&emltype=ShareToOutlook&linktype=openSkypeTeams&cmpid=ShareToOutlook> 
-
+So, looked into the PO module that PCFS has already purchased with Sage300. We learned in today's meeting that the module is installed but not configured. According to the Sage 300 documentation the module has its own complete requisition→approval→PO→receipt→invoice→AP/GL lifecycle, including three-way matching (PO→receipt→invoice) and auto-numbering. So, great news in a way, we won't need to build that. I think they themselves haven't yet delved into how that works or exact timelines, but they did say they were implementing it in previous meetings. But how do we proceed with this knowledge?
 
 ---
 
@@ -2492,77 +1402,32 @@ Go to Teams > <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOL
 AI-generated content. Make sure to check for accuracy.
 Marcus Morrisey and Gabrielle Mahé-Serle discussed integrating the Sage 300 PO module with Waabanong, deciding on a manual hand-off process initially. Gabrielle will add a mandatory budget field for supervisors in intake by July 7, with expense tracking limited to supervisors and excluding treatment facility costs.
 Key Takeaways:
-
-*	Budget Field Implementation: Gabrielle will update the intake wireframes to include a mandatory budget field for supervisors to enter family budgets manually. 1 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783432746757?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783>  2 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783357217595?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783> 
-*	Expense Visibility Restriction: Intake workers will not have access to the Finance tab to prevent budget oversharing with families. 3 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783358439586?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783>  4 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783358541204?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783> 
-*	PO Process Workflow: The PO process will use a two-step hand-off and hand-back between Waabanong and Sage 300, starting manually before automation. 5 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783108043566?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783>  1 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783432746757?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783> 
-*	Finance Tab Clarification: Marcus clarified there is no Finance tab on intake, only on cases, and will update wireframes accordingly. 6 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783439938715?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783>  7 <https://teams.microsoft.com/l/message/19:Yf8ygnZjbgmo4dnopU-VDwOLs0Y_Ubr3f6jHrji70dA1@thread.tacv2/1783439796198?tenantId=8b6ac279-af32-4217-880b-28886a7a9353&parentMessageId=1783107811783> 
-
-
-
- <https://idfusion.com/> 
+- Budget Field Implementation: Gabrielle will update the intake wireframes to include a mandatory budget field for supervisors to enter family budgets manually.
+- Expense Visibility Restriction: Intake workers will not have access to the Finance tab to prevent budget oversharing with families.
+- PO Process Workflow: The PO process will use a two-step hand-off and hand-back between Waabanong and Sage 300, starting manually before automation.
+- Finance Tab Clarification: Marcus clarified there is no Finance tab on intake, only on cases, and will update wireframes accordingly.
 
 Marcus Morrisey
-
 Systems Analyst
-
 1-204-880-9795
-
-IDFusion.com <https://idfusion.com/> 
-
-
-
+IDFusion.com
 
 ---
 
 ## Email — 2026-07-08 — Task Screen - Change Edit Task to Complete Task
-**From:** Ross Gillingham
+**From:** Ross Gillingham <ross.gillingham@peguiscfs.org>
 **To:** IDFDevTeam
 **CC:** Marcus Morrisey; Gabrielle Mahé-Serle; Kelvin Shergold; Christina Sutherland; Darryl Boulanger
 
 Good afternoon team,
 
-I am accessing this with Admin permissions so my view may differ from workers. When opening a task to view we would like to add a “Complete Task” button instead of “Edit Task” button (edit task can be moved to the top right for supervisors/appropriate staff.) After clicking the “Complete Task” button we would like a confirmation window to pop-up asking if the user wants to mark the task as complete with Yes/No options. Once the user clicks “Yes” on the confirmation window, the task is completed.
+I am accessing this with Admin permissions so my view may differ from workers. When opening a task to view we would like to add a "Complete Task" button instead of "Edit Task" button (edit task can be moved to the top right for supervisors/appropriate staff.) After clicking the "Complete Task" button we would like a confirmation window to pop-up asking if the user wants to mark the task as complete with Yes/No options. Once the user clicks "Yes" on the confirmation window, the task is completed.
 
-I’m happy to review the workflow in more detail as needed.
+I'm happy to review the workflow in more detail as needed.
 
 Warm regards,
-
-
-
-
- 
-
 Ross Gillingham
-
 Chief Information Officer
-
 Peguis Child and Family Services
-
-Winnipeg Office
-
-500 Madison St
-
-Winnipeg, MB R3H 0L4
-
-PH: (204) 632-5404
-
-https <https://peguiscfs.ca/> ://peguiscfs.ca/ <https://peguiscfs.ca/> 
-
- 
-
- 
-
-Our Children and Families Come First
-
- 
-
-THE INFORMATION CONTAINED IN THE EMAIL MESSAGE IS INTENDED ONLY FOR THE PERSONAL AND CONFIDENTIAL USE OF THE DESIGNATED RECIPIENT(S) NAMED ABOVE. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR AN AGENT RESPONSIBLE FOR DELIVERING IT TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT YOU HAVE RECEIVED THIS DOCUMENT IN ERROR, AND THAT ANY REVIEW, DISSEMINATION, DISTRIBUTION, OR COPYING OF THIS MESSAGE IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY RETURN EMAIL OR TELEPHONE AT (204) 645-2049 AND DELETE THE ORIGINAL MESSAGE TOGETHER WITH ANY ATTACHMENTS.
-
-
-Peguis CFS Legal Disclaimer
-
-
-The information contained in this e-mail message is intended only for the personal and confidential use of the designated recipient(s) named above. If the reader of this message is not the intended recipient or agent responsible for delivering it to the intended recipient, you are hereby notified that you have received this document in error, and that any review, dissemination, distribution, or copying of this message is strictly prohibited. If you have received this communication in error, please notify us immediately by return e-mail or telephone at either (204) 645-2049 or (204) 632-5404 and delete the original message together with any attachments.
 
 ---
