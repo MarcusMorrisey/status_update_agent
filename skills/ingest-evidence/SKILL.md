@@ -174,7 +174,7 @@ For each meeting and email in the target period, ordered chronologically (oldest
 ---
 ```
 
-**Emails** — write the body verbatim with header metadata:
+**Emails** — write the body with header metadata, after normalization (see below):
 
 ```markdown
 ## Email — [YYYY-MM-DD] — [Subject]
@@ -182,10 +182,18 @@ For each meeting and email in the target period, ordered chronologically (oldest
 **To:** [To]
 **CC:** [CC, or omit if blank]
 
-[full verbatim email body]
+[normalized email body]
 
 ---
 ```
+
+**Email body normalization (mechanical only — never summarize):** Outlook/Exchange email bodies routinely carry boilerplate that adds no evidentiary signal and just dilutes extraction. Strip the following, and nothing else:
+- Repeated legal disclaimer / confidentiality-notice blocks (e.g. "This message is intended only for..." boilerplate), wherever they recur in the body.
+- Nested quoted-reply history beyond the single most-recent prior message — if the body contains "On [date], [sender] wrote: > ... > On [earlier date], [sender] wrote: > ...", keep only the most recent quoted message for context and drop older nested quotes (each of those earlier messages already exists verbatim as its own `## Email` entry elsewhere in this file, so nothing is lost).
+- Repeated inline signature blocks (name / title / organization / address / phone / website), when the same block recurs multiple times within one email thread. Keep it once on the sender's first email in the period; strip subsequent repeats. The `**From:**` header already carries sender identity, so there is no evidentiary loss.
+- Inline image placeholder tokens (e.g. `<img-...>`) and tracking-pixel / open-tracking URLs (e.g. `.gif` links, click-tracking redirects) — these carry no reviewable content.
+
+Do NOT paraphrase, condense, or drop anything else — the actual message content, all substantive quoted context beyond the one-message rule above, dates, names, and decisions must remain exactly as written. When in doubt about whether a block is boilerplate vs. content, keep it.
 
 Write `evidence-notes-current.md` to the project root (overwriting if it exists). Include a file header:
 
@@ -199,7 +207,7 @@ Write `evidence-notes-current.md` to the project root (overwriting if it exists)
 ---
 ```
 
-Do NOT summarise, restructure, or extract anything from the transcripts or emails. Reproduce the text exactly as found in the source.
+Do NOT summarise, restructure, or extract anything from the transcripts or emails, beyond the narrow, mechanical email-body normalization defined above. Reproduce the text exactly as found in the source otherwise.
 
 ---
 

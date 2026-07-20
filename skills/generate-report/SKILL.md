@@ -28,7 +28,14 @@ Before writing, reconcile:
 
 **Action items:** Take all open items from `project-state.md` + new items from `extractions-current.md`. Apply any status updates from extractions. Include items that were marked Complete this period (show status = Complete) plus all still-Open items.
 
-**Issues:** Same approach — existing open issues from state + new issues from extractions + any updates.
+Bucket every action item into exactly one of three groups for Section 7:
+- **New This Period** — `Carried Over? = No` (added in this period's extractions).
+- **Changed This Period** — carried-over item with a status update this period (present in extractions' `Action Item Status Updates` table — e.g. went Complete, reopened, owner changed).
+- **Carried Forward (No Change)** — carried-over item with no update this period.
+
+**Issues:** Same approach — existing open issues from state + new issues from extractions + any updates. Bucket the same way (New This Period / Changed This Period / Carried Forward), using extractions' `Issue Updates` table to determine "changed."
+
+**Aging:** For any item (action item or issue) landing in **Carried Forward**, check its `Periods Open` value from `project-state.md`. If `Periods Open >= 8` (default threshold; use `Aging Threshold (periods):` from `project-config.md` instead if present), mark it as aging — this surfaces long-stalled items instead of letting them sit silently in an ever-growing table.
 
 **Milestones:** Use milestones from `project-state.md` as the source of record (they have both Baseline End and Estimated End). Apply any Estimated End updates from extractions (user already approved these).
 
@@ -182,29 +189,72 @@ No decisions recorded this period.
 
 ### Section 7 — Action Items & Commitments
 
+Use the three buckets computed in Step 2. Render each as its own subsection — this keeps fresh movement visible instead of burying it under an ever-growing backlog table. Full backlog detail still lives in `project-state.md`; this report only carries what's actually needed to read the period.
+
 ```markdown
 ## Action Items & Commitments
 
-| # | Owner | Item | Due Date | Status | Carried Over? |
+### New This Period
+| # | Owner | Item | Due Date | Status |
+|---|-------|------|----------|--------|
+[rows — Carried Over? = No, or:]
+
+None this period.
+
+### Changed This Period
+| # | Owner | Item | Due Date | Status | Update |
+|---|-------|------|----------|--------|--------|
+[rows — carried-over items with a status update this period, or:]
+
+None this period.
+
+### Carried Forward (No Change)
+| # | Owner | Item | Due Date | Status | Periods Open |
 |---|-------|------|----------|--------|---------------|
-[all open items + items completed this period]
+[rows — carried-over items with no update this period; prefix # with ⚠️ if aging, or:]
+
+None this period.
 ```
 
-Mark `Carried Over?` as Yes for items that existed before this period (from `project-state.md`), No for items new this period.
-
-If no action items:
+If there are no action items at all across all three buckets, collapse the whole section to:
 ```markdown
+## Action Items & Commitments
+
 No action items this period.
 ```
 
 ### Section 8 — Issues & Risks
 
+Same three-bucket structure as Section 7.
+
 ```markdown
 ## Issues & Risks
 
-| # | Description | Severity | Owner | Due Date | Status |
+### New This Period
+| # | Description | Severity | Owner | Due Date |
+|---|-------------|---------|-------|----------|
+[rows, or:]
+
+None this period.
+
+### Changed This Period
+| # | Description | Severity | Owner | Due Date | Update |
 |---|-------------|---------|-------|----------|--------|
 [rows, or:]
+
+None this period.
+
+### Carried Forward (No Change)
+| # | Description | Severity | Owner | Due Date | Periods Open |
+|---|-------------|---------|-------|----------|---------------|
+[rows; prefix # with ⚠️ if aging, or:]
+
+None this period.
+```
+
+If there are no issues at all across all three buckets, collapse the whole section to:
+```markdown
+## Issues & Risks
 
 No issues or risks recorded this period.
 ```
