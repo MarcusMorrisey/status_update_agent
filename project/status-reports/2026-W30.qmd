@@ -1,0 +1,232 @@
+---
+title: "Project Status Report — Custom-CMS"
+subtitle: "Reporting Period: 2026-W30 · 2026-07-10 to 2026-07-16"
+date: "2026-07-16"
+author: "Marcus Morrisey"
+client: "PCFS"
+docket: "PD25-1186-CO"
+format:
+  docx:
+    reference-doc: _templates/report-template.docx
+    toc: false
+    number-sections: false
+---
+
+# Project Status Report
+
+| | |
+|---|---|
+| **Client** | PCFS |
+| **Project** | Custom-CMS |
+| **Docket #** | PD25-1186-CO |
+| **Project Manager** | Marcus Morrisey |
+| **Reporting Date** | 2026-07-16 |
+| **Start Date** | 2025-11-17 |
+| **Planned Finish** | 2026-03-31 |
+| **Estimated Finish** | 2026-07-31 |
+
+## Health Dashboard
+
+| Indicator | Status |
+|-----------|--------|
+| Overall Health | 🔴 Red |
+| Schedule | 🔴 Red |
+| Scope | 🟡 Yellow |
+| Budget | 🟡 Yellow |
+| Client's Feeling | 🟡 Yellow |
+
+## Project Status & Dates
+
+**Project Status:** This period focused on go-live readiness planning rather than feature delivery — an end-of-project-plan session (July 13) covered training-video documentation, production-data anonymization tooling, and go-live sequencing, while a second session (July 15) surfaced a client request to pull event management and Community Circle of Care functionality into near-term planning, which the team had to decline given current capacity. The production-data anonymization approach (needed to unblock the FAMCare migration) remains unresolved, and its due date has now passed. The July 31 go-live target is unchanged.
+
+**Variance:** Planned finish 2026-03-31 → Estimated finish 2026-07-31 (+122 days)
+
+## Progress This Period
+
+- Invoice 13544 reviewed and approved by Ross, forwarded to the Peguis CFS Finance team for processing (July 13).
+- No other deliverables completed this period — both meetings were planning/discovery sessions (go-live readiness planning; event-management/service-referral requirements gathering), not completed work.
+
+## Milestones & Schedule
+
+| Milestone | Baseline End | Estimated End | Status | Variance |
+|-----------|-------------|---------------|--------|----------|
+| M-01: Stage 1 — Discovery and Requirements complete | 2025-12-22 | 2026-03-26 | Delayed | +94d |
+| M-02: Stage 2 — Solution Design complete | 2026-01-31 | 2026-03-26 | Delayed | +54d |
+| M-03: Stage 3 — All 9 iterations complete / system ready | 2026-03-31 | 2026-07-25 | Delayed | +116d |
+| M-04: Go-Live | 2026-03-31 | 2026-07-31 | Delayed | +122d |
+| M-05: Stage 4 — Post-launch support complete | 2026-04-30 | 2026-08-28 | Delayed | +120d |
+
+```{mermaid}
+gantt
+  title Milestone Schedule
+  dateFormat YYYY-MM-DD
+
+  section Stage 1 — Discovery
+    Baseline  :milestone, 2025-12-22, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+
+  section Stage 2 — Solution Design
+    Baseline  :milestone, 2026-01-31, 0d
+    Estimated :milestone, crit, 2026-03-26, 0d
+
+  section Stage 3 — All Iterations
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-07-25, 0d
+
+  section Go-Live
+    Baseline  :milestone, 2026-03-31, 0d
+    Estimated :milestone, crit, 2026-07-31, 0d
+
+  section Stage 4 — Post-Launch
+    Baseline  :milestone, 2026-04-30, 0d
+    Estimated :milestone, crit, 2026-08-28, 0d
+```
+
+## Decisions Made
+
+| Decision | Made By | Date | Notes |
+|----------|---------|------|-------|
+| Event management (Category E) and Community Circle of Care confirmed out of phase-one scope due to team capacity — treated as roadmap/future-phase items | Marcus / Ross | 2026-07-15 | Reaffirms the earlier prioritization exercise with Haley; Ross accepts this but wants a documented roadmap conversation |
+
+## Action Items & Commitments
+
+### New This Period
+| # | Owner | Item | Due Date | Status |
+|---|-------|------|----------|--------|
+| A-202 | Marcus | Circle back with Rob on training-video documentation scope (screen-by-screen videos) and report proposed approach to Ross | 2026-07-16 | Open |
+| A-203 | Marcus | Coordinate with IDFusion team on detailed go-live order-of-operations/timeline for FamCare rollover; send rollout plan to Ross | 2026-07-16 | Open |
+| A-204 | Varun | Review Data Veil (and Ken's input) for production-data anonymization; finalize tool/approach and which data fields migrate from FAMCare | 2026-07-16 | Open |
+| A-205 | Ross | Pre-identify key test cases and perform side-by-side checks after DB import to confirm data migrated correctly with no sensitive data exposed | 2026-07-16 | Open |
+| A-206 | Ross / Varun | Schedule pre-go-live stress test (simultaneous login load test) as part of go-live activities | 2026-07-16 | Open |
+| A-207 | Marcus | Send additional context on switch-over/AMS support agreement and next-priority roadmap planning (events, Community Circle of Care) to Ross | 2026-07-16 | Open |
+| A-208 | Marcus | Check with Gabrielle on current state of service-referral functionality (Rainbow Lodge/Sun Lodge-type referrals) | 2026-07-16 | Open |
+
+### Changed This Period
+| # | Owner | Item | Due Date | Status | Update |
+|---|-------|------|----------|--------|--------|
+| A-189 | Marcus / Ross | Obtain access to live (scrubbed) FAMCare production data for IDFusion (Varun) | 2026-07-15 | Open | Due date has now passed without resolution — Varun still evaluating Data Veil/anonymization approach (see A-204); no scrubbed data obtained yet |
+
+### Carried Forward (No Change)
+| # | Owner | Item | Due Date | Status | Periods Open |
+|---|-------|------|----------|--------|---------------|
+| ⚠️ A-104 | Christine | Consult Kinship department and QA to ensure licensing and placement info accurately represented in system design | 2026-03-26 | Open | 9 |
+| A-118 | Marcus / Gabrielle | Design and implement finance dashboard; GL mapping, PO flow, and summary view confirmed in June 19 session | 2026-04-23 | In Progress | 7 |
+| A-127 | Christine / Clemene | Provide IDFusion with complete list and definitions of all legal terms used by agency | 2026-05-07 | Open | 6 |
+| A-128 | Marcus / Clemene | Cross-reference agency law/regulations with system terminology | 2026-05-07 | In Progress | 6 |
+| A-129 | IDFusion / Kelvin | UAT access setup — intake module UAT walkthrough completed June 16; formal sign-off procedure still pending | 2026-05-07 | In Progress | 6 |
+| A-130 | Marcus | Translate project timeline into Outlook calendar invites for key milestones | 2026-04-28 | Open | 6 |
+| A-131 | IDFusion dev | Implement Apr 13 demo feedback items (footer, gender options, profile types, abuse tab, address history, etc.) | 2026-04-30 | Open | 6 |
+| A-135 | IDFusion / Rob / Ross | Define post-go-live support tiers (bronze/silver/gold) and SLAs | 2026-05-28 | Open | 6 |
+| A-136 | Bev / Christine / Barry / Clemene | Send all finance templates and forms (no PII); GL code chart received; RBC CSV headers still pending | 2026-04-28 | In Progress | 6 |
+| A-150 | Marcus / Gabrielle | Update finance PO workflow wireframes: button on intake/case → itemized form → auto GL mapping → Sage export; reviewed live with client July 3 | 2026-05-21 | In Progress | 5 |
+| A-151 | Marcus / Gabrielle | Update abuse module wireframes: redesign as intake-form wizard per May 11 reset | 2026-05-21 | In Progress | 5 |
+| A-152 | Ross / IDFusion | Implement global holiday calendar in Wabanong system settings for SLA calculations | 2026-05-21 | Open | 5 |
+| A-153 | Kelvin (PCFS) | Send finalized abuse investigation conclusion terminology to Ross/Marcus | 2026-05-21 | Open | 5 |
+| A-154 | Kelvin (PCFS) | Provide blank/redacted provincial abuse investigation form fields to IDFusion | 2026-05-21 | Open | 5 |
+| A-155 | Marcus | Follow up re: missing Manitoba CFS Act abuse issue categories for intake form | 2026-05-21 | In Progress | 5 |
+| A-156 | Marcus | Clarify how "parenting time" is determined for case anchoring (both parents Peguis members) | 2026-05-21 | Open | 5 |
+| A-157 | Marcus / Gabrielle | Update ongoing services wireframes (in-home/out-of-home toggle, checklist rename, IRAP rate trigger, etc.) | 2026-05-21 | In Progress | 5 |
+| A-158 | Bev / Barry (PCFS) | Send RBC bank export column headers (CSV) for Wabanong credit card import template | 2026-05-21 | Open | 5 |
+| A-159 | Marcus | Schedule follow-up ongoing services wireframe review with CRD team | 2026-05-21 | Open | 5 |
+| A-160 | Ross (IDFusion) | Document "Finance Assigner" role: queue visibility and task assignment capabilities | 2026-05-21 | Open | 5 |
+| A-161 | Darryl (PCFS) | Provide complete issue categories and subcategories list from provincial IM form | 2026-05-21 | Open | 4 |
+| A-170 | Marcus / Gabrielle | Redesign abuse module as intake-form wizard; produce initial wireframes for Kelvin review | 2026-06-04 | In Progress | 4 |
+| A-171 | Marcus (Rob) | Send updated PCFS status report: revised July go-live, abuse as separate iteration, updated meeting cadence | 2026-05-21 | Open | 4 |
+| A-176 | Marcus | Clarify which budget pool covers intake-related purchases (operations vs. prevention/family service) | 2026-05-21 | Open | 4 |
+| A-177 | Gabrielle | Implement dual supervisor task assignment in intake task modal (pool default + specific supervisor option) | 2026-07-02 | Open | 3 |
+| A-178 | Gabrielle | Add optional case synopsis/summary field at end of intake form; carry over to case file | 2026-07-02 | Open | 3 |
+| A-179 | Gabrielle | Submit development ticket for issue categories expansion to full CFIS list — go-live blocker | 2026-07-02 | Open | 3 |
+| A-180 | Ross / Darryl | Schedule follow-up intake practice run sessions; coordinate with Marcus/Gabrielle for follow-up reviews | 2026-07-02 | Open | 3 |
+| A-181 | Ross / Gabrielle / Marcus | Define and implement intake supervisor finance permissions: budget view + change; include after-hours access | 2026-07-02 | Open | 3 |
+| A-182 | Marcus | Activate UAT accounts for newly added team members following June 16 meeting | 2026-06-18 | Open | 3 |
+| A-183 | Marcus | Send UAT session summary + role chart + feedback instructions to all June 16 participants | 2026-06-18 | Open | 3 |
+| A-184 | Gabrielle | Create/confirm bug ticket for "open services" not showing in person search results | 2026-06-18 | Open | 3 |
+| A-187 | Rob | Review all shared finance documentation; compile requirements summary for finance module data entry screens | 2026-07-02 | Open | 2 |
+| A-188 | Marcus / Gabrielle | Schedule follow-up finance design session with Rob after documentation review | 2026-07-02 | Open | 2 |
+| A-190 | Marcus | Email Ross a concise summary of the finance-tab updates discussed July 3 | 2026-07-09 | Complete | 1 |
+| A-191 | Marcus | Follow up with Varun on FAMCare schema — pursue scrubbed live-data export in place of test snapshot | 2026-07-09 | Complete | 1 |
+| A-192 | Gabrielle | Add custom date-range filter to finance tab | 2026-07-09 | Open | 1 |
+| A-193 | Gabrielle | Rename "Source" column to "Source reference" in finance tab | 2026-07-09 | Open | 1 |
+| A-194 | Gabrielle | Add "Funding category" column to finance tab | 2026-07-09 | Open | 1 |
+| A-195 | Gabrielle | Add "Export to PDF" button to finance tab | 2026-07-09 | Open | 1 |
+| A-196 | Gabrielle | Add "Reset view" button to finance tab filters | 2026-07-09 | Open | 1 |
+| A-197 | Ross | Schedule meeting with Barry, Calvin, and relevant staff to align frontline/finance terminology (protection vs. prevention) | 2026-07-09 | Open | 1 |
+| A-198 | Ross / Marcus / Gabrielle | Determine and document which roles decide federal vs. provincial funding for expenses | 2026-07-09 | Open | 1 |
+| A-199 | Gabrielle | Add mandatory budget field for supervisors in intake wireframes | 2026-07-07 | Complete | 1 |
+| A-200 | Marcus | Send Sage 300 PO module info to Ross for Bass support team review | 2026-07-09 | Complete | 1 |
+| A-201 | IDFusion dev | Implement "Complete Task" button (replacing "Edit Task") with Yes/No confirmation dialog | 2026-07-09 | Open | 1 |
+
+*⚠️ = open 8+ periods — flagged for aging review.*
+
+## Issues & Risks
+
+### New This Period
+| # | Description | Severity | Owner | Due Date |
+|---|-------------|---------|-------|----------|
+| I-043 | Client requesting event management (Category E) and Community Circle of Care functionality be pulled into near-term planning; IDFusion team has no capacity within current schedule — risk of scope-expectation mismatch if not managed via clear roadmap conversation | Medium | Marcus | 2026-07-16 |
+
+### Changed This Period
+| # | Description | Severity | Owner | Due Date | Update |
+|---|-------------|---------|-------|----------|--------|
+| I-042 | FAMCare live schema diverges significantly from the test snapshot — risks inaccurate migration scripts if not resolved before finalizing FAMCare→Wabanong migration | Medium-High | Varun / Marcus | 2026-07-09 | Anonymization approach still being scoped (Data Veil evaluation underway, Ken consulted) — scrubbed production data snapshot still not available; compounds A-189's now-overdue due date |
+
+### Carried Forward (No Change)
+| # | Description | Severity | Owner | Due Date | Periods Open |
+|---|-------------|---------|-------|----------|---------------|
+| ⚠️ I-018 | Finance/Sage integration requirements incomplete — formal data entry screen design and Sage integration still pending | Medium | Hailey / Marcus | 2026-01-29 | 14 |
+| ⚠️ I-029 | Timeline slippage — go-live revised to end of July 2026; M-03 estimated end updated to 2026-07-25; formal contract re-baselining still pending | High | Marcus | 2026-02-12 | 12 |
+| ⚠️ I-032 | Development timeline at risk — intake module UAT underway; case file, finance, and abuse iterations still ahead | High | Marcus | 2026-03-12 | 10 |
+| ⚠️ I-033 | Address-based search confirmed as new development requirement — moved to roadmap; iteration sequencing impact to be assessed at roadmap review | Medium | Marcus | 2026-03-26 | 9 |
+| ⚠️ I-034 | Client-side continuity risk — Haley absent 3+ months; Clemene covering; Alice approaching retirement | Medium | Marcus / Ross | 2026-04-07 | 8 |
+| I-035 | Abuse program carved out as separate iteration — approach confirmed; initial wireframes in progress (A-170); form details (A-153, A-154) still pending from PCFS | Medium | Marcus / Kelvin / Clemene | 2026-04-30 | 6 |
+| I-036 | UAT pipeline fully operational — Freshdesk → ClickUp triage active; client+family data module UAT complete | Low | Gabrielle | 2026-04-30 | 6 |
+| I-037 | Demo environment instability — UAT environment set up in PCFS Azure; risk substantially reduced | Medium | Ross / IDFusion | 2026-05-21 | 5 |
+| I-038 | Intake form incomplete — full CFIS issue categories expansion confirmed as mandatory pre-go-live requirement; development ticket submitted (A-179); Darryl's source list still pending (A-161) | Medium | Marcus | 2026-05-21 | 5 |
+| I-039 | Holiday calendar missing — Wabanong timer logic does not yet account for observed holidays; required for SLA accuracy in finance and abuse workflows | Medium | Ross / IDFusion | 2026-05-21 | 5 |
+| I-041 | UAT bug: "open services" not showing in person search results when initiating a new intake | Low | Gabrielle | 2026-06-18 | 3 |
+
+*⚠️ = open 8+ periods — flagged for aging review.*
+
+## Return to Green Plans
+
+### Overall — 🔴 Red (first flagged: 2025-W48)
+
+- Complete intake UAT cycle (A-180); triage all feedback through Freshdesk → ClickUp pipeline
+- Advance finance module from design to wireframes (A-150, A-192–A-196) and get client sign-off before finance UAT
+- Schedule case file and abuse module UAT sessions to close remaining iteration gaps before July 31
+- Resolve production-data anonymization approach so scrubbed FAMCare data becomes available for migration testing (A-189, A-204, I-042) — due date already passed
+- Deliver go-live order-of-operations plan, training-video scope decision, and test-case verification plan to Ross (A-202, A-203, A-205)
+
+### Schedule — 🔴 Red (first flagged: 2025-W48)
+
+- M-03 estimated end updated to 2026-07-25 to reflect actual project state; communicate revised milestone picture to PCFS (A-171)
+- Formally re-baseline contract timeline with Clemene/Rob — July 31 go-live target needs a signed-off schedule
+- Identify critical path: intake UAT → case file UAT → finance UAT → abuse UAT → go-live; confirm each module's UAT readiness date
+- Schedule pre-go-live stress test as part of go-live activities (A-206)
+
+### Scope — 🟡 Yellow (first flagged: 2025-W50)
+
+- Finance scope now partially locked; complete scope definition after Rob's documentation review (A-187)
+- Align frontline/finance terminology (A-197) before further scope decisions on funding categorization
+- Confirm role ownership for federal/provincial funding determination (A-198)
+- Hold roadmap/capacity conversation on event management (Category E) and Community Circle of Care to manage scope-expectation risk (I-043)
+- Confirm service-referral functionality status with Gabrielle before committing to any scope changes (A-208)
+
+### Budget — 🟡 Yellow (first flagged: 2025-W50)
+
+- Finance module design underway; confirm scope limits with Rob and Clemene before full design begins
+- Abuse contract amendment still outstanding (A-171); include in next PCFS status report
+- No new cost concerns this period; monitor for a formal costing ask if events/CCC scope discussion advances
+
+### Client's Feeling — 🟡 Yellow (first flagged: 2026-W30; was Green in 2026-W29)
+
+- Send the additional context on switch-over/AMS/roadmap promised to Ross (A-207) to keep momentum and address his capacity question directly
+- Approach the events/CCC roadmap conversation collaboratively, given Ross's proactive, good-faith tone this period despite the capacity pushback
+
+## Next Period Plan
+
+- Confirm production-data anonymization approach (Data Veil or alternative) and finalize FAMCare→Wabanong data field mapping (A-204)
+- Deliver go-live order-of-operations/timeline plan to Ross (A-203)
+- Scope and report back on training-video documentation approach with Rob (A-202)
+- Hold roadmap/capacity conversation on event management and Community Circle of Care (I-043, A-207)
+- Follow up on service-referral functionality status with Gabrielle (A-208)
