@@ -44,6 +44,7 @@ format:
 ## Progress This Period
 
 - Invoice 13544 reviewed and approved by Ross, forwarded to the Peguis CFS Finance team for processing (July 13).
+- Signed Statement of Work re-sent to Ross per his phone request (July 15).
 - No other deliverables completed this period — both meetings were planning/discovery sessions (go-live readiness planning; event-management/service-referral requirements gathering), not completed work.
 
 ## Milestones & Schedule
@@ -87,6 +88,7 @@ gantt
 | Decision | Made By | Date | Notes |
 |----------|---------|------|-------|
 | Event management (Category E) and Community Circle of Care confirmed out of phase-one scope due to team capacity — treated as roadmap/future-phase items | Marcus / Ross | 2026-07-15 | Reaffirms the earlier prioritization exercise with Haley; Ross accepts this but wants a documented roadmap conversation |
+| Confirmed "protection services" was never part of the original scope discussion with Hailey — only Community Circle of Care was discussed, and only as a future-phase item, not current-phase work | Marcus | 2026-07-15 | Sent to Ross ahead of the same-day events meeting; independently corroborates the phase-one scope boundary |
 
 ## Action Items & Commitments
 
@@ -163,7 +165,7 @@ gantt
 ### New This Period
 | # | Description | Severity | Owner | Due Date |
 |---|-------------|---------|-------|----------|
-| I-043 | Client requesting event management (Category E) and Community Circle of Care functionality be pulled into near-term planning; IDFusion team has no capacity within current schedule — risk of scope-expectation mismatch if not managed via clear roadmap conversation | Medium | Marcus | 2026-07-16 |
+| I-043 | Client requesting event management (Category E) and Community Circle of Care functionality be pulled into near-term planning; IDFusion team has no capacity within current schedule — risk of scope-expectation mismatch if not managed via clear roadmap conversation. Marcus's Jul 15 email to Ross independently corroborates that protection services/CCC were never in the original Hailey-scoped requirements, strengthening the case for holding the phase-one scope line. | Medium | Marcus | 2026-07-16 |
 
 ### Changed This Period
 | # | Description | Severity | Owner | Due Date | Update |
