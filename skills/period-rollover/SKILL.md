@@ -7,7 +7,7 @@ description: Roll over a completed reporting period — carry forward open items
 
 Closes out the current reporting period by merging verified extractions into the project state file, advancing the period dates in config, and clearing the working extraction file.
 
-**Prerequisite:** Both `extractions-current.md` (Status: Verified) and a completed `status-reports/[period-id].qmd` should exist. If the report hasn't been generated yet, warn the user but offer to proceed anyway if they confirm.
+**Prerequisite:** Both `extractions-current.md` (Status: Verified) and a completed `status-reports/[period-id].qmd` should exist. If the report hasn't been generated yet, warn the user but offer to proceed anyway if they confirm. (Note: rollover reads and merges only extractions-current.md — the .qmd's existence is checked but its content is not read.)
 
 **Early rollover check:** After loading `project-config.md`, compare today's date against `Current Period End`. If today is before `Current Period End`, warn the user before doing anything else:
 

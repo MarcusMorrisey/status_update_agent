@@ -33,7 +33,14 @@ Bucket every action item into exactly one of three groups for Section 7:
 - **Changed This Period** — carried-over item with a status update this period (present in extractions' `Action Item Status Updates` table — e.g. went Complete, reopened, owner changed).
 - **Carried Forward (No Change)** — carried-over item with no update this period.
 
+Note: bucket membership is determined by which extractions-current.md table an item
+appears in (New Action Items vs. Action Item Status Updates vs. neither) — not by a
+literal field on the action item itself.
+
 **Issues:** Same approach — existing open issues from state + new issues from extractions + any updates. Bucket the same way (New This Period / Changed This Period / Carried Forward), using extractions' `Issue Updates` table to determine "changed."
+
+Note: as with action items, bucket membership is determined by which extractions-current.md
+table an issue appears in — not by a literal field on the issue itself.
 
 **Aging:** For any item (action item or issue) landing in **Carried Forward**, check its `Periods Open` value from `project-state.md`. If `Periods Open >= 8` (default threshold; use `Aging Threshold (periods):` from `project-config.md` instead if present), mark it as aging — this surfaces long-stalled items instead of letting them sit silently in an ever-growing table.
 

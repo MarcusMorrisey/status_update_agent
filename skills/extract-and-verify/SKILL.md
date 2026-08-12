@@ -26,7 +26,11 @@ Note the `Next Action Item ID` and `Next Issue ID` from `project-state.md`. If `
 
 ## Step 2 — Extract all items
 
-Read `evidence-notes-current.md` thoroughly. For each meeting and email, extract:
+Read `evidence-notes-current.md` thoroughly. Meeting transcripts and email threads contain
+substantial content that is not status-relevant (small talk, scheduling logistics, restated
+context from prior periods). Focus extraction on statements that describe work, decisions,
+commitments, or risks — do not let volume of irrelevant discussion inflate the number or
+prominence of extracted items. For each meeting and email, extract:
 
 ### Progress This Period
 Concrete work completed, deliverables produced, or milestones reached. Look for past-tense statements ("we finished", "delivered", "completed", "closed").
@@ -34,8 +38,16 @@ Concrete work completed, deliverables produced, or milestones reached. Look for 
 ### Decisions Made
 Any choice or direction that was explicitly agreed upon. Capture who made it and the date. Distinguish from action items: a decision is a concluded choice, an action item is future work.
 
+If more than 4 decisions are captured, review whether any are sub-points of a single
+broader decision and consolidate.
+
 ### Action Items & Commitments
 **Be liberal — overdetect.** Any stated intention qualifies: "I'll send", "we need to", "let's make sure", "someone should". Capture: owner (infer from context), item, due date (infer if not stated — use next period end as default). Assign sequential IDs continuing from `Next Action Item ID`.
+
+For any owner or due date that is inferred rather than explicitly stated, mark it in the
+verification table (Step 3) with a trailing "(inferred)" so the user can catch a wrong
+attribution before it's written to permanent state — do not present inferred values with
+the same confidence as an explicitly stated owner/date.
 
 Also check existing open action items in `project-state.md` and note their current status based on transcript content.
 
@@ -43,6 +55,10 @@ If you add more than 5 Action Items & Commitments, review them all again and try
 
 ### Issues & Risks
 Problems, blockers, concerns, or risks mentioned. Capture: description, severity (High / Medium / Low — infer from language), owner (infer), due date if mentioned. Assign new sequential IDs continuing from `Next Issue ID`.
+
+For any severity or owner that is inferred rather than explicitly stated, mark it in the
+verification table (Step 3) with a trailing "(inferred)" so the user can catch a wrong
+attribution before it's written to permanent state.
 
 Also check existing open issues in `project-state.md` and note any updates.
 
@@ -52,6 +68,9 @@ If you add more than 3 Issues & Risks, review them all again and try to collapse
 Any mention of milestone dates slipping, completing, or being revised. Map to existing milestones in `project-state.md` by name. Note: you can propose an updated Estimated End, but do not change Baseline End — that's immutable.
 
 ### Health Indicators
+Keep each rationale to one sentence — if a rationale needs more, the indicator's Return to
+Green Plan is the place for detail, not this table.
+
 Infer a RAG status (Green / Yellow / Red) for each:
 - **Overall Health** — your gestalt read on the project
 - **Schedule** — are milestones on track?
